@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2013 for Windows Desktop
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chaotic", "Chaotic\Chaotic\Chaotic.csproj", "{F73B7EAA-A8B5-4A41-81F8-412D225A0218}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChaoticContent", "Chaotic\ChaoticContent\ChaoticContent.contentproj", "{06309AF8-C123-46CE-BF38-6B9A63307E86}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChaoticGameLib", "..\ChaoticGameLib\ChaoticGameLib\ChaoticGameLib.csproj", "{F04EBC04-0FB3-4166-BEC6-377EB1F4BC25}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F73B7EAA-A8B5-4A41-81F8-412D225A0218}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{F73B7EAA-A8B5-4A41-81F8-412D225A0218}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{F73B7EAA-A8B5-4A41-81F8-412D225A0218}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{F73B7EAA-A8B5-4A41-81F8-412D225A0218}.Debug|x86.ActiveCfg = Debug|x86
+		{F73B7EAA-A8B5-4A41-81F8-412D225A0218}.Debug|x86.Build.0 = Debug|x86
+		{F73B7EAA-A8B5-4A41-81F8-412D225A0218}.Release|Any CPU.ActiveCfg = Release|x86
+		{F73B7EAA-A8B5-4A41-81F8-412D225A0218}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{F73B7EAA-A8B5-4A41-81F8-412D225A0218}.Release|Mixed Platforms.Build.0 = Release|x86
+		{F73B7EAA-A8B5-4A41-81F8-412D225A0218}.Release|x86.ActiveCfg = Release|x86
+		{F73B7EAA-A8B5-4A41-81F8-412D225A0218}.Release|x86.Build.0 = Release|x86
+		{06309AF8-C123-46CE-BF38-6B9A63307E86}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{06309AF8-C123-46CE-BF38-6B9A63307E86}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{06309AF8-C123-46CE-BF38-6B9A63307E86}.Debug|x86.ActiveCfg = Debug|x86
+		{06309AF8-C123-46CE-BF38-6B9A63307E86}.Release|Any CPU.ActiveCfg = Release|x86
+		{06309AF8-C123-46CE-BF38-6B9A63307E86}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{06309AF8-C123-46CE-BF38-6B9A63307E86}.Release|x86.ActiveCfg = Release|x86
+		{F04EBC04-0FB3-4166-BEC6-377EB1F4BC25}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{F04EBC04-0FB3-4166-BEC6-377EB1F4BC25}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{F04EBC04-0FB3-4166-BEC6-377EB1F4BC25}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{F04EBC04-0FB3-4166-BEC6-377EB1F4BC25}.Debug|x86.ActiveCfg = Debug|x86
+		{F04EBC04-0FB3-4166-BEC6-377EB1F4BC25}.Debug|x86.Build.0 = Debug|x86
+		{F04EBC04-0FB3-4166-BEC6-377EB1F4BC25}.Release|Any CPU.ActiveCfg = Release|x86
+		{F04EBC04-0FB3-4166-BEC6-377EB1F4BC25}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{F04EBC04-0FB3-4166-BEC6-377EB1F4BC25}.Release|Mixed Platforms.Build.0 = Release|x86
+		{F04EBC04-0FB3-4166-BEC6-377EB1F4BC25}.Release|x86.ActiveCfg = Release|x86
+		{F04EBC04-0FB3-4166-BEC6-377EB1F4BC25}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
