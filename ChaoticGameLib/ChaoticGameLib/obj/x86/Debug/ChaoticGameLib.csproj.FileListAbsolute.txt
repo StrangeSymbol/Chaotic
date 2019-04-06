@@ -1,0 +1,6 @@
+C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\ChaoticGameLib\ChaoticGameLib\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\ChaoticGameLib\ChaoticGameLib\bin\x86\Debug\ChaoticGameLib.dll
+C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\ChaoticGameLib\ChaoticGameLib\bin\x86\Debug\ChaoticGameLib.pdb
+C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\ChaoticGameLib\ChaoticGameLib\obj\x86\Debug\ChaoticGameLib.dll
+C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\ChaoticGameLib\ChaoticGameLib\obj\x86\Debug\ChaoticGameLib.pdb
+C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\ChaoticGameLib\ChaoticGameLib\obj\x86\Debug\ChaoticGameLib.csprojResolveAssemblyReference.cache

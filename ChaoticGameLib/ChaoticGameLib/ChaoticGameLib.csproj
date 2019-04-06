@@ -1,0 +1,317 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{F04EBC04-0FB3-4166-BEC6-377EB1F4BC25}</ProjectGuid>
+    <ProjectTypeGuids>{6D335F3A-9D43-41b4-9D22-F6F17C4BE596};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ChaoticGameLib</RootNamespace>
+    <AssemblyName>ChaoticGameLib</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <XnaFrameworkVersion>v4.0</XnaFrameworkVersion>
+    <XnaPlatform>Windows</XnaPlatform>
+    <XnaProfile>Reach</XnaProfile>
+    <XnaCrossPlatformGroupID>6589a1d8-2aa8-46da-9e74-4b1fad366e8f</XnaCrossPlatformGroupID>
+    <XnaOutputType>Library</XnaOutputType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\x86\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+    <XnaCompressContent>false</XnaCompressContent>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\x86\Release</OutputPath>
+    <DefineConstants>TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+    <XnaCompressContent>true</XnaCompressContent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.Game, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.Graphics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Net" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Attacks\Allmageddon.cs" />
+    <Compile Include="Attacks\AshTorrent.cs" />
+    <Compile Include="Attacks\Attack.cs" />
+    <Compile Include="Attacks\CoilCrush.cs" />
+    <Compile Include="Attacks\Degenervate.cs" />
+    <Compile Include="Attacks\Delerium.cs" />
+    <Compile Include="Attacks\Ektospasm.cs" />
+    <Compile Include="Attacks\EmberSwarm.cs" />
+    <Compile Include="Attacks\Evaporize.cs" />
+    <Compile Include="Attacks\Fearocity.cs" />
+    <Compile Include="Attacks\FlameOrb.cs" />
+    <Compile Include="Attacks\FlashKick.cs" />
+    <Compile Include="Attacks\FlashMend.cs" />
+    <Compile Include="Attacks\Flashwarp.cs" />
+    <Compile Include="Attacks\FrostBlight.cs" />
+    <Compile Include="Attacks\HailStorm.cs" />
+    <Compile Include="Attacks\HiveCall.cs" />
+    <Compile Include="Attacks\Incinerase.cs" />
+    <Compile Include="Attacks\InfernoGust.cs" />
+    <Compile Include="Attacks\IronBalls.cs" />
+    <Compile Include="Attacks\Lavalanche.cs" />
+    <Compile Include="Attacks\LightningBurst.cs" />
+    <Compile Include="Attacks\LuckyShot.cs" />
+    <Compile Include="Attacks\MegaRoar.cs" />
+    <Compile Include="Attacks\Mirthquake.cs" />
+    <Compile Include="Attacks\ParalEyes.cs" />
+    <Compile Include="Attacks\PebbleStorm.cs" />
+    <Compile Include="Attacks\PowerPulse.cs" />
+    <Compile Include="Attacks\QuickExit.cs" />
+    <Compile Include="Attacks\RipTide.cs" />
+    <Compile Include="Attacks\RockWave.cs" />
+    <Compile Include="Attacks\Rustoxic.cs" />
+    <Compile Include="Attacks\ShadowStrike.cs" />
+    <Compile Include="Attacks\ShriekShock.cs" />
+    <Compile Include="Attacks\SkeletalStrike.cs" />
+    <Compile Include="Attacks\SleepSting.cs" />
+    <Compile Include="Attacks\SludgeGush.cs" />
+    <Compile Include="Attacks\SpiritGust.cs" />
+    <Compile Include="Attacks\SqueezePlay.cs" />
+    <Compile Include="Attacks\SteamRage.cs" />
+    <Compile Include="Attacks\TelekineticBolt.cs" />
+    <Compile Include="Attacks\ThunderShout.cs" />
+    <Compile Include="Attacks\TornadoTackle.cs" />
+    <Compile Include="Attacks\TorrentOfFlame.cs" />
+    <Compile Include="Attacks\ToxicGust.cs" />
+    <Compile Include="Attacks\Unsanity.cs" />
+    <Compile Include="Attacks\Velocitrap.cs" />
+    <Compile Include="Attacks\VineSnare.cs" />
+    <Compile Include="Attacks\Viperlash.cs" />
+    <Compile Include="Attacks\Windslash.cs" />
+    <Compile Include="Battlegears\AquaShield.cs" />
+    <Compile Include="Battlegears\Battlegear.cs" />
+    <Compile Include="Battlegears\Cyclance.cs" />
+    <Compile Include="Battlegears\DiamondOfVlaric.cs" />
+    <Compile Include="Battlegears\DragonPulse.cs" />
+    <Compile Include="Battlegears\ElixirOfTenacity.cs" />
+    <Compile Include="Battlegears\FluxBauble.cs" />
+    <Compile Include="Battlegears\GauntletsOfMight.cs" />
+    <Compile Include="Battlegears\Liquilizer.cs" />
+    <Compile Include="Battlegears\MipedianCactus.cs" />
+    <Compile Include="Battlegears\Mowercycle.cs" />
+    <Compile Include="Battlegears\MugiciansLyre.cs" />
+    <Compile Include="Battlegears\NexusFuse.cs" />
+    <Compile Include="Battlegears\OrbOfForesight.cs" />
+    <Compile Include="Battlegears\PhobiaMask.cs" />
+    <Compile Include="Battlegears\PrismOfVacuity.cs" />
+    <Compile Include="Battlegears\Pyroblaster.cs" />
+    <Compile Include="Battlegears\RingOfNaarin.cs" />
+    <Compile Include="Battlegears\RiverlandStar.cs" />
+    <Compile Include="Battlegears\SkeletalSteed.cs" />
+    <Compile Include="Battlegears\SpectralViewer.cs" />
+    <Compile Include="Battlegears\StaffOfWisdom.cs" />
+    <Compile Include="Battlegears\StoneMail.cs" />
+    <Compile Include="Battlegears\TalismanOfTheMandiblor.cs" />
+    <Compile Include="Battlegears\TorrentKrinth.cs" />
+    <Compile Include="Battlegears\Torwegg.cs" />
+    <Compile Include="Battlegears\Viledriver.cs" />
+    <Compile Include="Battlegears\VlaricShard.cs" />
+    <Compile Include="Battlegears\WhepCrack.cs" />
+    <Compile Include="Battlegears\WindStrider.cs" />
+    <Compile Include="ChaoticCard.cs" />
+    <Compile Include="Creatures\CreatureType.cs" />
+    <Compile Include="Creatures\Danians\Ekuud.cs" />
+    <Compile Include="Creatures\Danians\Formicidor.cs" />
+    <Compile Include="Creatures\Danians\Galin.cs" />
+    <Compile Include="Creatures\Danians\Hota.cs" />
+    <Compile Include="Creatures\Danians\Ibiaan.cs" />
+    <Compile Include="Creatures\Danians\Junda.cs" />
+    <Compile Include="Creatures\Danians\Kannen.cs" />
+    <Compile Include="Creatures\Danians\Kebna.cs" />
+    <Compile Include="Creatures\Danians\Lhad.cs" />
+    <Compile Include="Creatures\Danians\Lore.cs" />
+    <Compile Include="Creatures\Danians\Mallash.cs" />
+    <Compile Include="Creatures\Danians\OduBathax.cs" />
+    <Compile Include="Creatures\Danians\Skartalas.cs" />
+    <Compile Include="Creatures\Danians\ValaniiLevaan.cs" />
+    <Compile Include="Creatures\Danians\Wamma.cs" />
+    <Compile Include="Creatures\Mipedians\Ario.cs" />
+    <Compile Include="Creatures\Mipedians\Biondu.cs" />
+    <Compile Include="Creatures\Mipedians\Brathe.cs" />
+    <Compile Include="Creatures\Mipedians\Malvadine.cs" />
+    <Compile Include="Creatures\Mipedians\MarquisDarini.cs" />
+    <Compile Include="Creatures\Mipedians\PrinceMudeenu.cs" />
+    <Compile Include="Creatures\Mipedians\Qwun.cs" />
+    <Compile Include="Creatures\Mipedians\Shimmark.cs" />
+    <Compile Include="Creatures\Mipedians\Siado.cs" />
+    <Compile Include="Creatures\Mipedians\Sobtjek.cs" />
+    <Compile Include="Creatures\Mipedians\Tiaane.cs" />
+    <Compile Include="Creatures\Mipedians\Ubliqun.cs" />
+    <Compile Include="Creatures\Mipedians\Uro.cs" />
+    <Compile Include="Creatures\Mipedians\Vinta.cs" />
+    <Compile Include="Creatures\Mipedians\Zhade.cs" />
+    <Compile Include="Creatures\Overworlders\Arias.cs" />
+    <Compile Include="Creatures\Overworlders\Attacat.cs" />
+    <Compile Include="Creatures\Overworlders\Blazier.cs" />
+    <Compile Include="Creatures\Overworlders\Blugon.cs" />
+    <Compile Include="Creatures\Overworlders\Bodal.cs" />
+    <Compile Include="Creatures\Creature.cs" />
+    <Compile Include="Creatures\Overworlders\Crawsectus.cs" />
+    <Compile Include="Creatures\Overworlders\Donmar.cs" />
+    <Compile Include="Creatures\Overworlders\Dractyl.cs" />
+    <Compile Include="Creatures\Overworlders\Frafdo.cs" />
+    <Compile Include="Creatures\Overworlders\Gespedan.cs" />
+    <Compile Include="Creatures\Overworlders\Heptadd.cs" />
+    <Compile Include="Creatures\Overworlders\Intress.cs" />
+    <Compile Include="Creatures\Overworlders\Laarina.cs" />
+    <Compile Include="Creatures\Overworlders\Maglax.cs" />
+    <Compile Include="Creatures\Overworlders\Maxxor.cs" />
+    <Compile Include="Creatures\Overworlders\Najarin.cs" />
+    <Compile Include="Creatures\Overworlders\Owis.cs" />
+    <Compile Include="Creatures\Overworlders\Psimion.cs" />
+    <Compile Include="Creatures\Overworlders\Rellim.cs" />
+    <Compile Include="Creatures\Overworlders\Staluk.cs" />
+    <Compile Include="Creatures\Overworlders\Slurhk.cs" />
+    <Compile Include="Creatures\Overworlders\TangathToborn.cs" />
+    <Compile Include="Creatures\Overworlders\Tartarek.cs" />
+    <Compile Include="Creatures\Overworlders\Velreth.cs" />
+    <Compile Include="Creatures\Overworlders\Vidav.cs" />
+    <Compile Include="Creatures\Overworlders\Xaerv.cs" />
+    <Compile Include="Creatures\Overworlders\Yokkis.cs" />
+    <Compile Include="Creatures\Overworlders\Zalic.cs" />
+    <Compile Include="Creatures\Underworlders\BarathBeyond.cs" />
+    <Compile Include="Creatures\Underworlders\BorthMajar.cs" />
+    <Compile Include="Creatures\Underworlders\Chaor.cs" />
+    <Compile Include="Creatures\Underworlders\Dardemus.cs" />
+    <Compile Include="Creatures\Underworlders\Drakness.cs" />
+    <Compile Include="Creatures\Underworlders\Ghuul.cs" />
+    <Compile Include="Creatures\Underworlders\Grook.cs" />
+    <Compile Include="Creatures\Underworlders\Hearring.cs" />
+    <Compile Include="Creatures\Underworlders\Kerric.cs" />
+    <Compile Include="Creatures\Underworlders\Khybon.cs" />
+    <Compile Include="Creatures\Underworlders\Klasp.cs" />
+    <Compile Include="Creatures\Underworlders\Krekk.cs" />
+    <Compile Include="Creatures\Underworlders\Kughar.cs" />
+    <Compile Include="Creatures\Underworlders\LordVanBloot.cs" />
+    <Compile Include="Creatures\Underworlders\Magmon.cs" />
+    <Compile Include="Creatures\Underworlders\Miklon.cs" />
+    <Compile Include="Creatures\Underworlders\Nauthilax.cs" />
+    <Compile Include="Creatures\Underworlders\Pyrithion.cs" />
+    <Compile Include="Creatures\Underworlders\Rarran.cs" />
+    <Compile Include="Creatures\Underworlders\Rothar.cs" />
+    <Compile Include="Creatures\Underworlders\Skithia.cs" />
+    <Compile Include="Creatures\Underworlders\Skreeth.cs" />
+    <Compile Include="Creatures\Underworlders\Solvis.cs" />
+    <Compile Include="Creatures\Underworlders\Takinom.cs" />
+    <Compile Include="Creatures\Underworlders\Toxis.cs" />
+    <Compile Include="Creatures\Underworlders\Ulmar.cs" />
+    <Compile Include="Creatures\Underworlders\Xield.cs" />
+    <Compile Include="Creatures\Underworlders\Zaur.cs" />
+    <Compile Include="InitiativeCheckException.cs" />
+    <Compile Include="Locations\CastleBodhran.cs" />
+    <Compile Include="Locations\CastlePillar.cs" />
+    <Compile Include="Locations\CordacFalls.cs" />
+    <Compile Include="Locations\CordacFallsPlungepool.cs" />
+    <Compile Include="Locations\CrystalCave.cs" />
+    <Compile Include="Locations\DoorsOfTheDeepmines.cs" />
+    <Compile Include="Locations\DranakisThreshold.cs" />
+    <Compile Include="Locations\Everrain.cs" />
+    <Compile Include="Locations\EyeOfTheMaelstrom.cs" />
+    <Compile Include="Locations\FearValley.cs" />
+    <Compile Include="Locations\ForestOfLife.cs" />
+    <Compile Include="Locations\Gigantempopolis.cs" />
+    <Compile Include="Locations\GloomuckSwamp.cs" />
+    <Compile Include="Locations\GlacierPlains.cs" />
+    <Compile Include="Locations\GothosTower.cs" />
+    <Compile Include="Locations\IronPillar.cs" />
+    <Compile Include="Locations\KiruCity.cs" />
+    <Compile Include="Locations\LakeKenIPo.cs" />
+    <Compile Include="Locations\LavaPond.cs" />
+    <Compile Include="Locations\Location.cs" />
+    <Compile Include="Locations\MipedimOasis.cs" />
+    <Compile Include="Locations\MountPilllar.cs" />
+    <Compile Include="Locations\RavanaughRidge.cs" />
+    <Compile Include="Locations\Riverlands.cs" />
+    <Compile Include="Locations\RunicGrove.cs" />
+    <Compile Include="Locations\StonePillar.cs" />
+    <Compile Include="Locations\StormTunnel.cs" />
+    <Compile Include="Locations\StrongholdMorn.cs" />
+    <Compile Include="Locations\UnderworldCity.cs" />
+    <Compile Include="Locations\UnderworldColosseum.cs" />
+    <Compile Include="Locations\WoodenPillar.cs" />
+    <Compile Include="Mugics\Danian\ChorusOfTheHive.cs" />
+    <Compile Include="Mugics\Danian\RefrainOfDenial_OverWorld0UnderWorld_.cs" />
+    <Compile Include="Mugics\Danian\SongOfMandiblor.cs" />
+    <Compile Include="Mugics\Danian\SongOfResistance.cs" />
+    <Compile Include="Mugics\Danian\SongOfSurprisal.cs" />
+    <Compile Include="Mugics\Danian\SongOfSymmetry.cs" />
+    <Compile Include="Mugics\Generic\Decrescendo.cs" />
+    <Compile Include="Mugics\Generic\EmberFlourish.cs" />
+    <Compile Include="Mugics\Generic\Fortissimo.cs" />
+    <Compile Include="Mugics\Generic\GeoFlourish.cs" />
+    <Compile Include="Mugics\Generic\InterludeOfConsequence.cs" />
+    <Compile Include="Mugics\Generic\MinorFlourish.cs" />
+    <Compile Include="Mugics\Generic\SongOfFuturesight.cs" />
+    <Compile Include="Mugics\Mipedian\FanfareOfTheVanishing.cs" />
+    <Compile Include="Mugics\Mipedian\MelodyOfMirage.cs" />
+    <Compile Include="Mugics\Mipedian\NotesOfNeverwhere.cs" />
+    <Compile Include="Mugics\Mipedian\SongOfDeflection.cs" />
+    <Compile Include="Mugics\Mipedian\SongOfRecovery.cs" />
+    <Compile Include="Mugics\Mipedian\TrillsOfDiminution.cs" />
+    <Compile Include="Mugics\Mugic.cs" />
+    <Compile Include="Mugics\Generic\SongOfEmbernova.cs" />
+    <Compile Include="Mugics\Generic\SongOfGeonova.cs" />
+    <Compile Include="Mugics\Generic\SongOfTruesight.cs" />
+    <Compile Include="Mugics\MugicType.cs" />
+    <Compile Include="Mugics\OverWorld\CascadeOfSymphony.cs" />
+    <Compile Include="Mugics\OverWorld\HymnOfTheElements.cs" />
+    <Compile Include="Mugics\OverWorld\MugicReprise.cs" />
+    <Compile Include="Mugics\OverWorld\OverWorldAria.cs" />
+    <Compile Include="Mugics\OverWorld\RefrainOfDenial.cs" />
+    <Compile Include="Mugics\OverWorld\SongOfFocus.cs" />
+    <Compile Include="Mugics\OverWorld\SongOFResurgence.cs" />
+    <Compile Include="Mugics\OverWorld\SongOfStasis.cs" />
+    <Compile Include="Mugics\UnderWorld\CanonOfCasualty.cs" />
+    <Compile Include="Mugics\UnderWorld\DiscordOfDisarming.cs" />
+    <Compile Include="Mugics\UnderWorld\MelodyOfMalady.cs" />
+    <Compile Include="Mugics\UnderWorld\RefrainOfDenial_OverWorld_.cs" />
+    <Compile Include="Mugics\UnderWorld\SongOfAsperity.cs" />
+    <Compile Include="Mugics\UnderWorld\SongOfFury.cs" />
+    <Compile Include="Mugics\UnderWorld\SongOfRevival_UnderWorld_.cs" />
+    <Compile Include="Mugics\UnderWorld\SongOfTreachery.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sprite.cs" />
+    <Compile Include="Locations\LocationType.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\Microsoft.Xna.GameStudio.targets" />
+  <!--
+      To modify your build process, add your task inside one of the targets below and uncomment it. 
+      Other similar extension points exist, see Microsoft.Common.targets.
+      <Target Name="BeforeBuild">
+      </Target>
+      <Target Name="AfterBuild">
+      </Target>
+    -->
+</Project>
