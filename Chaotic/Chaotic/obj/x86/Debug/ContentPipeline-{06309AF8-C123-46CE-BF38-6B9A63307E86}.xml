@@ -7,8 +7,17 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\CardBack.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\CardBack.xnb</Output>
       <Time>2018-06-22T13:44:48.6832621-04:00</Time>
+    </Item>
+    <Item>
+      <Source>CardOutline.png</Source>
+      <Name>CardOutline</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\CardOutline.xnb</Output>
+      <Time>2018-07-04T14:06:58.9393533-04:00</Time>
     </Item>
     <Item>
       <Source>Menu\ChaoticSymbol.png</Source>
@@ -16,7 +25,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Menu\ChaoticSymbol.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Menu\ChaoticSymbol.xnb</Output>
       <Time>2018-06-27T13:23:35.2412239-04:00</Time>
     </Item>
     <Item>
@@ -25,7 +34,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Menu\EditButton.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Menu\EditButton.xnb</Output>
       <Time>2018-06-27T13:23:35.3662261-04:00</Time>
     </Item>
     <Item>
@@ -34,7 +43,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Menu\MenuButtonCover.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Menu\MenuButtonCover.xnb</Output>
       <Time>2018-06-27T13:23:35.3818499-04:00</Time>
     </Item>
     <Item>
@@ -43,7 +52,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Menu\TestButton.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Menu\TestButton.xnb</Output>
       <Time>2018-06-27T13:23:35.3974777-04:00</Time>
     </Item>
     <Item>
@@ -52,7 +61,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Menu\OneOnOneButton.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Menu\OneOnOneButton.xnb</Output>
       <Time>2018-06-27T13:35:46.5731572-04:00</Time>
     </Item>
     <Item>
@@ -61,7 +70,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Menu\ThreeOnThreeButton.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Menu\ThreeOnThreeButton.xnb</Output>
       <Time>2018-06-27T13:35:46.6201074-04:00</Time>
     </Item>
     <Item>
@@ -70,7 +79,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Menu\SuitBackButton.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Menu\SuitBackButton.xnb</Output>
       <Time>2018-06-27T17:02:36.0852144-04:00</Time>
     </Item>
     <Item>
@@ -79,17 +88,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Menu\backBtnCover.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Menu\backBtnCover.xnb</Output>
       <Time>2018-06-27T17:27:22.8629068-04:00</Time>
-    </Item>
-    <Item>
-      <Source>CardOutline.png</Source>
-      <Name>CardOutline</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\CardOutline.xnb</Output>
-      <Time>2018-07-04T14:06:58.9393533-04:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\CastlePillar.jpg</Source>
@@ -97,7 +97,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\CastlePillar.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\CastlePillar.xnb</Output>
       <Time>2018-06-28T12:48:02.8496673-04:00</Time>
     </Item>
     <Item>
@@ -106,7 +106,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\CastleBodhran.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\CastleBodhran.xnb</Output>
       <Time>2018-06-28T12:48:45.5588416-04:00</Time>
     </Item>
     <Item>
@@ -115,7 +115,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\ChaoticBackground.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\ChaoticBackground.xnb</Output>
       <Time>2018-06-28T12:48:45.5744664-04:00</Time>
     </Item>
     <Item>
@@ -124,7 +124,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\CordacFalls.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\CordacFalls.xnb</Output>
       <Time>2018-06-28T12:48:45.5900911-04:00</Time>
     </Item>
     <Item>
@@ -133,7 +133,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\CordacFallsPlungePool.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\CordacFallsPlungePool.xnb</Output>
       <Time>2018-06-28T12:48:45.6213417-04:00</Time>
     </Item>
     <Item>
@@ -142,7 +142,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\CrystalCave.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\CrystalCave.xnb</Output>
       <Time>2018-06-28T12:48:45.6369664-04:00</Time>
     </Item>
     <Item>
@@ -151,7 +151,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\DoorsOfTheDeepmines.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\DoorsOfTheDeepmines.xnb</Output>
       <Time>2018-06-28T12:48:45.668216-04:00</Time>
     </Item>
     <Item>
@@ -160,7 +160,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\DranakisThreshold.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\DranakisThreshold.xnb</Output>
       <Time>2018-06-28T12:48:45.6838418-04:00</Time>
     </Item>
     <Item>
@@ -169,8 +169,17 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\Everrain.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\Everrain.xnb</Output>
       <Time>2018-06-28T12:48:45.7150913-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Backgrounds\EyeOfTheMaelstrom.jpg</Source>
+      <Name>Backgrounds\EyeOfTheMaelstrom</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\EyeOfTheMaelstrom.xnb</Output>
+      <Time>2018-06-28T12:48:45.7307181-04:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\FearValley.jpg</Source>
@@ -178,7 +187,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\FearValley.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\FearValley.xnb</Output>
       <Time>2018-06-28T12:48:45.7619676-04:00</Time>
     </Item>
     <Item>
@@ -187,17 +196,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\ForestOfLife.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\ForestOfLife.xnb</Output>
       <Time>2018-06-28T12:48:45.7932171-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Backgrounds\Gigantempopolis.jpg</Source>
-      <Name>Backgrounds\Gigantempopolis</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\Gigantempopolis.xnb</Output>
-      <Time>2019-01-04T04:24:10.9377488-05:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\GlacierPlains.jpg</Source>
@@ -205,7 +205,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\GlacierPlains.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\GlacierPlains.xnb</Output>
       <Time>2018-06-28T12:48:45.8244666-04:00</Time>
     </Item>
     <Item>
@@ -214,7 +214,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\GloomuckSwamp.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\GloomuckSwamp.xnb</Output>
       <Time>2018-06-28T12:48:45.8400924-04:00</Time>
     </Item>
     <Item>
@@ -223,7 +223,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\GothosTower.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\GothosTower.xnb</Output>
       <Time>2018-06-28T12:48:45.8557162-04:00</Time>
     </Item>
     <Item>
@@ -232,7 +232,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\IronPillar.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\IronPillar.xnb</Output>
       <Time>2018-06-28T12:48:45.8713409-04:00</Time>
     </Item>
     <Item>
@@ -241,7 +241,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\KiruCity.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\KiruCity.xnb</Output>
       <Time>2018-06-28T12:48:45.8869688-04:00</Time>
     </Item>
     <Item>
@@ -250,7 +250,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\LakeKenIPo.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\LakeKenIPo.xnb</Output>
       <Time>2018-06-28T12:48:45.9025915-04:00</Time>
     </Item>
     <Item>
@@ -259,7 +259,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\LavaPond.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\LavaPond.xnb</Output>
       <Time>2018-06-28T12:48:45.9338451-04:00</Time>
     </Item>
     <Item>
@@ -268,7 +268,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\MipedimOasis.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\MipedimOasis.xnb</Output>
       <Time>2018-06-28T12:48:45.9494657-04:00</Time>
     </Item>
     <Item>
@@ -277,7 +277,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\MountPillar.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\MountPillar.xnb</Output>
       <Time>2018-06-28T12:48:45.9650915-04:00</Time>
     </Item>
     <Item>
@@ -286,7 +286,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\RavanaughRidge.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\RavanaughRidge.xnb</Output>
       <Time>2018-06-28T12:48:45.9963421-04:00</Time>
     </Item>
     <Item>
@@ -295,7 +295,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\Riverlands.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\Riverlands.xnb</Output>
       <Time>2018-06-28T12:48:46.0119668-04:00</Time>
     </Item>
     <Item>
@@ -304,7 +304,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\RunicGrove.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\RunicGrove.xnb</Output>
       <Time>2018-06-28T12:48:46.0275916-04:00</Time>
     </Item>
     <Item>
@@ -313,7 +313,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\StonePillar.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\StonePillar.xnb</Output>
       <Time>2018-06-28T12:48:46.0432205-04:00</Time>
     </Item>
     <Item>
@@ -322,7 +322,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\StormTunnel.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\StormTunnel.xnb</Output>
       <Time>2018-06-28T12:48:46.0588421-04:00</Time>
     </Item>
     <Item>
@@ -331,7 +331,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\StrongholdMorn.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\StrongholdMorn.xnb</Output>
       <Time>2018-06-28T12:48:46.0900947-04:00</Time>
     </Item>
     <Item>
@@ -340,7 +340,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\UnderworldCity.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\UnderworldCity.xnb</Output>
       <Time>2018-06-28T12:48:46.1057185-04:00</Time>
     </Item>
     <Item>
@@ -349,7 +349,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\UnderWorldColosseum.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\UnderWorldColosseum.xnb</Output>
       <Time>2018-06-28T12:48:46.1213443-04:00</Time>
     </Item>
     <Item>
@@ -358,7 +358,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\WoodenPillar.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\WoodenPillar.xnb</Output>
       <Time>2018-06-28T12:48:46.1525938-04:00</Time>
     </Item>
     <Item>
@@ -367,7 +367,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Panel\ArrowButtonCoverL.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Panel\ArrowButtonCoverL.xnb</Output>
       <Time>2018-06-28T12:51:49.6673542-04:00</Time>
     </Item>
     <Item>
@@ -376,7 +376,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Panel\ArrowButtonCoverR.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Panel\ArrowButtonCoverR.xnb</Output>
       <Time>2018-06-28T12:51:49.682982-04:00</Time>
     </Item>
     <Item>
@@ -385,7 +385,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Panel\ArrowButtonL.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Panel\ArrowButtonL.xnb</Output>
       <Time>2018-06-28T12:51:49.6986068-04:00</Time>
     </Item>
     <Item>
@@ -394,7 +394,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Panel\ArrowButtonR.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Panel\ArrowButtonR.xnb</Output>
       <Time>2018-06-28T12:51:49.7142295-04:00</Time>
     </Item>
     <Item>
@@ -403,7 +403,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Panel\OkButton.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Panel\OkButton.xnb</Output>
       <Time>2018-06-28T12:51:49.7298543-04:00</Time>
     </Item>
     <Item>
@@ -412,7 +412,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Panel\Panel.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Panel\Panel.xnb</Output>
       <Time>2018-06-28T12:52:33.7328869-04:00</Time>
     </Item>
     <Item>
@@ -421,7 +421,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\BattleBoardButtons\ActivateButton.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\BattleBoardButtons\ActivateButton.xnb</Output>
       <Time>2018-06-28T12:55:18.2831923-04:00</Time>
     </Item>
     <Item>
@@ -430,7 +430,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\BattleBoardSprites\Attack.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\BattleBoardSprites\Attack.xnb</Output>
       <Time>2018-06-28T13:02:31.3788142-04:00</Time>
     </Item>
     <Item>
@@ -439,7 +439,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\BattleBoardSprites\AttackDiscard.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\BattleBoardSprites\AttackDiscard.xnb</Output>
       <Time>2018-06-28T13:02:31.3788142-04:00</Time>
     </Item>
     <Item>
@@ -448,7 +448,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\BattleBoardSprites\BattleBoardDescription.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\BattleBoardSprites\BattleBoardDescription.xnb</Output>
       <Time>2018-06-28T13:02:31.394439-04:00</Time>
     </Item>
     <Item>
@@ -457,7 +457,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\BattleBoardSprites\CardSpace.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\BattleBoardSprites\CardSpace.xnb</Output>
       <Time>2018-06-28T13:02:31.4100637-04:00</Time>
     </Item>
     <Item>
@@ -466,7 +466,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\BattleBoardSprites\Discard.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\BattleBoardSprites\Discard.xnb</Output>
       <Time>2018-06-28T13:02:31.4256895-04:00</Time>
     </Item>
     <Item>
@@ -475,7 +475,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\BattleBoardSprites\Location.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\BattleBoardSprites\Location.xnb</Output>
       <Time>2018-06-28T13:02:31.4256895-04:00</Time>
     </Item>
     <Item>
@@ -484,7 +484,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\BattleBoardSprites\LocationCardBack.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\BattleBoardSprites\LocationCardBack.xnb</Output>
       <Time>2018-06-28T13:02:31.4413143-04:00</Time>
     </Item>
     <Item>
@@ -493,7 +493,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\BattleBoardSprites\Mugic-Dan.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\BattleBoardSprites\Mugic-Dan.xnb</Output>
       <Time>2018-06-28T13:02:31.4569401-04:00</Time>
     </Item>
     <Item>
@@ -502,7 +502,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\BattleBoardSprites\Mugic-Gen.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\BattleBoardSprites\Mugic-Gen.xnb</Output>
       <Time>2018-06-28T13:02:31.4725658-04:00</Time>
     </Item>
     <Item>
@@ -511,7 +511,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\BattleBoardSprites\Mugic-Mip.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\BattleBoardSprites\Mugic-Mip.xnb</Output>
       <Time>2018-06-28T13:02:31.4725658-04:00</Time>
     </Item>
     <Item>
@@ -520,7 +520,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\BattleBoardSprites\Mugic-UW.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\BattleBoardSprites\Mugic-UW.xnb</Output>
       <Time>2018-06-28T13:02:31.5038143-04:00</Time>
     </Item>
     <Item>
@@ -529,7 +529,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\BattleBoardSprites\MugicOW.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\BattleBoardSprites\MugicOW.xnb</Output>
       <Time>2018-06-28T13:02:31.4881906-04:00</Time>
     </Item>
     <Item>
@@ -538,7 +538,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\BattleBoardButtons\CancelButton.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\BattleBoardButtons\CancelButton.xnb</Output>
       <Time>2018-06-28T13:03:53.7822192-04:00</Time>
     </Item>
     <Item>
@@ -547,7 +547,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\BattleBoardButtons\CastButton.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\BattleBoardButtons\CastButton.xnb</Output>
       <Time>2018-06-28T13:03:53.797845-04:00</Time>
     </Item>
     <Item>
@@ -556,7 +556,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\BattleBoardButtons\MoveButton.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\BattleBoardButtons\MoveButton.xnb</Output>
       <Time>2018-06-28T13:03:53.797845-04:00</Time>
     </Item>
     <Item>
@@ -565,7 +565,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\BattleBoardButtons\SacrificeButton.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\BattleBoardButtons\SacrificeButton.xnb</Output>
       <Time>2018-06-28T13:03:53.8134698-04:00</Time>
     </Item>
     <Item>
@@ -574,7 +574,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\Allmageddon.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\Allmageddon.xnb</Output>
       <Time>2018-06-28T13:53:59.910295-04:00</Time>
     </Item>
     <Item>
@@ -583,7 +583,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\AshTorrent.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\AshTorrent.xnb</Output>
       <Time>2018-06-28T13:53:59.9259187-04:00</Time>
     </Item>
     <Item>
@@ -592,7 +592,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\CoilCrush.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\CoilCrush.xnb</Output>
       <Time>2018-06-28T13:53:59.9571631-04:00</Time>
     </Item>
     <Item>
@@ -601,7 +601,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\Degenervate.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\Degenervate.xnb</Output>
       <Time>2018-06-28T13:54:00.03529-04:00</Time>
     </Item>
     <Item>
@@ -610,7 +610,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\Delerium.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\Delerium.xnb</Output>
       <Time>2018-06-28T13:54:00.0821622-04:00</Time>
     </Item>
     <Item>
@@ -619,7 +619,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\Ektospasm.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\Ektospasm.xnb</Output>
       <Time>2018-06-28T13:54:00.097788-04:00</Time>
     </Item>
     <Item>
@@ -628,7 +628,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\EmberSwarm.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\EmberSwarm.xnb</Output>
       <Time>2018-06-28T13:54:00.1446653-04:00</Time>
     </Item>
     <Item>
@@ -637,7 +637,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\Evaporize.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\Evaporize.xnb</Output>
       <Time>2018-06-28T13:54:00.1759138-04:00</Time>
     </Item>
     <Item>
@@ -646,7 +646,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\Fearocity.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\Fearocity.xnb</Output>
       <Time>2018-06-28T13:54:00.2071633-04:00</Time>
     </Item>
     <Item>
@@ -655,7 +655,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\FlameOrb.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\FlameOrb.xnb</Output>
       <Time>2018-06-28T13:54:00.2227881-04:00</Time>
     </Item>
     <Item>
@@ -664,7 +664,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\FlashKick.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\FlashKick.xnb</Output>
       <Time>2018-06-28T13:54:00.2384129-04:00</Time>
     </Item>
     <Item>
@@ -673,7 +673,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\Flashmend.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\Flashmend.xnb</Output>
       <Time>2018-06-28T13:54:00.3009119-04:00</Time>
     </Item>
     <Item>
@@ -682,7 +682,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\Flashwarp.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\Flashwarp.xnb</Output>
       <Time>2018-06-28T13:54:00.3321624-04:00</Time>
     </Item>
     <Item>
@@ -691,7 +691,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\FrostBlight.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\FrostBlight.xnb</Output>
       <Time>2018-06-28T13:54:00.3477872-04:00</Time>
     </Item>
     <Item>
@@ -700,7 +700,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\HailStorm.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\HailStorm.xnb</Output>
       <Time>2018-06-28T13:54:00.3790377-04:00</Time>
     </Item>
     <Item>
@@ -709,7 +709,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\HiveCall.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\HiveCall.xnb</Output>
       <Time>2018-06-28T13:54:00.3946625-04:00</Time>
     </Item>
     <Item>
@@ -718,7 +718,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\Incinerase.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\Incinerase.xnb</Output>
       <Time>2018-06-28T13:54:00.4102903-04:00</Time>
     </Item>
     <Item>
@@ -727,7 +727,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\InfernoGust.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\InfernoGust.xnb</Output>
       <Time>2018-06-28T13:54:00.4415388-04:00</Time>
     </Item>
     <Item>
@@ -736,7 +736,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\IronBalls.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\IronBalls.xnb</Output>
       <Time>2018-06-28T13:54:00.4571615-04:00</Time>
     </Item>
     <Item>
@@ -745,7 +745,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\Lavalanche.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\Lavalanche.xnb</Output>
       <Time>2018-06-28T13:54:00.5509132-04:00</Time>
     </Item>
     <Item>
@@ -754,7 +754,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\LightningBurst.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\LightningBurst.xnb</Output>
       <Time>2018-06-28T13:54:00.5977885-04:00</Time>
     </Item>
     <Item>
@@ -763,7 +763,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\LuckyShot.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\LuckyShot.xnb</Output>
       <Time>2018-06-28T13:54:00.6134132-04:00</Time>
     </Item>
     <Item>
@@ -772,7 +772,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\Megaroar.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\Megaroar.xnb</Output>
       <Time>2018-06-28T13:54:00.6290647-04:00</Time>
     </Item>
     <Item>
@@ -781,7 +781,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\Mirthquake.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\Mirthquake.xnb</Output>
       <Time>2018-06-28T13:54:00.6602886-04:00</Time>
     </Item>
     <Item>
@@ -790,7 +790,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\ParalEyes.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\ParalEyes.xnb</Output>
       <Time>2018-06-28T13:54:00.6759133-04:00</Time>
     </Item>
     <Item>
@@ -799,7 +799,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\Pebblestorm.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\Pebblestorm.xnb</Output>
       <Time>2018-06-28T13:54:00.7071628-04:00</Time>
     </Item>
     <Item>
@@ -808,7 +808,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\PowerPulse.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\PowerPulse.xnb</Output>
       <Time>2018-06-28T13:54:00.7227886-04:00</Time>
     </Item>
     <Item>
@@ -817,7 +817,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\QuickExit.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\QuickExit.xnb</Output>
       <Time>2018-06-28T13:54:00.7384134-04:00</Time>
     </Item>
     <Item>
@@ -826,7 +826,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\RipTide.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\RipTide.xnb</Output>
       <Time>2018-06-28T13:54:00.7540392-04:00</Time>
     </Item>
     <Item>
@@ -835,7 +835,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\RockWave.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\RockWave.xnb</Output>
       <Time>2018-06-28T13:54:00.7852887-04:00</Time>
     </Item>
     <Item>
@@ -844,7 +844,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\Rustoxic.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\Rustoxic.xnb</Output>
       <Time>2018-06-28T13:54:00.8634145-04:00</Time>
     </Item>
     <Item>
@@ -853,7 +853,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\ShadowStrike.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\ShadowStrike.xnb</Output>
       <Time>2018-06-28T13:54:00.894664-04:00</Time>
     </Item>
     <Item>
@@ -862,7 +862,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\ShriekShock.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\ShriekShock.xnb</Output>
       <Time>2018-06-28T13:54:00.9415394-04:00</Time>
     </Item>
     <Item>
@@ -871,7 +871,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\SkeletalStrike.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\SkeletalStrike.xnb</Output>
       <Time>2018-06-28T13:54:01.0040394-04:00</Time>
     </Item>
     <Item>
@@ -880,7 +880,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\SleepSting.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\SleepSting.xnb</Output>
       <Time>2018-06-28T13:54:01.0509147-04:00</Time>
     </Item>
     <Item>
@@ -889,7 +889,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\SludgeGush.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\SludgeGush.xnb</Output>
       <Time>2018-06-28T13:54:01.0821642-04:00</Time>
     </Item>
     <Item>
@@ -898,7 +898,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\SpiritGust.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\SpiritGust.xnb</Output>
       <Time>2018-06-28T13:54:01.1290395-04:00</Time>
     </Item>
     <Item>
@@ -907,7 +907,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\SqueezePlay.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\SqueezePlay.xnb</Output>
       <Time>2018-06-28T13:54:01.1759148-04:00</Time>
     </Item>
     <Item>
@@ -916,7 +916,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\SteamRage.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\SteamRage.xnb</Output>
       <Time>2018-06-28T13:54:01.2071633-04:00</Time>
     </Item>
     <Item>
@@ -925,7 +925,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\TelekineticBolt.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\TelekineticBolt.xnb</Output>
       <Time>2018-06-28T13:54:01.2540386-04:00</Time>
     </Item>
     <Item>
@@ -934,7 +934,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\ThunderShout.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\ThunderShout.xnb</Output>
       <Time>2018-06-28T13:54:01.3009129-04:00</Time>
     </Item>
     <Item>
@@ -943,7 +943,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\TorrentOfFlame.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\TorrentOfFlame.xnb</Output>
       <Time>2018-06-28T13:54:01.365592-04:00</Time>
     </Item>
     <Item>
@@ -952,7 +952,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\ToxicGust.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\ToxicGust.xnb</Output>
       <Time>2018-06-28T13:54:01.4577576-04:00</Time>
     </Item>
     <Item>
@@ -961,7 +961,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\Unsanity.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\Unsanity.xnb</Output>
       <Time>2018-06-28T13:54:01.5046319-04:00</Time>
     </Item>
     <Item>
@@ -970,7 +970,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\Velocitrap.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\Velocitrap.xnb</Output>
       <Time>2018-06-28T13:54:01.5515082-04:00</Time>
     </Item>
     <Item>
@@ -979,7 +979,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\VineSnare.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\VineSnare.xnb</Output>
       <Time>2018-06-28T13:54:01.5671319-04:00</Time>
     </Item>
     <Item>
@@ -988,7 +988,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\Viperlash.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\Viperlash.xnb</Output>
       <Time>2018-06-28T13:54:01.6140073-04:00</Time>
     </Item>
     <Item>
@@ -997,7 +997,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\Windslash.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\Windslash.xnb</Output>
       <Time>2018-06-28T13:54:01.6608826-04:00</Time>
     </Item>
     <Item>
@@ -1006,7 +1006,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\CastleBodhran.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\CastleBodhran.xnb</Output>
       <Time>2018-06-28T14:17:44.7402282-04:00</Time>
     </Item>
     <Item>
@@ -1015,7 +1015,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\CastlePillar.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\CastlePillar.xnb</Output>
       <Time>2018-06-28T14:17:44.7714797-04:00</Time>
     </Item>
     <Item>
@@ -1024,7 +1024,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\CordacFalls.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\CordacFalls.xnb</Output>
       <Time>2018-06-28T14:17:44.7871055-04:00</Time>
     </Item>
     <Item>
@@ -1033,7 +1033,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\CordacFallsPlungePool.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\CordacFallsPlungePool.xnb</Output>
       <Time>2018-06-28T14:17:44.818353-04:00</Time>
     </Item>
     <Item>
@@ -1042,7 +1042,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\CrystalCave.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\CrystalCave.xnb</Output>
       <Time>2018-06-28T14:17:44.8496056-04:00</Time>
     </Item>
     <Item>
@@ -1051,7 +1051,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\DoorsOfTheDeepmines.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\DoorsOfTheDeepmines.xnb</Output>
       <Time>2018-06-28T14:17:44.8652293-04:00</Time>
     </Item>
     <Item>
@@ -1060,7 +1060,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\DranakisThreshold.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\DranakisThreshold.xnb</Output>
       <Time>2018-06-28T14:17:44.8964799-04:00</Time>
     </Item>
     <Item>
@@ -1069,7 +1069,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\Everrain.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\Everrain.xnb</Output>
       <Time>2018-06-28T14:17:44.9121036-04:00</Time>
     </Item>
     <Item>
@@ -1078,7 +1078,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\EyeOfTheMaelstrom.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\EyeOfTheMaelstrom.xnb</Output>
       <Time>2018-06-28T14:17:44.9433541-04:00</Time>
     </Item>
     <Item>
@@ -1087,7 +1087,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\FearValley.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\FearValley.xnb</Output>
       <Time>2018-06-28T14:17:44.9746037-04:00</Time>
     </Item>
     <Item>
@@ -1096,7 +1096,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\ForestOfLife.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\ForestOfLife.xnb</Output>
       <Time>2018-06-28T14:17:44.9902305-04:00</Time>
     </Item>
     <Item>
@@ -1105,7 +1105,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\Gigantempopolis.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\Gigantempopolis.xnb</Output>
       <Time>2018-06-28T14:17:45.0058573-04:00</Time>
     </Item>
     <Item>
@@ -1114,7 +1114,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\GlacierPlains.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\GlacierPlains.xnb</Output>
       <Time>2018-06-28T14:17:45.021481-04:00</Time>
     </Item>
     <Item>
@@ -1123,7 +1123,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\GloomuckSwamp.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\GloomuckSwamp.xnb</Output>
       <Time>2018-06-28T14:17:45.0527305-04:00</Time>
     </Item>
     <Item>
@@ -1132,7 +1132,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\GothosTower.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\GothosTower.xnb</Output>
       <Time>2018-06-28T14:17:45.0839801-04:00</Time>
     </Item>
     <Item>
@@ -1141,7 +1141,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\IronPillar.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\IronPillar.xnb</Output>
       <Time>2018-06-28T14:17:45.0996048-04:00</Time>
     </Item>
     <Item>
@@ -1150,7 +1150,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\KiruCity.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\KiruCity.xnb</Output>
       <Time>2018-06-28T14:17:45.1152306-04:00</Time>
     </Item>
     <Item>
@@ -1159,7 +1159,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\LakeKenIPo.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\LakeKenIPo.xnb</Output>
       <Time>2018-06-28T14:17:45.1308584-04:00</Time>
     </Item>
     <Item>
@@ -1168,7 +1168,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\LavaPond.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\LavaPond.xnb</Output>
       <Time>2018-06-28T14:17:45.3183556-04:00</Time>
     </Item>
     <Item>
@@ -1177,7 +1177,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\MipedimOasis.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\MipedimOasis.xnb</Output>
       <Time>2018-06-28T14:17:45.3340173-04:00</Time>
     </Item>
     <Item>
@@ -1186,7 +1186,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\MountPillar.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\MountPillar.xnb</Output>
       <Time>2018-06-28T14:17:45.3652298-04:00</Time>
     </Item>
     <Item>
@@ -1195,7 +1195,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\RavanaughRidge.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\RavanaughRidge.xnb</Output>
       <Time>2018-06-28T14:17:45.3808556-04:00</Time>
     </Item>
     <Item>
@@ -1204,7 +1204,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\Riverlands.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\Riverlands.xnb</Output>
       <Time>2018-06-28T14:17:45.3964804-04:00</Time>
     </Item>
     <Item>
@@ -1213,7 +1213,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\RunicGrove.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\RunicGrove.xnb</Output>
       <Time>2018-06-28T14:17:45.4277299-04:00</Time>
     </Item>
     <Item>
@@ -1222,7 +1222,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\StonePillar.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\StonePillar.xnb</Output>
       <Time>2018-06-28T14:17:45.4433567-04:00</Time>
     </Item>
     <Item>
@@ -1231,7 +1231,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\StormTunnel.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\StormTunnel.xnb</Output>
       <Time>2018-06-28T14:17:45.4746052-04:00</Time>
     </Item>
     <Item>
@@ -1240,7 +1240,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\StrongholdMorn.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\StrongholdMorn.xnb</Output>
       <Time>2018-06-28T14:17:45.5058568-04:00</Time>
     </Item>
     <Item>
@@ -1249,7 +1249,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\UnderworldCity.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\UnderworldCity.xnb</Output>
       <Time>2018-06-28T14:17:45.5214815-04:00</Time>
     </Item>
     <Item>
@@ -1258,8 +1258,17 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\UnderWorldColosseum.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\UnderWorldColosseum.xnb</Output>
       <Time>2018-06-28T14:17:45.5683538-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Locations\WoodenPillar.png</Source>
+      <Name>Locations\WoodenPillar</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\WoodenPillar.xnb</Output>
+      <Time>2018-06-28T14:17:45.5839806-04:00</Time>
     </Item>
     <Item>
       <Source>OkButtonCover.png</Source>
@@ -1267,7 +1276,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\OkButtonCover.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\OkButtonCover.xnb</Output>
       <Time>2018-06-28T15:23:49.0653701-04:00</Time>
     </Item>
     <Item>
@@ -1276,7 +1285,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Arias.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Arias.xnb</Output>
       <Time>2018-06-29T00:31:51.4313093-04:00</Time>
     </Item>
     <Item>
@@ -1285,7 +1294,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Attacat.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Attacat.xnb</Output>
       <Time>2018-06-29T00:31:51.4469341-04:00</Time>
     </Item>
     <Item>
@@ -1294,7 +1303,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Blazier.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Blazier.xnb</Output>
       <Time>2018-06-29T00:31:51.4625599-04:00</Time>
     </Item>
     <Item>
@@ -1303,7 +1312,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Blugon.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Blugon.xnb</Output>
       <Time>2018-06-29T00:31:51.4625599-04:00</Time>
     </Item>
     <Item>
@@ -1312,7 +1321,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Bodal.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Bodal.xnb</Output>
       <Time>2018-06-29T00:31:51.4781877-04:00</Time>
     </Item>
     <Item>
@@ -1321,7 +1330,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Crawsectus.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Crawsectus.xnb</Output>
       <Time>2018-06-29T00:31:51.4938114-04:00</Time>
     </Item>
     <Item>
@@ -1330,7 +1339,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Donmar.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Donmar.xnb</Output>
       <Time>2018-06-29T00:31:51.5094352-04:00</Time>
     </Item>
     <Item>
@@ -1339,7 +1348,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Dractyl.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Dractyl.xnb</Output>
       <Time>2018-06-29T00:31:51.5250599-04:00</Time>
     </Item>
     <Item>
@@ -1348,7 +1357,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Frafdo.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Frafdo.xnb</Output>
       <Time>2018-06-29T00:31:51.5406857-04:00</Time>
     </Item>
     <Item>
@@ -1357,7 +1366,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Gespedan.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Gespedan.xnb</Output>
       <Time>2018-06-29T00:31:51.5563105-04:00</Time>
     </Item>
     <Item>
@@ -1366,7 +1375,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Heptadd.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Heptadd.xnb</Output>
       <Time>2018-06-29T00:31:51.5719352-04:00</Time>
     </Item>
     <Item>
@@ -1375,7 +1384,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Intress.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Intress.xnb</Output>
       <Time>2018-06-29T00:31:51.6188105-04:00</Time>
     </Item>
     <Item>
@@ -1384,7 +1393,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Laarina.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Laarina.xnb</Output>
       <Time>2018-06-29T00:31:51.6344363-04:00</Time>
     </Item>
     <Item>
@@ -1393,7 +1402,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Maglax.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Maglax.xnb</Output>
       <Time>2018-06-29T00:31:51.65006-04:00</Time>
     </Item>
     <Item>
@@ -1402,7 +1411,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Maxxor.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Maxxor.xnb</Output>
       <Time>2018-06-29T00:31:51.6656848-04:00</Time>
     </Item>
     <Item>
@@ -1411,7 +1420,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Owis.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Owis.xnb</Output>
       <Time>2018-06-29T00:31:51.6813096-04:00</Time>
     </Item>
     <Item>
@@ -1420,7 +1429,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Psimion.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Psimion.xnb</Output>
       <Time>2018-06-29T00:31:51.6969364-04:00</Time>
     </Item>
     <Item>
@@ -1429,7 +1438,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Slurhk.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Slurhk.xnb</Output>
       <Time>2018-06-29T00:31:51.7125591-04:00</Time>
     </Item>
     <Item>
@@ -1438,7 +1447,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Staluk.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Staluk.xnb</Output>
       <Time>2018-06-29T00:31:51.7125591-04:00</Time>
     </Item>
     <Item>
@@ -1447,7 +1456,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\TangathToborn.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\TangathToborn.xnb</Output>
       <Time>2018-06-29T00:31:51.7281859-04:00</Time>
     </Item>
     <Item>
@@ -1456,7 +1465,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Tartarek.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Tartarek.xnb</Output>
       <Time>2018-06-29T00:31:51.7438096-04:00</Time>
     </Item>
     <Item>
@@ -1465,7 +1474,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Velreth.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Velreth.xnb</Output>
       <Time>2018-06-29T00:31:51.7594364-04:00</Time>
     </Item>
     <Item>
@@ -1474,7 +1483,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Xaerv.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Xaerv.xnb</Output>
       <Time>2018-06-29T00:31:51.7906849-04:00</Time>
     </Item>
     <Item>
@@ -1483,7 +1492,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Zalic.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Zalic.xnb</Output>
       <Time>2018-06-29T00:31:51.8375623-04:00</Time>
     </Item>
     <Item>
@@ -1492,7 +1501,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Najarin.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Najarin.xnb</Output>
       <Time>2018-07-01T13:48:40.9219536-04:00</Time>
     </Item>
     <Item>
@@ -1501,7 +1510,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Rellim.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Rellim.xnb</Output>
       <Time>2018-07-01T14:17:20.2906559-04:00</Time>
     </Item>
     <Item>
@@ -1510,26 +1519,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Yokkis.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Yokkis.xnb</Output>
       <Time>2018-07-01T14:17:50.0313095-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Fonts\CardDescriptionFont.spritefont</Source>
-      <Name>Fonts\CardDescriptionFont</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Fonts\CardDescriptionFont.xnb</Output>
-      <Time>2018-06-30T13:10:54.7653788-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Fonts\PanelFont.spritefont</Source>
-      <Name>Fonts\PanelFont</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Fonts\PanelFont.xnb</Output>
-      <Time>2018-06-30T13:20:39.5295095-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\Vidav.png</Source>
@@ -1537,7 +1528,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Vidav.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Vidav.xnb</Output>
       <Time>2018-08-01T22:20:29.0234052-04:00</Time>
     </Item>
     <Item>
@@ -1546,7 +1537,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\TornadoTackle.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\TornadoTackle.xnb</Output>
       <Time>2018-08-02T13:33:36.9783337-04:00</Time>
     </Item>
     <Item>
@@ -1555,7 +1546,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\AquaShield.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\AquaShield.xnb</Output>
       <Time>2018-08-02T14:58:15.1183314-04:00</Time>
     </Item>
     <Item>
@@ -1564,7 +1555,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\Cyclance.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\Cyclance.xnb</Output>
       <Time>2018-08-02T14:58:15.1339602-04:00</Time>
     </Item>
     <Item>
@@ -1573,7 +1564,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\DiamondOfVlaric.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\DiamondOfVlaric.xnb</Output>
       <Time>2018-08-02T14:58:15.149587-04:00</Time>
     </Item>
     <Item>
@@ -1582,7 +1573,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\DragonPulse.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\DragonPulse.xnb</Output>
       <Time>2018-08-02T14:58:15.1652108-04:00</Time>
     </Item>
     <Item>
@@ -1591,7 +1582,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\ElixirOfTenacity.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\ElixirOfTenacity.xnb</Output>
       <Time>2018-08-02T14:58:15.1964592-04:00</Time>
     </Item>
     <Item>
@@ -1600,7 +1591,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\GauntletsOfMight.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\GauntletsOfMight.xnb</Output>
       <Time>2018-08-02T14:58:15.212084-04:00</Time>
     </Item>
     <Item>
@@ -1609,7 +1600,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\Liquilizer.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\Liquilizer.xnb</Output>
       <Time>2018-08-02T14:58:15.2277087-04:00</Time>
     </Item>
     <Item>
@@ -1618,7 +1609,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\MipedianCactus.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\MipedianCactus.xnb</Output>
       <Time>2018-08-02T14:58:15.2433324-04:00</Time>
     </Item>
     <Item>
@@ -1627,7 +1618,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\Mowercycle.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\Mowercycle.xnb</Output>
       <Time>2018-08-02T14:58:15.274584-04:00</Time>
     </Item>
     <Item>
@@ -1636,7 +1627,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\MugiciansLyre.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\MugiciansLyre.xnb</Output>
       <Time>2018-08-02T14:58:15.2902077-04:00</Time>
     </Item>
     <Item>
@@ -1645,7 +1636,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\NexusFuse.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\NexusFuse.xnb</Output>
       <Time>2018-08-02T14:58:15.3214582-04:00</Time>
     </Item>
     <Item>
@@ -1654,7 +1645,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\OrbOfForesight.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\OrbOfForesight.xnb</Output>
       <Time>2018-08-02T14:58:15.337084-04:00</Time>
     </Item>
     <Item>
@@ -1663,7 +1654,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\PhobiaMask.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\PhobiaMask.xnb</Output>
       <Time>2018-08-02T14:58:15.3527097-04:00</Time>
     </Item>
     <Item>
@@ -1672,7 +1663,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\PrismOfVacuity.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\PrismOfVacuity.xnb</Output>
       <Time>2018-08-02T14:58:15.3683365-04:00</Time>
     </Item>
     <Item>
@@ -1681,7 +1672,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\Pyroblaster.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\Pyroblaster.xnb</Output>
       <Time>2018-08-02T14:58:15.3839592-04:00</Time>
     </Item>
     <Item>
@@ -1690,7 +1681,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\RingOfNaarin.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\RingOfNaarin.xnb</Output>
       <Time>2018-08-02T14:58:15.4152077-04:00</Time>
     </Item>
     <Item>
@@ -1699,7 +1690,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\RiverlandStar.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\RiverlandStar.xnb</Output>
       <Time>2018-08-02T14:58:15.4308355-04:00</Time>
     </Item>
     <Item>
@@ -1708,7 +1699,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\SkeletalSteed.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\SkeletalSteed.xnb</Output>
       <Time>2018-08-02T14:58:15.4464602-04:00</Time>
     </Item>
     <Item>
@@ -1717,7 +1708,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\SpectralViewer.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\SpectralViewer.xnb</Output>
       <Time>2018-08-02T14:58:15.462084-04:00</Time>
     </Item>
     <Item>
@@ -1726,7 +1717,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\StaffOfWisdom.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\StaffOfWisdom.xnb</Output>
       <Time>2018-08-02T14:58:15.4777097-04:00</Time>
     </Item>
     <Item>
@@ -1735,7 +1726,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\StoneMail.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\StoneMail.xnb</Output>
       <Time>2018-08-02T14:58:15.4933345-04:00</Time>
     </Item>
     <Item>
@@ -1744,7 +1735,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\TalismanOfTheMandiblor.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\TalismanOfTheMandiblor.xnb</Output>
       <Time>2018-08-02T14:58:15.5089602-04:00</Time>
     </Item>
     <Item>
@@ -1753,7 +1744,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\TorrentKrinth.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\TorrentKrinth.xnb</Output>
       <Time>2018-08-02T14:58:15.524584-04:00</Time>
     </Item>
     <Item>
@@ -1762,7 +1753,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\Torwegg.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\Torwegg.xnb</Output>
       <Time>2018-08-02T14:58:15.5402087-04:00</Time>
     </Item>
     <Item>
@@ -1771,7 +1762,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\Viledriver.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\Viledriver.xnb</Output>
       <Time>2018-08-02T14:58:15.5558355-04:00</Time>
     </Item>
     <Item>
@@ -1780,7 +1771,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\VlaricShard.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\VlaricShard.xnb</Output>
       <Time>2018-08-02T14:58:15.5714613-04:00</Time>
     </Item>
     <Item>
@@ -1789,7 +1780,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\Whepcrack.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\Whepcrack.xnb</Output>
       <Time>2018-08-02T14:58:15.587084-04:00</Time>
     </Item>
     <Item>
@@ -1798,26 +1789,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\WindStrider.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\WindStrider.xnb</Output>
       <Time>2018-08-02T14:58:15.6027108-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Backgrounds\EyeOfTheMaelstrom.jpg</Source>
-      <Name>Backgrounds\EyeOfTheMaelstrom</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\EyeOfTheMaelstrom.xnb</Output>
-      <Time>2018-06-28T12:48:45.7307181-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Locations\WoodenPillar.png</Source>
-      <Name>Locations\WoodenPillar</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\WoodenPillar.xnb</Output>
-      <Time>2018-06-28T14:17:45.5839806-04:00</Time>
     </Item>
     <Item>
       <Source>Mugics\Decrescendo.png</Source>
@@ -1825,7 +1798,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\Decrescendo.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\Decrescendo.xnb</Output>
       <Time>2018-08-03T02:31:50.9555315-04:00</Time>
     </Item>
     <Item>
@@ -1834,17 +1807,17 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\EmberFlourish.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\EmberFlourish.xnb</Output>
       <Time>2018-08-03T02:31:50.9711552-04:00</Time>
     </Item>
     <Item>
-      <Source>Mugics\Fortissimo.png</Source>
-      <Name>Mugics\Fortissimo</Name>
+      <Source>Mugics\GeoFlourish.png</Source>
+      <Name>Mugics\GeoFlourish</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\Fortissimo.xnb</Output>
-      <Time>2018-08-04T00:25:36.1540435-04:00</Time>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\GeoFlourish.xnb</Output>
+      <Time>2018-08-03T02:31:51.0024057-04:00</Time>
     </Item>
     <Item>
       <Source>Mugics\InterludeOfConsequence.png</Source>
@@ -1852,7 +1825,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\InterludeOfConsequence.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\InterludeOfConsequence.xnb</Output>
       <Time>2018-08-03T02:31:51.0024057-04:00</Time>
     </Item>
     <Item>
@@ -1861,7 +1834,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\MinorFlourish.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\MinorFlourish.xnb</Output>
       <Time>2018-08-03T02:31:51.0180315-04:00</Time>
     </Item>
     <Item>
@@ -1870,7 +1843,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\SongOfEmbernova.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\SongOfEmbernova.xnb</Output>
       <Time>2018-08-03T02:31:51.0336562-04:00</Time>
     </Item>
     <Item>
@@ -1879,7 +1852,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\SongOfFuturesight.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\SongOfFuturesight.xnb</Output>
       <Time>2018-08-03T02:31:51.04928-04:00</Time>
     </Item>
     <Item>
@@ -1888,7 +1861,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\SongOfGeonova.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\SongOfGeonova.xnb</Output>
       <Time>2018-08-03T02:31:51.0649047-04:00</Time>
     </Item>
     <Item>
@@ -1897,17 +1870,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\SongOfTruesight.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\SongOfTruesight.xnb</Output>
       <Time>2018-08-03T02:31:51.0805315-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Mugics\GeoFlourish.png</Source>
-      <Name>Mugics\GeoFlourish</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\GeoFlourish.xnb</Output>
-      <Time>2018-08-03T02:31:51.0024057-04:00</Time>
     </Item>
     <Item>
       <Source>Mugics\CascadeOfSymphony.png</Source>
@@ -1915,7 +1879,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\CascadeOfSymphony.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\CascadeOfSymphony.xnb</Output>
       <Time>2018-08-03T13:38:17.2354217-04:00</Time>
     </Item>
     <Item>
@@ -1924,7 +1888,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\HymnOfTheElements.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\HymnOfTheElements.xnb</Output>
       <Time>2018-08-03T13:38:17.3291824-04:00</Time>
     </Item>
     <Item>
@@ -1933,7 +1897,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\MugicReprise.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\MugicReprise.xnb</Output>
       <Time>2018-08-03T13:38:17.4073-04:00</Time>
     </Item>
     <Item>
@@ -1942,7 +1906,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\OverworldAria.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\OverworldAria.xnb</Output>
       <Time>2018-08-03T13:38:17.4229237-04:00</Time>
     </Item>
     <Item>
@@ -1951,7 +1915,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\RefrainOfDenial.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\RefrainOfDenial.xnb</Output>
       <Time>2018-08-03T13:38:17.4542625-04:00</Time>
     </Item>
     <Item>
@@ -1960,7 +1924,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\SongOfFocus.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\SongOfFocus.xnb</Output>
       <Time>2018-08-03T13:38:17.532299-04:00</Time>
     </Item>
     <Item>
@@ -1969,7 +1933,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\SongOfResurgence.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\SongOfResurgence.xnb</Output>
       <Time>2018-08-03T13:38:17.5635495-04:00</Time>
     </Item>
     <Item>
@@ -1978,8 +1942,17 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\SongOfStasis.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\SongOfStasis.xnb</Output>
       <Time>2018-08-03T13:38:17.5791804-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Mugics\Fortissimo.png</Source>
+      <Name>Mugics\Fortissimo</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\Fortissimo.xnb</Output>
+      <Time>2018-08-04T00:25:36.1540435-04:00</Time>
     </Item>
     <Item>
       <Source>Mugics\CanonOfCasualty.png</Source>
@@ -1987,7 +1960,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\CanonOfCasualty.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\CanonOfCasualty.xnb</Output>
       <Time>2018-08-04T15:58:14.4764972-04:00</Time>
     </Item>
     <Item>
@@ -1996,7 +1969,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\DiscordOfDisarming.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\DiscordOfDisarming.xnb</Output>
       <Time>2018-08-04T15:58:14.5233642-04:00</Time>
     </Item>
     <Item>
@@ -2005,7 +1978,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\MelodyOfMalady.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\MelodyOfMalady.xnb</Output>
       <Time>2018-08-04T15:58:14.5546158-04:00</Time>
     </Item>
     <Item>
@@ -2014,7 +1987,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\RefrainOfDenial_OverWorld_.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\RefrainOfDenial_OverWorld_.xnb</Output>
       <Time>2018-08-04T15:58:14.5702754-04:00</Time>
     </Item>
     <Item>
@@ -2023,7 +1996,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\SongOfAsperity.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\SongOfAsperity.xnb</Output>
       <Time>2018-08-04T18:27:34.8918055-04:00</Time>
     </Item>
     <Item>
@@ -2032,7 +2005,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\SongOfFury.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\SongOfFury.xnb</Output>
       <Time>2018-08-04T18:27:34.9074303-04:00</Time>
     </Item>
     <Item>
@@ -2041,7 +2014,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\SongOfRevival_UnderWorld_.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\SongOfRevival_UnderWorld_.xnb</Output>
       <Time>2018-08-04T18:27:34.923056-04:00</Time>
     </Item>
     <Item>
@@ -2050,7 +2023,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\SongOfTreachery.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\SongOfTreachery.xnb</Output>
       <Time>2018-08-04T18:27:34.9386797-04:00</Time>
     </Item>
     <Item>
@@ -2059,7 +2032,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\FanfareOfTheVanishing.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\FanfareOfTheVanishing.xnb</Output>
       <Time>2018-08-04T21:46:04.7317048-04:00</Time>
     </Item>
     <Item>
@@ -2068,7 +2041,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\MelodyOfMirage.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\MelodyOfMirage.xnb</Output>
       <Time>2018-08-04T21:46:04.7473295-04:00</Time>
     </Item>
     <Item>
@@ -2077,7 +2050,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\NotesOfNeverwhere.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\NotesOfNeverwhere.xnb</Output>
       <Time>2018-08-04T21:46:04.7629573-04:00</Time>
     </Item>
     <Item>
@@ -2086,7 +2059,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\SongOfDeflection.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\SongOfDeflection.xnb</Output>
       <Time>2018-08-04T21:46:04.77858-04:00</Time>
     </Item>
     <Item>
@@ -2095,7 +2068,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\SongOfRecovery.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\SongOfRecovery.xnb</Output>
       <Time>2018-08-04T21:46:04.7942068-04:00</Time>
     </Item>
     <Item>
@@ -2104,7 +2077,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\TrillsOfDiminution.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\TrillsOfDiminution.xnb</Output>
       <Time>2018-08-04T21:46:04.8098316-04:00</Time>
     </Item>
     <Item>
@@ -2113,7 +2086,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\FluxBauble.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\FluxBauble.xnb</Output>
       <Time>2018-12-22T00:51:54.6152785-05:00</Time>
     </Item>
     <Item>
@@ -2122,7 +2095,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\BarathBeyond.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\BarathBeyond.xnb</Output>
       <Time>2018-12-28T00:45:09.3443085-05:00</Time>
     </Item>
     <Item>
@@ -2131,17 +2104,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\BorthMajar.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\BorthMajar.xnb</Output>
       <Time>2018-12-28T00:45:09.5318087-05:00</Time>
-    </Item>
-    <Item>
-      <Source>Creatures\Chaor.png</Source>
-      <Name>Creatures\Chaor</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Chaor.xnb</Output>
-      <Time>2019-03-25T23:43:08.7510927-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\Dardemus.png</Source>
@@ -2149,7 +2113,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Dardemus.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Dardemus.xnb</Output>
       <Time>2018-12-28T00:45:09.5943436-05:00</Time>
     </Item>
     <Item>
@@ -2158,7 +2122,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Ghuul.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Ghuul.xnb</Output>
       <Time>2018-12-28T00:45:09.6100074-05:00</Time>
     </Item>
     <Item>
@@ -2167,7 +2131,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Grook.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Grook.xnb</Output>
       <Time>2018-12-28T00:45:09.6568837-05:00</Time>
     </Item>
     <Item>
@@ -2176,7 +2140,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Hearring.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Hearring.xnb</Output>
       <Time>2018-12-28T00:45:09.6724346-05:00</Time>
     </Item>
     <Item>
@@ -2185,7 +2149,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Khybon.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Khybon.xnb</Output>
       <Time>2018-12-28T00:45:09.7036831-05:00</Time>
     </Item>
     <Item>
@@ -2194,7 +2158,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Klasp.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Klasp.xnb</Output>
       <Time>2018-12-28T00:45:09.7193335-05:00</Time>
     </Item>
     <Item>
@@ -2203,17 +2167,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Krekk.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Krekk.xnb</Output>
       <Time>2018-12-28T00:45:09.7505584-05:00</Time>
-    </Item>
-    <Item>
-      <Source>Creatures\LordVanbloot.png</Source>
-      <Name>Creatures\LordVanbloot</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\LordVanbloot.xnb</Output>
-      <Time>2019-03-25T23:43:08.8135672-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\Magmon.png</Source>
@@ -2221,7 +2176,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Magmon.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Magmon.xnb</Output>
       <Time>2018-12-28T00:45:09.7974327-05:00</Time>
     </Item>
     <Item>
@@ -2230,7 +2185,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Pyrithion.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Pyrithion.xnb</Output>
       <Time>2018-12-28T00:45:09.8287601-05:00</Time>
     </Item>
     <Item>
@@ -2239,7 +2194,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Rarran.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Rarran.xnb</Output>
       <Time>2018-12-28T00:45:09.8444157-05:00</Time>
     </Item>
     <Item>
@@ -2248,7 +2203,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Rothar.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Rothar.xnb</Output>
       <Time>2018-12-28T00:45:09.9068142-05:00</Time>
     </Item>
     <Item>
@@ -2257,7 +2212,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Skithia.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Skithia.xnb</Output>
       <Time>2018-12-28T00:45:09.9381612-05:00</Time>
     </Item>
     <Item>
@@ -2266,7 +2221,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Solvis.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Solvis.xnb</Output>
       <Time>2018-12-28T00:45:10.0162891-05:00</Time>
     </Item>
     <Item>
@@ -2275,7 +2230,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Takinom.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Takinom.xnb</Output>
       <Time>2018-12-28T00:45:10.0475396-05:00</Time>
     </Item>
     <Item>
@@ -2284,7 +2239,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Xield.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Xield.xnb</Output>
       <Time>2018-12-28T00:45:10.1880588-05:00</Time>
     </Item>
     <Item>
@@ -2293,7 +2248,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Drakness.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Drakness.xnb</Output>
       <Time>2018-12-28T01:19:54.2501279-05:00</Time>
     </Item>
     <Item>
@@ -2302,7 +2257,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Kerric.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Kerric.xnb</Output>
       <Time>2018-12-28T01:19:54.2657537-05:00</Time>
     </Item>
     <Item>
@@ -2311,7 +2266,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Kughar.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Kughar.xnb</Output>
       <Time>2018-12-28T01:19:54.2814041-05:00</Time>
     </Item>
     <Item>
@@ -2320,7 +2275,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Miklon.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Miklon.xnb</Output>
       <Time>2018-12-28T01:19:54.2970043-05:00</Time>
     </Item>
     <Item>
@@ -2329,7 +2284,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Nauthilax.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Nauthilax.xnb</Output>
       <Time>2018-12-28T01:19:54.2970043-05:00</Time>
     </Item>
     <Item>
@@ -2338,7 +2293,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Toxis.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Toxis.xnb</Output>
       <Time>2018-12-28T01:19:54.3126311-05:00</Time>
     </Item>
     <Item>
@@ -2347,7 +2302,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Ulmar.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Ulmar.xnb</Output>
       <Time>2018-12-28T01:19:54.3282548-05:00</Time>
     </Item>
     <Item>
@@ -2356,17 +2311,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Zaur.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Zaur.xnb</Output>
       <Time>2018-12-28T01:19:54.3438796-05:00</Time>
-    </Item>
-    <Item>
-      <Source>Creatures\Skreeth.png</Source>
-      <Name>Creatures\Skreeth</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Skreeth.xnb</Output>
-      <Time>2019-01-03T22:41:18.5475586-05:00</Time>
     </Item>
     <Item>
       <Source>Menu\SixOnSixButton.png</Source>
@@ -2374,7 +2320,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Menu\SixOnSixButton.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Menu\SixOnSixButton.xnb</Output>
       <Time>2018-12-31T19:27:58.4331212-05:00</Time>
     </Item>
     <Item>
@@ -2383,17 +2329,44 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\BattleBoardSprites\EndTurnButton.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\BattleBoardSprites\EndTurnButton.xnb</Output>
       <Time>2019-01-03T04:17:42.1452215-05:00</Time>
     </Item>
     <Item>
-      <Source>Fonts\AttackDamage.spritefont</Source>
-      <Name>Fonts\AttackDamage</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
+      <Source>Creatures\Skreeth.png</Source>
+      <Name>Creatures\Skreeth</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Fonts\AttackDamage.xnb</Output>
-      <Time>2018-12-31T20:13:51.7002297-05:00</Time>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Skreeth.xnb</Output>
+      <Time>2019-01-03T22:41:18.5475586-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Backgrounds\Gigantempopolis.jpg</Source>
+      <Name>Backgrounds\Gigantempopolis</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\Gigantempopolis.xnb</Output>
+      <Time>2019-01-04T04:24:10.9377488-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\Chaor.png</Source>
+      <Name>Creatures\Chaor</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Chaor.xnb</Output>
+      <Time>2019-03-25T23:43:08.7510927-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\LordVanBloot.png</Source>
+      <Name>Creatures\LordVanBloot</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\LordVanBloot.xnb</Output>
+      <Time>2019-03-25T23:43:08.8135672-04:00</Time>
     </Item>
     <Item>
       <Source>damagecover.png</Source>
@@ -2401,7 +2374,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\damagecover.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\damagecover.xnb</Output>
       <Time>2019-03-26T00:37:56.5920798-04:00</Time>
     </Item>
     <Item>
@@ -2410,8 +2383,35 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\healcover.xnb</Output>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\healcover.xnb</Output>
       <Time>2019-03-26T00:37:56.6077046-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Fonts\CardDescriptionFont.spritefont</Source>
+      <Name>Fonts\CardDescriptionFont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Fonts\CardDescriptionFont.xnb</Output>
+      <Time>2018-06-30T13:10:54.7653788-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Fonts\PanelFont.spritefont</Source>
+      <Name>Fonts\PanelFont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Fonts\PanelFont.xnb</Output>
+      <Time>2018-06-30T13:20:39.5295095-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Fonts\AttackDamage.spritefont</Source>
+      <Name>Fonts\AttackDamage</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Fonts\AttackDamage.xnb</Output>
+      <Time>2018-12-31T20:13:51.7002297-05:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -2420,10 +2420,10 @@
       <TargetProfile>Reach</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\ChaoticContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\ChaoticContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>

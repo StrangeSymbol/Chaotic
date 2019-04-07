@@ -60,6 +60,10 @@
     <XnaCompressContent>true</XnaCompressContent>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ChaoticGameLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ChaoticGameLib\ChaoticGameLib\bin\x86\Debug\ChaoticGameLib.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
     <Reference Include="Microsoft.Xna.Framework.Game, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
     <Reference Include="Microsoft.Xna.Framework.Graphics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
@@ -127,10 +131,6 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\ChaoticGameLib\ChaoticGameLib\ChaoticGameLib.csproj">
-      <Project>{f04ebc04-0fb3-4166-bec6-377eb1f4bc25}</Project>
-      <Name>ChaoticGameLib</Name>
-    </ProjectReference>
     <ProjectReference Include="..\ChaoticContent\ChaoticContent.contentproj">
       <Name>ChaoticContent</Name>
       <XnaReferenceType>Content</XnaReferenceType>

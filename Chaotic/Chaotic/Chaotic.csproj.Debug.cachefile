@@ -1,4 +1,5 @@
 Content\CardBack.xnb
+Content\CardOutline.xnb
 Content\Menu\ChaoticSymbol.xnb
 Content\Menu\EditButton.xnb
 Content\Menu\MenuButtonCover.xnb
@@ -7,7 +8,6 @@ Content\Menu\OneOnOneButton.xnb
 Content\Menu\ThreeOnThreeButton.xnb
 Content\Menu\SuitBackButton.xnb
 Content\Menu\backBtnCover.xnb
-Content\CardOutline.xnb
 Content\Backgrounds\CastlePillar.xnb
 Content\Backgrounds\CastleBodhran.xnb
 Content\Backgrounds\ChaoticBackground.xnb
@@ -17,9 +17,9 @@ Content\Backgrounds\CrystalCave.xnb
 Content\Backgrounds\DoorsOfTheDeepmines.xnb
 Content\Backgrounds\DranakisThreshold.xnb
 Content\Backgrounds\Everrain.xnb
+Content\Backgrounds\EyeOfTheMaelstrom.xnb
 Content\Backgrounds\FearValley.xnb
 Content\Backgrounds\ForestOfLife.xnb
-Content\Backgrounds\Gigantempopolis.xnb
 Content\Backgrounds\GlacierPlains.xnb
 Content\Backgrounds\GloomuckSwamp.xnb
 Content\Backgrounds\GothosTower.xnb
@@ -138,6 +138,7 @@ Content\Locations\StormTunnel.xnb
 Content\Locations\StrongholdMorn.xnb
 Content\Locations\UnderworldCity.xnb
 Content\Locations\UnderWorldColosseum.xnb
+Content\Locations\WoodenPillar.xnb
 Content\OkButtonCover.xnb
 Content\Creatures\Arias.xnb
 Content\Creatures\Attacat.xnb
@@ -166,8 +167,6 @@ Content\Creatures\Zalic.xnb
 Content\Creatures\Najarin.xnb
 Content\Creatures\Rellim.xnb
 Content\Creatures\Yokkis.xnb
-Content\Fonts\CardDescriptionFont.xnb
-Content\Fonts\PanelFont.xnb
 Content\Creatures\Vidav.xnb
 Content\Attacks\TornadoTackle.xnb
 Content\Battlegears\AquaShield.xnb
@@ -198,18 +197,15 @@ Content\Battlegears\Viledriver.xnb
 Content\Battlegears\VlaricShard.xnb
 Content\Battlegears\Whepcrack.xnb
 Content\Battlegears\WindStrider.xnb
-Content\Backgrounds\EyeOfTheMaelstrom.xnb
-Content\Locations\WoodenPillar.xnb
 Content\Mugics\Decrescendo.xnb
 Content\Mugics\EmberFlourish.xnb
-Content\Mugics\Fortissimo.xnb
+Content\Mugics\GeoFlourish.xnb
 Content\Mugics\InterludeOfConsequence.xnb
 Content\Mugics\MinorFlourish.xnb
 Content\Mugics\SongOfEmbernova.xnb
 Content\Mugics\SongOfFuturesight.xnb
 Content\Mugics\SongOfGeonova.xnb
 Content\Mugics\SongOfTruesight.xnb
-Content\Mugics\GeoFlourish.xnb
 Content\Mugics\CascadeOfSymphony.xnb
 Content\Mugics\HymnOfTheElements.xnb
 Content\Mugics\MugicReprise.xnb
@@ -218,6 +214,7 @@ Content\Mugics\RefrainOfDenial.xnb
 Content\Mugics\SongOfFocus.xnb
 Content\Mugics\SongOfResurgence.xnb
 Content\Mugics\SongOfStasis.xnb
+Content\Mugics\Fortissimo.xnb
 Content\Mugics\CanonOfCasualty.xnb
 Content\Mugics\DiscordOfDisarming.xnb
 Content\Mugics\MelodyOfMalady.xnb
@@ -235,7 +232,6 @@ Content\Mugics\TrillsOfDiminution.xnb
 Content\Battlegears\FluxBauble.xnb
 Content\Creatures\BarathBeyond.xnb
 Content\Creatures\BorthMajar.xnb
-Content\Creatures\Chaor.xnb
 Content\Creatures\Dardemus.xnb
 Content\Creatures\Ghuul.xnb
 Content\Creatures\Grook.xnb
@@ -243,7 +239,6 @@ Content\Creatures\Hearring.xnb
 Content\Creatures\Khybon.xnb
 Content\Creatures\Klasp.xnb
 Content\Creatures\Krekk.xnb
-Content\Creatures\LordVanbloot.xnb
 Content\Creatures\Magmon.xnb
 Content\Creatures\Pyrithion.xnb
 Content\Creatures\Rarran.xnb
@@ -260,9 +255,14 @@ Content\Creatures\Nauthilax.xnb
 Content\Creatures\Toxis.xnb
 Content\Creatures\Ulmar.xnb
 Content\Creatures\Zaur.xnb
-Content\Creatures\Skreeth.xnb
 Content\Menu\SixOnSixButton.xnb
 Content\BattleBoardSprites\EndTurnButton.xnb
-Content\Fonts\AttackDamage.xnb
+Content\Creatures\Skreeth.xnb
+Content\Backgrounds\Gigantempopolis.xnb
+Content\Creatures\Chaor.xnb
+Content\Creatures\LordVanBloot.xnb
 Content\damagecover.xnb
 Content\healcover.xnb
+Content\Fonts\CardDescriptionFont.xnb
+Content\Fonts\PanelFont.xnb
+Content\Fonts\AttackDamage.xnb

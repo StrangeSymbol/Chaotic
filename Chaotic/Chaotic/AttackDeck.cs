@@ -16,6 +16,8 @@ namespace Chaotic
         double elapsedTime;
         bool isPlayer1;
         bool start;
+        bool shuffleMove;
+        byte numShuffles;
 
         public AttackDeck(Texture2D deck, Texture2D cardBack, Texture2D overlay, Vector2 position, bool isPlayer1)
         {
@@ -26,6 +28,8 @@ namespace Chaotic
             elapsedTime = 0.0;
             this.isPlayer1 = isPlayer1;
             this.start = false;
+            this.shuffleMove = false;
+            this.numShuffles = 0;
         }
 
         public Attack RetrieveCard(int card)
@@ -132,6 +136,54 @@ namespace Chaotic
             return false;
         }
 
+        public bool UpdateShuffleDeck(GameTime gameTime)
+        {
+            if (!ChaoticEngine.IsACardMoving)
+            {
+                ChaoticEngine.IsACardMoving = true;
+                deckCover2.IsMoving = true;
+                if (!shuffleMove)
+                {
+                    if (this.isPlayer1)
+                        deckCover2.CourseToCard(attackTemplate.Position + new Vector2(ChaoticEngine.kCardWidth, 0));
+                    else
+                        deckCover2.CourseToCard(attackTemplate.Position + new Vector2(-ChaoticEngine.kCardWidth, 0));
+                }
+                else
+                {
+                    deckCover2.CourseToCard(attackTemplate.Position);
+                }
+                elapsedTime = gameTime.TotalGameTime.TotalMilliseconds;
+            }
+            else if (deckCover2.Time >= gameTime.TotalGameTime.TotalMilliseconds - elapsedTime && deckCover2.IsMoving)
+                deckCover2.Move(gameTime);
+            else if (deckCover2.Time < gameTime.TotalGameTime.TotalMilliseconds - elapsedTime && deckCover2.IsMoving)
+            {
+                ChaoticEngine.IsACardMoving = false;
+                deckCover2.IsMoving = false;
+                elapsedTime = 0.0;
+                if (!shuffleMove)
+                {
+                    if (this.isPlayer1)
+                        deckCover2.Position = attackTemplate.Position + new Vector2(ChaoticEngine.kCardWidth, 0);
+                    else
+                        deckCover2.Position = attackTemplate.Position + new Vector2(-ChaoticEngine.kCardWidth, 0);
+                    shuffleMove = true;
+                }
+                else
+                {
+                    deckCover2.Position = attackTemplate.Position;
+                    shuffleMove = false;
+                    if (++numShuffles == 3)
+                    {
+                        numShuffles = 0;
+                        return true;
+                    }
+                }
+            }
+            return false;
+        }
+
         //public bool UpdateDeckPile(GameTime gameTime, DiscardPile<Attack> discardPile)
         //{
         //    if (!ChaoticEngine.IsACardMoving)
@@ -162,6 +214,22 @@ namespace Chaotic
         {
             ShuffleDeck(discardPile);
             return UpdateDeckPile(gameTime, hand);
+        }
+
+        public void DrawShuffleDeck(SpriteBatch spriteBatch)
+        {
+            attackTemplate.DrawTemplate(spriteBatch, isPlayer1);
+
+            if (!shuffleMove)
+            {
+                deckCover1.DrawTemplate(spriteBatch, isPlayer1, 0.9f);
+                deckCover2.DrawTemplate(spriteBatch, isPlayer1);
+            }
+            else
+            {
+                deckCover1.DrawTemplate(spriteBatch, isPlayer1, 0.85f);
+                deckCover2.DrawTemplate(spriteBatch, isPlayer1, 0.9f);
+            }
         }
 
         public void DrawDeckPile(SpriteBatch spriteBatch)

@@ -3,7 +3,7 @@ Attacat
 Dardemus
 Khybon
 Grook
-Blugon
+Arias
 Phobia Mask
 Prism Of Vacuity
 Pyroblaster
@@ -22,8 +22,8 @@ Inferno Gust
 Velocitrap
 Flame Orb
 Flash Mend
-Flashwarp
-Mirthquake
+Tornado Tackle
+Shadow Strike
 Flash Kick
 Lightning Burst
 Rip Tide
