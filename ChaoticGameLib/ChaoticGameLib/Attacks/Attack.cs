@@ -78,10 +78,11 @@ namespace ChaoticGameLib
             else if (enemy.Battlegear is StoneMail && enemy.Battlegear.IsFaceUp && enemy.Energy < energy)
                 enemy.Energy -= 5;
 
-            //if (your.CreatureTribe == Tribe.UnderWorld)
-            //    your.Energy -= your.Recklessness;
+            if (your.CreatureTribe == Tribe.UnderWorld)
+                your.Energy -= your.Recklessness;
 
-            else if (your.Strike > 0 && !your.UsedAbility && enemy.Battlegear.IsFaceUp && !(enemy.Battlegear is SpectralViewer))
+            if (your.Strike > 0 && !your.UsedAbility && 
+                !(enemy.Battlegear.IsFaceUp && (enemy.Battlegear is SpectralViewer)))
             {
                 your.UsedAbility = true;
                 enemy.Energy -= your.Strike;    
@@ -112,9 +113,9 @@ namespace ChaoticGameLib
             if (your.CreatureTribe == Tribe.UnderWorld)
                 energy1 -= your.Recklessness;
 
-            else if (your.Strike > 0 && !your.UsedAbility && enemy.Battlegear.IsFaceUp && !(enemy.Battlegear is SpectralViewer))
+            if (your.Strike > 0 && !your.UsedAbility && 
+                !(enemy.Battlegear.IsFaceUp && (enemy.Battlegear is SpectralViewer)))
             {
-                your.UsedAbility = true;
                 energy2 -= your.Strike;
             }
 

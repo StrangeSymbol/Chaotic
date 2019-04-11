@@ -35,6 +35,10 @@ namespace ChaoticGameLib
         /// <returns>Which Creature won initiative check.</returns>
         public int initiativeCheck(Creature c1, Creature c2)
         {
+            if (c1.Surprise && !c2.Invisibility())
+                return 1;
+            else if (!c1.Invisibility() && c2.Surprise)
+                return -1;
             switch(initiative)
             {
                 case LocationType.Courage:

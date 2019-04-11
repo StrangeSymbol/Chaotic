@@ -1376,7 +1376,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Heptadd.xnb</Output>
-      <Time>2018-06-29T00:31:51.5719352-04:00</Time>
+      <Time>2019-04-09T19:51:43.7558865-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\Intress.png</Source>
@@ -2412,6 +2412,24 @@
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Fonts\AttackDamage.xnb</Output>
       <Time>2018-12-31T20:13:51.7002297-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\Malvadine.png</Source>
+      <Name>Creatures\Malvadine</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Malvadine.xnb</Output>
+      <Time>2019-04-09T19:51:55.8834948-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Fonts\EndGame.spritefont</Source>
+      <Name>Fonts\EndGame</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Fonts\EndGame.xnb</Output>
+      <Time>2019-04-11T02:47:52.2577652-04:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

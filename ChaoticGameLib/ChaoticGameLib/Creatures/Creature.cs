@@ -126,6 +126,8 @@ namespace ChaoticGameLib
             this.swift = swift;
             this.range = range;
             this.recklessness = recklessness;
+            this.strike = strike;
+            this.surprise = surprise;
             this.fireDamage = 0;
             this.airDamage = 0;
             this.earthDamage = 0;

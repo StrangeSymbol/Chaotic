@@ -46,21 +46,19 @@ namespace Chaotic
 
         public void ShuffleDeck(List<Attack> deckHolder)
         {
-            Random genDeck = new Random();
-            bool[] check52 = new bool[deckHolder.Count];
-            for (int count = 0; count < deckHolder.Count; count++)
+            Random random = new Random();
+            List<Attack> deckCopy = new List<Attack>();
+
+            for (int i = 0; i < deckHolder.Count; i++)
             {
-                bool hasCard = false;
-                int deckInt = 0;
-                while (!hasCard)
-                {
-                    deckInt = genDeck.Next(deckHolder.Count);
-       
-                    if (!check52[deckInt])
-                        hasCard = true;
-                }
-                check52[deckInt] = true;
-                deckPile.Add(deckHolder[deckInt].ShallowCopy() as Attack);
+                deckCopy.Add(deckHolder[i]);
+            }
+
+            while (deckCopy.Count > 0)
+            {
+                Attack card = deckCopy[random.Next(deckCopy.Count)];
+                deckCopy.Remove(card);
+                deckPile.Add(card);
             }
         }
 

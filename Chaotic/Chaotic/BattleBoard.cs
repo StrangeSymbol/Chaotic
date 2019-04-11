@@ -14,7 +14,7 @@ namespace Chaotic
     public enum CreatureNumber { SixOnSix, ThreeOnThree, OneOnOne };
     enum GameStage { BeginningOfTheGame, CoinFlip, DrawingAttack, LocationStep, Moving, ReturnLocation, CreatureToDiscard1,
     CreatureToDiscard2, Action, Combat, Initiative, EndOfCombat, MoveToCodedSpace, Abilities, ChangeLocation, ShuffleAtkDeck1,
-    ShuffleAtkDeck2, ShuffleAtkDecks,
+    ShuffleAtkDeck2, ShuffleAtkDecks, EndGame,
     };
 
     /// <summary>
@@ -55,9 +55,12 @@ namespace Chaotic
 
         CreatureNumber creatureNumber;
         bool done;
+        bool player1Won;
         byte numDrawed;
 
         GameStage nextStage;
+
+        SpriteFont endgamefont;
 
         public BattleBoard(Game game, GraphicsDeviceManager graphics, CreatureNumber creatureNumber)
             : base(game)
@@ -291,6 +294,7 @@ namespace Chaotic
             endTurnButton = new Button(Game.Content.Load<Texture2D>("BattleBoardSprites/EndTurnButton"),
                 new Vector2(attackDeck1.Position.X + ChaoticEngine.kCardWidth, graphics.PreferredBackBufferHeight / 2),
                 Game.Content.Load<Texture2D>("Menu/MenuButtonCover"));
+            endgamefont = Game.Content.Load<SpriteFont>("Fonts/EndGame");
             base.LoadContent();
         }
 
@@ -495,7 +499,17 @@ namespace Chaotic
                         done = activeLocation2.ReturnLocationToDeck(gameTime, locationDeck2);
                     if (done)
                     {
-                        if (ChaoticEngine.CombatThisTurn)
+                        if (!anyCreatureAlive(true))
+                        {
+                            player1Won = false;
+                            ChaoticEngine.GStage = GameStage.EndGame;
+                        }
+                        else if (!anyCreatureAlive(false))
+                        {
+                            player1Won = true;
+                            ChaoticEngine.GStage = GameStage.EndGame;
+                        }
+                        else if (ChaoticEngine.CombatThisTurn)
                             ChaoticEngine.GStage = GameStage.Action;
                         else
                             ChaoticEngine.GStage = GameStage.LocationStep;
@@ -628,6 +642,11 @@ namespace Chaotic
                                 }
                                 else if (attackDiscardPile2[attackDiscardPile2.Count - 1] is SqueezePlay &&
                                         attackDeck2.Deck.Count > 2)
+                                {
+                                    ChaoticEngine.GStage = GameStage.Abilities;
+                                }
+                                else if (attackDiscardPile2[attackDiscardPile2.Count - 1] is FlashKick &&
+                                        locationDeck2.Deck.Count > 2)
                                 {
                                     ChaoticEngine.GStage = GameStage.Abilities;
                                 }
@@ -793,9 +812,26 @@ namespace Chaotic
                     if (attackDeck1.UpdateShuffleDeck(gameTime))
                         ChaoticEngine.GStage = GameStage.ShuffleAtkDeck2;
                     break;
+                case GameStage.EndGame:
+                    if (Keyboard.GetState().IsKeyDown(Keys.Enter))
+                    {
+                        ChaoticEngine.MStage = MenuStage.MainMenu;
+                        Game.Components.Remove(this);
+                    }
+                    break;
             }
 
             base.Update(gameTime);
+        }
+
+        private bool anyCreatureAlive(bool isPlayer1)
+        {
+            for (int i = 0; i < creatureSpaces.Length; i++)
+            {
+                if (creatureSpaces[i].CreatureNode != null && creatureSpaces[i].IsPlayer1 == isPlayer1)
+                    return true;
+            }
+            return false;
         }
 
         public override void Draw(GameTime gameTime)
@@ -878,6 +914,12 @@ namespace Chaotic
                     break;
                 case GameStage.ShuffleAtkDecks:
                     attackDeck1.DrawShuffleDeck(spriteBatch);
+                    break;
+                case GameStage.EndGame:
+                    string endText = (player1Won ? "Player 1 " : "Player 2 ") + "is the winner. (Press Enter)";
+                    spriteBatch.DrawString(endgamefont, endText, new Vector2(graphics.PreferredBackBufferWidth / 2
+                        - endgamefont.MeasureString(endText).X / 2, graphics.PreferredBackBufferHeight / 2
+                        - endgamefont.MeasureString(endText).Y / 2), Color.Blue);
                     break;
                 default:
                     break;

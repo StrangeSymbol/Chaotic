@@ -266,3 +266,5 @@ Content\healcover.xnb
 Content\Fonts\CardDescriptionFont.xnb
 Content\Fonts\PanelFont.xnb
 Content\Fonts\AttackDamage.xnb
+Content\Creatures\Malvadine.xnb
+Content\Fonts\EndGame.xnb

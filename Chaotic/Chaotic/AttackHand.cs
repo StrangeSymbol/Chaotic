@@ -239,7 +239,7 @@ namespace Chaotic
             //                SpriteEffects.FlipVertically, 0f);
             //}
             foreach (Attack card in hand)
-                card.Draw(spriteBatch, isPlayer1);
+                card.Draw(spriteBatch, isPlayer1, 0.7f, 0.75f);
         }
         public void ProjectHandDamage(SpriteBatch spriteBatch, Creature creature1, Creature creature2)
         {
@@ -249,19 +249,19 @@ namespace Chaotic
                 string msg1 = damage.Item1.ToString();
                 spriteBatch.Draw(healCover, new Vector2(atk.Position.X + ChaoticEngine.kCardWidth / 4 - healCover.Width / 2,
                     atk.Position.Y + 3 * ChaoticEngine.kCardHeight / 4 - healCover.Height / 4), null,
-                    Color.White, 0f, Vector2.Zero, 1f, SpriteEffects.None, 0.85f);
+                    Color.White, 0f, Vector2.Zero, 1f, SpriteEffects.None, 0.65f);
                 spriteBatch.DrawString(spriteFont, msg1, new Vector2(atk.Position.X + ChaoticEngine.kCardWidth / 4
                     - spriteFont.MeasureString(msg1).X / 2,
                     atk.Position.Y + 3 * ChaoticEngine.kCardHeight / 4 - healCover.Height / 4),
-                    Color.Black, 0f, Vector2.Zero, 1f, SpriteEffects.None, 0.8f);
+                    Color.Black, 0f, Vector2.Zero, 1f, SpriteEffects.None, 0.6f);
                 string msg2 = Math.Abs(damage.Item2).ToString();
                 spriteBatch.Draw(damageCover, new Vector2(atk.Position.X + 3 * ChaoticEngine.kCardWidth / 4 
                     - damageCover.Width / 2, atk.Position.Y + 3 * ChaoticEngine.kCardHeight / 4 - damageCover.Height / 4), null,
-                    Color.White, 0f, Vector2.Zero, 1f, SpriteEffects.None, 0.85f);
+                    Color.White, 0f, Vector2.Zero, 1f, SpriteEffects.None, 0.65f);
                 spriteBatch.DrawString(spriteFont, msg2, new Vector2(atk.Position.X + 3 * ChaoticEngine.kCardWidth / 4 
                     - spriteFont.MeasureString(msg2).X / 2,
                     atk.Position.Y + 3 * ChaoticEngine.kCardHeight / 4 - damageCover.Height / 4),
-                    Color.Black, 0f, Vector2.Zero, 1f, SpriteEffects.None, 0.8f);
+                    Color.Black, 0f, Vector2.Zero, 1f, SpriteEffects.None, 0.6f);
             }
         }
     }

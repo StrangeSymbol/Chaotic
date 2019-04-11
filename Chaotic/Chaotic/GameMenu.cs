@@ -142,6 +142,7 @@ namespace Chaotic
               new Ulmar(Content.Load<Texture2D>(@"Creatures\Ulmar"), overlay, 25, 40, 20, 70, 35),
               new Xield(Content.Load<Texture2D>(@"Creatures\Xield"), overlay, 20, 90, 40, 35, 15),
               new Zaur(Content.Load<Texture2D>(@"Creatures\Zaur"), overlay, 50, 65, 75, 35, 25),
+              new Malvadine(Content.Load<Texture2D>(@"Creatures\Malvadine"), overlay, 50, 50, 75, 40, 55),
               new Allmageddon(Content.Load<Texture2D>(@"Attacks\Allmageddon"), overlay),
               new AshTorrent(Content.Load<Texture2D>(@"Attacks\AshTorrent"), overlay),
               new CoilCrush(Content.Load<Texture2D>(@"Attacks\CoilCrush"), overlay),

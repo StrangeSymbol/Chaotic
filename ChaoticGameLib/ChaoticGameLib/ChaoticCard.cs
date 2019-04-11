@@ -142,16 +142,16 @@ namespace ChaoticGameLib
                     (int)this.position.Y, (int)(kWidth - kWidth * currentPercent / 100 * 2), kHeight);
         }
 
-        public void Draw(SpriteBatch spriteBatch, bool isPlayer1)
+        public void Draw(SpriteBatch spriteBatch, bool isPlayer1, float layer=0.9f, float cover=0.85f)
         {
             SpriteEffects spriteEffect;
             if (isPlayer1)
                 spriteEffect = SpriteEffects.None;
             else
                 spriteEffect = SpriteEffects.FlipVertically;
-            spriteBatch.Draw(this.sprite, CollisionRectangle, null, Color.White, 0f, Vector2.Zero, spriteEffect, 0.9f);
+            spriteBatch.Draw(this.sprite, CollisionRectangle, null, Color.White, 0f, Vector2.Zero, spriteEffect, layer);
             if (IsCovered)
-                spriteBatch.Draw(this.overlay, CollisionRectangle, null, Color.White, 0f, Vector2.Zero, spriteEffect, 0.85f);
+                spriteBatch.Draw(this.overlay, CollisionRectangle, null, Color.White, 0f, Vector2.Zero, spriteEffect, cover);
         }
 
         public void Draw(SpriteBatch spriteBatch, Texture2D texture, bool isPlayer1)
