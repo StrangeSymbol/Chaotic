@@ -241,11 +241,11 @@ namespace Chaotic
             foreach (Attack card in hand)
                 card.Draw(spriteBatch, isPlayer1, 0.7f, 0.75f);
         }
-        public void ProjectHandDamage(SpriteBatch spriteBatch, Creature creature1, Creature creature2)
+        public void ProjectHandDamage(SpriteBatch spriteBatch, Creature creature1, Creature creature2, Location location)
         {
             foreach (Attack atk in hand)
             {
-                Tuple<short, short> damage = atk.PotentialDamage(creature1, creature2);
+                Tuple<short, short> damage = atk.PredictedDamage(creature1, creature2, location);
                 string msg1 = damage.Item1.ToString();
                 spriteBatch.Draw(healCover, new Vector2(atk.Position.X + ChaoticEngine.kCardWidth / 4 - healCover.Width / 2,
                     atk.Position.Y + 3 * ChaoticEngine.kCardHeight / 4 - healCover.Height / 4), null,

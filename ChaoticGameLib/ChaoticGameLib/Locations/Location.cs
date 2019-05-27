@@ -35,9 +35,11 @@ namespace ChaoticGameLib
         /// <returns>Which Creature won initiative check.</returns>
         public int initiativeCheck(Creature c1, Creature c2)
         {
-            if (c1.Surprise && !c2.Invisibility())
+            if (c1.Surprise && !c2.Invisibility() &&
+                !(c2.Battlegear != null && c2.Battlegear is ChaoticGameLib.Battlegears.SpectralViewer))
                 return 1;
-            else if (!c1.Invisibility() && c2.Surprise)
+            else if (!c1.Invisibility() && c2.Surprise &&
+                !(c1.Battlegear != null && c1.Battlegear is ChaoticGameLib.Battlegears.SpectralViewer))
                 return -1;
             switch(initiative)
             {

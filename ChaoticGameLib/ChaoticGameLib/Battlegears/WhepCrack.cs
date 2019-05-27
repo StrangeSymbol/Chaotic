@@ -10,14 +10,20 @@ namespace ChaoticGameLib.Battlegears
         public override void Equip(Creature creature)
         {
             creature.Power += this.DisciplineAmount;
-            if (creature.CreatureTribe == Tribe.OverWorld)
+            if (creature.CreatureTribe == Tribe.UnderWorld)
+            {
                 creature.FireDamage += 5;
+                creature.FireDamageGained += 5;
+            }
         }
         public override void UnEquip(Creature creature)
         {
             creature.Power -= this.DisciplineAmount;
-            if (creature.CreatureTribe == Tribe.OverWorld)
-                creature.FireDamage -= 5;
+            if (creature.CreatureTribe == Tribe.UnderWorld)
+            {
+                creature.FireDamage -= (byte)(creature.FireDamage == 0 ? 0 : 5);
+                creature.FireDamageGained -= 5;
+            }
         }
 
         public override string Description()

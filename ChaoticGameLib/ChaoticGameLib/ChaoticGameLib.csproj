@@ -58,6 +58,8 @@
     <Reference Include="System.Net" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abilities\IHive.cs" />
+    <Compile Include="Abilities\ISupport.cs" />
     <Compile Include="Attacks\Allmageddon.cs" />
     <Compile Include="Attacks\AshTorrent.cs" />
     <Compile Include="Attacks\Attack.cs" />

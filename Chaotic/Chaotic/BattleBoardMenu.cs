@@ -33,8 +33,8 @@ namespace Chaotic
                     switch (buttons[i].Action)
                     {
                         case ActionType.Move:
-                            if (numMoves > 0 && (!ChaoticEngine.CombatThisTurn || 
-                                (card is Creature && !(card as Creature).MovedThisTurn)))
+                            if (numMoves > 0 && (!ChaoticEngine.CombatThisTurn ||
+                                (card is Creature && !(card as Creature).MovedThisTurn))) // Swift Effect.
                             {
                                 buttons[i].IsActive = true;
                                 buttons[i].Position = new Vector2(position.X + ChaoticEngine.kCardWidth,

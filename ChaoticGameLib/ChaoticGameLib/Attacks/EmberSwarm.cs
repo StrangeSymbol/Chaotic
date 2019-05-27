@@ -8,9 +8,9 @@ namespace ChaoticGameLib.Attacks
     {
         public EmberSwarm(Texture2D sprite, Texture2D overlay)
             : base(sprite, overlay, 5, 5, 0, 0, 0, 1, 0, 25, true, false, false, false) { }
-        public override void Damage(Creature your, Creature enemy)
+        public override void Damage(Creature your, Creature enemy, Location location)
         {
-            base.Damage(your, enemy);
+            base.Damage(your, enemy, location);
             if (your.Fire)
             {
                 enemy.Wisdom -= this.DisciplineAmount;

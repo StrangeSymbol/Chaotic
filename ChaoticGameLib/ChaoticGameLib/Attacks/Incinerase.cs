@@ -8,9 +8,9 @@ namespace ChaoticGameLib.Attacks
     {
         public Incinerase(Texture2D sprite, Texture2D overlay)
             : base(sprite, overlay, 0, 10, 0, 0, 0, 0, 0, 0, true, false, false, false) { }
-        public override void Damage(Creature your, Creature enemy)
+        public override void Damage(Creature your, Creature enemy, Location location)
         {
-            base.Damage(your, enemy);
+            base.Damage(your, enemy, location);
             your.Fire = your.FireCombat = false;
         }
 

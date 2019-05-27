@@ -2,7 +2,7 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
-namespace ChaoticGameLib.Creatures.Mipedians
+namespace ChaoticGameLib.Creatures
 {
     public class Biondu : Creature
     {

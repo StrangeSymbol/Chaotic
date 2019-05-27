@@ -4,7 +4,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace ChaoticGameLib.Creatures
 {
-    public class Arias : Creature
+    public class Arias : Creature, ISupport
     {
         public Arias(Texture2D sprite, Texture2D overlay, byte energy, byte courage, byte power, byte wisdom, byte speed) :
             base(sprite, overlay, energy, courage, power, wisdom, speed, 0,
@@ -13,7 +13,9 @@ namespace ChaoticGameLib.Creatures
         }
         public void Ability(byte numAdjacent)
         {
+            this.Power -= (byte)(5 * PreNumAdja);
             this.Power += (byte)(5 * numAdjacent);
+            PreNumAdja = numAdjacent;
         }
         public override string Description()
         {

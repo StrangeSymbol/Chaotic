@@ -2,9 +2,9 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
-namespace ChaoticGameLib.Creatures.Danians
+namespace ChaoticGameLib.Creatures
 {
-    class Formicidor : Creature
+    public class Formicidor : Creature, IHive
     {
         public Formicidor(Texture2D sprite, Texture2D overlay,
             byte energy, byte courage, byte power, byte wisdom, byte speed) :
@@ -21,20 +21,20 @@ namespace ChaoticGameLib.Creatures.Danians
             "Because he dares to roam the UnderWorld, Formicidor knows secrets even some UnderWorlders do not.";
         }
 
-        public void Ability(System.Collections.Generic.List<Creature> creatures, bool hive)
+        public void HiveOn(byte numMandiblor)
         {
-            if (hive)
+            if (this.NumMandiblor != numMandiblor)
             {
-                byte numMandiblor = NumMandiblorOnTeam(creatures);
-                if (this.NumMandiblor != numMandiblor)
-                {
-                    sbyte difference = (sbyte)(numMandiblor - this.NumMandiblor);
-                    this.Courage = (byte)(this.Courage + 10 * difference);
-                    this.NumMandiblor = numMandiblor;
-                }
+                sbyte difference = (sbyte)(numMandiblor - this.NumMandiblor);
+                this.Courage = (byte)(this.Courage + 10 * difference);
+                this.NumMandiblor = numMandiblor;
             }
-            else
-                this.Courage -= (byte)(10 * this.NumMandiblor);
+        }
+
+        public void HiveOff(byte numMandiblor)
+        {
+            this.Courage -= (byte)(10 * this.NumMandiblor);
+            this.NumMandiblor = 0;
         }
     }
 }

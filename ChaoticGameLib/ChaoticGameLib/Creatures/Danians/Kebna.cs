@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
-namespace ChaoticGameLib.Creatures.Danians
+namespace ChaoticGameLib.Creatures
 {
-    class Kebna : Creature
+    public class Kebna : Creature, IHive
     {
         public Kebna(Texture2D sprite, Texture2D overlay, byte energy, byte courage, byte power, byte wisdom, byte speed) :
             base(sprite, overlay, energy, courage, power, wisdom, speed, 1, 
@@ -21,21 +21,21 @@ namespace ChaoticGameLib.Creatures.Danians
             "There's fine line between bravery and insanity. Kebna crosses that line daily.";
         }
 
-        public void Ability(List<Creature> creatures, bool hive)
+        public void HiveOn(byte numMandiblor)
         {
-            if (hive)
+            if (this.NumMandiblor != numMandiblor)
             {
-                byte numMandiblor = NumMandiblorOnTeam(creatures);
-                if (this.NumMandiblor != numMandiblor)
-                {
-                    this.RemoveGainedEnergy((byte)(5 * this.NumMandiblor));
-                    this.Energy += (byte)(5 * numMandiblor);
-                    this.GainedEnergy += (byte)(5 * numMandiblor);
-                    this.NumMandiblor = numMandiblor;
-                }
-            }
-            else
                 this.RemoveGainedEnergy((byte)(5 * this.NumMandiblor));
+                this.Energy += (byte)(5 * numMandiblor);
+                this.GainedEnergy += (byte)(5 * numMandiblor);
+                this.NumMandiblor = numMandiblor;
+            }
+        }
+
+        public void HiveOff(byte numMandiblor)
+        {
+            this.RemoveGainedEnergy((byte)(5 * this.NumMandiblor));
+            this.NumMandiblor = 0;
         }
     }
 }

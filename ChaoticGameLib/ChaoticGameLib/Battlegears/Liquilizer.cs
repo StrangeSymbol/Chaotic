@@ -8,7 +8,7 @@ namespace ChaoticGameLib.Battlegears
         public Liquilizer(Texture2D sprite, Texture2D overlay) : base(sprite, overlay) { }
         public override void UnEquip(Creature creature)
         {
-            creature.Water = true;
+            //creature.Water = true;
         }
 
         public override string Description()

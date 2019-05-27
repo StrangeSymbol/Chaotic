@@ -8,9 +8,9 @@ namespace ChaoticGameLib.Attacks
     {
         public VineSnare(Texture2D sprite, Texture2D overlay)
             : base(sprite, overlay, 5, 0, 0, 5, 0, 1, 0, 25, false, false, true, false) { }
-        public override void Damage(Creature your, Creature enemy)
+        public override void Damage(Creature your, Creature enemy, Location location)
         {
-            base.Damage(your, enemy);
+            base.Damage(your, enemy, location);
             if (your.Earth)
             {
                 enemy.Speed -= this.DisciplineAmount;

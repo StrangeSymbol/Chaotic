@@ -9,7 +9,7 @@ namespace ChaoticGameLib.Battlegears
 
         public override void UnEquip(Creature creature)
         {
-            creature.Air = true;
+            //creature.Air = true;
         }
 
         public override string Description()

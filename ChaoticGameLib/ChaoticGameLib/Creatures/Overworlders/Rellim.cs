@@ -4,7 +4,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace ChaoticGameLib.Creatures
 {
-    public class Rellim : Creature
+    public class Rellim : Creature, ISupport
     {
         public Rellim(Texture2D sprite, Texture2D overlay, 
             byte energy, byte courage, byte power, byte wisdom, byte speed) :
@@ -23,7 +23,9 @@ namespace ChaoticGameLib.Creatures
 
         public void Ability(byte numAdjacent)
         {
+            this.Courage -= (byte)(5 * PreNumAdja);
             this.Courage += (byte)(5 * numAdjacent);
+            PreNumAdja = numAdjacent;
         }
     }
 }

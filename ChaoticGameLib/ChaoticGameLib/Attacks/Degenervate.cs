@@ -8,9 +8,9 @@ namespace ChaoticGameLib.Attacks
     {
         public Degenervate(Texture2D sprite, Texture2D overlay)
             : base(sprite, overlay, 0, 0, 0, 0, 0, 0, 0, 25, false, false, false, true) { }
-        public override void Damage(Creature your, Creature enemy)
+        public override void Damage(Creature your, Creature enemy, Location location)
         {
-            base.Damage(your, enemy);
+            base.Damage(your, enemy, location);
             if (your.Water)
             {
                 your.Water = your.WaterCombat = false;

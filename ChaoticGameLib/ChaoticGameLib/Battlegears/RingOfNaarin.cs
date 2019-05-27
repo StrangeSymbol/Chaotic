@@ -21,14 +21,7 @@ namespace ChaoticGameLib.Battlegears
         {
             creature.Power -= this.DisciplineAmount;
             creature.Wisdom -= this.DisciplineAmount;
-            creature.GainedEnergy -= this.DisciplineAmount;
-            if (creature.OldCreature.Energy < creature.Energy)
-            {
-                if (creature.Energy - creature.OldCreature.Energy >= this.DisciplineAmount)
-                    creature.Energy -= this.DisciplineAmount;
-                else
-                    creature.Energy = (byte)(creature.OldCreature.Energy + creature.GainedEnergy);
-            }
+            creature.RemoveGainedEnergy(this.DisciplineAmount);
         }
 
         public override string Description()

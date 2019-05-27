@@ -31,6 +31,9 @@ namespace Chaotic
         BattleBoardMenu creatureMenu;
         BattleBoardMenu battlegearMenu;
 
+        bool isSeen;
+        Queue<int> rangeQueue;
+
 
         public BattleBoardNode(Texture2D creatureSpaceSprite, Texture2D overlay, SpriteFont font, Vector2 position, byte[] movableSpaces,
             Texture2D descriptionPanel, BattleBoardButton[] creatureButtons, BattleBoardButton button,
@@ -146,7 +149,7 @@ namespace Chaotic
             else if (creature.Time < gameTime.TotalGameTime.TotalMilliseconds - elaspedTime && creature.IsMoving)
             {
                 ChaoticEngine.IsACardMoving = false;
-                creature.MovedThisTurn = true;
+                creature.MovedThisTurn = !ChaoticEngine.CombatThisTurn;
                 creature.IsMoving = false;
                 elaspedTime = 0.0;
                 creatureSpaces[selectedIndex].isPlayer1 = this.isPlayer1;
@@ -178,7 +181,7 @@ namespace Chaotic
             else if (creature.Time < gameTime.TotalGameTime.TotalMilliseconds - elaspedTime && creature.IsMoving)
             {
                 ChaoticEngine.IsACardMoving = false;
-                creature.MovedThisTurn = true;
+                creature.MovedThisTurn = !ChaoticEngine.CombatThisTurn;
                 creature.IsMoving = false;
                 elaspedTime = 0.0;
                 node.isPlayer1 = this.isPlayer1;
@@ -244,14 +247,76 @@ namespace Chaotic
 
         public void TurnOnMovableSpaces(BattleBoardNode[] creatureSpaces)
         {
-            //TODO: Range implementation.
+            if (creature.Range)
+            {
+                rangeQueue = new Queue<int>();
+                for (int i = 0; i < creatureSpaces.Length; i++)
+                {
+                    if (creatureSpaces[i] == this)
+                    {
+                        rangeQueue.Enqueue(i);
+                        creatureSpaces[i].isSeen = true;
+                    }
+                }
+                while (rangeQueue.Count != 0)
+                {
+                    int i = rangeQueue.Dequeue();
+                    for (int j = 0; j < creatureSpaces[i].movableSpaces.Length; j++)
+                    {
+                        if (creatureSpaces[creatureSpaces[i].movableSpaces[j]].creature != null
+                            && !creatureSpaces[creatureSpaces[i].movableSpaces[j]].isSeen)
+                        {
+                            rangeQueue.Enqueue(creatureSpaces[i].movableSpaces[j]);
+                            creatureSpaces[creatureSpaces[i].movableSpaces[j]].isSeen = true;
+                        }
+                        if (creatureSpaces[creatureSpaces[i].movableSpaces[j]].creature == null)
+                            creatureSpaces[creatureSpaces[i].movableSpaces[j]].isMovableSpace = true;
+                        else if (creatureSpaces[creatureSpaces[i].movableSpaces[j]].isPlayer1 != this.isPlayer1 && !ChaoticEngine.CombatThisTurn)
+                            creatureSpaces[creatureSpaces[i].movableSpaces[j]].isMovableSpace = true;
+                    }
+                }
+
+                for (int i = 0; i < creatureSpaces.Length; i++)
+                {
+                    creatureSpaces[i].isSeen = false;
+                }
+            }
+            else
+            {
+                for (int j = 0; j < movableSpaces.Length; j++)
+                {
+                    if (creatureSpaces[movableSpaces[j]].creature == null)
+                        creatureSpaces[movableSpaces[j]].isMovableSpace = true;
+                    else if (creatureSpaces[movableSpaces[j]].isPlayer1 != this.isPlayer1 && !ChaoticEngine.CombatThisTurn)
+                        creatureSpaces[movableSpaces[j]].isMovableSpace = true;
+                }
+            }
+        }
+
+        public byte NumAdjacentOverWorldCreatures(BattleBoardNode[] creatureSpaces)
+        {
+            byte numOverWorldCreatures = 0;
             for (int j = 0; j < movableSpaces.Length; j++)
             {
-                if (creatureSpaces[movableSpaces[j]].creature == null)
-                    creatureSpaces[movableSpaces[j]].isMovableSpace = true;
-                else if (creatureSpaces[movableSpaces[j]].isPlayer1 != this.isPlayer1 && !ChaoticEngine.CombatThisTurn)
-                    creatureSpaces[movableSpaces[j]].isMovableSpace = true;
+                BattleBoardNode b = creatureSpaces[movableSpaces[j]];
+                if (b.creature != null && b.creature.CreatureTribe == Tribe.OverWorld && b.isPlayer1 == isPlayer1)
+                    numOverWorldCreatures++;
             }
+            return numOverWorldCreatures;
+        }
+
+        public byte NumMandiblors(BattleBoardNode[] creatureSpaces)
+        {
+            byte numMandiblors = 0;
+            for (int i = 0; i < creatureSpaces.Length; i++)
+            {
+                BattleBoardNode b = creatureSpaces[i];
+                if (b.creature != null && b.creature.CreatureTribe == Tribe.Danian &&
+                    (b.creature.CardType == CreatureType.Mandiblor || b.creature.CardType == CreatureType.MandiblorMuge)
+                    && b.isPlayer1 == isPlayer1)
+                    numMandiblors++;
+            }
+            return numMandiblors;
         }
 
         public void TurnOnPlayableMugic(MugicHand hand)
@@ -458,18 +523,18 @@ namespace Chaotic
                             descriptionPosition = new Vector2(position.X + ChaoticEngine.kCardWidth, position.Y
                             + ChaoticEngine.kCardHeight + ChaoticEngine.kCardHeight / 6 - descriptionPanel.Height);
                         spriteBatch.Draw(descriptionPanel, descriptionPosition, null, Color.White,
-                            0f, Vector2.Zero, 1f, SpriteEffects.None, 0.75f);
+                            0f, Vector2.Zero, 1f, SpriteEffects.None, 0.45f);
                         spriteBatch.DrawString(font, battlegearDescription(), descriptionPosition, Color.Black,
-                            0f, Vector2.Zero, 1f, SpriteEffects.None, 0.7f);
+                            0f, Vector2.Zero, 1f, SpriteEffects.None, 0.4f);
                     }
                 }
                 if (mouseCoveredCreature)
                 {
                     Vector2 panelPosition = new Vector2(position.X - descriptionPanel.Width, position.Y);
                     spriteBatch.Draw(descriptionPanel, panelPosition, null, Color.White,
-                        0f, Vector2.Zero, 1f, SpriteEffects.None, 0.75f);
+                        0f, Vector2.Zero, 1f, SpriteEffects.None, 0.45f);
                     spriteBatch.DrawString(font, creatureDescription(), panelPosition, colour, 
-                        0f, Vector2.Zero, 1f, SpriteEffects.None, 0.7f);
+                        0f, Vector2.Zero, 1f, SpriteEffects.None, 0.4f);
                 }
 
                 creatureMenu.DrawBattleBoardMenu(spriteBatch, mouseCoveredCreature);

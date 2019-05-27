@@ -4,7 +4,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace ChaoticGameLib.Creatures
 {
-    public class Bodal : Creature
+    public class Bodal : Creature, ISupport
     {
         public Bodal(Texture2D sprite, Texture2D overlay, byte energy, byte courage, byte power, byte wisdom, byte speed) :
             base(sprite, overlay, energy, courage, power, wisdom, speed, 1,
@@ -14,7 +14,9 @@ namespace ChaoticGameLib.Creatures
 
         public void Ability(byte numAdjacent)
         {
+            this.Wisdom -= (byte)(5 * PreNumAdja);
             this.Wisdom += (byte)(5 * numAdjacent);
+            PreNumAdja = numAdjacent;
         }
 
         public override string Description()

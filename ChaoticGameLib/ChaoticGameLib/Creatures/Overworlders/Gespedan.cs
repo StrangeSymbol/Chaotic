@@ -4,7 +4,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace ChaoticGameLib.Creatures
 {
-    public class Gespedan : Creature
+    public class Gespedan : Creature, ISupport
     {
         public Gespedan(Texture2D sprite, Texture2D overlay,
             byte energy, byte courage, byte power, byte wisdom, byte speed) :
@@ -22,9 +22,11 @@ namespace ChaoticGameLib.Creatures
             "No matter how swiftly Gespedan sprints, he can't outrun his one, tragic mistake.";
         }
 
-        public void ability(byte numAdjacent)
+        public void Ability(byte numAdjacent)
         {
+            this.Speed -= (byte)(5 * PreNumAdja);
             this.Speed += (byte)(5 * numAdjacent);
+            PreNumAdja = numAdjacent;
         }
     }
 }

@@ -1,0 +1,6 @@
+C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\ChaoticGameLib\ChaoticGameLib\bin\x86\Release\ChaoticGameLib.dll
+C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\ChaoticGameLib\ChaoticGameLib\bin\x86\Release\ChaoticGameLib.pdb
+C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\ChaoticGameLib\ChaoticGameLib\obj\x86\Release\ChaoticGameLib.csprojResolveAssemblyReference.cache
+C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\ChaoticGameLib\ChaoticGameLib\obj\x86\Release\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\ChaoticGameLib\ChaoticGameLib\obj\x86\Release\ChaoticGameLib.dll
+C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\ChaoticGameLib\ChaoticGameLib\obj\x86\Release\ChaoticGameLib.pdb

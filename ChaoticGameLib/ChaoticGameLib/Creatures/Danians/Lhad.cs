@@ -2,7 +2,7 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
-namespace ChaoticGameLib.Creatures.Danians
+namespace ChaoticGameLib.Creatures
 {
     public class Lhad : Creature
     {
@@ -15,7 +15,7 @@ namespace ChaoticGameLib.Creatures.Danians
         public override string Description()
         {
             return "Lhad Creature - Danian Mandiblor Courage: 65 Power: 65 Wisdom: 70 Speed: 25 Energy: 40 Mugic Ability: 0" +
-                " Elemental Type: Fire Creature Ability: " +
+                " Elemental Type: Fire " +
             "Unless we become one, We will become none. -- Mandiblor war cry";
         }
 

@@ -23,6 +23,9 @@ namespace ChaoticGameLib
         short energy;
 
         // holds the amount of gained energy a creature has.
+        byte gainedEnergyTurn;
+
+        // holds the amount of energy gained from abilities.
         byte gainedEnergy;
 
         // holds the number of mugicians the creature has
@@ -37,6 +40,9 @@ namespace ChaoticGameLib
         // Holds the amount of extra spaces the creature can move each turn
         byte swift;
 
+        // Holds the gained extra number of moves.
+        byte swiftGained;
+
         // Holds the amount of occupied spaces the creature can pass through
         bool range;
 
@@ -45,6 +51,12 @@ namespace ChaoticGameLib
         byte airDamage;
         byte earthDamage;
         byte waterDamage;
+
+        // Holds the elemental damage gained from Battlegear.
+        byte fireDamageGained;
+        byte airDamageGained;
+        byte earthDamageGained;
+        byte waterDamageGained;
 
         
         // copy to store old values to restore after combat
@@ -92,11 +104,14 @@ namespace ChaoticGameLib
         // Holds the value of whether it has suprise
         bool surprise;
 
-        // Holds the number of Mandiblor on team.
-        byte numMandiblor = 0;
-
         // Holds whether this Creature moved this turn.
         bool movedThisTurn;
+
+        // Holds whether this Creature had first attack.
+        bool firstAttack;
+
+        // Holds the number of previous adjacent creatures.
+        byte prevNumAdja;
 
         // The Tribe the Creature belongs to.
         Tribe tribe;
@@ -143,8 +158,13 @@ namespace ChaoticGameLib
             this.earthCombat =  this.earth;
             this.waterCombat = this.water;
             this.oldCreature = this.ShallowCopy() as Creature;
-            this.gainedEnergy = 0;
+            this.gainedEnergyTurn = 0;
             this.creatureType = creatureType;
+            this.firstAttack = true;
+            this.prevNumAdja = 0;
+            this.gainedEnergy = 0;
+            this.fireDamageGained = this.airDamageGained = this.earthDamageGained = this.waterDamageGained = 0;
+            this.swiftGained = 0;
         }
 
         public Creature(Texture2D sprite, Texture2D overlay, short energy, short courage, short power, short wisdom, short speed,
@@ -164,10 +184,10 @@ namespace ChaoticGameLib
             this(sprite, overlay, energy, courage, power, wisdom, speed, mugicCounters, fire, air, earth, water,
             swift, range, recklessness, strike, surprise, mixedArmies, unique, tribe, creatureType)
         {
-            this.fireDamage = fireDamage;
-            this.airDamage = airDamage;
-            this.earthDamage = earthDamage;
-            this.waterDamage = waterDamage;
+            this.fireDamage = this.oldCreature.fireDamage = fireDamage;
+            this.airDamage = this.oldCreature.airDamage = airDamage;
+            this.earthDamage = this.oldCreature.earthDamage = earthDamage;
+            this.waterDamage = this.oldCreature.waterDamage = waterDamage;
         }
 
         public Creature(Texture2D sprite, Texture2D overlay,
@@ -199,6 +219,8 @@ namespace ChaoticGameLib
         public short Speed { get { if (speed < 0) speed = 0; else if (speed > 120) speed = 120; return speed; } set { speed = value; } }
 
         public byte Swift { get { return swift; } set { swift = value; } }
+        public byte SwiftGained { get { return swiftGained; } set { swiftGained = value; } }
+
         public bool Range { get { return range; } set { range = value; } }
 
         public Creature OldCreature { get { return oldCreature; } }
@@ -207,6 +229,11 @@ namespace ChaoticGameLib
         public byte AirDamage { get { return airDamage; } set { airDamage = value; } }
         public byte EarthDamage { get { return earthDamage; } set { { earthDamage = value; } } }
         public byte WaterDamage { get { return waterDamage; } set { waterDamage = value; } }
+
+        public byte FireDamageGained { get { return fireDamageGained; } set { fireDamageGained = value; } }
+        public byte AirDamageGained { get { return airDamageGained; } set { airDamageGained = value; } }
+        public byte EarthDamageGained { get { return earthDamageGained; } set { earthDamageGained = value; } }
+        public byte WaterDamageGained { get { return waterDamageGained; } set { waterDamageGained = value; } }
 
         public byte Recklessness { get { return recklessness; } set { recklessness = value; } }
 
@@ -234,14 +261,20 @@ namespace ChaoticGameLib
         public bool EarthCombat { get { return this.earthCombat; } set { this.earthCombat = value; } }
         public bool WaterCombat { get { return this.waterCombat; } set { this.waterCombat = value; } }
 
+        public byte GainedEnergyTurn { get { return gainedEnergyTurn; } set { gainedEnergyTurn = value; } }
+
         public byte GainedEnergy { get { return gainedEnergy; } set { gainedEnergy = value; } }
 
         public byte Strike { get { return strike; } set { strike = value; } }
         public bool Surprise { get { return surprise; } set { surprise = value; } }
 
-        protected byte NumMandiblor { get { return this.numMandiblor; } set { this.numMandiblor = value; } }
+        protected byte NumMandiblor { get; set; }
 
         public bool MovedThisTurn { get { return this.movedThisTurn; } set { movedThisTurn = value; } }
+
+        public bool FirstAttack { get { return this.firstAttack; } set { firstAttack = value; } }
+
+        protected byte PreNumAdja { get { return this.prevNumAdja; } set { this.prevNumAdja = value; } }
 
         public Tribe CreatureTribe { get { return tribe; } }
 
@@ -269,17 +302,24 @@ namespace ChaoticGameLib
 
         public void RestoreTurn()
         {
-            this.energy = oldCreature.energy;
+            this.energy = (short)(oldCreature.energy + gainedEnergy);
             this.courage += this.courageTurn;
             this.power += this.powerTurn;
             this.wisdom += this.wisdomTurn;
             this.speed += this.speedTurn;
             this.UsedAbility = false;
+            this.firstAttack = true;
             this.courageTurn = this.powerTurn = this.wisdomTurn = this.speedTurn = 0;
             this.fire = oldCreature.Fire;
             this.air = oldCreature.Air;
             this.earth = oldCreature.Earth;
             this.water = oldCreature.Water;
+            this.strike = oldCreature.strike;
+            this.fireDamage = (byte)(oldCreature.fireDamage + fireDamageGained);
+            this.airDamage = (byte)(oldCreature.airDamage + airDamageGained);
+            this.earthDamage = (byte)(oldCreature.earthDamage + earthDamageGained);
+            this.waterDamage = (byte)(oldCreature.waterDamage + waterDamageGained);
+            this.swift = (byte)(oldCreature.swift + swiftGained);
         }
 
         public bool Invisibility()
@@ -290,17 +330,6 @@ namespace ChaoticGameLib
                 return false;
         }
 
-        protected byte NumMandiblorOnTeam(List<Creature> creatures)
-        {
-            byte numMandiblor = 0;
-            foreach (Creature c in creatures)
-            {
-                if (c.tribe == Tribe.Danian && (c.creatureType == CreatureType.Mandiblor || c.creatureType == CreatureType.MandiblorMuge))
-                    numMandiblor++;
-            }
-            return numMandiblor;
-        }
-
         public void Equip(Battlegear gear)
         {
             this.battlegear = gear.ShallowCopy();
@@ -308,14 +337,20 @@ namespace ChaoticGameLib
 
         public void ActivateBattlegear()
         {
-            this.battlegear.IsFaceUp = true;
-            this.battlegear.Equip(this);
+            if (battlegear != null && !this.battlegear.IsFaceUp)
+            {
+                this.battlegear.IsFaceUp = true;
+                this.battlegear.Equip(this);
+            }
         }
 
         public void DeactivateBattleGear()
         {
-            this.Battlegear.IsFaceUp = false;
-            this.Battlegear.UnEquip(this);
+            if (battlegear != null && this.Battlegear.IsFaceUp)
+            {
+                this.Battlegear.IsFaceUp = false;
+                this.Battlegear.UnEquip(this);
+            }
         }
 
         public void UnEquip()
@@ -327,18 +362,18 @@ namespace ChaoticGameLib
         public void Heal(byte energy)
         {
             this.energy += energy;
-            if (this.energy > this.oldCreature.energy + this.gainedEnergy)
-                this.energy = (byte)(this.oldCreature.energy + this.gainedEnergy);
+            if (this.energy > this.oldCreature.energy + this.gainedEnergyTurn + this.gainedEnergy)
+                this.energy = (byte)(this.oldCreature.energy + this.gainedEnergyTurn + this.gainedEnergy);
         }
         public void RemoveGainedEnergy(byte gainedAmount)
         {
-            this.GainedEnergy -= gainedAmount;
+            this.gainedEnergy -= gainedAmount;
             if (this.OldCreature.Energy < this.Energy)
             {
                 if (this.Energy - this.OldCreature.Energy >= gainedAmount)
                     this.Energy -= gainedAmount;
                 else
-                    this.Energy = (byte)(this.OldCreature.Energy + this.GainedEnergy);
+                    this.Energy = (byte)(this.OldCreature.Energy + this.gainedEnergy);
             }
         }
 

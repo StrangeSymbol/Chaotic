@@ -2393,7 +2393,7 @@
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Fonts\CardDescriptionFont.xnb</Output>
-      <Time>2018-06-30T13:10:54.7653788-04:00</Time>
+      <Time>2019-05-25T01:20:17.3624928-04:00</Time>
     </Item>
     <Item>
       <Source>Fonts\PanelFont.spritefont</Source>
@@ -2430,6 +2430,276 @@
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Fonts\EndGame.xnb</Output>
       <Time>2019-04-11T02:47:52.2577652-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\Ario.png</Source>
+      <Name>Creatures\Ario</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Ario.xnb</Output>
+      <Time>2019-05-09T02:06:30.7824948-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\Biondu.png</Source>
+      <Name>Creatures\Biondu</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Biondu.xnb</Output>
+      <Time>2019-05-09T02:06:31.1545181-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\Brathe.png</Source>
+      <Name>Creatures\Brathe</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Brathe.xnb</Output>
+      <Time>2019-05-09T02:06:31.1845192-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\MarquisDarini.png</Source>
+      <Name>Creatures\MarquisDarini</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\MarquisDarini.xnb</Output>
+      <Time>2019-05-09T02:06:31.2005184-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\PrinceMudeenu.png</Source>
+      <Name>Creatures\PrinceMudeenu</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\PrinceMudeenu.xnb</Output>
+      <Time>2019-05-09T02:06:31.2165198-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\Qwun.png</Source>
+      <Name>Creatures\Qwun</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Qwun.xnb</Output>
+      <Time>2019-05-09T02:06:31.2485214-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\Shimmark.png</Source>
+      <Name>Creatures\Shimmark</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Shimmark.xnb</Output>
+      <Time>2019-05-09T02:06:31.265523-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\Siado.png</Source>
+      <Name>Creatures\Siado</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Siado.xnb</Output>
+      <Time>2019-05-09T02:06:31.2815222-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\Sobtjek.png</Source>
+      <Name>Creatures\Sobtjek</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Sobtjek.xnb</Output>
+      <Time>2019-05-09T02:06:31.2975266-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\Tiaane.png</Source>
+      <Name>Creatures\Tiaane</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Tiaane.xnb</Output>
+      <Time>2019-05-09T02:06:31.3165247-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\Ubliqun.png</Source>
+      <Name>Creatures\Ubliqun</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Ubliqun.xnb</Output>
+      <Time>2019-05-09T02:06:31.3335283-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\Uro.png</Source>
+      <Name>Creatures\Uro</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Uro.xnb</Output>
+      <Time>2019-05-09T02:06:31.3485284-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\Vinta.png</Source>
+      <Name>Creatures\Vinta</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Vinta.xnb</Output>
+      <Time>2019-05-09T02:06:31.3645297-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\Zhade.png</Source>
+      <Name>Creatures\Zhade</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Zhade.xnb</Output>
+      <Time>2019-05-09T02:06:31.3845321-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\Ekuud.png</Source>
+      <Name>Creatures\Ekuud</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Ekuud.xnb</Output>
+      <Time>2019-05-21T14:41:57.8268386-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\Galin.png</Source>
+      <Name>Creatures\Galin</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Galin.xnb</Output>
+      <Time>2019-05-21T14:54:32.1309868-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Fonts\HUB.spritefont</Source>
+      <Name>Fonts\HUB</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Fonts\HUB.xnb</Output>
+      <Time>2019-05-25T03:18:51.605603-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\Hota.png</Source>
+      <Name>Creatures\Hota</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Hota.xnb</Output>
+      <Time>2019-05-27T02:16:27.1001486-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\Ibiaan.png</Source>
+      <Name>Creatures\Ibiaan</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Ibiaan.xnb</Output>
+      <Time>2019-05-27T02:16:27.1191518-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\Junda.png</Source>
+      <Name>Creatures\Junda</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Junda.xnb</Output>
+      <Time>2019-05-27T02:16:27.135153-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\Kannen.png</Source>
+      <Name>Creatures\Kannen</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Kannen.xnb</Output>
+      <Time>2019-05-27T02:16:27.1521525-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\Kebna.png</Source>
+      <Name>Creatures\Kebna</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Kebna.xnb</Output>
+      <Time>2019-05-27T02:16:27.1701543-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\Lhad.png</Source>
+      <Name>Creatures\Lhad</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Lhad.xnb</Output>
+      <Time>2019-05-27T02:16:27.1981568-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\Lore.png</Source>
+      <Name>Creatures\Lore</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Lore.xnb</Output>
+      <Time>2019-05-27T02:16:27.2181571-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\Mallash.png</Source>
+      <Name>Creatures\Mallash</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Mallash.xnb</Output>
+      <Time>2019-05-27T02:16:27.2371582-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\OduBathax.png</Source>
+      <Name>Creatures\OduBathax</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\OduBathax.xnb</Output>
+      <Time>2019-05-27T02:16:27.2561582-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\Skartalas.png</Source>
+      <Name>Creatures\Skartalas</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Skartalas.xnb</Output>
+      <Time>2019-05-27T02:16:27.3616064-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\ValaniiLevaan.png</Source>
+      <Name>Creatures\ValaniiLevaan</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\ValaniiLevaan.xnb</Output>
+      <Time>2019-05-27T02:16:27.4236089-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\Wamma.png</Source>
+      <Name>Creatures\Wamma</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Wamma.xnb</Output>
+      <Time>2019-05-27T02:16:27.4426089-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\Formicidor.png</Source>
+      <Name>Creatures\Formicidor</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Formicidor.xnb</Output>
+      <Time>2019-05-27T02:35:11.381582-04:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

@@ -8,22 +8,10 @@ namespace ChaoticGameLib.Attacks
     {
         public MegaRoar(Texture2D sprite, Texture2D overlay)
             : base(sprite, overlay, 0, 0, 0, 0, 0, 4, 10, 70, false, false, false, false) { }
-        public override void Damage(Creature your, Creature enemy)
-        {
-            base.Damage(your, enemy);
-            if (your.Speed >= this.DisciplineAmount)
-                enemy.Energy -= this.EnergyAmount;
-            if (your.Wisdom >= this.DisciplineAmount)
-                enemy.Energy -= this.EnergyAmount;
-            if (your.Power >= this.DisciplineAmount)
-                enemy.Energy -= this.EnergyAmount;
-            if (your.Courage >= this.DisciplineAmount)
-                enemy.Energy -= this.EnergyAmount;
-        }
 
-        public override Tuple<short, short> PotentialDamage(Creature your, Creature enemy)
+        public override Tuple<short, short> PotentialDamage(Creature your, Creature enemy, Location location)
         {
-            Tuple<short, short> damage = base.PotentialDamage(your, enemy);
+            Tuple<short, short> damage = base.PotentialDamage(your, enemy, location);
             short energy1 = damage.Item1;
             short energy2 = damage.Item2;
             if (your.Speed >= this.DisciplineAmount)

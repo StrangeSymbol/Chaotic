@@ -10,10 +10,12 @@ namespace ChaoticGameLib.Battlegears
         public override void Equip(Creature creature)
         {
             creature.WaterDamage += this.DisciplineAmount;
+            creature.WaterDamageGained += this.DisciplineAmount;
         }
         public override void UnEquip(Creature creature)
         {
-            creature.WaterDamage -= this.DisciplineAmount;
+            creature.WaterDamage -= (byte)(creature.WaterDamage == 0 ? 0 : this.DisciplineAmount);
+            creature.WaterDamageGained -= this.DisciplineAmount;
         }
 
         public override string Description()

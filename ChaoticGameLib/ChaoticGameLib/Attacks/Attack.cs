@@ -1,5 +1,6 @@
 ﻿using System;
 using ChaoticGameLib.Battlegears;
+using ChaoticGameLib.Locations;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
@@ -59,37 +60,16 @@ namespace ChaoticGameLib
         protected byte DisciplineAmount { get { return disciplineAmount; } }
         protected byte EnergyAmount { get { return energyAmount; } }
     
-        public virtual void Damage(Creature your, Creature enemy)
+        public virtual void Damage(Creature your, Creature enemy, Location location)
         {
-            short energy = enemy.Energy;
-            enemy.Energy -= baseDamage;
+            Tuple<short, short> damage = PredictedDamage(your, enemy, location);
+            your.Heal((byte)damage.Item1);
+            enemy.Energy += damage.Item2;
 
-            if (your.Fire && this.fire)
-                enemy.Energy -= (byte)(fireDamage + your.FireDamage);
-            if (your.Air && this.air)
-                enemy.Energy -= (byte)(airDamage + your.AirDamage);
-            if (your.Earth && this.earth)
-                enemy.Energy -= (byte)(earthDamage + your.EarthDamage);
-            if (your.Water && this.water)
-                enemy.Energy -= (byte)(waterDamage + your.WaterDamage);
-
-            if (your.Battlegear is RiverlandStar && your.CreatureTribe == Tribe.OverWorld && your.Water && this.water)
-                your.Heal(5);
-            else if (enemy.Battlegear is StoneMail && enemy.Battlegear.IsFaceUp && enemy.Energy < energy)
-                enemy.Energy -= 5;
-
-            if (your.CreatureTribe == Tribe.UnderWorld)
-                your.Energy -= your.Recklessness;
-
-            if (your.Strike > 0 && !your.UsedAbility && 
-                !(enemy.Battlegear.IsFaceUp && (enemy.Battlegear is SpectralViewer)))
-            {
-                your.UsedAbility = true;
-                enemy.Energy -= your.Strike;    
-            }
+            your.FirstAttack = false;
         }
 
-        public virtual Tuple<short, short> PotentialDamage(Creature your, Creature enemy)
+        public virtual Tuple<short, short> PotentialDamage(Creature your, Creature enemy, Location location)
         {
             short energy = enemy.Energy;
             short energy1 = 0;
@@ -110,16 +90,70 @@ namespace ChaoticGameLib
             else if (enemy.Battlegear is StoneMail && enemy.Battlegear.IsFaceUp && enemy.Energy < energy)
                 energy2 -= 5;
 
-            if (your.CreatureTribe == Tribe.UnderWorld)
-                energy1 -= your.Recklessness;
+            //energy1 -= your.Recklessness; // TODO: Add to Burst.
 
-            if (your.Strike > 0 && !your.UsedAbility && 
+            if (your.Strike > 0 && your.FirstAttack && 
                 !(enemy.Battlegear.IsFaceUp && (enemy.Battlegear is SpectralViewer)))
-            {
                 energy2 -= your.Strike;
+
+            if (location is StormTunnel)
+            {
+                if (your.Air && this.air)
+                    energy2 -= 5;
+                if (your.Water && this.water)
+                    energy2 += (byte)(energy2 >= 0 ? 0 : 5);
+            }
+            else if (location is Everrain)
+            {
+                if (your.Water && this.water)
+                    energy2 -= 5;
+                if (your.Earth && this.earth)
+                    energy2 += (byte)(energy2 >= 0 ? 0 : 5);
+            }
+            else if (location is GloomuckSwamp)
+            {
+                if (your.Earth && this.earth)
+                    energy2 -= 5;
+                if (your.Fire && this.fire)
+                    energy2 += (byte)(energy2 >= 0 ? 0 : 5);
+            }
+            else if (location is LavaPond)
+            {
+                if (your.Fire && this.fire)
+                    energy2 -= 5;
+                if (your.Air && this.air)
+                    energy2 += (byte)(energy2 >= 0 ? 0 : 5);
+            }
+            else if (location is MipedimOasis && your.FirstAttack && your.CreatureTribe == Tribe.Mipedian)
+                energy2 -= 10;
+            else if (location is Riverlands && your.Water && this.water)
+                energy1 += (byte)(your.Energy + 5 > 
+                    your.OldCreature.Energy + your.GainedEnergyTurn + your.GainedEnergy ? 0 : 5);
+            else if (location is UnderworldColosseum && your.FirstAttack && your.Fire)
+                energy2 -= 10;
+            else if (location is UnderworldCity && your.CreatureTribe == Tribe.UnderWorld)
+            {
+                if ((your.Power - enemy.Power) >= 15)
+                    energy2 -= 5;
             }
 
             return new Tuple<short, short>(energy1, energy2);
+        }
+
+        public Tuple<short, short> PredictedDamage(Creature your, Creature enemy, Location location)
+        {
+            Tuple<short, short> damage = PotentialDamage(your, enemy, location);
+            short energy1 = damage.Item1;
+            short energy2 = damage.Item2;
+            if (location is CrystalCave && your.FirstAttack && your.Speed < enemy.Speed)
+                energy2 = 0;
+            return new Tuple<short, short>(energy1, energy2);
+        }
+
+        protected byte predictedHealAmount(Creature your)
+        {
+            return (byte)(your.Energy + energyAmount >
+                your.OldCreature.Energy + your.GainedEnergyTurn + your.GainedEnergy ? 0 : energyAmount);
         }
 
         public override string Description()

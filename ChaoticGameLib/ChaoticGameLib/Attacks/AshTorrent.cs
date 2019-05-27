@@ -9,16 +9,9 @@ namespace ChaoticGameLib.Attacks
         public AshTorrent(Texture2D sprite, Texture2D overlay) 
             : base(sprite, overlay, 0, 5, 0, 5, 0, 1, 10, 15, true, false, true, false) { }
 
-        public override void Damage(Creature your, Creature enemy)
+        public override Tuple<short, short> PotentialDamage(Creature your, Creature enemy, Location location)
         {
-            base.Damage(your, enemy);
-            if ((your.Power - enemy.Power) >= this.DisciplineAmount)
-                enemy.Energy -= this.EnergyAmount;
-        }
-
-        public override Tuple<short, short> PotentialDamage(Creature your, Creature enemy)
-        {
-            Tuple<short, short> damage = base.PotentialDamage(your, enemy);
+            Tuple<short, short> damage = base.PotentialDamage(your, enemy, location);
             short energy1 = damage.Item1;
             short energy2 = damage.Item2;
             if ((your.Power - enemy.Power) >= this.DisciplineAmount)

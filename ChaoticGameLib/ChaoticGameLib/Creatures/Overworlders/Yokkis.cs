@@ -4,7 +4,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace ChaoticGameLib.Creatures
 {
-    public class Yokkis : Creature
+    public class Yokkis : Creature, ISupport
     {
         public Yokkis(Texture2D sprite, Texture2D overlay, 
             byte energy, byte courage, byte power, byte wisdom, byte speed) :
@@ -23,12 +23,17 @@ namespace ChaoticGameLib.Creatures
 
         public void Ability(byte adjacentOver)
         {
-            byte amount = (byte)(5 * adjacentOver);
-
-            this.Courage += amount;
-            this.Power += amount;
-            this.Wisdom += amount;
-            this.Speed += amount;
+            byte amount1 = (byte)(5 * adjacentOver);
+            byte amount2 = (byte)(5 * PreNumAdja);
+            this.Courage += amount1;
+            this.Power += amount1;
+            this.Wisdom += amount1;
+            this.Speed += amount1;
+            this.Courage -= amount2;
+            this.Power -= amount2;
+            this.Wisdom -= amount2;
+            this.Speed -= amount2;
+            PreNumAdja = adjacentOver;
         }
     }
 }

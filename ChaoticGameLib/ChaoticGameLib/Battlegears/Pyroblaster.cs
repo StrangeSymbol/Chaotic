@@ -8,7 +8,7 @@ namespace ChaoticGameLib.Battlegears
         public Pyroblaster(Texture2D sprite, Texture2D overlay) : base(sprite, overlay) { }
         public override void UnEquip(Creature creature)
         {
-            creature.Fire = true;
+            //creature.Fire = true;
         }
 
         public override string Description()

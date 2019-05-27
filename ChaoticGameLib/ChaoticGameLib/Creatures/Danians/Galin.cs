@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
-namespace ChaoticGameLib.Creatures.Danians
+namespace ChaoticGameLib.Creatures
 {
-    class Galin : Creature
+    public class Galin : Creature, IHive
     {
         public Galin(Texture2D sprite, Texture2D overlay, byte energy, byte courage, byte power, byte wisdom, byte speed) :
             base(sprite, overlay, energy, courage, power, wisdom, speed, 0,
@@ -21,20 +21,20 @@ namespace ChaoticGameLib.Creatures.Danians
             "Galin believes he can speak with his Danian ancestors, who have yet to tell him anything of much use.";
         }
 
-        public void Ability(List<Creature> creatures, bool hive)
+        public void HiveOn(byte numMandiblor)
         {
-            if (hive)
+            if (this.NumMandiblor != numMandiblor)
             {
-                byte numMandiblor = NumMandiblorOnTeam(creatures);
-                if (this.NumMandiblor != numMandiblor)
-                {
-                    sbyte difference = (sbyte)(numMandiblor - this.NumMandiblor);
-                    this.Speed = (byte)(this.Speed + 10 * difference);
-                    this.NumMandiblor = numMandiblor;
-                }
+                sbyte difference = (sbyte)(numMandiblor - this.NumMandiblor);
+                this.Speed = (byte)(this.Speed + 10 * difference);
+                this.NumMandiblor = numMandiblor;
             }
-            else
-                this.Speed -= (byte)(10 * this.NumMandiblor);
+        }
+
+        public void HiveOff(byte numMandiblor)
+        {
+            this.Speed -= (byte)(10 * this.NumMandiblor);
+            this.NumMandiblor = 0;
         }
     }
 }

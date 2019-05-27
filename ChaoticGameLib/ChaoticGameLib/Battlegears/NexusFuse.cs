@@ -15,7 +15,6 @@ namespace ChaoticGameLib.Battlegears
         public override void UnEquip(Creature creature)
         {
             creature.RemoveGainedEnergy(this.DisciplineAmount);
-            // TODO: Sacrifice Nexus Fuse and deal 15 to target creature.
         }
 
         public override string Description()

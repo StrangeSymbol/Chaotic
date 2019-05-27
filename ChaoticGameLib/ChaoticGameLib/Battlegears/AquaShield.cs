@@ -15,7 +15,7 @@ namespace ChaoticGameLib.Battlegears
         public override void UnEquip(Creature creature)
         {
             creature.RemoveGainedEnergy(5);
-            creature.Heal(this.DisciplineAmount);
+            //creature.Heal(this.DisciplineAmount);
         }
 
         public override string Description()

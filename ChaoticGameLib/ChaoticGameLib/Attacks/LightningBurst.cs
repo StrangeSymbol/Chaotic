@@ -8,9 +8,9 @@ namespace ChaoticGameLib.Attacks
     {
         public LightningBurst(Texture2D sprite, Texture2D overlay)
             : base(sprite, overlay, 5, 0, 5, 0, 0, 1, 0, 25, false, true, false, false) { }
-        public override void Damage(Creature your, Creature enemy)
+        public override void Damage(Creature your, Creature enemy, Location location)
         {
-            base.Damage(your, enemy);
+            base.Damage(your, enemy, location);
             if (your.Air)
             {
                 enemy.Power -= this.DisciplineAmount;

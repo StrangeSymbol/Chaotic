@@ -4,7 +4,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace ChaoticGameLib.Creatures
 {
-    public class Psimion : Creature
+    public class Psimion : Creature, ISupport
     {
         public Psimion(Texture2D sprite, Texture2D overlay, 
             byte energy, byte courage, byte power, byte wisdom, byte speed) :
@@ -23,7 +23,9 @@ namespace ChaoticGameLib.Creatures
 
         public void Ability(byte numAdjacent)
         {
+            this.Wisdom -= (byte)(5 * PreNumAdja);
             this.Wisdom += (byte)(5 * numAdjacent);
+            PreNumAdja = numAdjacent;
         }
     }
 }

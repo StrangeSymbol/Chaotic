@@ -8,16 +8,10 @@ namespace ChaoticGameLib.Attacks
     {
         public FlameOrb(Texture2D sprite, Texture2D overlay)
             : base(sprite, overlay, 5, 5, 0, 0, 0, 2, 10, 75, true, false, false, false) { }
-        public override void Damage(Creature your, Creature enemy)
-        {
-            base.Damage(your, enemy);
-            if (your.Power >= this.DisciplineAmount)
-                enemy.Energy -= this.EnergyAmount;
-        }
 
-        public override Tuple<short, short> PotentialDamage(Creature your, Creature enemy)
+        public override Tuple<short, short> PotentialDamage(Creature your, Creature enemy, Location location)
         {
-            Tuple<short, short> damage = base.PotentialDamage(your, enemy);
+            Tuple<short, short> damage = base.PotentialDamage(your, enemy, location);
             short energy1 = damage.Item1;
             short energy2 = damage.Item2;
             if (your.Power >= this.DisciplineAmount)

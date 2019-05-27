@@ -14,7 +14,6 @@ namespace ChaoticGameLib.Battlegears
         public override void UnEquip(Creature creature)
         {
             creature.Speed -= this.DisciplineAmount;
-            // Gains if Danian sacrifice creature return mandiblor to any open spot on board.
         }
 
         public override string Description()

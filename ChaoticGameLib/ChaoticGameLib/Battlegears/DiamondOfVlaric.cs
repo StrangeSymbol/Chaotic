@@ -8,7 +8,7 @@ namespace ChaoticGameLib.Battlegears
         public DiamondOfVlaric(Texture2D texture, Texture2D overlay) : base(texture, overlay) { }
         public override void UnEquip(Creature creature)
         {
-            creature.Earth = true;
+            //creature.Earth = true;
         }
         public override string Description()
         {

@@ -2,9 +2,9 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
-namespace ChaoticGameLib.Creatures.Danians
+namespace ChaoticGameLib.Creatures
 {
-    class ValaniiLevaan : Creature
+    public class ValaniiLevaan : Creature, IHive
     {
         public ValaniiLevaan(Texture2D sprite, Texture2D overlay, byte energy, byte courage, byte power, byte wisdom, byte speed) :
             base(sprite, overlay, energy, courage, power, wisdom, speed, 1,
@@ -20,20 +20,20 @@ namespace ChaoticGameLib.Creatures.Danians
             "When his Squadleaders don't execute orders, Valanii Levaan orders executions.";
         }
 
-        public void Ability(System.Collections.Generic.List<Creature> creatures, bool hive)
+        public void HiveOn(byte numMandiblor)
         {
-            if (hive)
+            if (this.NumMandiblor != numMandiblor)
             {
-                byte numMandiblor = NumMandiblorOnTeam(creatures);
-                if (this.NumMandiblor != numMandiblor)
-                {
-                    sbyte difference = (sbyte)(numMandiblor - this.NumMandiblor);
-                    this.Power = (byte)(this.Power + 10 * difference);
-                    this.NumMandiblor = numMandiblor;
-                }
+                sbyte difference = (sbyte)(numMandiblor - this.NumMandiblor);
+                this.Power = (byte)(this.Power + 10 * difference);
+                this.NumMandiblor = numMandiblor;
             }
-            else
-                this.Power -= (byte)(10 * this.NumMandiblor);
+        }
+
+        public void HiveOff(byte numMandiblor)
+        {
+            this.Power -= (byte)(10 * this.NumMandiblor);
+            this.NumMandiblor = 0;
         }
     }
 }

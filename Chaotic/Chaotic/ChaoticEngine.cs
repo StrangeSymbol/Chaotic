@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Xml.Serialization;
+using System.Runtime.Serialization.Formatters.Binary;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
@@ -19,6 +21,7 @@ namespace Chaotic
         public const int kCardGap = kCardHeight / 4;
         public const int kBattlegearGap = kCardHeight / 6;
         public const string kDeckFile = "Deck";
+        public const string kFileFormat = ".cha";
         public static List<ChaoticGameLib.ChaoticCard> sCardDatabase;
         public static MenuStage MStage { get; set; }
         public static GameStage GStage { get; set; }
@@ -27,6 +30,8 @@ namespace Chaotic
         public static bool CombatThisTurn { get; set; }
         public static bool Player1Setup { get; set; }
         public static bool Player2Setup { get; set; }
+        public static bool Hive { get; set; }
+        public static bool PrevHive { get; set; }
         public static List<ChaoticGameLib.Creature> sCreatures1;
         public static List<ChaoticGameLib.Battlegear> sBattlegears1;
         public static List<ChaoticGameLib.Attack> sAttacks1;
@@ -40,32 +45,23 @@ namespace Chaotic
 
         public static void SaveFile(List<string> lst, string file)
         {
-            if (File.Exists(file + ".txt"))
-                File.Delete(file + ".txt");
-            using (StreamWriter w = new StreamWriter(file + ".txt"))
+            if (File.Exists(file + kFileFormat))
+                File.Delete(file + kFileFormat);
+            using (FileStream w = new FileStream(file + kFileFormat, FileMode.Create))
             {
-                foreach (string line in lst)
-                {
-                    w.WriteLine(line);
-                }
+                BinaryFormatter formatter = new BinaryFormatter();
+                formatter.Serialize(w, lst);
             }
         }
 
         public static List<string> LoadFile(string file)
         {
-            if (File.Exists(file + ".txt"))
+            if (File.Exists(file + kFileFormat))
             {
-                using (StreamReader r = File.OpenText(file + ".txt"))
+                using (FileStream r = new FileStream(file + kFileFormat, FileMode.Open))
                 {
-                    List<string> loadText = new List<string>();
-                    string line = "";
-                    while (line != null)
-                    {
-                        line = r.ReadLine();
-                        if (line != null)
-                            loadText.Add(line);
-                    }
-                    return loadText;
+                    BinaryFormatter formatter = new BinaryFormatter();
+                    return (List<string>)formatter.Deserialize(r);
                 }
             }
             else

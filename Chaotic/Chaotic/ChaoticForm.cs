@@ -247,11 +247,11 @@ namespace Chaotic
                 MessageBox.Show("No Deck has name '" + tbxSaveAs.Text + "' to be deleted.", "No Deck Deleted", MessageBoxButtons.OK);
                 return;
             }
-
+            
             cbxDeck.Items.Remove(tbxSaveAs.Text);
             files.Remove(tbxSaveAs.Text);
             ChaoticEngine.SaveFile(files, ChaoticEngine.kDeckFile);
-            File.Delete(tbxSaveAs.Text + ".txt");
+            File.Delete(tbxSaveAs.Text + ChaoticEngine.kFileFormat);
         }
 
         private void btnClear_Click(object sender, EventArgs e)

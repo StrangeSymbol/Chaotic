@@ -8,17 +8,10 @@ namespace ChaoticGameLib.Attacks
     {
         public LuckyShot(Texture2D sprite, Texture2D overlay)
             : base(sprite, overlay, 0, 0, 0, 0, 0, 4, 40, 0, false, false, false, false) { }
-        public override void Damage(Creature your, Creature enemy)
-        {
-            base.Damage(your, enemy);
-            if (your.Power < enemy.Power && your.Courage < enemy.Courage
-                && your.Wisdom < enemy.Wisdom && your.Speed < enemy.Speed && your.Energy < enemy.Energy)
-                enemy.Energy -= this.EnergyAmount;
-        }
 
-        public override Tuple<short, short> PotentialDamage(Creature your, Creature enemy)
+        public override Tuple<short, short> PotentialDamage(Creature your, Creature enemy, Location location)
         {
-            Tuple<short, short> damage = base.PotentialDamage(your, enemy);
+            Tuple<short, short> damage = base.PotentialDamage(your, enemy, location);
             short energy1 = damage.Item1;
             short energy2 = damage.Item2;
             if (your.Power < enemy.Power && your.Courage < enemy.Courage

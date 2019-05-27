@@ -51,7 +51,7 @@ namespace Chaotic
 
             for (int i = 0; i < deckHolder.Count; i++)
             {
-                deckCopy.Add(deckHolder[i]);
+                deckCopy.Add(deckHolder[i].ShallowCopy() as Attack);
             }
 
             while (deckCopy.Count > 0)

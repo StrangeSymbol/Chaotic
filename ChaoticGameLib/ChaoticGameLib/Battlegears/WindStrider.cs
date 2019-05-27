@@ -10,10 +10,12 @@ namespace ChaoticGameLib.Battlegears
         public override void Equip(Creature creature)
         {
             creature.Swift += this.DisciplineAmount;
+            creature.SwiftGained += this.DisciplineAmount;
         }
         public override void UnEquip(Creature creature)
         {
             creature.Swift -= this.DisciplineAmount;
+            creature.SwiftGained -= this.DisciplineAmount;
         }
 
         public override string Description()

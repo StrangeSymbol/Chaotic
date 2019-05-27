@@ -2,9 +2,9 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
-namespace ChaoticGameLib.Creatures.Danians
+namespace ChaoticGameLib.Creatures
 {
-    class Ibiaan : Creature
+    public class Ibiaan : Creature, IHive
     {
         public Ibiaan(Texture2D sprite, Texture2D overlay, 
             byte energy, byte courage, byte power, byte wisdom, byte speed) :
@@ -21,20 +21,20 @@ namespace ChaoticGameLib.Creatures.Danians
             "\"If Ibiaan's so smart, why is he still a Mandiblor?\" -- Hota";
         }
 
-        public void Ability(System.Collections.Generic.List<Creature> creatures, bool hive)
+        public void HiveOn(byte numMandiblor)
         {
-            if (hive)
+            if (this.NumMandiblor != numMandiblor)
             {
-                byte numMandiblor = NumMandiblorOnTeam(creatures);
-                if (this.NumMandiblor != numMandiblor)
-                {
-                    sbyte difference = (sbyte)(numMandiblor - this.NumMandiblor);
-                    this.Wisdom = (byte)(this.Wisdom + 5 * difference);
-                    this.NumMandiblor = numMandiblor;
-                }
+                sbyte difference = (sbyte)(numMandiblor - this.NumMandiblor);
+                this.Wisdom = (byte)(this.Wisdom + 5 * difference);
+                this.NumMandiblor = numMandiblor;
             }
-            else
-                this.Wisdom -= (byte)(10 * this.NumMandiblor);
+        }
+
+        public void HiveOff(byte numMandiblor)
+        {
+            this.Speed -= (byte)(5 * this.NumMandiblor);
+            this.NumMandiblor = 0;
         }
     }
 }
