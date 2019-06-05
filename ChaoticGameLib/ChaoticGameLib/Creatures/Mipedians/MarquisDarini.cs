@@ -9,7 +9,7 @@ namespace ChaoticGameLib.Creatures
         public MarquisDarini(Texture2D sprite, Texture2D overlay, 
             byte energy, byte courage, byte power, byte wisdom, byte speed) :
             base(sprite, overlay, energy, courage, power, wisdom, speed, 0, true, true, false, false, 0,
-            false, 0, 5, false, false, true, Tribe.Mipedian, CreatureType.Royal)
+            false, 0, 0, false, false, true, Tribe.Mipedian, CreatureType.Royal)
         {
         }
 

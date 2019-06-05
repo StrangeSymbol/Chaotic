@@ -2701,6 +2701,24 @@
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Formicidor.xnb</Output>
       <Time>2019-05-27T02:35:11.381582-04:00</Time>
     </Item>
+    <Item>
+      <Source>Coin\OverWorldHeads.png</Source>
+      <Name>Coin\OverWorldHeads</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Coin\OverWorldHeads.xnb</Output>
+      <Time>2019-05-30T13:28:11.9033321-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Coin\OverWorldTails.png</Source>
+      <Name>Coin\OverWorldTails</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Coin\OverWorldTails.xnb</Output>
+      <Time>2019-05-30T13:28:11.9492276-04:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{06309AF8-C123-46CE-BF38-6B9A63307E86}</ContentProjectGUID>

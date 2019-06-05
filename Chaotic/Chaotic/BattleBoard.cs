@@ -14,8 +14,8 @@ namespace Chaotic
     public enum CreatureNumber { SixOnSix, ThreeOnThree, OneOnOne };
     enum GameStage { BeginningOfTheGame, CoinFlip, DrawingAttack, LocationStep, Moving, ReturnLocation, CreatureToDiscard1,
     CreatureToDiscard2, BattlegearToDiscard1, BattlegearToDiscard2, Action, Combat, Initiative, EndOfCombat, MoveToCodedSpace,
-    SelectingAbilities, ChangeLocation, ShuffleAtkDeck1, ShuffleAtkDeck2, ShuffleAtkDecks, EndGame, BeginningOfCombat1,
-    BeginningOfCombat2, LocationStepCombat, ReturnLocationCombat,
+    AttackSelectAbility, ChangeLocation, ShuffleAtkDeck1, ShuffleAtkDeck2, EndGame, BeginningOfCombat,
+    LocationStepCombat, ReturnLocationCombat, LocationSelectAbility1, LocationSelectAbility2, BattlegearSelectAbility1, BattlegearSelectAbility2,
     };
 
     /// <summary>
@@ -44,22 +44,26 @@ namespace Chaotic
         Button endTurnButton;
         Button backButton;
 
+        Coin coin;
+
         Texture2D cardBack;
 
         Rectangle backgroundRect;
 
         SelectPanel<Attack> attackPanel1;
         SelectPanel<Attack> attackPanel2;
-        List<Attack> topTwo;
-        SelectPanel<Location> locationPanel;
-        List<Location> topTwoLoc;
+        List<Attack> topAtk;
+        SelectPanel<Location> locationPanel1;
+        SelectPanel<Location> locationPanel2;
+        List<Location> topLoc;
 
         CreatureNumber creatureNumber;
         bool done;
         bool player1Won;
         byte numDrawed;
 
-        GameStage nextStage;
+        //GameStage nextStage;
+        Queue<GameStage> stageQueue; // Keeps track of next stages.
 
         SpriteFont endgamefont;
         SpriteFont hubFont;
@@ -70,11 +74,14 @@ namespace Chaotic
             this.graphics = graphics;
             this.creatureNumber = creatureNumber;
             this.numDrawed = 0;
+            stageQueue = new Queue<GameStage>();
             ChaoticEngine.GStage = GameStage.BeginningOfTheGame;
             ChaoticEngine.Hive = false;
             ChaoticEngine.PrevHive = false;
             ChaoticEngine.Player1Active = true;
             ChaoticEngine.CombatThisTurn = false;
+            topAtk = null;
+            topLoc = null;
         }
 
         /// <summary>
@@ -291,7 +298,8 @@ namespace Chaotic
 
             attackPanel1 = new SelectPanel<Attack>(Game.Content, graphics, 2, "Top", "Bottom");
             attackPanel2 = new SelectPanel<Attack>(Game.Content, graphics, 3, "Top", "Bottom", "2nd From\n Bottom");
-            locationPanel = new SelectPanel<Location>(Game.Content, graphics, 2, "Top", "Bottom");
+            locationPanel1 = new SelectPanel<Location>(Game.Content, graphics, 2, "Top", "Bottom");
+            locationPanel2 = new SelectPanel<Location>(Game.Content, graphics, 3, "Top", "Bottom", "2nd From\n Bottom");
 
             Texture2D backTexture = Game.Content.Load<Texture2D>("Menu/SuitBackButton");
             backButton = new Button(backTexture, new Vector2(graphics.PreferredBackBufferWidth - backTexture.Width - 20, 20),
@@ -301,6 +309,8 @@ namespace Chaotic
                 Game.Content.Load<Texture2D>("Menu/MenuButtonCover"));
             endgamefont = Game.Content.Load<SpriteFont>("Fonts/EndGame");
             hubFont = Game.Content.Load<SpriteFont>("Fonts/HUB");
+
+            coin = new Coin(Game.Content, graphics);
             base.LoadContent();
         }
 
@@ -341,7 +351,7 @@ namespace Chaotic
             if ((ChaoticEngine.Player1Active && you.HasBattegear()) ||
                 (!ChaoticEngine.Player1Active && enemy.HasBattegear()))
             {
-                nextStage = cStage;
+                stageQueue.Enqueue(cStage);
                 ChaoticEngine.GStage = bStage;
             }
             else
@@ -385,12 +395,12 @@ namespace Chaotic
             if (ChaoticEngine.Player1Active && you.UpdateDiscardBattlegear(gameTime, mouse, discardPile))
             {
                 you.RemoveBattlegear();
-                ChaoticEngine.GStage = nextStage;
+                ChaoticEngine.GStage = stageQueue.Dequeue();
             }
             else if (!ChaoticEngine.Player1Active && enemy.UpdateDiscardBattlegear(gameTime, mouse, discardPile))
             {
                 enemy.RemoveBattlegear();
-                ChaoticEngine.GStage = nextStage;
+                ChaoticEngine.GStage = stageQueue.Dequeue();
             }
         }
 
@@ -467,9 +477,15 @@ namespace Chaotic
                 if (activeLocation == null)
                     activeLocation = activeLocation2.LocationActive;
                 if (ChaoticEngine.Player1Active)
+                {
+                    setAttackInfo(your, enemy, player1);
                     attackDiscardPile[attackDiscardPile.Count - 1].Damage(your, enemy, activeLocation);
+                }
                 else
+                {
+                    setAttackInfo(enemy, your, player1);
                     attackDiscardPile[attackDiscardPile.Count - 1].Damage(enemy, your, activeLocation);
+                }
 
                 if (attackDiscardPile[attackDiscardPile.Count - 1] is Windslash)
                 {
@@ -490,20 +506,21 @@ namespace Chaotic
                     attackDiscardPile2.DiscardList.AddRange(attackDeck2.Deck);
                     attackDeck2.Deck.Clear();
                     attackDeck2.ShuffleDeck(attackDiscardPile2);
-                    ChaoticEngine.GStage = GameStage.ShuffleAtkDecks;
-                    nextStage = GameStage.Combat;
+                    ChaoticEngine.GStage = GameStage.ShuffleAtkDeck1;
+                    stageQueue.Enqueue(GameStage.ShuffleAtkDeck2);
+                    stageQueue.Enqueue(GameStage.Combat);
                 }
                 else if (attackDiscardPile[attackDiscardPile.Count - 1] is SqueezePlay &&
                         attackDeck.Deck.Count > 1)
                 {
-                    ChaoticEngine.GStage = GameStage.SelectingAbilities;
-                    nextStage = GameStage.Combat;
+                    ChaoticEngine.GStage = GameStage.AttackSelectAbility;
+                    stageQueue.Enqueue(GameStage.Combat);
                 }
                 else if (attackDiscardPile[attackDiscardPile.Count - 1] is FlashKick &&
                         locationDeck.Deck.Count > 1)
                 {
-                    ChaoticEngine.GStage = GameStage.SelectingAbilities;
-                    nextStage = GameStage.Combat;
+                    ChaoticEngine.GStage = GameStage.AttackSelectAbility;
+                    stageQueue.Enqueue(GameStage.Combat);
                 }
 
                 else if (attackDiscardPile[attackDiscardPile.Count - 1] is CoilCrush &&
@@ -513,7 +530,7 @@ namespace Chaotic
                         && your.Battlegear != null)))
                 {
                     ChaoticEngine.GStage = player1 ? GameStage.BattlegearToDiscard2 : GameStage.BattlegearToDiscard1;
-                    nextStage = GameStage.Combat;
+                    stageQueue.Enqueue(GameStage.Combat);
                 }
                 else if (attackDiscardPile[attackDiscardPile.Count - 1] is Mirthquake &&
                     ((ChaoticEngine.Player1Active && your.Earth) ||
@@ -524,11 +541,20 @@ namespace Chaotic
                     else
                         enemy.Earth = enemy.EarthCombat = false;
                     ChaoticEngine.GStage = GameStage.ReturnLocationCombat;
-                    nextStage = GameStage.Combat;
+                    stageQueue.Enqueue(GameStage.Combat);
                 }
 
                 ChaoticEngine.Player1Strike = !ChaoticEngine.Player1Strike;
             }
+        }
+
+        private void setAttackInfo(Creature you, Creature enemy, bool isPlayer1)
+        {
+            if (you.FirstAttack && you.Invisibility() && creatureSpaces.Count(c => c.IsPlayer1 == isPlayer1 
+                    && c.CreatureNode is ChaoticGameLib.Creatures.MarquisDarini) > 0)
+                ChaoticLibEngine.HasMaquisDarini = true;
+            else
+                ChaoticLibEngine.HasMaquisDarini = false;
         }
 
         /// <summary>
@@ -568,7 +594,7 @@ namespace Chaotic
                     done = attackDeck2.UpdateDeckPile(gameTime, attackHand2);
                     if (done && numDrawed >= 1)
                     {
-                        ChaoticEngine.GStage = GameStage.LocationStep;
+                        ChaoticEngine.GStage = GameStage.CoinFlip;
                         for (int i = 0; i < creatureSpaces.Length; i++)
                         {
                             if (creatureSpaces[i].CreatureNode.Battlegear.RevealAtBeginning)
@@ -589,6 +615,15 @@ namespace Chaotic
                     }
                     else if (done)
                         numDrawed++;
+                    break;
+                case GameStage.CoinFlip:
+                    bool? flip = coin.UpdateCoin(gameTime, Keyboard.GetState());
+
+                    if (flip != null)
+                    {
+                        ChaoticEngine.GStage = GameStage.LocationStep;
+                        ChaoticEngine.Player1Active = flip.Value;
+                    }
                     break;
                 case GameStage.Action:
                     if (!attackDiscardPile1.DiscardPanelActive && !attackDiscardPile2.DiscardPanelActive && !discardPile2.DiscardPanelActive)
@@ -666,13 +701,13 @@ namespace Chaotic
                             if (attackDeck1.Count == 0)
                             {
                                 ChaoticEngine.GStage = GameStage.ShuffleAtkDeck1;
-                                nextStage = GameStage.Combat;
+                                stageQueue.Enqueue(GameStage.Combat);
                                 attackDeck1.ShuffleDeck(attackDiscardPile1);
                             }
                             else if (attackDeck2.Count == 0)
                             {
                                 ChaoticEngine.GStage = GameStage.ShuffleAtkDeck2;
-                                nextStage = GameStage.Combat;
+                                stageQueue.Enqueue(GameStage.Combat);
                                 attackDeck2.ShuffleDeck(attackDiscardPile2);
                             }
                             else
@@ -684,7 +719,7 @@ namespace Chaotic
                     locationStep(gameTime, ChaoticEngine.Player1Active, GameStage.Action);
                     break;
                 case GameStage.LocationStepCombat:
-                    locationStep(gameTime, !ChaoticEngine.Player1Strike, nextStage);
+                    locationStep(gameTime, !ChaoticEngine.Player1Strike, stageQueue.Dequeue());
                     break;
                 case GameStage.CreatureToDiscard1:
                     creatureToDiscard(gameTime, mouse, ChaoticEngine.sYouNode, ChaoticEngine.sEnemyNode, discardPile1, 
@@ -764,9 +799,9 @@ namespace Chaotic
                             ChaoticEngine.Player1Strike = true;
                     }
                     
-                    ChaoticEngine.GStage = GameStage.BeginningOfCombat1;
+                    ChaoticEngine.GStage = GameStage.BeginningOfCombat;
                     break;
-                case GameStage.BeginningOfCombat1:
+                case GameStage.BeginningOfCombat:
                     Location locActive = activeLocation1.LocationActive != null ? activeLocation1.LocationActive : activeLocation2.LocationActive;
                     if (locActive is ChaoticGameLib.Locations.CordacFalls)
                     {
@@ -846,20 +881,21 @@ namespace Chaotic
                     }
                     else if (locActive is ChaoticGameLib.Locations.RavanaughRidge)
                     {
-                        //TODO: Implement.
+                        if (ChaoticEngine.sYouNode.CreatureNode.Air)
+                            stageQueue.Enqueue(GameStage.LocationSelectAbility1);
+                        if (ChaoticEngine.sEnemyNode.CreatureNode.Air)
+                            stageQueue.Enqueue(GameStage.LocationSelectAbility2);
                     }
+                    if (ChaoticEngine.sYouNode.CreatureNode.Battlegear is ChaoticGameLib.Battlegears.OrbOfForesight ||
+                        ChaoticEngine.sYouNode.CreatureNode.Battlegear is ChaoticGameLib.Battlegears.FluxBauble)
+                        stageQueue.Enqueue(GameStage.BattlegearSelectAbility1);
+                    if (ChaoticEngine.sEnemyNode.CreatureNode.Battlegear is ChaoticGameLib.Battlegears.OrbOfForesight ||
+                        ChaoticEngine.sEnemyNode.CreatureNode.Battlegear is ChaoticGameLib.Battlegears.FluxBauble)
+                        stageQueue.Enqueue(GameStage.BattlegearSelectAbility2);
 
-                    ChaoticEngine.GStage = GameStage.Combat;
+                    stageQueue.Enqueue(GameStage.Combat);
+                    ChaoticEngine.GStage = stageQueue.Dequeue();
                     break;
-                //case GameStage.BeginningOfCombat2:
-                //    if (ChaoticEngine.sYouNode.HasBattegear() &&
-                //        ChaoticEngine.sYouNode.CreatureNode.Battlegear is ChaoticGameLib.Battlegears.OrbOfForesight)
-                //    {
-                //        ChaoticEngine.GStage = GameStage.SelectingAbilities;
-                //        nextStage = GameStage.BeginningOfCombat2;
-                //    }
-                //    ChaoticEngine.GStage = GameStage.Combat;
-                //    break;
                 case GameStage.Combat:
                     if (!ChaoticEngine.IsACardMoving)
                     {
@@ -888,12 +924,20 @@ namespace Chaotic
 
                         if (ChaoticEngine.sYouNode.CreatureNode.Energy == 0 || ChaoticEngine.sEnemyNode.CreatureNode.Energy == 0)
                         {
-                            if (ChaoticEngine.GStage == GameStage.ShuffleAtkDecks ||
-                                ChaoticEngine.GStage == GameStage.SelectingAbilities ||
+                            if (ChaoticEngine.GStage == GameStage.AttackSelectAbility ||
                                 ChaoticEngine.GStage == GameStage.BattlegearToDiscard1 ||
                                 ChaoticEngine.GStage == GameStage.BattlegearToDiscard2 ||
                                 ChaoticEngine.GStage == GameStage.ReturnLocationCombat)
-                                nextStage = GameStage.EndOfCombat;
+                            {
+                                stageQueue.Clear();
+                                stageQueue.Enqueue(GameStage.EndOfCombat);
+                            }
+                            else if (ChaoticEngine.GStage == GameStage.ShuffleAtkDeck1)
+                            {
+                                stageQueue.Clear();
+                                stageQueue.Enqueue(GameStage.ShuffleAtkDeck2);
+                                stageQueue.Enqueue(GameStage.EndOfCombat);
+                            }
                             else
                                 ChaoticEngine.GStage = GameStage.EndOfCombat;
                             ChaoticEngine.CombatThisTurn = true;
@@ -941,27 +985,39 @@ namespace Chaotic
                         updateSupport();
                     }
                     break;
-                case GameStage.SelectingAbilities:
+                case GameStage.AttackSelectAbility:
                     if (!ChaoticEngine.Player1Strike)
-                    {
-                        selectingAbilities(gameTime, attackDeck1, locationDeck1, attackDiscardPile1);
-                    }
+                        attackSelectingAbilities(gameTime, attackDeck1, locationDeck1, attackDiscardPile1);
                     else
-                    {
-                        selectingAbilities(gameTime, attackDeck2, locationDeck2, attackDiscardPile2);
-                    }
+                        attackSelectingAbilities(gameTime, attackDeck2, locationDeck2, attackDiscardPile2);
+                    break;
+                case GameStage.LocationSelectAbility1:
+                    locationSelectingAbilities(gameTime,
+                        activeLocation1.LocationActive != null ? activeLocation1.LocationActive : 
+                        activeLocation2.LocationActive, ChaoticEngine.Player1Active ? attackDeck1 : attackDeck2);
+                    break;
+                case GameStage.LocationSelectAbility2:
+                    locationSelectingAbilities(gameTime,
+                        activeLocation1.LocationActive != null ? activeLocation1.LocationActive :
+                        activeLocation2.LocationActive, ChaoticEngine.Player1Active ? attackDeck2 : attackDeck1);
+                    break;
+                case GameStage.BattlegearSelectAbility1:
+                    battlegearSelectingAbilities(gameTime, ChaoticEngine.sYouNode.CreatureNode.Battlegear,
+                        ChaoticEngine.Player1Active ? attackDeck1 : attackDeck2, 
+                        ChaoticEngine.Player1Active ? locationDeck1 : locationDeck2);
+                    break;
+                case GameStage.BattlegearSelectAbility2:
+                    battlegearSelectingAbilities(gameTime, ChaoticEngine.sEnemyNode.CreatureNode.Battlegear,
+                        ChaoticEngine.Player1Active ? attackDeck2 : attackDeck1,
+                        ChaoticEngine.Player1Active ? locationDeck2 : locationDeck1);
                     break;
                 case GameStage.ShuffleAtkDeck1:
                     if (attackDeck1.UpdateShuffleDeck(gameTime))
-                        ChaoticEngine.GStage = nextStage;
+                        ChaoticEngine.GStage = stageQueue.Dequeue();
                     break;
                 case GameStage.ShuffleAtkDeck2:
                     if (attackDeck2.UpdateShuffleDeck(gameTime))
-                        ChaoticEngine.GStage = nextStage;
-                    break;
-                case GameStage.ShuffleAtkDecks:
-                    if (attackDeck1.UpdateShuffleDeck(gameTime))
-                        ChaoticEngine.GStage = GameStage.ShuffleAtkDeck2;
+                        ChaoticEngine.GStage = stageQueue.Dequeue();
                     break;
                 case GameStage.EndGame:
                     if (Keyboard.GetState().IsKeyDown(Keys.Enter))
@@ -975,52 +1031,76 @@ namespace Chaotic
             base.Update(gameTime);
         }
 
-        private void selectingAbilities(GameTime gameTime, AttackDeck attackDeck, LocationDeck locationDeck,
+        private void selectOrdering<T>(GameTime gameTime, SelectPanel<T> panel, List<T> deckPile, ref List<T> topCards) where T : ChaoticCard
+        {
+            if (!panel.Active)
+            {
+                topCards = new List<T>(){
+                                deckPile[deckPile.Count - 1],
+                                deckPile[deckPile.Count - 2]};
+                if (panel.SelectNumber == 3)
+                    topCards.Add(deckPile[deckPile.Count - 3]);
+                panel.Active = true;
+            }
+            List<int> indices = panel.UpdatePanel(gameTime, topCards);
+            if (indices != null)
+            {
+                deckPile.RemoveAt(deckPile.Count - 1);
+                deckPile.RemoveAt(deckPile.Count - 1);
+                if (panel.SelectNumber == 3)
+                    deckPile.RemoveAt(deckPile.Count - 1);
+
+                deckPile.Add(topCards[indices[0]]);
+                if (panel.SelectNumber == 3)
+                    deckPile.Insert(0, topCards[indices[2]]);
+                deckPile.Insert(0, topCards[indices[1]]);
+
+                ChaoticEngine.GStage = stageQueue.Dequeue();
+                topCards = null;
+            }
+        }
+
+        private void attackSelectingAbilities(GameTime gameTime, AttackDeck attackDeck, LocationDeck locationDeck,
             DiscardPile<Attack> attackDiscardPile)
         {
             if (attackDiscardPile[attackDiscardPile.Count - 1] is SqueezePlay)
             {
-                if (!attackPanel1.Active)
-                {
-                    topTwo = new List<Attack>(){
-                                attackDeck.RetrieveCard(attackDeck.Count - 1),
-                                attackDeck.RetrieveCard(attackDeck.Count - 2)};
-                    attackPanel1.Active = true;
-                }
-                List<int> indices = attackPanel1.UpdatePanel(gameTime, topTwo);
-                if (indices != null)
-                {
-                    attackDeck.Deck.RemoveAt(attackDeck.Count - 1);
-                    attackDeck.Deck.RemoveAt(attackDeck.Count - 1);
-
-                    attackDeck.Deck.Add(topTwo[indices[0]]);
-                    attackDeck.Deck.Insert(0, topTwo[indices[1]]);
-
-                    ChaoticEngine.GStage = nextStage;
-                    topTwo = null;
-                }
+                selectOrdering<Attack>(gameTime, attackPanel1, attackDeck.Deck, ref topAtk);
             }
             else if (attackDiscardPile[attackDiscardPile.Count - 1] is FlashKick)
             {
-                if (!locationPanel.Active)
-                {
-                    topTwoLoc = new List<Location>(){
-                                locationDeck.RetrieveCard(locationDeck.Count - 1),
-                                locationDeck.RetrieveCard(locationDeck.Count - 2)};
-                    locationPanel.Active = true;
-                }
-                List<int> indices = locationPanel.UpdatePanel(gameTime, topTwoLoc);
-                if (indices != null)
-                {
-                    locationDeck.Deck.RemoveAt(locationDeck.Count - 1);
-                    locationDeck.Deck.RemoveAt(locationDeck.Count - 1);
+                selectOrdering<Location>(gameTime, locationPanel1, locationDeck.Deck, ref topLoc);
+            }
+        }
 
-                    locationDeck.Deck.Add(topTwoLoc[indices[0]]);
-                    locationDeck.Deck.Insert(0, topTwoLoc[indices[1]]);
+        private void locationSelectingAbilities(GameTime gameTime, Location location, AttackDeck attackDeck)
+        {
+            if (location is ChaoticGameLib.Locations.RavanaughRidge && attackDeck.Count >= 2)
+            {
+                if (attackDeck.Count > 2)
+                    selectOrdering<Attack>(gameTime, attackPanel2, attackDeck.Deck, ref topAtk);
+                else
+                    selectOrdering<Attack>(gameTime, attackPanel1, attackDeck.Deck, ref topAtk);
+            }
+            else if (location is ChaoticGameLib.Locations.RavanaughRidge)
+                ChaoticEngine.GStage = stageQueue.Dequeue();
+        }
 
-                    ChaoticEngine.GStage = nextStage;
-                    topTwoLoc = null;
-                }
+        private void battlegearSelectingAbilities(GameTime gameTime, Battlegear battlegear, AttackDeck attackDeck,
+            LocationDeck locationDeck)
+        {
+            if (battlegear is ChaoticGameLib.Battlegears.OrbOfForesight && attackDeck.Count >= 2)
+            {
+                if (attackDeck.Count > 2)
+                    selectOrdering<Attack>(gameTime, attackPanel2, attackDeck.Deck, ref topAtk);
+                else
+                    selectOrdering<Attack>(gameTime, attackPanel1, attackDeck.Deck, ref topAtk);
+            }
+            else if (battlegear is ChaoticGameLib.Battlegears.OrbOfForesight)
+                ChaoticEngine.GStage = stageQueue.Dequeue();
+            else if (battlegear is ChaoticGameLib.Battlegears.FluxBauble)
+            {
+                selectOrdering<Location>(gameTime, locationPanel1, locationDeck.Deck, ref topLoc);
             }
         }
 
@@ -1030,8 +1110,10 @@ namespace Chaotic
 
             spriteBatch.Begin(SpriteSortMode.BackToFront, BlendState.AlphaBlend);
             backButton.Draw(spriteBatch);
-            attackPanel1.DrawPanel(spriteBatch, topTwo);
-            locationPanel.DrawPanel(spriteBatch, topTwoLoc);
+            attackPanel1.DrawPanel(spriteBatch, topAtk);
+            attackPanel2.DrawPanel(spriteBatch, topAtk);
+            locationPanel1.DrawPanel(spriteBatch, topLoc);
+            //locationPanel2.DrawPanel(spriteBatch, topLoc);
             discardPile1.DrawDiscardPile(spriteBatch);
             discardPile2.DrawDiscardPile(spriteBatch);
             attackDiscardPile1.DrawDiscardPile(spriteBatch);
@@ -1043,10 +1125,8 @@ namespace Chaotic
             activeLocation1.DrawActiveLocation(spriteBatch, true);
             activeLocation2.DrawActiveLocation(spriteBatch, false);
 
-            if (ChaoticEngine.GStage != GameStage.ShuffleAtkDeck1 && ChaoticEngine.GStage != GameStage.ShuffleAtkDecks)
-            {
+            if (ChaoticEngine.GStage != GameStage.ShuffleAtkDeck1)
                 attackDeck1.DrawDeckPile(spriteBatch);
-            }
 
             if (ChaoticEngine.GStage != GameStage.ShuffleAtkDeck2)
                 attackDeck2.DrawDeckPile(spriteBatch);
@@ -1057,7 +1137,7 @@ namespace Chaotic
             }
             if ((activeLocation1.LocationActive != null && activeLocation1.LocationActive.Texture == ChaoticEngine.CoveredCard) ||
                 (activeLocation2.LocationActive != null && activeLocation2.LocationActive.Texture == ChaoticEngine.CoveredCard) ||
-                locationPanel.Active && (topTwoLoc[0].Texture == ChaoticEngine.CoveredCard || topTwoLoc[1].Texture == ChaoticEngine.CoveredCard))
+                (locationPanel1.Active && (topLoc[0].Texture == ChaoticEngine.CoveredCard || topLoc[1].Texture == ChaoticEngine.CoveredCard)))
                 spriteBatch.Draw(ChaoticEngine.CoveredCard, new Rectangle(3, 6, 245, 175), Color.White);
             else
                 spriteBatch.Draw(ChaoticEngine.CoveredCard, new Rectangle(3, 6, 175, 245), Color.White);
@@ -1066,13 +1146,14 @@ namespace Chaotic
             string hiveText = "Hive: " + (ChaoticEngine.Hive ? "On" : "Off");
             spriteBatch.DrawString(hubFont, hiveText, new Vector2(9 * graphics.PreferredBackBufferWidth / 10
                 - endgamefont.MeasureString(hiveText).X / 2, graphics.PreferredBackBufferHeight / 2
-                - endgamefont.MeasureString(hiveText).Y / 2), Color.Black);
+                - endgamefont.MeasureString(hiveText).Y / 2), Color.Brown);
 
             switch (ChaoticEngine.GStage)
             {
                 case GameStage.BeginningOfTheGame:
                     break;
                 case GameStage.CoinFlip:
+                    coin.DrawCoin(spriteBatch);
                     break;
                 case GameStage.LocationStep:
                     break;
@@ -1089,15 +1170,23 @@ namespace Chaotic
                     Location loc = activeLocation1.LocationActive != null ? activeLocation1.LocationActive : activeLocation2.LocationActive;
                     if (ChaoticEngine.Player1Active)
                     {
+                        setAttackInfo(ChaoticEngine.sYouNode.CreatureNode, ChaoticEngine.sEnemyNode.CreatureNode,
+                            ChaoticEngine.Player1Active);
                         attackHand1.ProjectHandDamage(spriteBatch, ChaoticEngine.sYouNode.CreatureNode,
                         ChaoticEngine.sEnemyNode.CreatureNode, loc);
+                        setAttackInfo(ChaoticEngine.sEnemyNode.CreatureNode, ChaoticEngine.sYouNode.CreatureNode,
+                            !ChaoticEngine.Player1Active);
                         attackHand2.ProjectHandDamage(spriteBatch, ChaoticEngine.sEnemyNode.CreatureNode,
                             ChaoticEngine.sYouNode.CreatureNode, loc);
                     }
                     else
                     {
+                        setAttackInfo(ChaoticEngine.sEnemyNode.CreatureNode, ChaoticEngine.sYouNode.CreatureNode,
+                            !ChaoticEngine.Player1Active);
                         attackHand1.ProjectHandDamage(spriteBatch, ChaoticEngine.sEnemyNode.CreatureNode,
                            ChaoticEngine.sYouNode.CreatureNode, loc);
+                        setAttackInfo(ChaoticEngine.sYouNode.CreatureNode, ChaoticEngine.sEnemyNode.CreatureNode,
+                            ChaoticEngine.Player1Active);
                         attackHand2.ProjectHandDamage(spriteBatch, ChaoticEngine.sYouNode.CreatureNode,
                        ChaoticEngine.sEnemyNode.CreatureNode, loc);
                     }
@@ -1107,9 +1196,6 @@ namespace Chaotic
                     break;
                 case GameStage.ShuffleAtkDeck2:
                     attackDeck2.DrawShuffleDeck(spriteBatch);
-                    break;
-                case GameStage.ShuffleAtkDecks:
-                    attackDeck1.DrawShuffleDeck(spriteBatch);
                     break;
                 case GameStage.EndGame:
                     string endText = (player1Won ? "Player 1 " : "Player 2 ") + "is the winner. (Press Enter)";

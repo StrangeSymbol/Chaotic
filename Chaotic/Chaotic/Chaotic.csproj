@@ -107,6 +107,7 @@
     <Compile Include="ChaoticForm.Designer.cs">
       <DependentUpon>ChaoticForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Coin.cs" />
     <Compile Include="DeckSetup1On1.cs">
       <SubType>Form</SubType>
     </Compile>

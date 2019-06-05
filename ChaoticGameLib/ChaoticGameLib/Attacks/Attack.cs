@@ -90,7 +90,8 @@ namespace ChaoticGameLib
             else if (enemy.Battlegear is StoneMail && enemy.Battlegear.IsFaceUp && enemy.Energy < energy)
                 energy2 -= 5;
 
-            //energy1 -= your.Recklessness; // TODO: Add to Burst.
+            if (your.FirstAttack && your.Invisibility() && ChaoticLibEngine.HasMaquisDarini)
+                energy2 -= 5;
 
             if (your.Strike > 0 && your.FirstAttack && 
                 !(enemy.Battlegear.IsFaceUp && (enemy.Battlegear is SpectralViewer)))

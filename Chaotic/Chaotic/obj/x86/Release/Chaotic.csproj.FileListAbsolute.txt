@@ -315,3 +315,5 @@ C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Release
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Release\Content\Creatures\ValaniiLevaan.xnb
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Release\Content\Creatures\Wamma.xnb
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Release\Content\Creatures\Formicidor.xnb
+C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Release\Content\Coin\OverWorldHeads.xnb
+C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Release\Content\Coin\OverWorldTails.xnb

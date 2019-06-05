@@ -79,6 +79,7 @@ namespace Chaotic
         }
 
         public bool Active { get { return active; } set { if (!active) selectedIndices = new List<int>(); active = value; } }
+        public int SelectNumber { get { return selectNumber; } }
 
         public List<int> UpdatePanel(GameTime gameTime, List<T> pile)
         {

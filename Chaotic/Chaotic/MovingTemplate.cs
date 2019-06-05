@@ -50,7 +50,7 @@ namespace Chaotic
             }
         }
 
-        public bool IsFromFaceDownToFaceUp { get { return IsFromFaceDownToFaceUp; } set { isFromFaceDownToFaceUp = value; } }
+        public bool IsFromFaceDownToFaceUp { get { return isFromFaceDownToFaceUp; } set { isFromFaceDownToFaceUp = value; } }
         public Rectangle Destination { set { destination = value; } }
         public double Time { get { return time; } }
         public bool IsMoving { get; set; }
