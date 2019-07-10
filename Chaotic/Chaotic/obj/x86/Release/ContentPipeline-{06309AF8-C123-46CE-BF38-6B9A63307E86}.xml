@@ -2719,6 +2719,51 @@
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Release\Content\Coin\OverWorldTails.xnb</Output>
       <Time>2019-05-30T13:28:11.9492276-04:00</Time>
     </Item>
+    <Item>
+      <Source>Sheen.png</Source>
+      <Name>Sheen</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Release\Content\Sheen.xnb</Output>
+      <Time>2019-06-07T04:41:02.9868583-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Panel\NoButton.jpg</Source>
+      <Name>Panel\NoButton</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Release\Content\Panel\NoButton.xnb</Output>
+      <Time>2019-07-02T04:16:47.2554625-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Panel\YesButton.jpg</Source>
+      <Name>Panel\YesButton</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Release\Content\Panel\YesButton.xnb</Output>
+      <Time>2019-07-02T04:16:47.3023399-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Fonts\Description.spritefont</Source>
+      <Name>Fonts\Description</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Release\Content\Fonts\Description.xnb</Output>
+      <Time>2019-06-10T17:51:26.1448186-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Fonts\MessageBox.spritefont</Source>
+      <Name>Fonts\MessageBox</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Release\Content\Fonts\MessageBox.xnb</Output>
+      <Time>2019-07-02T04:20:47.9794898-04:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{06309AF8-C123-46CE-BF38-6B9A63307E86}</ContentProjectGUID>

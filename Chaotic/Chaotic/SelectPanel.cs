@@ -81,7 +81,7 @@ namespace Chaotic
         public bool Active { get { return active; } set { if (!active) selectedIndices = new List<int>(); active = value; } }
         public int SelectNumber { get { return selectNumber; } }
 
-        public List<int> UpdatePanel(GameTime gameTime, List<T> pile)
+        public List<int> UpdatePanel(GameTime gameTime, List<T> pile, CardDescription description)
         {
             if (active)
             {
@@ -105,7 +105,10 @@ namespace Chaotic
                     {
                         if (new Rectangle((int)positions[j].X, (int)positions[j].Y, cTextureWidth,
                             cTextureHeight).Contains(mouse.X, mouse.Y))
-                            ChaoticEngine.CoveredCard = pile[i].Texture;
+                        {
+                            description.CoveredCard = pile[i].Texture;
+                            description.Description = pile[i].Description();
+                        }
 
                         if (mouse.LeftButton == ButtonState.Pressed &&
                             new Rectangle((int)positions[j].X, (int)positions[j].Y, cTextureWidth,
@@ -128,10 +131,16 @@ namespace Chaotic
                 {
                     if (new Rectangle((int)pos1.X, (int)pos1.Y, cTextureWidth,
                             cTextureHeight).Contains(mouse.X, mouse.Y))
-                        ChaoticEngine.CoveredCard = pile[1].Texture;
+                    {
+                        description.CoveredCard = pile[1].Texture;
+                        description.Description = pile[1].Description();
+                    }
                     else if (new Rectangle((int)pos2.X, (int)pos2.Y, cTextureWidth,
                             cTextureHeight).Contains(mouse.X, mouse.Y))
-                        ChaoticEngine.CoveredCard = pile[0].Texture;
+                    {
+                        description.CoveredCard = pile[0].Texture;
+                        description.Description = pile[0].Description();
+                    }
 
                     if (mouse.LeftButton == ButtonState.Pressed && new Rectangle((int)pos1.X, (int)pos1.Y, cTextureWidth,
                             cTextureHeight).Contains(new Point(mouse.X, mouse.Y)) && !selectedIndices.Contains(1)
@@ -154,7 +163,10 @@ namespace Chaotic
                 {
                     if (new Rectangle((int)positions[2].X, (int)positions[2].Y, cTextureWidth,
                             cTextureHeight).Contains(mouse.X, mouse.Y))
-                        ChaoticEngine.CoveredCard = pile[start].Texture;
+                    {
+                        description.CoveredCard = pile[start].Texture;
+                        description.Description = pile[start].Description();
+                    }
 
                     if (mouse.LeftButton == ButtonState.Pressed && new Rectangle((int)positions[2].X, (int)positions[2].Y,
                         cTextureWidth, cTextureHeight).Contains(new Point(mouse.X, mouse.Y)) && !selectedIndices.Contains(0)

@@ -33,10 +33,13 @@ namespace Chaotic
             locationTemp = new MovingTemplate(location.Texture, position, null, true);
         }
 
-        public void UpdateActiveLocation(MouseState mouse)
+        public void UpdateActiveLocation(MouseState mouse, CardDescription description)
         {
             if (locationTemp != null && locationTemp.CollisionRectangle.Contains(mouse.X, mouse.Y))
-                ChaoticEngine.CoveredCard = location.Texture;
+            {
+                description.CoveredCard = location.Texture;
+                description.Description = location.Description();
+            }
         }
 
         public bool ReturnLocationToDeck(GameTime gameTime, LocationDeck deck)

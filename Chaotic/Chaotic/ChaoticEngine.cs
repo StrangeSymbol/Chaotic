@@ -13,7 +13,6 @@ namespace Chaotic
         public static bool IsACardMoving { get; set; }
         public static bool Player1Active { get; set; }
         public static bool Player1Strike { get; set; }
-        public static Texture2D CoveredCard { get; set; }
         public static Texture2D OrgBackgroundSprite { get; set; }
         public static Texture2D BackgroundSprite { get; set; }
         public const int kCardWidth = 59;
@@ -22,16 +21,21 @@ namespace Chaotic
         public const int kBattlegearGap = kCardHeight / 6;
         public const string kDeckFile = "Deck";
         public const string kFileFormat = ".cha";
+        public const int kCardCoveredWidth = 175;
+        public const int kCardCoveredHeight = 245;
         public static List<ChaoticGameLib.ChaoticCard> sCardDatabase;
         public static MenuStage MStage { get; set; }
         public static GameStage GStage { get; set; }
         public static BattleBoardNode sYouNode { get; set; }
         public static BattleBoardNode sEnemyNode { get; set; }
+        public static int ReturnSelectedIndex1 { get; set; }
+        public static int ReturnSelectedIndex2 { get; set; }
         public static bool CombatThisTurn { get; set; }
         public static bool Player1Setup { get; set; }
         public static bool Player2Setup { get; set; }
         public static bool Hive { get; set; }
         public static bool PrevHive { get; set; }
+        public static bool GenericMugicOnly { get; set; }
         public static List<ChaoticGameLib.Creature> sCreatures1;
         public static List<ChaoticGameLib.Battlegear> sBattlegears1;
         public static List<ChaoticGameLib.Attack> sAttacks1;
@@ -42,6 +46,16 @@ namespace Chaotic
         public static List<ChaoticGameLib.Attack> sAttacks2;
         public static List<ChaoticGameLib.Mugic> sMugics2;
         public static List<ChaoticGameLib.Location> sLocations2;
+
+        public static bool CheckMugicPlayable(ChaoticGameLib.Mugic mugic, BattleBoardNode[] creatureSpaces)
+        {
+            for (int i = 0; i < creatureSpaces.Length; i++)
+            {
+                if (creatureSpaces[i].CreatureNode != null && mugic.CheckCanPayMugicCost(creatureSpaces[i].CreatureNode))
+                    return true;
+            }
+            return false;
+        }
 
         public static void SaveFile(List<string> lst, string file)
         {

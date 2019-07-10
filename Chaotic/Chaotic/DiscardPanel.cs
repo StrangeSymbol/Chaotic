@@ -57,7 +57,7 @@ namespace Chaotic
 
         public bool Active { get { return active; } set { active = value; } }
 
-        public void UpdatePanel(GameTime gameTime, List<T> pile)
+        public void UpdatePanel(GameTime gameTime, List<T> pile, CardDescription description)
         {
             if (active)
             {
@@ -79,7 +79,10 @@ namespace Chaotic
                     {
                         if (new Rectangle((int)positions[j].X, (int)positions[j].Y, cTextureWidth,
                             cTextureHeight).Contains(mouse.X, mouse.Y))
-                            ChaoticEngine.CoveredCard = pile[i].Texture;
+                        {
+                            description.CoveredCard = pile[i].Texture;
+                            description.Description = pile[i].Description();
+                        }
                     }
                 }
 
@@ -87,17 +90,26 @@ namespace Chaotic
                 {
                     if (new Rectangle((int)pos1.X, (int)pos1.Y, cTextureWidth,
                             cTextureHeight).Contains(mouse.X, mouse.Y))
-                        ChaoticEngine.CoveredCard = pile[1].Texture;
+                    {
+                        description.CoveredCard = pile[1].Texture;
+                        description.Description = pile[1].Description();
+                    }
                     else if (new Rectangle((int)pos2.X, (int)pos2.Y, cTextureWidth,
                             cTextureHeight).Contains(mouse.X, mouse.Y))
-                        ChaoticEngine.CoveredCard = pile[0].Texture;
+                    {
+                        description.CoveredCard = pile[0].Texture;
+                        description.Description = pile[0].Description();
+                    }
                 }
 
                 else if (start - end == 0)
                 {
                     if (new Rectangle((int)positions[2].X, (int)positions[2].Y, cTextureWidth,
                             cTextureHeight).Contains(mouse.X, mouse.Y))
-                        ChaoticEngine.CoveredCard = pile[start].Texture;
+                    {
+                        description.CoveredCard = pile[start].Texture;
+                        description.Description = pile[start].Description();
+                    }
                 }
                 if (leftButton.UpdateButton(mouse, gameTime) && start != pile.Count - 1)
                 {

@@ -14,9 +14,7 @@ namespace Chaotic
         Vector2 cardInHandPos;
         readonly Vector2 discardTemplate;
         bool isPlayer1;
-        bool isCardCovered;
         double elaspedTime;
-        int selectedCard = -1;
 
         public MugicHand(bool isPlayer1, Texture2D cardBack, Vector2 discardTemplate)
         {
@@ -30,56 +28,29 @@ namespace Chaotic
         public int Count { get { return hand.Count; } }
         public bool IsPlayer1 { get { return isPlayer1; } }
 
-        public void UpdateCoveredCard(MouseState mouse)
+        public void UpdateCoveredCard(MouseState mouse, CardDescription description)
         {
             for (int i = 0; i < hand.Count; i++)
             {
                 if (hand[i].CollisionRectangle.Contains(mouse.X, mouse.Y))
-                    ChaoticEngine.CoveredCard = hand[i].Texture;
+                {
+                    description.CoveredCard = hand[i].Texture;
+                    description.Description = hand[i].Description();
+                }
             }
         }
 
-        public bool UpdateHand(GameTime gameTime, MouseState mouse, DiscardPile<ChaoticCard> discardPile, bool selectCovered=false)
+        public bool UpdateHand(GameTime gameTime, MouseState mouse, DiscardPile<ChaoticCard> discardPile,
+            BattleBoardNode[] creatureSpaces)
         {
             for (int i = hand.Count - 1; i >= 0; i--)
             {
-                if (!ChaoticEngine.IsACardMoving && !selectCovered)
+                if (!ChaoticEngine.IsACardMoving)
                 {
-                    if (mouse.LeftButton == ButtonState.Pressed &&
-                    hand[i].CollisionRectangle.Contains(mouse.X, mouse.Y))
-                    {
-                        if (!isCardCovered)
-                        {
-                            hand[i].IsCovered = true;
-                            isCardCovered = true;
-                            selectedCard = i;
-                        }
-                        else if (isCardCovered && i != selectedCard)
-                        {
-                            hand[i].IsCovered = true;
-                            hand[selectedCard].IsCovered = false;
-                            selectedCard = i;
-                        }
-                    }
-                    else if (mouse.RightButton == ButtonState.Pressed &&
-                        hand[i].CollisionRectangle.Contains(mouse.X, mouse.Y) && hand[i].IsCovered)
+                    if (mouse.LeftButton == ButtonState.Pressed && hand[i].CollisionRectangle.Contains(mouse.X, mouse.Y) && 
+                    ChaoticEngine.CheckMugicPlayable(hand[i], creatureSpaces))
                     {
                         ChaoticEngine.IsACardMoving = true;
-                        hand[i].IsCovered = false;
-                        hand[i].IsMoving = true;
-                        hand[i].CourseToCard(discardPile.GetDiscardTemplate().Position);
-                        elaspedTime = gameTime.TotalGameTime.TotalMilliseconds;
-                        isCardCovered = false;
-                        selectedCard = -1;
-                    }
-                }
-                else if (!ChaoticEngine.IsACardMoving && selectCovered)
-                {
-                    if (mouse.LeftButton == ButtonState.Pressed &&
-                        hand[i].CollisionRectangle.Contains(mouse.X, mouse.Y) && hand[i].IsCovered)
-                    {
-                        ChaoticEngine.IsACardMoving = true;
-                        hand[i].IsCovered = false;
                         hand[i].IsMoving = true;
                         hand[i].CourseToCard(discardPile.GetDiscardTemplate().Position);
                         elaspedTime = gameTime.TotalGameTime.TotalMilliseconds;
@@ -89,9 +60,38 @@ namespace Chaotic
                     hand[i].Move(gameTime);
                 else if (hand[i].Time < gameTime.TotalGameTime.TotalMilliseconds - elaspedTime && hand[i].IsMoving)
                 {
+                    hand[i].IsMoving = false;
                     discardPile.DiscardList.Add(hand[i].Copy(discardPile.GetDiscardTemplate().Position));
                     ChaoticEngine.IsACardMoving = false;
+                    elaspedTime = 0.0;
+                    RemoveCardFromHand(i);
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        public bool UpdateHand(GameTime gameTime, MouseState mouse, DiscardPile<ChaoticCard> discardPile)
+        {
+            for (int i = hand.Count - 1; i >= 0; i--)
+            {
+                if (!ChaoticEngine.IsACardMoving)
+                {
+                    if (mouse.LeftButton == ButtonState.Pressed && hand[i].CollisionRectangle.Contains(mouse.X, mouse.Y))
+                    {
+                        ChaoticEngine.IsACardMoving = true;
+                        hand[i].IsMoving = true;
+                        hand[i].CourseToCard(discardPile.GetDiscardTemplate().Position);
+                        elaspedTime = gameTime.TotalGameTime.TotalMilliseconds;
+                    }
+                }
+                else if (hand[i].Time >= gameTime.TotalGameTime.TotalMilliseconds - elaspedTime && hand[i].IsMoving)
+                    hand[i].Move(gameTime);
+                else if (hand[i].Time < gameTime.TotalGameTime.TotalMilliseconds - elaspedTime && hand[i].IsMoving)
+                {
                     hand[i].IsMoving = false;
+                    discardPile.DiscardList.Add(hand[i].Copy(discardPile.GetDiscardTemplate().Position));
+                    ChaoticEngine.IsACardMoving = false;
                     elaspedTime = 0.0;
                     RemoveCardFromHand(i);
                     return true;
@@ -171,16 +171,6 @@ namespace Chaotic
                     hand[hand.Count % 3].Position.Y - ChaoticEngine.kCardHeight);
             else
                 throw new IndexOutOfRangeException("The Mugic Hand can only have up to 6 cards in hand!");
-        }
-
-        public void TurnOffCover()
-        {
-            if (selectedCard != -1)
-            {
-                hand[selectedCard].IsCovered = false;
-                selectedCard = -1;
-                isCardCovered = false;
-            }
         }
 
         public void EmptyHand()

@@ -91,6 +91,7 @@
     <Reference Include="System.Net" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ability.cs" />
     <Compile Include="ActiveLocation.cs" />
     <Compile Include="AttackDeck.cs" />
     <Compile Include="AttackHand.cs" />
@@ -98,7 +99,10 @@
     <Compile Include="BattleBoardButton.cs" />
     <Compile Include="BattleBoardMenu.cs" />
     <Compile Include="BattleBoardNode.cs" />
+    <Compile Include="Burst.cs" />
     <Compile Include="Button.cs" />
+    <Compile Include="CardDescription.cs" />
+    <Compile Include="CardHighlighter.cs" />
     <Compile Include="CardTemplate.cs" />
     <Compile Include="ChaoticEngine.cs" />
     <Compile Include="ChaoticForm.cs">
@@ -131,6 +135,7 @@
     <Compile Include="FileContentException.cs" />
     <Compile Include="LocationDeck.cs" />
     <Compile Include="MenuButton.cs" />
+    <Compile Include="ChaoticMessageBox.cs" />
     <Compile Include="MovingTemplate.cs" />
     <Compile Include="MugicHand.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

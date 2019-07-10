@@ -300,3 +300,8 @@ Content\Creatures\Wamma.xnb
 Content\Creatures\Formicidor.xnb
 Content\Coin\OverWorldHeads.xnb
 Content\Coin\OverWorldTails.xnb
+Content\Sheen.xnb
+Content\Panel\NoButton.xnb
+Content\Panel\YesButton.xnb
+Content\Fonts\Description.xnb
+Content\Fonts\MessageBox.xnb

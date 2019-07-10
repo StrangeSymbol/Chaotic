@@ -35,12 +35,15 @@ namespace Chaotic
         public int Count { get { return hand.Count; } }
         public bool IsPlayer1 { get { return isPlayer1; } }
 
-        public void UpdateCoveredCard(MouseState mouse)
+        public void UpdateCoveredCard(MouseState mouse, CardDescription description)
         {
             for (int i = 0; i < hand.Count; i++)
             {
                 if (hand[i].CollisionRectangle.Contains(mouse.X, mouse.Y))
-                    ChaoticEngine.CoveredCard = hand[i].Texture;
+                {
+                    description.CoveredCard = hand[i].Texture;
+                    description.Description = hand[i].Description();
+                }
             }
         }
 

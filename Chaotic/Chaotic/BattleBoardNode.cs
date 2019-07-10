@@ -374,12 +374,18 @@ namespace Chaotic
             creature.UnEquip();
         }
 
-        public void GetCardCoveredByMouse(MouseState mouse)
+        public void GetCardCoveredByMouse(MouseState mouse, CardDescription description)
         {
             if (creature != null && creature.Battlegear != null && BattlegearRectangle.Contains(mouse.X, mouse.Y))
-                ChaoticEngine.CoveredCard = creature.Battlegear.Texture;
+            {
+                description.CoveredCard = creature.Battlegear.Texture;
+                description.Description = creature.Battlegear.Description();
+            }
             else if (creature != null && CreatureRectangle.Contains(mouse.X, mouse.Y))
-                ChaoticEngine.CoveredCard = creature.Texture;
+            {
+                description.CoveredCard = creature.Texture;
+                description.Description = creature.Description();
+            }
         }
 
         private string creatureDescription()

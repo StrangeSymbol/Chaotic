@@ -93,7 +93,7 @@ namespace ChaoticGameLib
             if (your.FirstAttack && your.Invisibility() && ChaoticLibEngine.HasMaquisDarini)
                 energy2 -= 5;
 
-            if (your.Strike > 0 && your.FirstAttack && 
+            if (your.Strike > 0 && your.FirstAttack && !enemy.Invisibility() &&
                 !(enemy.Battlegear.IsFaceUp && (enemy.Battlegear is SpectralViewer)))
                 energy2 -= your.Strike;
 

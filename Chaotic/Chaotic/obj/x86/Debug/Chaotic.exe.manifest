@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Chaotic.exe" size="243688">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Chaotic.exe" size="253416">
       <assemblyIdentity name="Chaotic" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>9erEcwdopSpLDARDtM+HgsslyKU=</dsig:DigestValue>
+        <dsig:DigestValue>wMGp/nvbvyGHpP+2+hyRh7WvN78=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -62,7 +62,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>JgCZbUg3Vl4lzIZocdRebq4BuOw=</dsig:DigestValue>
+        <dsig:DigestValue>wYj1MbQMvgd+SwD1sVP8Zjx/Ts4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -2115,6 +2115,15 @@
       <dsig:DigestValue>ZsoZHFio+/7QqHRZSS+iRgFsSOA=</dsig:DigestValue>
     </hash>
   </file>
+  <file name="Content\Fonts\Description.xnb" size="13486">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>HnIftSF2mpcONZ7dqbnzjA0MMec=</dsig:DigestValue>
+    </hash>
+  </file>
   <file name="Content\Fonts\EndGame.xnb" size="38062">
     <hash>
       <dsig:Transforms>
@@ -2851,6 +2860,15 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
       <dsig:DigestValue>D1dzq0zoKhLNgBPTn76go7hS7uY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Sheen.xnb" size="258251">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>GgGLKvdQg4nTOn7fCpJj3fPEcZ4=</dsig:DigestValue>
     </hash>
   </file>
   <file name="GameThumbnail.png" size="5734">

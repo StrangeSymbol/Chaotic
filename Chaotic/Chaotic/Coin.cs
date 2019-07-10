@@ -197,7 +197,6 @@ namespace Chaotic
                 ChaoticEngine.IsACardMoving = false;
                 isMoving = false;
                 reachedAppex = false;
-                elapsedTime = 0.0;
                 return true;
             }
             return false;
@@ -223,7 +222,11 @@ namespace Chaotic
                     flippedSide = false;
             }
             else if (flippedSide.HasValue && keyboard.IsKeyDown(Keys.Enter))
-                return flippedSide;
+            {
+                bool flip = flippedSide.Value;
+                flippedSide = null;
+                return flip;
+            }
             return null;
         }
 
