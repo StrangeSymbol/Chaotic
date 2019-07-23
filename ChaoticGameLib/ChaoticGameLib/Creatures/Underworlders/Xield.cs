@@ -4,13 +4,18 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace ChaoticGameLib.Creatures
 {
-    public class Xield : Creature
+    public class Xield : Creature, IActivateTarget<Creature>
     {
         public Xield(Texture2D sprite, Texture2D overlay, 
             byte energy, byte courage, byte power, byte wisdom, byte speed) :
             base(sprite, overlay, energy, courage, power, wisdom, speed, 0, false, false, false, false, 0,
             false, 0, 0, false, false, false, 0, 0, 0, 0, 0, 10, Tribe.UnderWorld, CreatureType.Elementalist)
         {
+        }
+
+        public override bool CheckAbility(bool hive)
+        {
+            return this.Energy > 0 && !this.UsedAbility;
         }
 
         public override string Description()
@@ -21,14 +26,17 @@ namespace ChaoticGameLib.Creatures
             "When the arrows shattered against his back, Xield knew he had found his calling.";
         }
 
-        public void Ability(Creature c)
+        void IActivate.PayCost()
         {
-            if (!this.UsedAbility)
-            {
-                this.UsedAbility = true;
-                this.Energy -= this.AbilityEnergy;
-                c.Energy += this.AbilityEnergy;
-            }
+            this.Energy -= this.AbilityEnergy;
         }
+
+        void IActivateTarget<Creature>.Ability(Creature c)
+        {
+            c.GainedEnergyTurn += this.AbilityEnergy;
+            this.UsedAbility = true;
+        }
+
+         AbilityType IActivate.Type { get { return AbilityType.TargetCreature; } }
     }
 }

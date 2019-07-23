@@ -17,7 +17,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\CardOutline.xnb</Output>
-      <Time>2018-07-04T14:06:58.9393533-04:00</Time>
+      <Time>2019-07-14T22:42:47.7195174-04:00</Time>
     </Item>
     <Item>
       <Source>Menu\ChaoticSymbol.png</Source>
@@ -2736,6 +2736,87 @@
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Fonts\Description.xnb</Output>
       <Time>2019-06-10T17:51:26.1448186-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Panel\NoButton.jpg</Source>
+      <Name>Panel\NoButton</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Panel\NoButton.xnb</Output>
+      <Time>2019-07-02T04:16:47.2554625-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Panel\YesButton.jpg</Source>
+      <Name>Panel\YesButton</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Panel\YesButton.xnb</Output>
+      <Time>2019-07-02T04:16:47.3023399-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Fonts\MessageBox.spritefont</Source>
+      <Name>Fonts\MessageBox</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Fonts\MessageBox.xnb</Output>
+      <Time>2019-07-02T04:20:47.9794898-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Mugics\ChorusOfTheHive.png</Source>
+      <Name>Mugics\ChorusOfTheHive</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\ChorusOfTheHive.xnb</Output>
+      <Time>2019-07-15T23:04:52.6401197-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Mugics\RefrainOfDenial_OverWorld0UnderWorld_.png</Source>
+      <Name>Mugics\RefrainOfDenial_OverWorld0UnderWorld_</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\RefrainOfDenial_OverWorld0UnderWorld_.xnb</Output>
+      <Time>2019-07-15T23:04:52.6921226-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Mugics\SongOfMandiblor.png</Source>
+      <Name>Mugics\SongOfMandiblor</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\SongOfMandiblor.xnb</Output>
+      <Time>2019-07-15T23:04:52.7131232-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Mugics\SongOfResistance.png</Source>
+      <Name>Mugics\SongOfResistance</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\SongOfResistance.xnb</Output>
+      <Time>2019-07-15T23:04:52.7491259-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Mugics\SongOfSurprisal.png</Source>
+      <Name>Mugics\SongOfSurprisal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\SongOfSurprisal.xnb</Output>
+      <Time>2019-07-15T23:04:52.7691272-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Mugics\SongOfSymmetry.png</Source>
+      <Name>Mugics\SongOfSymmetry</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\SongOfSymmetry.xnb</Output>
+      <Time>2019-07-15T23:04:52.7851275-04:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

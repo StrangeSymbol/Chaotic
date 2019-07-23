@@ -4,12 +4,14 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace ChaoticGameLib.Mugics
 {
-    public class Fortissimo : Mugic
+    public class Fortissimo : Mugic, ICastTarget<Creature>
     {
         public Fortissimo(Texture2D sprite, Texture2D overlay) : base(sprite, overlay, MugicType.Generic, 1) { }
-        public override void Ability(Creature creature)
+
+        void ICastTarget<Creature>.Ability(Creature creature)
         {
             creature.Energy += 5;
+            creature.GainedEnergyTurn += 5;
             creature.Courage += 5;
             creature.CourageTurn += 5;
             creature.Power += 5;
@@ -18,8 +20,10 @@ namespace ChaoticGameLib.Mugics
             creature.WisdomTurn += 5;
             creature.Speed += 5;
             creature.SpeedTurn += 5;
-            base.Ability(creature);
         }
+
+        AbilityType ICast.Type { get { return AbilityType.TargetCreature; } }
+
         public override string Description()
         {
             return base.Description() + " Target Creature gains 5 Courage, Power, Wisdom, Speed, and Energy until end of the turn." +

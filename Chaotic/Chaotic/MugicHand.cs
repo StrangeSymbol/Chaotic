@@ -13,16 +13,20 @@ namespace Chaotic
         Texture2D cardBack;
         Vector2 cardInHandPos;
         readonly Vector2 discardTemplate;
+        SpriteFont font;
+        int? currentCard;
         bool isPlayer1;
         double elaspedTime;
 
-        public MugicHand(bool isPlayer1, Texture2D cardBack, Vector2 discardTemplate)
+        public MugicHand(bool isPlayer1, Texture2D cardBack, Vector2 discardTemplate, SpriteFont font)
         {
             this.isPlayer1 = isPlayer1;
             this.cardBack = cardBack;
             hand = new List<Mugic>();
             elaspedTime = 0.0;
             this.discardTemplate = discardTemplate;
+            this.font = font;
+            this.currentCard = null;
         }
 
         public int Count { get { return hand.Count; } }
@@ -40,20 +44,36 @@ namespace Chaotic
             }
         }
 
+        public void UpdatePlayable(MouseState mouse, BattleBoardNode[] creatureSpaces, DiscardPile<ChaoticCard> discardPile,
+            ActiveLocation activeLoc)
+        {
+            for (int i = 0; i < hand.Count; i++)
+            {
+                if (hand[i].CollisionRectangle.Contains(mouse.X, mouse.Y))
+                {
+                    if (CheckSystem.CheckMugicPlayable(this.isPlayer1, hand[i], creatureSpaces, discardPile, activeLoc))
+                        currentCard = i;
+                }
+                else if (currentCard == i)
+                    currentCard = null;
+            }
+        }
+
         public bool UpdateHand(GameTime gameTime, MouseState mouse, DiscardPile<ChaoticCard> discardPile,
-            BattleBoardNode[] creatureSpaces)
+            BattleBoardNode[] creatureSpaces, ActiveLocation activeLoc)
         {
             for (int i = hand.Count - 1; i >= 0; i--)
             {
                 if (!ChaoticEngine.IsACardMoving)
                 {
-                    if (mouse.LeftButton == ButtonState.Pressed && hand[i].CollisionRectangle.Contains(mouse.X, mouse.Y) && 
-                    ChaoticEngine.CheckMugicPlayable(hand[i], creatureSpaces))
+                    if (mouse.LeftButton == ButtonState.Pressed && hand[i].CollisionRectangle.Contains(mouse.X, mouse.Y) &&
+                    CheckSystem.CheckMugicPlayable(this.isPlayer1, hand[i], creatureSpaces, discardPile, activeLoc))
                     {
                         ChaoticEngine.IsACardMoving = true;
                         hand[i].IsMoving = true;
                         hand[i].CourseToCard(discardPile.GetDiscardTemplate().Position);
                         elaspedTime = gameTime.TotalGameTime.TotalMilliseconds;
+                        ChaoticEngine.Highlighter.InitializeHighlight(gameTime, hand[i]);
                     }
                 }
                 else if (hand[i].Time >= gameTime.TotalGameTime.TotalMilliseconds - elaspedTime && hand[i].IsMoving)
@@ -212,6 +232,25 @@ namespace Chaotic
             //}
             foreach (Mugic card in hand)
                 card.Draw(spriteBatch, isPlayer1);
+
+            if (currentCard.HasValue)
+            {
+                string canCast = "Can Cast";
+                Vector2 posText;
+                if (currentCard.Value / 3 == 0)
+                {
+                    posText = hand[currentCard.Value].Position +
+                        new Vector2(ChaoticEngine.kCardWidth / 2 - font.MeasureString(canCast).X / 2,
+                            -font.MeasureString(canCast).Y);
+                }
+                else
+                {
+                    posText = hand[currentCard.Value].Position + new Vector2(0, ChaoticEngine.kCardHeight) +
+                        new Vector2(ChaoticEngine.kCardWidth / 2 - font.MeasureString(canCast).X / 2, 
+                            -font.MeasureString(canCast).Y / 4);
+                }
+                spriteBatch.DrawString(font, canCast, posText, Color.Blue, 0.0f, Vector2.Zero, 1f, SpriteEffects.None, 0.5f);
+            }
         }
     }
 }

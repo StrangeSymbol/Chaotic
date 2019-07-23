@@ -36,6 +36,10 @@ namespace Chaotic
         public static bool Hive { get; set; }
         public static bool PrevHive { get; set; }
         public static bool GenericMugicOnly { get; set; }
+        public static CardHighlighter Highlighter { get; set; } // When a card is added to burst puts a sheen on that card. 
+        public static ChaoticMessageBox MsgBox { get; set; } // Checks whether a player wants to add to Burst.
+        public static Ability CurrentAbility { get; set; }
+        public static BattleBoardNode SelectedNode { get; set; }
         public static List<ChaoticGameLib.Creature> sCreatures1;
         public static List<ChaoticGameLib.Battlegear> sBattlegears1;
         public static List<ChaoticGameLib.Attack> sAttacks1;
@@ -46,16 +50,6 @@ namespace Chaotic
         public static List<ChaoticGameLib.Attack> sAttacks2;
         public static List<ChaoticGameLib.Mugic> sMugics2;
         public static List<ChaoticGameLib.Location> sLocations2;
-
-        public static bool CheckMugicPlayable(ChaoticGameLib.Mugic mugic, BattleBoardNode[] creatureSpaces)
-        {
-            for (int i = 0; i < creatureSpaces.Length; i++)
-            {
-                if (creatureSpaces[i].CreatureNode != null && mugic.CheckCanPayMugicCost(creatureSpaces[i].CreatureNode))
-                    return true;
-            }
-            return false;
-        }
 
         public static void SaveFile(List<string> lst, string file)
         {

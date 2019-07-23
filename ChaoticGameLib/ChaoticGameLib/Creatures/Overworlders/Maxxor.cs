@@ -4,7 +4,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace ChaoticGameLib.Creatures
 {
-    public class Maxxor : Creature
+    public class Maxxor : Creature, IActivateTarget<Creature>
     {
         public Maxxor(Texture2D sprite, Texture2D overlay, 
             byte energy, byte courage, byte power, byte wisdom, byte speed) :
@@ -21,14 +21,26 @@ namespace ChaoticGameLib.Creatures
             "No OverWorlder has ever seen Maxxor's face in battle because he is always in the frontline, leading the charge!";
         }
 
-        public void Ability(Creature c)
+        public override bool CheckAbility(bool hive)
         {
-            if (this.MugicCounters >= this.MugicCost)
-            {
-                // cost of activating ability
-                this.MugicCounters -= this.MugicCost;
-                c.Heal(this.AbilityEnergy);
-            }
+            return this.MugicCounters >= this.MugicCost;
         }
+
+        public override bool CheckAbilityTarget(Creature creature, bool sameOwner)
+        {
+            return creature.CheckHealable();
+        }
+
+        void IActivate.PayCost()
+        {
+            this.MugicCounters -= this.MugicCost;
+        }
+
+        void IActivateTarget<Creature>.Ability(Creature c)
+        {
+            c.Heal(this.AbilityEnergy);
+        }
+
+        AbilityType IActivate.Type { get { return AbilityType.TargetCreature; } }
     }
 }

@@ -4,14 +4,17 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace ChaoticGameLib.Mugics
 {
-    public class SongOfRevival_UnderWorld_ : Mugic
+    public class SongOfRevival_UnderWorld_ : Mugic, ICastReturn
     {
         public SongOfRevival_UnderWorld_(Texture2D sprite, Texture2D overlay) : base(sprite, overlay, MugicType.UnderWorld, 2) { }
-        public override void Ability(Creature creature)
+
+        bool ICastReturn.CheckReturnable(Creature c)
         {
-            // TODO:
-            base.Ability(creature);
+            return c.CreatureTribe == Tribe.UnderWorld;
         }
+
+        AbilityType ICast.Type { get { return AbilityType.ReturnCreature; } }
+
         public override string Description()
         {
             return base.Description() + " Return target UnderWorld Creature Card in your discard pile " +

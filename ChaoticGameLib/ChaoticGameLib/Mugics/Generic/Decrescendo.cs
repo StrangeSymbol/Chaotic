@@ -4,14 +4,17 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace ChaoticGameLib.Mugics
 {
-    public class Decrescendo : Mugic
+    public class Decrescendo : Mugic, ICastTarget<Creature>
     {
         public Decrescendo(Texture2D sprite, Texture2D overlay) : base(sprite, overlay, MugicType.Generic, 1) { }
-        public override void Ability(Creature creature)
+
+        void ICastTarget<Creature>.Ability(Creature creature)
         {
             creature.Energy -= 5;
-            base.Ability(creature);
         }
+
+        AbilityType ICast.Type { get { return AbilityType.TargetCreature; } }
+
         public override string Description()
         {
             return base.Description() + " Deal 5 damage to target Creature. Minimalism to the max.";

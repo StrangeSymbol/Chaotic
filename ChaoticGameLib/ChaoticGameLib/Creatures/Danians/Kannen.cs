@@ -4,7 +4,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace ChaoticGameLib.Creatures
 {
-    public class Kannen : Creature
+    public class Kannen : Creature, IActivateChange, ISacrificeReturn
     {
         public Kannen(Texture2D sprite, Texture2D overlay, 
             byte energy, byte courage, byte power, byte wisdom, byte speed) :
@@ -22,19 +22,32 @@ namespace ChaoticGameLib.Creatures
             "\"My life is my tribe!\" -- Kannen";
         }
 
-        public void Ability(ref bool hive)
+        public override bool CheckAbility(bool hive)
         {
-            // Until end of turn.
-            if (this.MugicCounters >= 1)
-            {
-                this.MugicCounters--;
-                hive = true;
-            }
+            return this.MugicCounters >= 1 && !hive;
         }
-        public void Ability()
+
+        public override bool CheckSacrifice(bool sameOwner)
         {
-            this.Alive = false;
-            // Return a Mandiblor from discard pile to any open space.
+            return this.Energy > 0;
         }
+
+        void IActivate.PayCost()
+        {
+            this.MugicCounters--;
+        }
+
+        void IActivateChange.Ability(ref bool hive)
+        {
+            hive = true;
+        }
+
+        bool ISacrificeReturn.CheckReturnable(Creature c)
+        {
+            return c.CardType == CreatureType.Mandiblor || c.CardType == CreatureType.MandiblorMuge;
+        }
+
+        AbilityType IActivate.Type { get { return AbilityType.TargetSelfChange; } }
+        AbilityType ISacrifice.Type { get { return AbilityType.ReturnCreature; } }
     }
 }

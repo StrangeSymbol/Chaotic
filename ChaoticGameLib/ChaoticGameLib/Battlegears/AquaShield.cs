@@ -3,7 +3,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace ChaoticGameLib.Battlegears
 {
-    public class AquaShield : Battlegear
+    public class AquaShield : Battlegear, ISacrificeTarget<Creature>
     {
         public AquaShield(Texture2D texture, Texture2D overlay) : base(texture, overlay, 15) { }
         public override void Equip(Creature creature)
@@ -15,8 +15,24 @@ namespace ChaoticGameLib.Battlegears
         public override void UnEquip(Creature creature)
         {
             creature.RemoveGainedEnergy(5);
-            //creature.Heal(this.DisciplineAmount);
         }
+
+        public override bool CheckSacrifice(Creature creatureEquipped)
+        {
+            return this.IsFaceUp;
+        }
+
+        public override bool CheckSacrificeTarget(Creature target)
+        {
+            return target.CheckHealable();
+        }
+
+        void ISacrificeTarget<Creature>.Ability(Creature c)
+        {
+            c.Heal(this.DisciplineAmount);
+        }
+
+        AbilityType ISacrifice.Type { get { return AbilityType.TargetCreature; } }
 
         public override string Description()
         {

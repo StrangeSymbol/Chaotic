@@ -4,9 +4,11 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace ChaoticGameLib.Mugics
 {
-    public class SongOfFuturesight : Mugic
+    public class SongOfFuturesight : Mugic, ICast
     {
         public SongOfFuturesight(Texture2D sprite, Texture2D overlay) : base(sprite, overlay, MugicType.Generic, 1) { }
+
+        AbilityType ICast.Type { get { return AbilityType.TargetAttackLocationDeck; } }
 
         public override string Description()
         {

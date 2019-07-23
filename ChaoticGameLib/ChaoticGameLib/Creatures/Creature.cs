@@ -107,6 +107,9 @@ namespace ChaoticGameLib
         // Holds whether this Creature moved this turn.
         bool movedThisTurn;
 
+        // Holds whether this Creature can move to any spot on the board.
+        bool canMoveAnywhere;
+
         // Holds whether this Creature had first attack.
         bool firstAttack;
 
@@ -118,6 +121,10 @@ namespace ChaoticGameLib
 
         // The Type of Creature.
         CreatureType creatureType;
+
+        // Holds the reduced damage caused by element attacks.
+        byte reducedFireDamage;
+        byte reducedAirDamage;
         #endregion
 
         #region constructor
@@ -157,7 +164,6 @@ namespace ChaoticGameLib
             this.airCombat = this.air;
             this.earthCombat =  this.earth;
             this.waterCombat = this.water;
-            this.oldCreature = this.ShallowCopy() as Creature;
             this.gainedEnergyTurn = 0;
             this.creatureType = creatureType;
             this.firstAttack = true;
@@ -165,6 +171,8 @@ namespace ChaoticGameLib
             this.gainedEnergy = 0;
             this.fireDamageGained = this.airDamageGained = this.earthDamageGained = this.waterDamageGained = 0;
             this.swiftGained = 0;
+            this.reducedAirDamage = this.reducedFireDamage = 0;
+            this.oldCreature = this.ShallowCopy() as Creature;
         }
 
         public Creature(Texture2D sprite, Texture2D overlay, short energy, short courage, short power, short wisdom, short speed,
@@ -272,9 +280,14 @@ namespace ChaoticGameLib
 
         public bool MovedThisTurn { get { return this.movedThisTurn; } set { movedThisTurn = value; } }
 
+        public bool CanMoveAnywhere { get { return this.canMoveAnywhere; } set { canMoveAnywhere = value; } }
+
         public bool FirstAttack { get { return this.firstAttack; } set { firstAttack = value; } }
 
         protected byte PreNumAdja { get { return this.prevNumAdja; } set { this.prevNumAdja = value; } }
+
+        public byte ReducedFireDamage { get { return reducedFireDamage; } set { this.reducedFireDamage = value; } }
+        public byte ReducedAirDamage { get { return reducedAirDamage; } set { this.reducedAirDamage = value; } }
 
         public Tribe CreatureTribe { get { return tribe; } }
 
@@ -315,11 +328,15 @@ namespace ChaoticGameLib
             this.earth = oldCreature.Earth;
             this.water = oldCreature.Water;
             this.strike = oldCreature.strike;
+            this.surprise = oldCreature.Surprise;
             this.fireDamage = (byte)(oldCreature.fireDamage + fireDamageGained);
             this.airDamage = (byte)(oldCreature.airDamage + airDamageGained);
             this.earthDamage = (byte)(oldCreature.earthDamage + earthDamageGained);
             this.waterDamage = (byte)(oldCreature.waterDamage + waterDamageGained);
             this.swift = (byte)(oldCreature.swift + swiftGained);
+            this.range = oldCreature.Range;
+            this.canMoveAnywhere = false;
+            this.reducedAirDamage = this.reducedFireDamage = 0;
         }
 
         public bool Invisibility()
@@ -375,6 +392,50 @@ namespace ChaoticGameLib
                 else
                     this.Energy = (byte)(this.OldCreature.Energy + this.gainedEnergy);
             }
+        }
+        /// <summary>
+        /// This checks this Creature can be healed.
+        /// </summary>
+        /// <returns>Whether this Creature is healable.</returns>
+        public bool CheckHealable()
+        {
+            return this.energy < this.oldCreature.energy + this.gainedEnergyTurn + this.gainedEnergy;
+        }
+        /// <summary>
+        /// This checks that this Creature can activate an ability.
+        /// <param name="sameOwner">Do these creature belong to the same player.</param>
+        /// </summary>
+        /// <returns>Whether this Creature can activate ability.</returns>
+        public virtual bool CheckAbility(bool hive)
+        {
+            return false;
+        }
+        /// <summary>
+        /// This checks that this Creature has target for ability.
+        /// </summary>
+        /// <param name="creature">The Target of the effect.</param>
+        /// <returns>Whether this Creature can target for ability.</returns>
+        public virtual bool CheckAbilityTarget(Creature creature, bool sameOwner)
+        {
+            return true;
+        }
+        /// <summary>
+        /// This checks that this Creature can activate ability by sacrificing self.
+        /// </summary>
+        /// <param name="sameOwner">Do these creature belong to the same player.</param>
+        /// <returns>Whether this Creature can activate ability by sacrificing self.</returns>
+        public virtual bool CheckSacrifice(bool hive)
+        {
+            return false;
+        }
+        /// <summary>
+        /// This checks that this Creature can target for this ability by sacrificing self.
+        /// </summary>
+        /// <param name="creature">The Target of the effect.</param>
+        /// <returns>Whether this Creature can target for ability by sacrificing self.</returns>
+        public virtual bool CheckSacrificeTarget(Creature creature)
+        {
+            return true;
         }
 
         public override string ToString()

@@ -4,7 +4,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace ChaoticGameLib.Battlegears
 {
-    public class PrismOfVacuity : Battlegear
+    public class PrismOfVacuity : Battlegear, ISacrificeTarget<Creature>
     {
         public PrismOfVacuity(Texture2D sprite, Texture2D overlay) : base(sprite, overlay, 20) { }
         public override void Equip(Creature creature)
@@ -15,8 +15,25 @@ namespace ChaoticGameLib.Battlegears
         public override void UnEquip(Creature creature)
         {
             creature.RemoveGainedEnergy(5);
-            // Sacrifice Until end of turn target creature loses 20 power.
         }
+
+        public override bool CheckSacrifice(Creature creatureEquipped)
+        {
+            return this.IsFaceUp;
+        }
+
+        public override bool CheckSacrificeTarget(Creature target)
+        {
+            return target.Power > 0;
+        }
+
+        void ISacrificeTarget<Creature>.Ability(Creature c)
+        {
+            c.Power -= this.DisciplineAmount;
+            c.PowerTurn += this.DisciplineAmount;
+        }
+
+        AbilityType ISacrifice.Type { get { return AbilityType.TargetCreature; } }
 
         public override string Description()
         {

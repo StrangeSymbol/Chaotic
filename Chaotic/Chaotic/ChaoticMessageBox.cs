@@ -17,8 +17,9 @@ namespace Chaotic
 
         string title;
         string description;
-        bool active = true;
-        bool clickedYes;
+        bool active;
+        bool? clickedYes;
+        bool[] prevClicks;
 
         public ChaoticMessageBox(string title, string description, ContentManager content, GraphicsDeviceManager graphics)
         {
@@ -34,10 +35,13 @@ namespace Chaotic
             this.noButton = new Button(texture, new Vector2(graphics.PreferredBackBufferWidth / 2 + texture.Width / 2,
                 position.Y + panel.Height - texture.Height - 20), content.Load<Texture2D>("OkButtonCover"));
             font = content.Load<SpriteFont>(@"Fonts\MessageBox");
+            prevClicks = new bool[2]{true, true};
+            clickedYes = null;
         }
 
         public bool Active { get { return active; } set { active = value; } }
-        public bool ClickedYes { get { return clickedYes; } }
+        public bool? ClickedYes { get { return clickedYes; } set { clickedYes = value; } }
+        public bool PrevClick { get { return prevClicks[1]; } }
 
         public void UpdateMessageBox(GameTime gameTime)
         {
@@ -54,21 +58,26 @@ namespace Chaotic
                     active = false;
                     clickedYes = false;
                 }
+                if (clickedYes.HasValue)
+                {
+                    prevClicks[1] = prevClicks[0];
+                    prevClicks[0] = clickedYes.Value;
+                }
             }
         }
 
-        public void DrawMessageBox(SpriteBatch spriteBatch)
+        public void DrawMessageBox(SpriteBatch spriteBatch, float layerDepth=0.2f)
         {
             if (active)
             {
-                spriteBatch.Begin();
-                spriteBatch.Draw(panel, position, Color.White);
+                spriteBatch.Draw(panel, position, null, Color.White, 0f, Vector2.Zero, 1f, SpriteEffects.None, layerDepth);
                 yesButton.Draw(spriteBatch);
                 noButton.Draw(spriteBatch);
-                spriteBatch.DrawString(font, title, position, Color.Black);
+                spriteBatch.DrawString(font, title, position, Color.Black, 0f, 
+                    Vector2.Zero, 1f, SpriteEffects.None, layerDepth - 0.05f);
                 spriteBatch.DrawString(font, description, new Vector2(position.X + panel.Width / 2 - font.MeasureString(description).X / 2,
-                    position.Y + panel.Height / 2 - font.MeasureString(description).Y / 2), Color.Black);
-                spriteBatch.End();
+                    position.Y + panel.Height / 2 - font.MeasureString(description).Y / 2), Color.Black, 
+                    0f, Vector2.Zero, 1f, SpriteEffects.None, layerDepth - 0.05f);
             }
         }
     }

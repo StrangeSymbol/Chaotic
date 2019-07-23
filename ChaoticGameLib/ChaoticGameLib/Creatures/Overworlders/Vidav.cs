@@ -4,7 +4,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace ChaoticGameLib.Creatures
 {
-    public class Vidav : Creature
+    public class Vidav : Creature, IActivateTarget<Creature>
     {
         public Vidav(Texture2D sprite, Texture2D overlay, 
             byte energy, byte courage, byte power, byte wisdom, byte speed)
@@ -21,14 +21,26 @@ namespace ChaoticGameLib.Creatures
             "could have brought peace to the warring tribes of Perim...if only its leaders had been willing to accept it.";
         }
 
-        public void Ability(Creature c)
+        public override bool CheckAbility(bool hive)
         {
-            if (this.MugicCounters >= this.MugicCost)
-            {
-                // cost of activating ability
-                this.MugicCounters -= this.MugicCost;
-                c.Heal(this.AbilityEnergy);
-            }
+            return this.MugicCounters >= this.MugicCost;
         }
+
+        public override bool CheckAbilityTarget(Creature creature, bool sameOwner)
+        {
+            return creature.CheckHealable();
+        }
+
+        void IActivate.PayCost()
+        {
+            this.MugicCounters -= this.MugicCost;
+        }
+
+        void IActivateTarget<Creature>.Ability(Creature c)
+        {
+            c.Heal(this.AbilityEnergy);
+        }
+
+        AbilityType IActivate.Type { get { return AbilityType.TargetCreature; } }
     }
 }

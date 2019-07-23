@@ -29,6 +29,10 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
+    <TargetCulture>en-CA</TargetCulture>
+    <ProductName>Chaotic</ProductName>
+    <PublisherName>Ambrose Emmett-Iwaniw</PublisherName>
+    <SuiteName>Strange Symbol</SuiteName>
     <ApplicationRevision>1</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
@@ -111,6 +115,7 @@
     <Compile Include="ChaoticForm.Designer.cs">
       <DependentUpon>ChaoticForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="CheckSystem.cs" />
     <Compile Include="Coin.cs" />
     <Compile Include="DeckSetup1On1.cs">
       <SubType>Form</SubType>
@@ -141,6 +146,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="GameMenu.cs" />
+    <Compile Include="SelectingSystem.cs" />
     <Compile Include="SelectPanel.cs" />
   </ItemGroup>
   <ItemGroup>

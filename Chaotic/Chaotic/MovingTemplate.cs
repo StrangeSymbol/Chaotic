@@ -136,7 +136,7 @@ namespace Chaotic
 
             spriteBatch.Draw(this.texture, CollisionRectangle, null, Color.White, 0f, Vector2.Zero, spriteEffect, layerDepth);
             if (IsCovered)
-                spriteBatch.Draw(this.overlay, CollisionRectangle, null, Color.White, 0f, Vector2.Zero, spriteEffect, layerDepth - 0.05f);
+                spriteBatch.Draw(this.overlay, CollisionRectangle, null, Color.Yellow, 0f, Vector2.Zero, spriteEffect, layerDepth - 0.05f);
         }
 
         public virtual void DrawTemplate(SpriteBatch spriteBatch, Texture2D sprite, bool isPlayer1, float layerDepth=0.85f)

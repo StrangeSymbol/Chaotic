@@ -48,9 +48,19 @@ namespace ChaoticGameLib
             // ERROR: If not implemented means no unequip effect.
         }
 
+        public virtual bool CheckSacrifice(Creature creatureEquipped)
+        {
+            return false;
+        }
+
+        public virtual bool CheckSacrificeTarget(Creature target)
+        {
+            return true;
+        }
+
         public override string ToString()
         {
-            return this.Name + " BattleGear.";
+            return this.Name + " Battlegear.";
         } 
     }
 }

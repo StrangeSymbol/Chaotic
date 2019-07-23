@@ -151,7 +151,7 @@ namespace ChaoticGameLib
                 spriteEffect = SpriteEffects.FlipVertically;
             spriteBatch.Draw(this.sprite, CollisionRectangle, null, Color.White, 0f, Vector2.Zero, spriteEffect, layer);
             if (IsCovered)
-                spriteBatch.Draw(this.overlay, CollisionRectangle, null, Color.White, 0f, Vector2.Zero, spriteEffect, cover);
+                spriteBatch.Draw(this.overlay, CollisionRectangle, null, Color.Yellow, 0f, Vector2.Zero, spriteEffect, cover);
         }
 
         public void Draw(SpriteBatch spriteBatch, Texture2D texture, bool isPlayer1)

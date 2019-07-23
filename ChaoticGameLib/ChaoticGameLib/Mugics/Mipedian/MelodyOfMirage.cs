@@ -4,14 +4,17 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace ChaoticGameLib.Mugics
 {
-    public class MelodyOfMirage : Mugic
+    public class MelodyOfMirage : Mugic, ICastTarget<Attack>
     {
         public MelodyOfMirage(Texture2D sprite, Texture2D overlay) : base(sprite, overlay, MugicType.Mipedian, 1) { }
-        public override void Ability(Creature creature)
+
+        void ICastTarget<Attack>.Ability(Attack attack)
         {
-            // TODO:
-            base.Ability(creature);
+            attack.DealZero = true;
         }
+
+        AbilityType ICast.Type { get { return AbilityType.TargetAttack; } }
+
         public override string Description()
         {
             return base.Description() + " Target attack deals 0 damage." +

@@ -50,15 +50,17 @@ namespace Chaotic
             this.mugicTextures = mugicTextures;
             mugicPositions = new Vector2[6];
             creatureMenu = new BattleBoardMenu(creatureButtons, button);
-            battlegearMenu = new BattleBoardMenu(new BattleBoardButton[2] { creatureButtons[1],
+            battlegearMenu = new BattleBoardMenu(new BattleBoardButton[2] { 
+                new BattleBoardButton(creatureButtons[1].Texture, creatureButtons[1].Overlay, 
+                creatureButtons[1].Width, creatureButtons[1].Height, ActionType.ActivateBattlegear),
                 new BattleBoardButton(creatureButtons[2].Texture, creatureButtons[2].Overlay, 
                 creatureButtons[2].Width, creatureButtons[2].Height, ActionType.SacrificeBattlegear)}, button);
         }
 
         public Vector2 Position { get { return position; } }
-        protected Rectangle CreatureRectangle { get { return new Rectangle((int)position.X, (int)position.Y, ChaoticEngine.kCardWidth,
+        public Rectangle CreatureRectangle { get { return new Rectangle((int)position.X, (int)position.Y, ChaoticEngine.kCardWidth,
             ChaoticEngine.kCardHeight); } }
-        protected Rectangle BattlegearRectangle
+        public Rectangle BattlegearRectangle
         {
             get
             {
@@ -75,17 +77,30 @@ namespace Chaotic
         public bool MouseCoveredBattlegear { get { return mouseCoveredBattlegear; } }
         public bool IsMovableSpace { get { return isMovableSpace; } set { isMovableSpace = value; } }
         public bool IsPlayer1 { get { return isPlayer1; } set { isPlayer1 = value; } }
+        public bool IsSelectible { get { if (creature != null) return creature.IsCovered; else return false; }
+            set { if (creature != null) creature.IsCovered = value; }
+        }
 
         public bool HasBattegear()
         {
-            return creature.Battlegear != null;
+            return creature != null && creature.Battlegear != null;
         }
 
-        public ActionType? UpdateBattleBoardNode(MouseState mouse, GameTime gameTime)
+        public ActionType? UpdateBattleBoardNode(GameTime gameTime, MouseState mouse, BattleBoardNode[] creatureSpaces,
+            DiscardPile<ChaoticCard> discardPile, ActiveLocation activeLoc)
         {
             ActionType? action = creatureMenu.UpdateBattleBoardMenu(gameTime, mouse, creature, position,
-                CreatureRectangle, mouseCoveredCreature, numMoves);
-            return action;
+                CreatureRectangle, mouseCoveredCreature, this.isPlayer1, creatureSpaces, discardPile, activeLoc, numMoves);
+            if (!action.HasValue)
+            {
+                Vector2 locButtonPos = position + (this.isPlayer1 ?
+                    new Vector2(0, -ChaoticEngine.kCardHeight / 4) : new Vector2(0, 3 * ChaoticEngine.kCardHeight / 4));
+                return battlegearMenu.UpdateBattleBoardMenu(gameTime, mouse, creature,
+                     locButtonPos, BattlegearRectangle, MouseCoveredBattlegear,
+                    this.isPlayer1, creatureSpaces, discardPile, activeLoc);
+            }
+            else
+                return action;
         }
 
         public void UpdateCardDescription(MouseState mouse)
@@ -319,11 +334,11 @@ namespace Chaotic
             return numMandiblors;
         }
 
-        public void TurnOnPlayableMugic(MugicHand hand)
+        public void TurnOnPlayableMugic(MugicHand hand, ActiveLocation activeLoc)
         {
             for (int i = 0; i < hand.Count; i++)
             {
-                if (hand[i].CheckCanPayMugicCost(creature))
+                if (hand[i].CheckCanPayMugicCost(creature, activeLoc.LocationActive))
                     hand[i].IsCovered = true;
             }
         }
@@ -500,6 +515,10 @@ namespace Chaotic
                     spriteBatch.Draw(creature.Texture, new Rectangle((int)creature.Position.X, (int)creature.Position.Y,
                         ChaoticEngine.kCardWidth, ChaoticEngine.kCardHeight), null, Color.White, 0f,
                         Vector2.Zero, SpriteEffects.FlipVertically, 0.7f);
+
+                if (creature.IsCovered)
+                    spriteBatch.Draw(overlay, CreatureRectangle, null, Color.Yellow, 0f, Vector2.Zero, SpriteEffects.None, 0.55f);
+
                 if (creature.Battlegear != null)
                 {
                     Texture2D sprite;
@@ -533,6 +552,9 @@ namespace Chaotic
                         spriteBatch.DrawString(font, battlegearDescription(), descriptionPosition, Color.Black,
                             0f, Vector2.Zero, 1f, SpriteEffects.None, 0.4f);
                     }
+                    if (creature.Battlegear.IsCovered)
+                        spriteBatch.Draw(overlay, BattlegearRectangle, null, Color.Yellow, 0f, 
+                            Vector2.Zero, SpriteEffects.None, 0.75f);
                 }
                 if (mouseCoveredCreature)
                 {
@@ -554,8 +576,7 @@ namespace Chaotic
             }
             if (isMovableSpace)
             {
-                spriteBatch.Draw(overlay, CreatureRectangle,
-                    null, Color.White, 0f, Vector2.Zero, SpriteEffects.None, 0.6f);
+                spriteBatch.Draw(overlay, CreatureRectangle, null, Color.Red, 0f, Vector2.Zero, SpriteEffects.None, 0.6f);
             }
         }
     }

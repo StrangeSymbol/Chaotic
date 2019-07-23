@@ -4,14 +4,17 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace ChaoticGameLib.Mugics
 {
-    public class FanfareOfTheVanishing : Mugic
+    public class FanfareOfTheVanishing : Mugic, ICastTarget<Creature>
     {
         public FanfareOfTheVanishing(Texture2D sprite, Texture2D overlay) : base(sprite, overlay, MugicType.Mipedian, 1) { }
-        public override void Ability(Creature creature)
+
+        void ICastTarget<Creature>.Ability(Creature creature)
         {
-            // TODO:
-            base.Ability(creature);
+            creature.Strike += 15;
         }
+
+        AbilityType ICast.Type { get { return AbilityType.TargetCreature; } }
+
         public override string Description()
         {
             return base.Description() + " Target Creature gains \"Invisibility: Strike 15\" until the end of the turn." +

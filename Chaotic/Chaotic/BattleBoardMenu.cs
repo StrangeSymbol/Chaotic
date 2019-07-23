@@ -21,8 +21,9 @@ namespace Chaotic
 
         public bool MousePressed { get { return mousePressed; } }
 
-        public ActionType? UpdateBattleBoardMenu(GameTime gameTime, MouseState mouse, ChaoticCard card, Vector2 position,
-            Rectangle cardRect, bool mouseCovered, int numMoves=0)
+        public ActionType? UpdateBattleBoardMenu(GameTime gameTime, MouseState mouse, Creature card, Vector2 position,
+            Rectangle cardRect, bool mouseCovered, bool isPlayer1, BattleBoardNode[] creatureSpaces,
+            DiscardPile<ChaoticCard> discardPile, ActiveLocation activeLoc, int numMoves=0)
         {
             if (card != null && mouse.LeftButton == ButtonState.Pressed && cardRect.Contains(mouse.X, mouse.Y))
             {
@@ -33,8 +34,44 @@ namespace Chaotic
                     switch (buttons[i].Action)
                     {
                         case ActionType.Move:
-                            if (numMoves > 0 && (!ChaoticEngine.CombatThisTurn ||
-                                (card is Creature && !(card as Creature).MovedThisTurn))) // Swift Effect.
+                            if (ChaoticEngine.GStage == GameStage.Action && numMoves > 0 &&
+                                (!ChaoticEngine.CombatThisTurn || !card.MovedThisTurn)) // Swift Effect.
+                            {
+                                buttons[i].IsActive = true;
+                                buttons[i].Position = new Vector2(position.X + ChaoticEngine.kCardWidth,
+                                    position.Y + count * buttons[i].Height);
+                                count++;
+                            }
+                            break;
+                        case ActionType.ActivateCreature:
+                            if (CheckSystem.CheckCreatureAbility(isPlayer1, card, creatureSpaces, discardPile, activeLoc))
+                            {
+                                buttons[i].IsActive = true;
+                                buttons[i].Position = new Vector2(position.X + ChaoticEngine.kCardWidth,
+                                    position.Y + count * buttons[i].Height);
+                                count++;
+                            }
+                            break;
+                        case ActionType.ActivateBattlegear:
+                            if (CheckSystem.CheckBattlegearAbility(card, creatureSpaces, activeLoc))
+                            {
+                                buttons[i].IsActive = true;
+                                buttons[i].Position = new Vector2(position.X + ChaoticEngine.kCardWidth,
+                                    position.Y + count * buttons[i].Height);
+                                count++;
+                            }
+                            break;
+                        case ActionType.SacrificeCreature:
+                            if (CheckSystem.CheckCreatureSacrifice(card, creatureSpaces, discardPile, activeLoc))
+                            {
+                                buttons[i].IsActive = true;
+                                buttons[i].Position = new Vector2(position.X + ChaoticEngine.kCardWidth,
+                                    position.Y + count * buttons[i].Height);
+                                count++;
+                            }
+                            break;
+                        case ActionType.SacrificeBattlegear:
+                            if (CheckSystem.CheckBattlegearSacrifice(card, creatureSpaces, discardPile, activeLoc))
                             {
                                 buttons[i].IsActive = true;
                                 buttons[i].Position = new Vector2(position.X + ChaoticEngine.kCardWidth,

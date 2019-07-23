@@ -4,16 +4,22 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace ChaoticGameLib.Mugics
 {
-    public class SongOfEmbernova : Mugic
+    public class SongOfEmbernova : Mugic, ICastTarget<Creature>
     {
         public SongOfEmbernova(Texture2D sprite, Texture2D overlay) : base(sprite, overlay, MugicType.Generic, 1) { }
 
-        public override void Ability(Creature creature)
+        public override bool CheckPlayable(Creature creature)
         {
-            if (creature.Air || creature.Fire)
-                creature.Energy -= 10;
-            base.Ability(creature);
+            return creature.Air || creature.Fire;
         }
+
+        void ICastTarget<Creature>.Ability(Creature creature)
+        {
+            if (creature.Fire || creature.Air)
+                creature.Energy -= 10;
+        }
+
+        AbilityType ICast.Type { get { return AbilityType.TargetCreature; } }
 
         public override string Description()
         {

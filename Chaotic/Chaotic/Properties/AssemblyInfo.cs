@@ -7,7 +7,7 @@ using System.Runtime.InteropServices;
 // associated with an assembly.
 [assembly: AssemblyTitle("Chaotic")]
 [assembly: AssemblyProduct("Chaotic")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("2D Card game.")]
 [assembly: AssemblyCompany("Strange Symbol")]
 [assembly: AssemblyCopyright("Copyright © Strange Symbol 2019")]
 [assembly: AssemblyTrademark("")]

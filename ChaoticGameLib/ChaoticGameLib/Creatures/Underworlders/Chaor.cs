@@ -21,6 +21,9 @@ namespace ChaoticGameLib.Creatures
             "\"We'll take Kiru City and the UnderWorld will rule all of Perim!\" -- Chaor";
         }
 
-        // TODO: Implement ability
+        public override bool CheckAbility(bool hive)
+        {
+            return this.MugicCounters >= 3;
+        }
     }
 }

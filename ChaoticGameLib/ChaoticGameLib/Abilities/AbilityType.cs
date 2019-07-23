@@ -1,0 +1,11 @@
+﻿using System;
+
+namespace ChaoticGameLib
+{
+    public enum AbilityType : byte
+    {
+        TargetSelf, TargetSelfChange, TargetCreature, TargetCreatureTwo, SacrificeTargetCreature,
+        ReturnMugic, ReturnCreature, TargetAttackDeck, TargetLocationDeck, TargetAttackLocationDeck, DispelMugic,
+        TargetEquipped, TargetSelectElemental, DestroyTargetBattlegear, TargetAttack, ShuffleTargetDeck,
+    };
+}

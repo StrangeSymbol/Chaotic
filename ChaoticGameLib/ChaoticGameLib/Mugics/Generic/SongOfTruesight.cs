@@ -5,18 +5,23 @@ using ChaoticGameLib.Creatures;
 
 namespace ChaoticGameLib.Mugics
 {
-    public class SongOfTruesight : Mugic
+    public class SongOfTruesight : Mugic, ICastTarget<Creature>
     {
         public SongOfTruesight(Texture2D sprite, Texture2D overlay) : base(sprite, overlay, MugicType.Generic, 1) { }
-        public override void Ability(Creature creature)
+
+        public override bool CheckPlayable(Creature creature)
         {
-            if (creature.CreatureTribe == Tribe.Mipedian)
-            {
-                creature.UsedAbility = true;
-                creature.Surprise = false;
-            }
-            base.Ability(creature);
+            return creature.Invisibility();
         }
+
+        void ICastTarget<Creature>.Ability(Creature creature)
+        {
+            creature.Strike = 0;
+            creature.Surprise = false;
+        }
+
+        AbilityType ICast.Type { get { return AbilityType.TargetCreature; } }
+
         public override string Description()
         {
             return base.Description() + " Target Creature loses all Invisability abilities until the end of the turn." +

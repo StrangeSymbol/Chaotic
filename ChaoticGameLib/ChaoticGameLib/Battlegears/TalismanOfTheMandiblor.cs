@@ -4,7 +4,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace ChaoticGameLib.Battlegears
 {
-    public class TalismanOfTheMandiblor : Battlegear
+    public class TalismanOfTheMandiblor : Battlegear, ISacrificeReturn
     {
         public TalismanOfTheMandiblor(Texture2D sprite, Texture2D overlay) : base(sprite, overlay, 15) { }
         public override void Equip(Creature creature)
@@ -15,6 +15,13 @@ namespace ChaoticGameLib.Battlegears
         {
             creature.Speed -= this.DisciplineAmount;
         }
+
+        bool ISacrificeReturn.CheckReturnable(Creature c)
+        {
+            return c.CardType == CreatureType.Mandiblor || c.CardType == CreatureType.MandiblorMuge;
+        }
+
+        AbilityType ISacrifice.Type { get { return AbilityType.ReturnCreature; } }
 
         public override string Description()
         {

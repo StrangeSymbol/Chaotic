@@ -4,7 +4,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace ChaoticGameLib.Creatures
 {
-    public class Owis : Creature
+    public class Owis : Creature, IActivateTarget<Creature>
     {
         public Owis(Texture2D sprite, Texture2D overlay, byte energy, byte courage, byte power, byte wisdom, byte speed) :
             base(sprite, overlay, energy, courage, power, wisdom, speed, 1, false, false, false, true, 0,
@@ -20,20 +20,29 @@ namespace ChaoticGameLib.Creatures
             "UnderWorlders have made countless attempts to breach Cordac Falls. Owis has repelled all but one...the one that haunts him.";
         }
 
-        public void Ability(Creature c)
+        public override bool CheckAbility(bool hive)
         {
-            if (this.MugicCounters >= this.MugicCost)
-            {
-                // cost of activating ability
-                this.MugicCounters -= this.MugicCost;
+            return this.MugicCounters >= this.MugicCost;
+        }
+
+        public override bool CheckAbilityTarget(Creature creature, bool sameOwner)
+        {
+            return creature.CheckHealable();
+        }
+
+        void IActivate.PayCost()
+        {
+            this.MugicCounters -= this.MugicCost;
+        }
+
+        void IActivateTarget<Creature>.Ability(Creature c)
+        {
+            if (this != c)
                 c.Heal(this.AbilityEnergy);
-            }
+            else
+                c.Heal(10);
         }
-        public void Ability()
-        {
-            this.AbilityEnergy = 10;
-            Ability(this);
-            this.AbilityEnergy = 5;
-        }
+
+        AbilityType IActivate.Type { get { return AbilityType.TargetCreature; } }
     }
 }

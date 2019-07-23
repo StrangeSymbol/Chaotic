@@ -18,6 +18,8 @@ namespace Chaotic
     LocationStepCombat, ReturnLocationCombat, LocationSelectAbility1, LocationSelectAbility2, 
     BattlegearSelectAbility1, BattlegearSelectAbility2, SelectingCreature1, SelectingCreature2, Showdown, ShowdownCoinFlip,
     ShuffleLocDeck1, ShuffleLocDeck2, SelectMugic1, SelectMugic2, ReturnMugic1, ReturnMugic2, DiscardMugic1, DiscardMugic2,
+    SelCreatureToDiscard, SelBattlegearToDiscard, TargetCreature, SelMugicInDiscard, SelCreatureInDiscard, TargetBattlegear,
+    SelAttackDeck, SelLocationDeck, SelAttackLocationDeck, SelElemental, SelMugic, DecideToBurst, AddingToBurst, RunBurst,
     };
 
     /// <summary>
@@ -62,6 +64,8 @@ namespace Chaotic
         List<Location> topLoc;
         SelectPanel<Mugic> mugicPanel;
         List<Mugic> discardedMugics;
+        SelectPanel<Creature> creaturePanel;
+        List<Creature> discardedCreature;
 
         CreatureNumber creatureNumber;
         bool done;
@@ -89,10 +93,13 @@ namespace Chaotic
             ChaoticEngine.PrevHive = false;
             ChaoticEngine.Player1Active = true;
             ChaoticEngine.CombatThisTurn = false;
+            ChaoticEngine.GenericMugicOnly = false;
+            ChaoticEngine.CurrentAbility = null;
             hadCombat = new bool[3] { false, false, true };
             topAtk = null;
             topLoc = null;
             discardedMugics = null;
+            discardedCreature = null;
         }
 
         /// <summary>
@@ -138,7 +145,8 @@ namespace Chaotic
             attackDeck1 = new AttackDeck(attackTexture, cardBack, spaceCover, attackPosition, true);
             attackHand1 = new AttackHand(true, cardBack, attackPosition, damageCover, healCover,
                 Game.Content.Load<SpriteFont>("Fonts/AttackDamage"));
-            mugicHand1 = new MugicHand(true, cardBack, discardPosition);
+            mugicHand1 = new MugicHand(true, cardBack, discardPosition,
+                Game.Content.Load<SpriteFont>(@"Fonts\CardDescriptionFont"));
             for (int i = 0; i < ChaoticEngine.sMugics1.Count; i++)
                 mugicHand1.AddCardToHand(ChaoticEngine.sMugics1[i]);
             Vector2 locationPosition = new Vector2(graphics.PreferredBackBufferWidth / 2 - 3 * ChaoticEngine.kCardWidth
@@ -156,7 +164,8 @@ namespace Chaotic
             attackDeck2 = new AttackDeck(attackTexture, cardBack, spaceCover, attackPosition, false);
             attackHand2 = new AttackHand(false, cardBack, attackPosition, damageCover, healCover,
                 Game.Content.Load<SpriteFont>("Fonts/AttackDamage"));
-            mugicHand2 = new MugicHand(false, cardBack, discardPosition);
+            mugicHand2 = new MugicHand(false, cardBack, discardPosition, 
+                Game.Content.Load<SpriteFont>(@"Fonts\CardDescriptionFont"));
             for (int i = 0; i < ChaoticEngine.sMugics2.Count; i++)
                 mugicHand2.AddCardToHand(ChaoticEngine.sMugics2[i]);
             locationPosition = new Vector2(discardPosition.X + 2 * ChaoticEngine.kCardWidth,
@@ -172,7 +181,7 @@ namespace Chaotic
             BattleBoardButton move = new BattleBoardButton(moveButtonSprite, overlay,
                 ChaoticEngine.kCardWidth, ChaoticEngine.kCardHeight / 3, ActionType.Move);
             BattleBoardButton activate = new BattleBoardButton(activateButtonSprite, overlay,
-                ChaoticEngine.kCardWidth, ChaoticEngine.kCardHeight / 3, ActionType.Activate);
+                ChaoticEngine.kCardWidth, ChaoticEngine.kCardHeight / 3, ActionType.ActivateCreature);
             BattleBoardButton sacrifice = new BattleBoardButton(sacrificeButtonSprite, overlay, ChaoticEngine.kCardWidth,
                 ChaoticEngine.kCardHeight / 3, ActionType.SacrificeCreature);
             BattleBoardButton cast = new BattleBoardButton(castButtonSprite, overlay, ChaoticEngine.kCardWidth,
@@ -319,6 +328,7 @@ namespace Chaotic
             locationPanel1 = new SelectPanel<Location>(Game.Content, graphics, 2, "Top", "Bottom");
             locationPanel2 = new SelectPanel<Location>(Game.Content, graphics, 3, "Top", "Bottom", "2nd From\n Bottom");
             mugicPanel = new SelectPanel<Mugic>(Game.Content, graphics, 1, "Return");
+            creaturePanel = new SelectPanel<Creature>(Game.Content, graphics, 1, "Return");
 
             Texture2D backTexture = Game.Content.Load<Texture2D>("Menu/SuitBackButton");
             backButton = new Button(backTexture, new Vector2(graphics.PreferredBackBufferWidth - backTexture.Width - 20, 20),
@@ -330,6 +340,10 @@ namespace Chaotic
             hubFont = Game.Content.Load<SpriteFont>("Fonts/HUB");
 
             coin = new Coin(Game.Content, graphics);
+
+            ChaoticEngine.Highlighter = new CardHighlighter(Game.Content, graphics);
+            ChaoticEngine.MsgBox = new ChaoticMessageBox("Adding To Burst", "Do you want to add an ability to Burst?", 
+                Game.Content, graphics);
             base.LoadContent();
         }
 
@@ -364,13 +378,65 @@ namespace Chaotic
                 ChaoticEngine.PrevHive = false;
         }
 
+        private void hiveUpdate()
+        {
+            for (int i = 0; i < creatureSpaces.Length; i++)
+            {
+                if (creatureSpaces[i].CreatureNode is IHive && ChaoticEngine.Hive)
+                {
+                    byte numMandiblor = creatureSpaces[i].NumMandiblors(creatureSpaces);
+                    (creatureSpaces[i].CreatureNode as IHive).HiveOn(numMandiblor);
+                }
+                else if (creatureSpaces[i].CreatureNode is ChaoticGameLib.Creatures.OduBathax)
+                {
+                    byte numMandiblor = creatureSpaces[i].NumMandiblors(creatureSpaces);
+                    (creatureSpaces[i].CreatureNode as ChaoticGameLib.Creatures.OduBathax).Ability(numMandiblor);
+                }
+            }
+        }
+
+        private void selectedCreatureToDiscard(GameTime gameTime, MouseState mouse, BattleBoardNode selectedCreature,
+            DiscardPile<ChaoticCard> discardPile)
+        {
+            if (selectedCreature.HasBattegear())
+            {
+                stageQueue.Enqueue(GameStage.SelCreatureToDiscard);
+                while (stageQueue.Peek() != GameStage.SelCreatureToDiscard)
+                    stageQueue.Enqueue(stageQueue.Dequeue());
+                ChaoticEngine.GStage = GameStage.SelBattlegearToDiscard;
+            }
+            else
+            {
+                if (selectedCreature.UpdateDiscardCreature(gameTime, mouse, discardPile))
+                {
+                    selectedCreature.RemoveCreature();
+                    updateSupport();
+                    ChaoticEngine.GStage = stageQueue.Dequeue();
+                }
+                if (ChaoticEngine.GStage != GameStage.SelCreatureToDiscard)
+                {
+                    hiveUpdate();
+                }
+            }
+        }
+
+        private void selectedBattlegearToDiscard(GameTime gameTime, MouseState mouse, BattleBoardNode selectedBattlegear,
+            DiscardPile<ChaoticCard> discardPile)
+        {
+            if (selectedBattlegear.UpdateDiscardBattlegear(gameTime, mouse, discardPile))
+            {
+                selectedBattlegear.RemoveBattlegear();
+                ChaoticEngine.GStage = stageQueue.Dequeue();
+            }
+        }
+
         private void creatureToDiscard(GameTime gameTime, MouseState mouse, BattleBoardNode you, BattleBoardNode enemy,
-            DiscardPile<ChaoticCard> discardPile, GameStage cStage, GameStage bStage)
+            DiscardPile<ChaoticCard> discardPile, GameStage bStage)
         {
             if ((ChaoticEngine.Player1Active && you.HasBattegear()) ||
                 (!ChaoticEngine.Player1Active && enemy.HasBattegear()))
             {
-                stageQueue.Enqueue(cStage);
+                stageQueue.Enqueue(ChaoticEngine.GStage);
                 ChaoticEngine.GStage = bStage;
             }
             else
@@ -391,19 +457,7 @@ namespace Chaotic
                 }
                 if (ChaoticEngine.GStage == GameStage.EndOfCombat)
                 {
-                    for (int i = 0; i < creatureSpaces.Length; i++)
-                    {
-                        if (creatureSpaces[i].CreatureNode is IHive && ChaoticEngine.Hive)
-                        {
-                            byte numMandiblor = creatureSpaces[i].NumMandiblors(creatureSpaces);
-                            (creatureSpaces[i].CreatureNode as IHive).HiveOn(numMandiblor);
-                        }
-                        else if (creatureSpaces[i].CreatureNode is ChaoticGameLib.Creatures.OduBathax)
-                        {
-                            byte numMandiblor = creatureSpaces[i].NumMandiblors(creatureSpaces);
-                            (creatureSpaces[i].CreatureNode as ChaoticGameLib.Creatures.OduBathax).Ability(numMandiblor);
-                        }
-                    }
+                    hiveUpdate();
                 }
             }
         }
@@ -613,6 +667,135 @@ namespace Chaotic
                 ChaoticLibEngine.HasMaquisDarini = false;
         }
 
+        private void updatePlayableAbilities(MouseState mouse, GameTime gameTime, bool playerOneTurn)
+        {
+            ActiveLocation activeLoc = activeLocation1.LocationActive != null ? activeLocation1 : activeLocation2;
+            if (playerOneTurn)
+            {
+                mugicHand1.UpdatePlayable(mouse, creatureSpaces, discardPile1, activeLoc);
+                if (mugicHand1.UpdateHand(gameTime, mouse, discardPile1, creatureSpaces, activeLoc))
+                {
+                    Mugic mugic = discardPile1[discardPile1.Count - 1] as Mugic;
+                    if (mugic is ICast)
+                    {
+                        stageQueue.Enqueue(GameStage.TargetCreature);
+                        ICast cast = mugic as ICast;
+                        setAbilityPath(true, cast.Type, AbilityAction.Cast);
+                        ChaoticEngine.CurrentAbility.Add(mugic);
+                    }
+                }
+            }
+            else
+            {
+                mugicHand2.UpdatePlayable(mouse, creatureSpaces, discardPile2, activeLoc);
+                if (mugicHand2.UpdateHand(gameTime, mouse, discardPile2, creatureSpaces, activeLoc))
+                {
+                    Mugic mugic = discardPile2[discardPile2.Count - 1] as Mugic;
+                    if (mugic is ICast)
+                    {
+                        stageQueue.Enqueue(GameStage.TargetCreature);
+                        ICast cast = mugic as ICast;
+                        setAbilityPath(false, cast.Type, AbilityAction.Cast);
+                        ChaoticEngine.CurrentAbility.Add(mugic);
+                    }
+                }
+            }
+
+            for (int i = 0; i < creatureSpaces.Length; i++)
+            {
+                if (creatureSpaces[i].IsPlayer1 == playerOneTurn)
+                {
+                    ActionType? action = creatureSpaces[i].UpdateBattleBoardNode(gameTime, mouse, creatureSpaces,
+                        creatureSpaces[i].IsPlayer1 ? discardPile1 : discardPile2, activeLoc);
+
+                    switch (action)
+                    {
+                        case ActionType.Move:
+                            creatureSpaces[i].TurnOnMovableSpaces(creatureSpaces);
+                            selectedSpace = i;
+                            ChaoticEngine.GStage = GameStage.Moving;
+                            break;
+                        case ActionType.ActivateCreature:
+                            IActivate active = creatureSpaces[i].CreatureNode as IActivate;
+                            active.PayCost();
+                            setAbilityPath(creatureSpaces[i].IsPlayer1, active.Type, AbilityAction.Activate);
+                            ChaoticEngine.CurrentAbility.Add(creatureSpaces[i].CreatureNode);
+                            ChaoticEngine.Highlighter.InitializeHighlight(gameTime, creatureSpaces[i].CreatureNode);
+                            break;
+                        case ActionType.SacrificeCreature:
+                            ChaoticEngine.SelectedNode = creatureSpaces[i];
+                            stageQueue.Enqueue(GameStage.SelCreatureToDiscard);
+                            setAbilityPath(creatureSpaces[i].IsPlayer1, (creatureSpaces[i].CreatureNode as ISacrifice).Type,
+                                AbilityAction.Sacrifice);
+                            ChaoticEngine.CurrentAbility.Add(creatureSpaces[i].CreatureNode);
+                            ChaoticEngine.Highlighter.InitializeHighlight(gameTime, creatureSpaces[i].CreatureNode);
+                            break;
+                        case ActionType.SacrificeBattlegear:
+                            ChaoticEngine.SelectedNode = creatureSpaces[i];
+                            stageQueue.Enqueue(GameStage.SelBattlegearToDiscard);
+                            setAbilityPath(creatureSpaces[i].IsPlayer1, 
+                                (creatureSpaces[i].CreatureNode.Battlegear as ISacrifice).Type, AbilityAction.Sacrifice);
+                            ChaoticEngine.CurrentAbility.Add(creatureSpaces[i].CreatureNode.Battlegear);
+                            ChaoticEngine.CurrentAbility.Add(creatureSpaces[i].CreatureNode);
+                            ChaoticEngine.Highlighter.InitializeHighlight(gameTime, creatureSpaces[i].CreatureNode.Battlegear);
+                            break;
+                    }
+                }
+            }
+        }
+
+        private void setAbilityPath(bool isPlayer1, AbilityType abilityType, AbilityAction action)
+        {
+            ChaoticEngine.CurrentAbility = new Ability(isPlayer1, abilityType, action);
+            switch (abilityType)
+            {
+                case AbilityType.TargetCreature:
+                    stageQueue.Enqueue(GameStage.TargetCreature);
+                    break;
+                case AbilityType.TargetCreatureTwo:
+                    stageQueue.Enqueue(GameStage.TargetCreature);
+                    stageQueue.Enqueue(GameStage.TargetCreature);
+                    break;
+                case AbilityType.SacrificeTargetCreature:
+                    stageQueue.Enqueue(GameStage.TargetCreature);
+                    stageQueue.Enqueue(GameStage.SelCreatureToDiscard);
+                    break;
+                case AbilityType.DestroyTargetBattlegear:
+                    stageQueue.Enqueue(GameStage.TargetBattlegear);
+                    break;
+                case AbilityType.ReturnMugic:
+                    stageQueue.Enqueue(GameStage.SelMugicInDiscard);
+                    break;
+                case AbilityType.ReturnCreature:
+                    stageQueue.Enqueue(GameStage.SelCreatureInDiscard);
+                    break;
+                case AbilityType.TargetAttackDeck:
+                    stageQueue.Enqueue(GameStage.SelAttackDeck);
+                    break;
+                case AbilityType.TargetLocationDeck:
+                    stageQueue.Enqueue(GameStage.SelLocationDeck);
+                    break;
+                case AbilityType.ShuffleTargetDeck:
+                case AbilityType.TargetAttackLocationDeck:
+                    stageQueue.Enqueue(GameStage.SelAttackLocationDeck);
+                    break;
+                case AbilityType.DispelMugic:
+                    break;
+                case AbilityType.TargetSelectElemental:
+                    stageQueue.Enqueue(GameStage.TargetCreature);
+                    stageQueue.Enqueue(GameStage.SelElemental);
+                    break;
+                default:
+                    break;
+            }
+            if (!Burst.Alive)
+                Burst.InitializeBurst(ChaoticEngine.GStage);
+
+            Burst.Push(ChaoticEngine.CurrentAbility);
+            stageQueue.Enqueue(GameStage.DecideToBurst);
+            ChaoticEngine.GStage = stageQueue.Dequeue();
+        }
+
         /// <summary>
         /// Allows the game component to update itself.
         /// </summary>
@@ -644,6 +827,9 @@ namespace Chaotic
 
             if (ChaoticEngine.Hive != ChaoticEngine.PrevHive)
                 updateHive();
+
+            ChaoticEngine.MsgBox.UpdateMessageBox(gameTime);
+            ChaoticEngine.Highlighter.UpdateHighlight(gameTime);
 
             switch (ChaoticEngine.GStage)
             {
@@ -713,22 +899,8 @@ namespace Chaotic
                     if (!discardPile1.DiscardPanelActive && !attackDiscardPile1.DiscardPanelActive
                         && !attackDiscardPile2.DiscardPanelActive && !discardPile2.DiscardPanelActive)
                     {
-                        for (int i = 0; i < creatureSpaces.Length; i++)
-                        {
-                            if (creatureSpaces[i].IsPlayer1 == ChaoticEngine.Player1Active)
-                            {
-                                ActionType? action = creatureSpaces[i].UpdateBattleBoardNode(mouse, gameTime);
+                        updatePlayableAbilities(mouse, gameTime, ChaoticEngine.Player1Active);
 
-                                switch (action)
-                                {
-                                    case ActionType.Move:
-                                        creatureSpaces[i].TurnOnMovableSpaces(creatureSpaces);
-                                        selectedSpace = i;
-                                        ChaoticEngine.GStage = GameStage.Moving;
-                                        break;
-                                }
-                            }
-                        }
                         if ((creatureSpaces.Count(b => b.CreatureNode != null && b.CreatureNode.MovedThisTurn == true) > 0 ||
                         ChaoticEngine.CombatThisTurn) && endTurnButton.UpdateButton(mouse, gameTime))
                         {
@@ -797,11 +969,11 @@ namespace Chaotic
                     break;
                 case GameStage.CreatureToDiscard1:
                     creatureToDiscard(gameTime, mouse, ChaoticEngine.sYouNode, ChaoticEngine.sEnemyNode, discardPile1, 
-                        GameStage.CreatureToDiscard1, GameStage.BattlegearToDiscard1);
+                        GameStage.BattlegearToDiscard1);
                     break;
                 case GameStage.CreatureToDiscard2:
                     creatureToDiscard(gameTime, mouse, ChaoticEngine.sEnemyNode, ChaoticEngine.sYouNode, discardPile2,
-                        GameStage.CreatureToDiscard2, GameStage.BattlegearToDiscard2);
+                        GameStage.BattlegearToDiscard2);
                     break;
                 case GameStage.BattlegearToDiscard1:
                     battlegearToDiscard(gameTime, mouse, ChaoticEngine.sYouNode, ChaoticEngine.sEnemyNode, discardPile1);
@@ -980,6 +1152,7 @@ namespace Chaotic
                         ChaoticEngine.sEnemyNode.CreatureNode.Battlegear is ChaoticGameLib.Battlegears.FluxBauble)
                         stageQueue.Enqueue(GameStage.BattlegearSelectAbility2);
 
+                    // TODO: Implement abilities for Beginning of Combat like Intimidate.
                     stageQueue.Enqueue(GameStage.Combat);
                     ChaoticEngine.GStage = stageQueue.Dequeue();
                     break;
@@ -998,6 +1171,8 @@ namespace Chaotic
                     if (!discardPile1.DiscardPanelActive && !attackDiscardPile1.DiscardPanelActive
                         && !attackDiscardPile2.DiscardPanelActive && !discardPile2.DiscardPanelActive)
                     {
+                        updatePlayableAbilities(mouse, gameTime, ChaoticEngine.Player1Strike);
+
                         if (ChaoticEngine.Player1Strike)
                         {
                             updateCombat(gameTime, mouse, attackHand1, attackDeck1, locationDeck1, attackDiscardPile1,
@@ -1199,6 +1374,222 @@ namespace Chaotic
                         Game.Components.Remove(this);
                     }
                     break;
+                case GameStage.TargetCreature:
+                    BattleBoardNode targetNode = null;
+                    if (ChaoticEngine.CurrentAbility[0] is Creature)
+                    {
+                        Creature creature = ChaoticEngine.CurrentAbility[0] as Creature;
+                        switch (ChaoticEngine.CurrentAbility.Action)
+                        {
+                            case AbilityAction.Activate:
+                                targetNode = SelectingSystem.SelectingCreature(mouse, creatureSpaces, 
+                                    b => b.CreatureNode != null && creature.CheckAbilityTarget(b.CreatureNode, 
+                                        b.IsPlayer1 == ChaoticEngine.CurrentAbility.IsPlayer1));
+                                break;
+                            case AbilityAction.Sacrifice:
+                                targetNode = SelectingSystem.SelectingCreature(mouse, creatureSpaces,
+                                    b => b.CreatureNode != null && creature.CheckSacrificeTarget(b.CreatureNode));
+                                break;
+                            default:
+                                break;
+                        }
+                    }
+                    else if (ChaoticEngine.CurrentAbility[0] is Battlegear)
+                    {
+                        Battlegear battlegear = ChaoticEngine.CurrentAbility[0] as Battlegear;
+                        Creature creatureEquipped = ChaoticEngine.CurrentAbility[1] as Creature;
+
+                        switch (ChaoticEngine.CurrentAbility.Action)
+                        {
+                            case AbilityAction.Sacrifice:
+                                targetNode = SelectingSystem.SelectingCreature(mouse, creatureSpaces,
+                                    b => b.CreatureNode != null && battlegear.CheckSacrificeTarget(b.CreatureNode));
+                                break;
+                            default:
+                                break;
+                        }
+                    }
+                    else if (ChaoticEngine.CurrentAbility[0] is Mugic && ChaoticEngine.CurrentAbility.Count > 1)
+                    {
+                        Mugic mugic = ChaoticEngine.CurrentAbility[0] as Mugic;
+                        Creature caster = ChaoticEngine.CurrentAbility[1] as Creature;
+
+                        switch (ChaoticEngine.CurrentAbility.Action)
+                        {
+                            case AbilityAction.Cast:
+                                targetNode = SelectingSystem.SelectingCreature(Mouse.GetState(), creatureSpaces,
+                                    b => b.CreatureNode != null && mugic.CheckPlayable(b.CreatureNode));
+                                break;
+                            default:
+                                break;
+                        }
+                    }
+                    else if (ChaoticEngine.CurrentAbility[0] is Mugic)
+                    {
+                        Mugic mugic = ChaoticEngine.CurrentAbility[0] as Mugic;
+                        Location activeLoc = activeLocation1.LocationActive != null ?
+                            activeLocation1.LocationActive : activeLocation2.LocationActive;
+
+                        targetNode = SelectingSystem.SelectingCreature(mouse, creatureSpaces,
+                                    b => b.CreatureNode != null && b.IsPlayer1 == ChaoticEngine.CurrentAbility.IsPlayer1 &&
+                                    mugic.CheckCanPayMugicCost(b.CreatureNode, activeLoc));
+                        if (targetNode != null)
+                            mugic.PayCost(targetNode.CreatureNode, activeLoc);
+                    }
+                    if (targetNode != null)
+                    {
+                        ChaoticEngine.CurrentAbility.Add(targetNode.CreatureNode);
+                        ChaoticEngine.GStage = stageQueue.Dequeue();
+                    }
+                    break;
+                case GameStage.TargetBattlegear:
+                    targetNode = SelectingSystem.SelectingBattlegear(mouse, creatureSpaces, b => b.HasBattegear());
+                    if (targetNode != null)
+                    {
+                        ChaoticEngine.CurrentAbility.Add(targetNode);
+                        ChaoticEngine.GStage = stageQueue.Dequeue();
+                    }
+                    break;
+                case GameStage.SelCreatureToDiscard:
+                    selectedCreatureToDiscard(gameTime, mouse, ChaoticEngine.SelectedNode,
+                        ChaoticEngine.SelectedNode.IsPlayer1 ? discardPile1 : discardPile2);
+                    break;
+                case GameStage.SelBattlegearToDiscard:
+                    selectedBattlegearToDiscard(gameTime, mouse, ChaoticEngine.SelectedNode,
+                        ChaoticEngine.SelectedNode.IsPlayer1 ? discardPile1 : discardPile2);
+                    break;
+                case GameStage.SelCreatureInDiscard:
+                    Predicate<Creature> selCreaturePred = c => c is Creature;
+                    if (ChaoticEngine.CurrentAbility[0] is ICastReturn)
+                    {
+                        ICastReturn castReturn = ChaoticEngine.CurrentAbility[0] as ICastReturn;
+                        selCreaturePred = c => castReturn.CheckReturnable(c);
+                    }
+                    else if (ChaoticEngine.CurrentAbility[0] is ISacrificeReturn)
+                    {
+                        ISacrificeReturn castReturn = ChaoticEngine.CurrentAbility[0] as ISacrificeReturn;
+                        selCreaturePred = c => castReturn.CheckReturnable(c);
+                    }
+                    Creature selCreature = selectCreatureReturn(gameTime,
+                        ChaoticEngine.CurrentAbility.IsPlayer1 ? discardPile1 : discardPile2, selCreaturePred);
+                    if (selCreature != null)
+                    {
+                        ChaoticEngine.CurrentAbility.Add(selCreature);
+                    }
+                    break;
+                case GameStage.SelMugicInDiscard:
+                    Predicate<Mugic> selMugicPred = m => m is Mugic;
+
+                    Mugic selMugic = selectMugicReturn(gameTime,
+                        ChaoticEngine.CurrentAbility.IsPlayer1 ? discardPile1 : discardPile2, selMugicPred);
+                    if (selMugic != null)
+                    {
+                        ChaoticEngine.CurrentAbility.Add(selMugic);
+                    }
+                    break;
+                case GameStage.SelAttackDeck:
+                    AttackDeck? atkDeck = SelectingSystem.SelectingAttackDeck(mouse, attackDeck1, attackDeck2);
+                    if (atkDeck != null)
+                    {
+                        ChaoticEngine.CurrentAbility.Add(atkDeck.Value);
+                        ChaoticEngine.GStage = stageQueue.Dequeue();
+                    }
+                    break;
+                case GameStage.SelLocationDeck:
+                    LocationDeck? locDeck = SelectingSystem.SelectingLocationDeck(mouse, locationDeck1, locationDeck2);
+                    if (locDeck != null)
+                    {
+                        ChaoticEngine.CurrentAbility.Add(locDeck.Value);
+                        ChaoticEngine.GStage = stageQueue.Dequeue();
+                    }
+                    break;
+                case GameStage.SelAttackLocationDeck:
+                    atkDeck = SelectingSystem.SelectingAttackDeck(mouse, attackDeck1, attackDeck2);
+                    locDeck = SelectingSystem.SelectingLocationDeck(mouse, locationDeck1, locationDeck2);
+                    if (atkDeck != null || locDeck != null)
+                    {
+                        if (atkDeck != null)
+                        {
+                            locationDeck1.DeckCovered = locationDeck2.DeckCovered = false;
+                            ChaoticEngine.CurrentAbility.Add(atkDeck.Value);
+                        }
+                        else
+                        {
+                            attackDeck1.DeckCovered = attackDeck2.DeckCovered = false;
+                            ChaoticEngine.CurrentAbility.Add(locDeck.Value);
+                        }
+                        ChaoticEngine.GStage = stageQueue.Dequeue();
+                    }
+                    break;
+                case GameStage.DecideToBurst:
+                    if (!ChaoticEngine.MsgBox.Active && !ChaoticEngine.MsgBox.ClickedYes.HasValue)
+                    {
+                        ActiveLocation activeLoc = activeLocation1.LocationActive != null ? activeLocation1 : activeLocation2;
+
+                        if (Burst.Player1Turn &&
+                            (CheckSystem.CheckAnyMugicPlayable(mugicHand1, creatureSpaces, discardPile1, activeLoc) ||
+                            CheckSystem.CheckAnyCreature(true, creatureSpaces, discardPile1, activeLoc) ||
+                            CheckSystem.CheckAnyBattlegearAbility(creatureSpaces, activeLoc) ||
+                            CheckSystem.CheckAnyBattlegearSacrifice(creatureSpaces, discardPile1, activeLoc)))
+                        {
+                            ChaoticEngine.MsgBox.Active = true;
+                        }
+                        else if (!Burst.Player1Turn &&
+                            (CheckSystem.CheckAnyMugicPlayable(mugicHand2, creatureSpaces, discardPile2, activeLoc) ||
+                            CheckSystem.CheckAnyCreature(false, creatureSpaces, discardPile2, activeLoc) ||
+                            CheckSystem.CheckAnyBattlegearAbility(creatureSpaces, activeLoc) ||
+                            CheckSystem.CheckAnyBattlegearSacrifice(creatureSpaces, discardPile2, activeLoc)))
+                        {
+                            ChaoticEngine.MsgBox.Active = true;
+                        }
+                        else
+                        {
+                            ChaoticEngine.MsgBox.ClickedYes = false;
+                        }
+                    }
+                    else if (ChaoticEngine.MsgBox.ClickedYes.HasValue)
+                    {
+                        if (ChaoticEngine.MsgBox.ClickedYes.Value)
+                            ChaoticEngine.GStage = GameStage.AddingToBurst;
+                        else
+                        {
+                            if (!ChaoticEngine.MsgBox.PrevClick)
+                                ChaoticEngine.GStage = GameStage.RunBurst;
+                            else
+                                Burst.Player1Turn = Burst.Player1Turn;
+                        }
+                        ChaoticEngine.MsgBox.ClickedYes = null;
+                    }
+                    break;
+                case GameStage.AddingToBurst:
+                    if (!ChaoticEngine.IsACardMoving)
+                    {
+                        if (!attackDiscardPile1.DiscardPanelActive && !attackDiscardPile2.DiscardPanelActive && !discardPile2.DiscardPanelActive)
+                            discardPile1.UpdateDiscardPile(gameTime, description);
+                        if (!discardPile1.DiscardPanelActive && !attackDiscardPile2.DiscardPanelActive && !discardPile2.DiscardPanelActive)
+                            attackDiscardPile1.UpdateDiscardPile(gameTime, description);
+                        if (!attackDiscardPile1.DiscardPanelActive && !attackDiscardPile2.DiscardPanelActive && !discardPile1.DiscardPanelActive)
+                            discardPile2.UpdateDiscardPile(gameTime, description);
+                        if (!discardPile1.DiscardPanelActive && !attackDiscardPile1.DiscardPanelActive && !discardPile2.DiscardPanelActive)
+                            attackDiscardPile2.UpdateDiscardPile(gameTime, description);
+                    }
+                    if (!discardPile1.DiscardPanelActive && !attackDiscardPile1.DiscardPanelActive
+                        && !attackDiscardPile2.DiscardPanelActive && !discardPile2.DiscardPanelActive)
+                    {
+                        updatePlayableAbilities(mouse, gameTime, Burst.Player1Turn);
+                    }
+                    
+                    break;
+                case GameStage.RunBurst:
+                    if (Burst.Alive)
+                    {
+
+                    }
+                    else
+                    {
+                        ChaoticEngine.GStage = Burst.BurstStart;
+                    }
+                    break;
             }
 
             base.Update(gameTime);
@@ -1209,14 +1600,14 @@ namespace Chaotic
             for (int i = 0; i < creatureSpaces.Length; i++)
             {
                 if (creatureSpaces[i].CreatureNode != null && creatureSpaces[i].IsPlayer1 == isPlayer1)
-                    creatureSpaces[i].IsMovableSpace = true;
+                    creatureSpaces[i].IsSelectible = true;
 
                 if (creatureSpaces[i].MouseCoveredCreature && mouse.LeftButton == ButtonState.Pressed &&
-                    creatureSpaces[i].IsMovableSpace)
+                    creatureSpaces[i].IsSelectible)
                 {
                     for (int j = 0; j < creatureSpaces.Length; j++)
                     {
-                        creatureSpaces[j].IsMovableSpace = false;
+                        creatureSpaces[j].IsSelectible = false;
                     }
                     ChaoticEngine.GStage = stageQueue.Dequeue();
                     return creatureSpaces[i];
@@ -1241,6 +1632,42 @@ namespace Chaotic
                 return returnIndex;
             }
             return -1;
+        }
+
+        private Mugic selectMugicReturn(GameTime gameTime, DiscardPile<ChaoticCard> discardPile, Predicate<Mugic> selMugic)
+        {
+            if (!mugicPanel.Active)
+            {
+                discardedMugics = discardPile.Find<Mugic>();
+                mugicPanel.Active = true;
+            }
+            List<int> indices = mugicPanel.UpdatePanel(gameTime, discardedMugics, description);
+            if (indices != null)
+            {
+                ChaoticEngine.GStage = stageQueue.Dequeue();
+                Mugic retMugic = discardedMugics[indices[0]];
+                discardedMugics = null;
+                return retMugic;
+            }
+            return null;
+        }
+
+        private Creature selectCreatureReturn(GameTime gameTime, DiscardPile<ChaoticCard> discardPile, Predicate<Creature> selectPred)
+        {
+            if (!creaturePanel.Active)
+            {
+                discardedCreature = discardPile.Find<Creature>(selectPred);
+                creaturePanel.Active = true;
+            }
+            List<int> indices = creaturePanel.UpdatePanel(gameTime, discardedCreature, description);
+            if (indices != null)
+            {
+                ChaoticEngine.GStage = stageQueue.Dequeue();
+                Creature retCreature = discardedCreature[indices[0]];
+                discardedCreature = null;
+                return retCreature;
+            }
+            return null;
         }
 
         private void selectOrdering<T>(GameTime gameTime, SelectPanel<T> panel, List<T> deckPile, ref List<T> topCards) where T : ChaoticCard
@@ -1458,6 +1885,8 @@ namespace Chaotic
                 default:
                     break;
             }
+            ChaoticEngine.MsgBox.DrawMessageBox(spriteBatch);
+            ChaoticEngine.Highlighter.DrawHighlight(spriteBatch);
             spriteBatch.End();
 
             base.Draw(gameTime);

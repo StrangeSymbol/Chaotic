@@ -4,7 +4,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace ChaoticGameLib.Creatures
 {
-    public class Ubliqun : Creature
+    public class Ubliqun : Creature, IActivateSelf
     {
         public Ubliqun(Texture2D sprite, Texture2D overlay, 
             byte energy, byte courage, byte power, byte wisdom, byte speed) :
@@ -12,6 +12,23 @@ namespace ChaoticGameLib.Creatures
             false, 0, 0, false, false, false, Tribe.Mipedian, CreatureType.Stalker)
         {
         }
+
+        public override bool CheckAbility(bool hive)
+        {
+            return this.MugicCounters >= 1 && !CanMoveAnywhere;
+        }
+
+        void IActivate.PayCost()
+        {
+            this.MugicCounters--;
+        }
+
+        void IActivateSelf.Ability()
+        {
+            CanMoveAnywhere = true;
+        }
+
+        AbilityType IActivate.Type { get { return AbilityType.TargetSelf; } }
 
         public override string Description()
         {

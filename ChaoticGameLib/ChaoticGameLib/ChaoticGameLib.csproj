@@ -58,7 +58,20 @@
     <Reference Include="System.Net" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abilities\AbilityType.cs" />
+    <Compile Include="Abilities\IActivate.cs" />
+    <Compile Include="Abilities\ICastReturn.cs" />
+    <Compile Include="Abilities\IActivateSelf.cs" />
+    <Compile Include="Abilities\IActivateTarget.cs" />
+    <Compile Include="Abilities\ICastTargetTwo.cs" />
+    <Compile Include="Abilities\IActivateChange.cs" />
+    <Compile Include="Abilities\ICast.cs" />
+    <Compile Include="Abilities\ICastTarget.cs" />
     <Compile Include="Abilities\IHive.cs" />
+    <Compile Include="Abilities\ISacrificeChange.cs" />
+    <Compile Include="Abilities\ISacrificeReturn.cs" />
+    <Compile Include="Abilities\ISacrificeTarget.cs" />
+    <Compile Include="Abilities\ISacrifice.cs" />
     <Compile Include="Abilities\ISupport.cs" />
     <Compile Include="Attacks\Allmageddon.cs" />
     <Compile Include="Attacks\AshTorrent.cs" />

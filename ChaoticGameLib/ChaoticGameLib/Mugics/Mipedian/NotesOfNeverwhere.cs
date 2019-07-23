@@ -7,11 +7,7 @@ namespace ChaoticGameLib.Mugics
     public class NotesOfNeverwhere : Mugic
     {
         public NotesOfNeverwhere(Texture2D sprite, Texture2D overlay) : base(sprite, overlay, MugicType.Mipedian, 1) { }
-        public override void Ability(Creature creature)
-        {
-            // TODO:
-            base.Ability(creature);
-        }
+
         public override string Description()
         {
             return base.Description() + " Target Location loses all abilities until the end of the turn." +

@@ -8,16 +8,40 @@ using ChaoticGameLib;
 
 namespace Chaotic
 {
-    class Burst
+    static class Burst
     {
-        CardHighlighter cardHighlighter; // When a card is added to burst puts a sheen on that card.
-        ChaoticMessageBox msgBox; // Checks whether a player wants to add to Burst.
-        Stack<Ability> burstStack; // Contains the abilities to resolve.
+        static Stack<Ability> burstStack; // Contains the abilities to resolve.
+        static GameStage burstStart; // Contains the stage where the Burst started
+        static bool player1Turn; // Holds onto whose current turn it is.
 
-        public Burst(ContentManager content, GraphicsDeviceManager graphics)
+        public static void InitializeBurst(GameStage startStage)
         {
-            cardHighlighter = new CardHighlighter(content, graphics);
-            msgBox = new ChaoticMessageBox("Adding To Burst", "Do you want to add another ability to Burst?", content, graphics);
+            burstStack = new Stack<Ability>();
+            burstStart = startStage;
+        }
+
+        public static GameStage BurstStart { get { return burstStart; } }
+        public static bool Alive { get { return burstStack != null && burstStack.Count > 0; } }
+        public static bool Player1Turn 
+        { 
+            get { return !(player1Turn ^ (burstStack.Count == 1 && burstStack.Peek()[0] is Attack)); }
+            set { player1Turn = value; }
+        }
+
+        public static Ability Peek()
+        {
+            return burstStack.Peek();
+        }
+
+        public static Ability NextAbility()
+        {
+            return burstStack.Pop();
+        }
+
+        public static void Push(Ability abil)
+        {
+            burstStack.Push(abil);
+            player1Turn = abil.IsPlayer1;
         }
     }
 }

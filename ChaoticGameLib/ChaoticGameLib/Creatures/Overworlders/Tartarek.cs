@@ -4,7 +4,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace ChaoticGameLib.Creatures
 {
-    public class Tartarek : Creature
+    public class Tartarek : Creature, IActivateTarget<Creature>
     {
         public Tartarek(Texture2D sprite, Texture2D overlay, 
             byte energy, byte courage, byte power, byte wisdom, byte speed) :
@@ -21,13 +21,21 @@ namespace ChaoticGameLib.Creatures
             "Brave enough to take on any battle, wise enough to avoid most.";
         }
 
-        public void Ability(Creature c)
+        public override bool CheckAbility(bool hive)
         {
-            if (this.MugicCounters >= this.MugicCost)
-            {
-                this.MugicCounters -= this.MugicCost;
-                c.Swift += 1;
-            }
+            return this.MugicCost >= this.MugicCost;
         }
+
+        void IActivate.PayCost()
+        {
+            this.MugicCounters -= this.MugicCost;
+        }
+
+        void IActivateTarget<Creature>.Ability(Creature c)
+        {
+            c.Swift++;
+        }
+
+        AbilityType IActivate.Type { get { return AbilityType.TargetCreature; } }
     }
 }

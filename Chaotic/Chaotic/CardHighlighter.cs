@@ -16,7 +16,7 @@ namespace Chaotic
         float sheenHeight; // Holds the height of sheen.
 
         double elapsedTime;
-        const float kWaitTime = 1500f; // The amount of time the card gets highlighted.
+        const float kWaitTime = 500f; // The amount of time the card gets highlighted.
 
         public CardHighlighter(ContentManager content, GraphicsDeviceManager graphics)
         {
@@ -25,9 +25,9 @@ namespace Chaotic
                 (graphics.PreferredBackBufferHeight - ChaoticEngine.kCardCoveredHeight) / 2);
         }
 
-        public void InitializeHighlight(GameTime gameTime, Texture2D card)
+        public void InitializeHighlight(GameTime gameTime, ChaoticGameLib.ChaoticCard card)
         {
-            this.card = card;
+            this.card = card.Texture;
             sheenPos = cardPos;
             sheenWidth = 0;
             sheenHeight = 0;

@@ -4,7 +4,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace ChaoticGameLib.Creatures
 {
-    public class Sobtjek : Creature
+    public class Sobtjek : Creature, ISacrificeTarget<Creature>
     {
         public Sobtjek(Texture2D sprite, Texture2D overlay, 
             byte energy, byte courage, byte power, byte wisdom, byte speed) :
@@ -21,14 +21,22 @@ namespace ChaoticGameLib.Creatures
                 "Few Mipedians can outlast Sobtjek in a parfkew eating contest.";
         }
 
-        public void Ability(Creature c)
+        public override bool CheckSacrifice(bool hive)
         {
-            if (this.MugicCounters >= this.MugicCost)
-            {
-                this.MugicCounters -= this.MugicCost;
-                this.Alive = false;
-                c.Energy -= this.AbilityEnergy;
-            }
+            return this.MugicCounters >= this.MugicCost && this.Energy > 0;
         }
+
+        public override bool CheckSacrificeTarget(Creature creature)
+        {
+            return creature.Energy > 0;
+        }
+
+        void ISacrificeTarget<Creature>.Ability(Creature c)
+        {
+            this.MugicCounters -= this.MugicCost;
+            c.Energy -= this.AbilityEnergy;
+        }
+
+        AbilityType ISacrifice.Type { get { return AbilityType.TargetCreature; } }
     }
 }

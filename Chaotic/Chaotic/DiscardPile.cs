@@ -53,6 +53,10 @@ namespace Chaotic
                 findLst.Add(lst[i] as S);
             return findLst;
         }
+        public List<S> Find<S>(Predicate<S> selectPred) where S : ChaoticCard
+        {
+            return Find<S>().FindAll(selectPred);
+        }
         public void UpdateDiscardPile(GameTime gameTime, CardDescription description)
         {
             if (discardPile.Count > 0)

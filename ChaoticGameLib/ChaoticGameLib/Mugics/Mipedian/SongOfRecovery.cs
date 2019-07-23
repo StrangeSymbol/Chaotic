@@ -4,14 +4,23 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace ChaoticGameLib.Mugics
 {
-    public class SongOfRecovery : Mugic
+    public class SongOfRecovery : Mugic, ICastTarget<Creature>
     {
         public SongOfRecovery(Texture2D sprite, Texture2D overlay) : base(sprite, overlay, MugicType.Mipedian, 1) { }
-        public override void Ability(Creature creature)
+        
+        public override bool CheckPlayable(Creature creature)
         {
-            // TODO:
-            base.Ability(creature);
+            return creature.CheckHealable();
         }
+
+        void ICastTarget<Creature>.Ability(Creature creature)
+        {
+            creature.Heal(10);
+            creature.AirDamage += 5;
+        }
+
+        AbilityType ICast.Type { get { return AbilityType.TargetCreature; } }
+
         public override string Description()
         {
             return base.Description() + " Heal 10 damage to target Creature. That Creature gains \"Air 5\" until the end of the turn." +

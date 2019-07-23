@@ -3,14 +3,21 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace ChaoticGameLib.Battlegears
 {
-    public class Cyclance : Battlegear
+    public class Cyclance : Battlegear, ISacrificeTarget<Creature>
     {
         public Cyclance(Texture2D texture, Texture2D overlay) : base(texture, overlay) { }
 
-        public override void UnEquip(Creature creature)
+        public override bool CheckSacrifice(Creature creatureEquipped)
         {
-            //creature.Air = true;
+            return this.IsFaceUp && !creatureEquipped.Air;
         }
+
+        void ISacrificeTarget<Creature>.Ability(Creature c)
+        {
+            c.Air = true;
+        }
+
+        AbilityType ISacrifice.Type { get { return AbilityType.TargetEquipped; } }
 
         public override string Description()
         {

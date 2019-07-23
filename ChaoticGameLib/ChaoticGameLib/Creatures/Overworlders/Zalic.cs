@@ -4,7 +4,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace ChaoticGameLib.Creatures
 {
-    public class Zalic : Creature
+    public class Zalic : Creature, IActivateSelf
     {
         public Zalic(Texture2D sprite, Texture2D overlay, 
             byte energy, byte courage, byte power, byte wisdom, byte speed) :
@@ -21,14 +21,21 @@ namespace ChaoticGameLib.Creatures
             "has appointed him guardian of the Passage between the OverWorld and the UnderWorld.";
         }
 
-        public void Ability(Creature c)
+        public override bool CheckAbility(bool hive)
         {
-            if (this.MugicCounters >= this.MugicCost)
-            {
-                // cost of activating ability
-                this.MugicCounters -= this.MugicCost;
-                c.Heal(this.AbilityEnergy);
-            }
+            return this.MugicCounters >= this.MugicCost && this.CheckHealable();
         }
+
+        void IActivate.PayCost()
+        {
+            this.MugicCounters -= this.MugicCost;
+        }
+
+        void IActivateSelf.Ability()
+        {
+            Heal(this.AbilityEnergy);
+        }
+
+        AbilityType IActivate.Type { get { return AbilityType.TargetSelf; } }
     }
 }

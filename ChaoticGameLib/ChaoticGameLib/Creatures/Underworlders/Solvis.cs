@@ -4,13 +4,23 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace ChaoticGameLib.Creatures
 {
-    public class Solvis : Creature
+    public class Solvis : Creature, IActivateTarget<Creature>
     {
         public Solvis(Texture2D sprite, Texture2D overlay, 
             byte energy, byte courage, byte power, byte wisdom, byte speed) :
             base(sprite, overlay, energy, courage, power, wisdom, speed, 2, false, false, false, false, 0,
             false, 0, 0, false, false, false, 0, 0, 0, 0, 2, 10, Tribe.UnderWorld, CreatureType.Taskmaster)
         {
+        }
+
+        public override bool CheckAbility(bool hive)
+        {
+            return this.MugicCounters >= this.MugicCost;
+        }
+
+        public override bool CheckAbilityTarget(Creature creature, bool sameOwner)
+        {
+            return creature.Energy > 0;
         }
 
         public override string Description()
@@ -21,13 +31,16 @@ namespace ChaoticGameLib.Creatures
             "The proof of the theory of natural selection or devolution defined?";
         }
 
-        public void Ability(Creature c)
+        void IActivate.PayCost()
         {
-            if (this.MugicCounters >= this.MugicCost)
-            {
-                this.MugicCounters -= this.MugicCost;
-                c.Energy -= this.AbilityEnergy;
-            }
+            this.MugicCounters -= this.MugicCost;
         }
+
+        void IActivateTarget<Creature>.Ability(Creature c)
+        {
+            c.Energy -= this.AbilityEnergy;
+        }
+
+        AbilityType IActivate.Type { get { return AbilityType.TargetCreature; } }
     }
 }

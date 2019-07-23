@@ -11,6 +11,7 @@ namespace ChaoticGameLib.Battlegears
         {
             creature.Energy += this.DisciplineAmount;
             creature.GainedEnergy += this.DisciplineAmount;
+            // TODO: Can't move.
         }
         public override void UnEquip(Creature creature)
         {

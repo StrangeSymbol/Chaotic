@@ -5,7 +5,8 @@ using Microsoft.Xna.Framework.Input;
 
 namespace Chaotic
 {
-    public enum ActionType : byte { Move, Activate, Cast, SacrificeCreature, SacrificeBattlegear, Cancel }
+    public enum ActionType : byte { Move, ActivateCreature, ActivateBattlegear, Cast, SacrificeCreature,
+        SacrificeBattlegear, Cancel }
     struct BattleBoardButton
     {
         #region Fields

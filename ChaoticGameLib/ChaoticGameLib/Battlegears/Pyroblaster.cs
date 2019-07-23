@@ -3,13 +3,21 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace ChaoticGameLib.Battlegears
 {
-    public class Pyroblaster : Battlegear
+    public class Pyroblaster : Battlegear, ISacrificeTarget<Creature>
     {
         public Pyroblaster(Texture2D sprite, Texture2D overlay) : base(sprite, overlay) { }
-        public override void UnEquip(Creature creature)
+
+        public override bool CheckSacrifice(Creature creatureEquipped)
         {
-            //creature.Fire = true;
+            return this.IsFaceUp && !creatureEquipped.Fire;
         }
+
+        void ISacrificeTarget<Creature>.Ability(Creature c)
+        {
+            c.Fire = true;
+        }
+
+        AbilityType ISacrifice.Type { get { return AbilityType.TargetEquipped; } }
 
         public override string Description()
         {

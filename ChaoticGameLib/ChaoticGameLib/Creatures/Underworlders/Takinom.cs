@@ -4,7 +4,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace ChaoticGameLib.Creatures
 {
-    public class Takinom : Creature
+    public class Takinom : Creature, IActivateTarget<Creature>
     {
         public Takinom(Texture2D sprite, Texture2D overlay, 
             byte energy, byte courage, byte power, byte wisdom, byte speed) :
@@ -21,10 +21,26 @@ namespace ChaoticGameLib.Creatures
             "Takinom unearthed a shocking secret bond with her archenemy Intress that she's wisely kept from Chaor...";
         }
 
-        public void Ability(Creature c)
+        public override bool CheckAbility(bool hive)
         {
-            c.Alive = false;
+            return this.CheckHealable();
+        }
+
+        public override bool CheckAbilityTarget(Creature creature, bool sameOwner)
+        {
+            return sameOwner && creature.CreatureTribe == Tribe.UnderWorld && creature.Energy > 0;
+        }
+
+        void IActivate.PayCost()
+        {
+            // No Cost paid by activator.
+        }
+
+        void IActivateTarget<Creature>.Ability(Creature c)
+        {
             Heal(this.AbilityEnergy);
         }
+
+        AbilityType IActivate.Type { get { return AbilityType.SacrificeTargetCreature; } }
     }
 }

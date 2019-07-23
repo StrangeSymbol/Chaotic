@@ -41,6 +41,8 @@ namespace Chaotic
         public List<Location> Deck { get { return deckPile; } }
         public Vector2 DeckPosition { get { return locationTemplate.Position; } }
         public int Count { get { return Deck.Count; } }
+        public bool DeckCovered { get { return deckCover2.IsCovered; } set { deckCover2.IsCovered = value; } }
+        public Rectangle DeckRectangle { get { return locationTemplate.CollisionRectangle; } }
 
         public void ShuffleDeck(List<Location> deckHolder)
         {

@@ -32,6 +32,9 @@ namespace ChaoticGameLib
         bool earth;
         bool water;
 
+        // Holds whether this attack deals 0 damage.
+        bool dealZero;
+
         public Attack(Texture2D sprite, Texture2D overlay, 
             byte baseDamage, byte fireDamage, byte airDamage, byte earthDamage, byte waterDamage, byte buildNumber,
             byte energyAmount, byte disciplineAmount, bool fire, bool air, bool earth, bool water, bool unique=false)
@@ -49,6 +52,7 @@ namespace ChaoticGameLib
             this.air = air;
             this.earth = earth;
             this.water = water;
+            this.dealZero = false;
         }
 
         public byte BuildNumber { get { return buildNumber; } }
@@ -59,6 +63,7 @@ namespace ChaoticGameLib
         public byte WaterDamage { get { return waterDamage; } }
         protected byte DisciplineAmount { get { return disciplineAmount; } }
         protected byte EnergyAmount { get { return energyAmount; } }
+        public bool DealZero { set { dealZero = value; } }
     
         public virtual void Damage(Creature your, Creature enemy, Location location)
         {
@@ -77,9 +82,11 @@ namespace ChaoticGameLib
             energy2 -= baseDamage;
 
             if (your.Fire && this.fire)
-                energy2 -= (byte)(fireDamage + your.FireDamage);
+                energy2 -= (byte)(fireDamage + your.FireDamage -
+                    (fireDamage + your.FireDamage >= your.ReducedFireDamage ? your.ReducedFireDamage : 0));
             if (your.Air && this.air)
-                energy2 -= (byte)(airDamage + your.AirDamage);
+                energy2 -= (byte)(airDamage + your.AirDamage - 
+                    (airDamage + your.AirDamage >= your.ReducedAirDamage ? your.ReducedAirDamage : 0));
             if (your.Earth && this.earth)
                 energy2 -= (byte)(earthDamage + your.EarthDamage);
             if (your.Water && this.water)
@@ -146,8 +153,11 @@ namespace ChaoticGameLib
             Tuple<short, short> damage = PotentialDamage(your, enemy, location);
             short energy1 = damage.Item1;
             short energy2 = damage.Item2;
-            if (location is CrystalCave && your.FirstAttack && your.Speed < enemy.Speed)
+            if ((location is CrystalCave && your.FirstAttack && your.Speed < enemy.Speed) || dealZero)
+            {
                 energy2 = 0;
+                dealZero = false;
+            }
             return new Tuple<short, short>(energy1, energy2);
         }
 

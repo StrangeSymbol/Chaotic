@@ -276,7 +276,12 @@ namespace Chaotic
               new SongOfFury(Content.Load<Texture2D>(@"Mugics\SongOfFury"), overlay),
               new SongOfRevival_UnderWorld_(Content.Load<Texture2D>(@"Mugics\SongOfRevival_UnderWorld_"), overlay),
               new SongOfTreachery(Content.Load<Texture2D>(@"Mugics\SongOfTreachery"), overlay),
-
+              new ChorusOfTheHive(Content.Load<Texture2D>(@"Mugics\ChorusOfTheHive"), overlay),
+              new RefrainOfDenial_OverWorld0UnderWorld_(Content.Load<Texture2D>(@"Mugics\RefrainOfDenial_OverWorld0UnderWorld_"), overlay),
+              new SongOfMandiblor(Content.Load<Texture2D>(@"Mugics\SongOfMandiblor"), overlay),
+              new SongOfResistance(Content.Load<Texture2D>(@"Mugics\SongOfResistance"), overlay),
+              new SongOfSurprisal(Content.Load<Texture2D>(@"Mugics\SongOfSurprisal"), overlay),
+              new SongOfSymmetry(Content.Load<Texture2D>(@"Mugics\SongOfSymmetry"), overlay),
               new FanfareOfTheVanishing(Content.Load<Texture2D>(@"Mugics\FanfareOfTheVanishing"), overlay),
               new MelodyOfMirage(Content.Load<Texture2D>(@"Mugics\MelodyOfMirage"), overlay),
               new NotesOfNeverwhere(Content.Load<Texture2D>(@"Mugics\NotesOfNeverwhere"), overlay),

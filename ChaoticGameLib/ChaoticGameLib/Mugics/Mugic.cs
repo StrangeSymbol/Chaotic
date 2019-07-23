@@ -22,10 +22,21 @@ namespace ChaoticGameLib
         public byte Cost { get { return cost; } }
         public MugicType MugicCasting { get { return type; } }
 
-        public bool CheckCanPayMugicCost(Creature creature)
+        private byte additionalCost(Creature creature, Location location)
         {
-            if (creature.MugicCounters >= cost)
+            byte addCost = 0;
+            if ((location is Locations.GlacierPlains && this.type == MugicType.UnderWorld) ||
+                (location is Locations.WoodenPillar && this.type == MugicType.OverWorld))
+                addCost++;
+            return addCost;
+        }
+
+        public bool CheckCanPayMugicCost(Creature creature, Location location)
+        {
+            if (creature.MugicCounters >= cost + additionalCost(creature, location))
             {
+                if (creature is Heptadd) // Heptadd can cast mugic from any tribe
+                    return true;
                 switch (type)
                 {
                     case MugicType.Generic:
@@ -43,9 +54,14 @@ namespace ChaoticGameLib
             return false;
         }
 
-        public virtual void Ability(Creature creature)
+        public virtual bool CheckPlayable(Creature creature)
         {
-            creature.MugicCounters -= cost;
+            return true;
+        }
+
+        public virtual void PayCost(Creature creature, Location location)
+        {
+            creature.MugicCounters -= (byte)(cost + additionalCost(creature, location));
         }
 
         public override string ToString()

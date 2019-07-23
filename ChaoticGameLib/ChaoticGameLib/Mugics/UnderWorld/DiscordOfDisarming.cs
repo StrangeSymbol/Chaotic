@@ -4,13 +4,15 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace ChaoticGameLib.Mugics
 {
-    public class DiscordOfDisarming : Mugic
+    public class DiscordOfDisarming : Mugic, ICast
     {
         public DiscordOfDisarming(Texture2D sprite, Texture2D overlay) : base(sprite, overlay, MugicType.UnderWorld, 1) { }
-        public override void Ability(Creature creature)
+
+        AbilityType ICast.Type { get { return AbilityType.DestroyTargetBattlegear; } }
+
+        public override bool CheckPlayable(Creature creature)
         {
-            // TODO:
-            base.Ability(creature);
+            return creature.Battlegear != null;
         }
         public override string Description()
         {

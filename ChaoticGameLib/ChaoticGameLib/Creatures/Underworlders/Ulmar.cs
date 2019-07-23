@@ -4,7 +4,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace ChaoticGameLib.Creatures
 {
-    public class Ulmar : Creature
+    public class Ulmar : Creature, IActivateTarget<Creature>
     {
         public Ulmar(Texture2D sprite, Texture2D overlay, 
             byte energy, byte courage, byte power, byte wisdom, byte speed) :
@@ -21,13 +21,26 @@ namespace ChaoticGameLib.Creatures
             "Takinom thinks that Chaor's \"go-to\" guy for BattleGear has a screw loose himself.";
         }
 
-        public void Ability(Creature c)
+        public override bool CheckAbility(bool hive)
         {
-            if (this.MugicCounters >= this.MugicCost)
-            {
-                this.MugicCounters -= this.MugicCost;
-                c.Energy -= this.AbilityEnergy;
-            }
+            return this.MugicCounters >= this.MugicCost;
         }
+
+        public override bool CheckAbilityTarget(Creature creature, bool sameOwner)
+        {
+            return creature.Energy > 0;
+        }
+
+        void IActivate.PayCost()
+        {
+            this.MugicCounters -= this.MugicCost;
+        }
+
+        void IActivateTarget<Creature>.Ability(Creature c)
+        {
+            c.Energy -= this.AbilityEnergy;
+        }
+
+        AbilityType IActivate.Type { get { return AbilityType.TargetCreature; } }
     }
 }

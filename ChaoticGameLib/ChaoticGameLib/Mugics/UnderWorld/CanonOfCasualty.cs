@@ -4,14 +4,17 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace ChaoticGameLib.Mugics
 {
-    public class CanonOfCasualty : Mugic
+    public class CanonOfCasualty : Mugic, ICastTarget<Creature>
     {
         public CanonOfCasualty(Texture2D sprite, Texture2D overlay) : base(sprite, overlay, MugicType.UnderWorld, 1) { }
-        public override void Ability(Creature creature)
+
+        void ICastTarget<Creature>.Ability(Creature creature)
         {
-            // TODO:
-            base.Ability(creature);
+            creature.Energy -= 20;
         }
+
+        AbilityType ICast.Type { get { return AbilityType.TargetCreature; } }
+
         public override string Description()
         {
             return base.Description() + " Deal 20 damage to target Creature. " +

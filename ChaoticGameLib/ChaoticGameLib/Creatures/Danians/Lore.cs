@@ -4,7 +4,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace ChaoticGameLib.Creatures
 {
-    public class Lore : Creature
+    public class Lore : Creature, IActivateTarget<Creature>
     {
         public Lore(Texture2D sprite, Texture2D overlay, byte energy, byte courage, byte power, byte wisdom, byte speed) :
             base(sprite, overlay, energy, courage, power, wisdom, speed, 3, false, false, false, false, 0, false, 0, 0, false,
@@ -20,14 +20,26 @@ namespace ChaoticGameLib.Creatures
             "As a spirit leader of the Danians, many believe this shaman may one day lead his tribe to the Cothica.";
         }
 
-        public void Ability(Creature c)
+        public override bool CheckAbility(bool hive)
         {
-            if (this.MugicCounters >= this.MugicCost)
-            {
-                this.MugicCounters -= this.MugicCost;
-                c.Energy -= this.AbilityEnergy;
-                Heal(this.AbilityEnergy);
-            }
+            return this.MugicCounters >= this.MugicCost && this.CheckHealable();
         }
+
+        public override bool CheckAbilityTarget(Creature creature, bool sameOwner)
+        {
+            return creature.Energy > 0;
+        }
+
+        void IActivate.PayCost()
+        {
+            this.MugicCounters -= this.MugicCost;
+        }
+
+        void IActivateTarget<Creature>.Ability(Creature c)
+        {
+            c.Energy -= this.AbilityEnergy;
+            Heal(this.AbilityEnergy);
+        }
+        AbilityType IActivate.Type { get { return AbilityType.TargetCreature; } }
     }
 }

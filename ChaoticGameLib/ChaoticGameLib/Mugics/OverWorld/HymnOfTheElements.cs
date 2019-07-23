@@ -4,14 +4,17 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace ChaoticGameLib.Mugics
 {
-    public class HymnOfTheElements : Mugic
+    public class HymnOfTheElements : Mugic, ICast
     {
         public HymnOfTheElements(Texture2D sprite, Texture2D overlay) : base(sprite, overlay, MugicType.OverWorld, 1) { }
-        public override void Ability(Creature creature)
+
+        public override bool CheckPlayable(Creature creature)
         {
-            // TODO:
-            base.Ability(creature);
+            return !(creature.Fire && creature.Air && creature.Earth && creature.Water);
         }
+
+        AbilityType ICast.Type { get { return AbilityType.TargetSelectElemental; } }
+
         public override string Description()
         {
             return base.Description() + " Target Creature gains the Elemental Type of your choice until the end of the turn. " +

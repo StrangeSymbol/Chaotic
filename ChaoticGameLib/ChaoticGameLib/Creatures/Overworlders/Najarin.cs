@@ -4,7 +4,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace ChaoticGameLib.Creatures
 {
-    public class Najarin : Creature
+    public class Najarin : Creature, IActivate
     {
         public Najarin(Texture2D sprite, Texture2D overlay, 
             byte energy, byte courage, byte power, byte wisdom, byte speed) :
@@ -12,6 +12,18 @@ namespace ChaoticGameLib.Creatures
             false, 0, 0, false, false, true, Tribe.OverWorld, CreatureType.StrategistMuge)
         {
         }
+
+        public override bool CheckAbility(bool hive)
+        {
+            return this.MugicCounters >= 2;
+        }
+
+        void IActivate.PayCost()
+        {
+            this.MugicCounters -= 2;
+        }
+
+        AbilityType IActivate.Type { get { return AbilityType.ReturnMugic; } }
 
         public override string Description()
         {

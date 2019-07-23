@@ -4,7 +4,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace ChaoticGameLib.Creatures
 {
-    public class Donmar : Creature
+    public class Donmar : Creature, IActivateTarget<Creature>
     {
         public Donmar(Texture2D sprite, Texture2D overlay, 
             byte energy, byte courage, byte power, byte wisdom, byte speed) :
@@ -20,14 +20,27 @@ namespace ChaoticGameLib.Creatures
                 "Pay 1 Mugic Ability: Heal 10 Energy to target Creature. " +
             "Deciphering the Runic Grove's mysterious markings is Donmar's devotion...and the likely cause of his dementia.";
         }
-        public void Ability(Creature c)
+
+        public override bool CheckAbility(bool hive)
         {
-            if (this.MugicCounters >= this.MugicCost)
-            {
-                // cost of activating ability
-                this.MugicCounters -= this.MugicCost;
-                c.Heal(this.AbilityEnergy);
-            }
+            return this.MugicCounters >= this.MugicCost;
         }
+
+        public override bool CheckAbilityTarget(Creature creature, bool sameOwner)
+        {
+            return creature.CheckHealable();
+        }
+
+        void IActivate.PayCost()
+        {
+            this.MugicCounters -= this.MugicCost;
+        }
+
+        void IActivateTarget<Creature>.Ability(Creature c)
+        {
+            c.Heal(this.AbilityEnergy);
+        }
+
+        AbilityType IActivate.Type { get { return AbilityType.TargetCreature; } }
     }
 }

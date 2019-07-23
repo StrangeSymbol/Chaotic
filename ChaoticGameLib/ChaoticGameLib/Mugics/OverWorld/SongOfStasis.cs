@@ -4,14 +4,16 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace ChaoticGameLib.Mugics
 {
-    public class SongOfStasis : Mugic
+    public class SongOfStasis : Mugic, ICastTarget<Creature>
     {
         public SongOfStasis(Texture2D sprite, Texture2D overlay) : base(sprite, overlay, MugicType.OverWorld, 1) { }
-        public override void Ability(Creature creature)
+
+        void ICastTarget<Creature>.Ability(Creature creature)
         {
-            // TODO:
-            base.Ability(creature);
+            // TODO: This Creature can't move for the rest of the turn.
         }
+
+        AbilityType ICast.Type { get { return AbilityType.TargetCreature; } }
         public override string Description()
         {
             return base.Description() + " Until the end of the turn, target Creature cannot move." +
