@@ -4,6 +4,6 @@ namespace ChaoticGameLib
 {
     public interface ISacrificeChange : ISacrifice
     {
-        void Ability(ref bool change);
+        bool Ability();
     }
 }

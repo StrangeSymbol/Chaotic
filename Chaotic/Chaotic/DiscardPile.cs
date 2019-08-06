@@ -95,6 +95,31 @@ namespace Chaotic
             return false;
         }
 
+        public bool ReturnToSpace(GameTime gameTime, int i, BattleBoardNode space)
+        {
+            if (!ChaoticEngine.IsACardMoving)
+            {
+                ChaoticEngine.IsACardMoving = true;
+                discardPile[i].IsMoving = true;
+                discardPile[i].Position = discardTemplate.Position;
+                discardPile[i].CourseToCard(space.Position);
+                elapsedTime = gameTime.TotalGameTime.TotalMilliseconds;
+            }
+            else if (discardPile[i].Time >= gameTime.TotalGameTime.TotalMilliseconds - elapsedTime && discardPile[i].IsMoving)
+                discardPile[i].Move(gameTime);
+            else if (discardPile[i].Time < gameTime.TotalGameTime.TotalMilliseconds - elapsedTime && discardPile[i].IsMoving)
+            {
+                discardPile[i].IsMoving = false;
+                ChaoticEngine.IsACardMoving = false;
+                elapsedTime = 0.0;
+                space.AddCreature(discardPile[i] as Creature);
+                space.IsPlayer1 = isPlayer1;
+                discardPile.RemoveAt(i);
+                return true;
+            }
+            return false;
+        }
+
         public void DrawDiscardPile(SpriteBatch spriteBatch)
         {
             discardTemplate.DrawTemplate(spriteBatch, isPlayer1);

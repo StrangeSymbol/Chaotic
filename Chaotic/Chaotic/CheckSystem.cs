@@ -43,6 +43,8 @@ namespace Chaotic
                 if (creatureSpaces[i].CreatureNode != null && creatureSpaces[i].IsPlayer1 == isPlayer1 &&
                         (!ChaoticEngine.GenericMugicOnly || mugic.MugicCasting == MugicType.Generic) &&
                         !(activeLoc.LocationActive is ChaoticGameLib.Locations.DranakisThreshold) &&
+                        !(activeLoc.LocationActive is ChaoticGameLib.Locations.LakeKenIPo &&
+                        (mugic is ICastDispel || mugic is ChaoticGameLib.Mugics.MugicReprise)) && 
                         mugic.CheckCanPayMugicCost(creatureSpaces[i].CreatureNode, activeLoc.LocationActive) && 
                         CheckAvailableTarget(mugic, creatureSpaces, discardPile))
                 {
@@ -67,7 +69,6 @@ namespace Chaotic
                     if (discardPile[i] is Mugic)
                         return true;
                 }
-                return false;
             }
             else if (mugic is ChaoticGameLib.Mugics.SongOfRevival_UnderWorld_)
             {
@@ -80,7 +81,15 @@ namespace Chaotic
                             return true;
                     }
                 }
-                return false;
+            }
+            else if (mugic is ICastDispel)
+            {
+                ICastDispel dispelMugic = mugic as ICastDispel;
+                if (Burst.Alive && Burst.Peek().Action == AbilityAction.Cast && Burst.Peek()[0] is Mugic)
+                {
+                    Mugic dispel = Burst.Peek()[0] as Mugic;
+                    return dispelMugic.CheckDispel(dispel);
+                }
             }
             else
             {
@@ -89,8 +98,8 @@ namespace Chaotic
                     if (creatureSpaces[i].CreatureNode != null && mugic.CheckPlayable(creatureSpaces[i].CreatureNode))
                         return true;
                 }
-                return false;
             }
+            return false;
         }
         /// <summary>
         /// Checks whether any Creature can play an effect.
@@ -124,12 +133,28 @@ namespace Chaotic
             if (!(activeLoc.LocationActive is ChaoticGameLib.Locations.DranakisThreshold) &&
                 creature.CheckAbility(ChaoticEngine.Hive))
             {
-                if (creature is ChaoticGameLib.Creatures.Najarin)
+                if (creature is ChaoticGameLib.Creatures.Najarin &&
+                    !(activeLoc.LocationActive is ChaoticGameLib.Locations.LakeKenIPo))
                 {
                     for (int j = 0; j < discardPile.Count; j++)
                     {
                         if (discardPile[j] is Mugic)
                             return true;
+                    }
+                }
+                else if (creature is IActivateDispel)
+                {
+                    if (Burst.Alive)
+                    {
+                        IActivateDispel actDispel = creature as IActivateDispel;
+                        if (Burst.Peek().Action == AbilityAction.Cast && Burst.Peek()[0] is Mugic)
+                        {
+                            Mugic dispel = Burst.Peek()[0] as Mugic;
+                            return (actDispel.CheckDispel(dispel) && !(activeLoc.LocationActive is 
+                                ChaoticGameLib.Locations.LakeKenIPo)) || Burst.Peek().IsTarget(creature);
+                        }
+                        else
+                            Burst.Peek().IsTarget(creature);
                     }
                 }
                 else
@@ -241,8 +266,7 @@ namespace Chaotic
                 {
                     for (int i = 0; i < creatureSpaces.Length; i++)
                     {
-                        if (creatureSpaces[i].CreatureNode != null && creatureSpaces[i].CreatureNode.Battlegear != null &&
-                            creature.Battlegear.IsFaceUp &&
+                        if (creatureSpaces[i].CreatureNode != null &&
                             creature.Battlegear.CheckSacrificeTarget(creatureSpaces[i].CreatureNode))
                             return true;
                     }

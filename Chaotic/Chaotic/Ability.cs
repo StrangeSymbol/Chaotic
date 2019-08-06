@@ -39,5 +39,15 @@ namespace Chaotic
         {
             get { return abilityList[i]; }
         }
+
+        public bool IsTarget(object card)
+        {
+            for (int i = 1; i < abilityList.Count; i++)
+            {
+                if (card.Equals(abilityList[i]))
+                    return true;
+            }
+            return false;
+        }
     }
 }

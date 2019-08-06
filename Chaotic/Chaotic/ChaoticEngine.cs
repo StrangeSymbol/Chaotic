@@ -5,6 +5,7 @@ using System.Xml.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Input;
 
 namespace Chaotic
 {
@@ -40,6 +41,7 @@ namespace Chaotic
         public static ChaoticMessageBox MsgBox { get; set; } // Checks whether a player wants to add to Burst.
         public static Ability CurrentAbility { get; set; }
         public static BattleBoardNode SelectedNode { get; set; }
+        public static MouseState PrevState { get; set; }
         public static List<ChaoticGameLib.Creature> sCreatures1;
         public static List<ChaoticGameLib.Battlegear> sBattlegears1;
         public static List<ChaoticGameLib.Attack> sAttacks1;

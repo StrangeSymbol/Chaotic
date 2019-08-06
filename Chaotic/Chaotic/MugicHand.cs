@@ -73,7 +73,6 @@ namespace Chaotic
                         hand[i].IsMoving = true;
                         hand[i].CourseToCard(discardPile.GetDiscardTemplate().Position);
                         elaspedTime = gameTime.TotalGameTime.TotalMilliseconds;
-                        ChaoticEngine.Highlighter.InitializeHighlight(gameTime, hand[i]);
                     }
                 }
                 else if (hand[i].Time >= gameTime.TotalGameTime.TotalMilliseconds - elaspedTime && hand[i].IsMoving)

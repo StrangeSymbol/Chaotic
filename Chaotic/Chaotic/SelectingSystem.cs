@@ -18,7 +18,7 @@ namespace Chaotic
                     creatureSpaces[i].IsSelectible = true;
 
                 if (creatureSpaces[i].CreatureRectangle.Contains(mouse.X,mouse.Y) && mouse.LeftButton == ButtonState.Pressed &&
-                    creatureSpaces[i].IsSelectible)
+                    ChaoticEngine.PrevState.LeftButton != ButtonState.Pressed && creatureSpaces[i].IsSelectible)
                 {
                     for (int j = 0; j < creatureSpaces.Length; j++)
                     {
@@ -43,6 +43,26 @@ namespace Chaotic
                     for (int j = 0; j < creatureSpaces.Length; j++)
                     {
                         creatureSpaces[j].IsSelectible = false;
+                    }
+                    return creatureSpaces[i];
+                }
+            }
+            return null;
+        }
+
+        public static BattleBoardNode SelectingOpenSpace(MouseState mouse, BattleBoardNode[] creatureSpaces)
+        {
+            for (int i = 0; i < creatureSpaces.Length; i++)
+            {
+                if (creatureSpaces[i].CreatureNode == null)
+                    creatureSpaces[i].IsCovered = true;
+
+                if (creatureSpaces[i].CreatureRectangle.Contains(mouse.X, mouse.Y) && mouse.LeftButton == ButtonState.Pressed &&
+                    ChaoticEngine.PrevState.LeftButton != ButtonState.Pressed && creatureSpaces[i].IsCovered)
+                {
+                    for (int j = 0; j < creatureSpaces.Length; j++)
+                    {
+                        creatureSpaces[j].IsCovered = false;
                     }
                     return creatureSpaces[i];
                 }

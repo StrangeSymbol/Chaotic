@@ -30,9 +30,9 @@ namespace ChaoticGameLib.Creatures
             this.MugicCounters--;
         }
 
-        void IActivateChange.Ability(ref bool hive)
+        bool IActivateChange.Ability()
         {
-            hive = true;
+            return true;
         }
 
         AbilityType IActivate.Type { get { return AbilityType.TargetSelfChange; } }

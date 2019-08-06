@@ -24,6 +24,7 @@ namespace Chaotic
         bool mouseCoveredCreature;
         bool mouseCoveredBattlegear;
         bool isMovableSpace;
+        bool isCovered;
         Texture2D mugicCounter;
         Texture2D[] mugicTextures;
         Vector2[] mugicPositions;
@@ -78,8 +79,8 @@ namespace Chaotic
         public bool IsMovableSpace { get { return isMovableSpace; } set { isMovableSpace = value; } }
         public bool IsPlayer1 { get { return isPlayer1; } set { isPlayer1 = value; } }
         public bool IsSelectible { get { if (creature != null) return creature.IsCovered; else return false; }
-            set { if (creature != null) creature.IsCovered = value; }
-        }
+            set { if (creature != null) creature.IsCovered = value; } }
+        public bool IsCovered { get { return isCovered; } set { isCovered = value; } }
 
         public bool HasBattegear()
         {
@@ -262,48 +263,61 @@ namespace Chaotic
 
         public void TurnOnMovableSpaces(BattleBoardNode[] creatureSpaces)
         {
-            if (creature.Range)
+            if (creature.CanMoveAnywhere)
             {
-                rangeQueue = new Queue<int>();
                 for (int i = 0; i < creatureSpaces.Length; i++)
                 {
-                    if (creatureSpaces[i] == this)
-                    {
-                        rangeQueue.Enqueue(i);
-                        creatureSpaces[i].isSeen = true;
-                    }
-                }
-                while (rangeQueue.Count != 0)
-                {
-                    int i = rangeQueue.Dequeue();
-                    for (int j = 0; j < creatureSpaces[i].movableSpaces.Length; j++)
-                    {
-                        if (creatureSpaces[creatureSpaces[i].movableSpaces[j]].creature != null
-                            && !creatureSpaces[creatureSpaces[i].movableSpaces[j]].isSeen)
-                        {
-                            rangeQueue.Enqueue(creatureSpaces[i].movableSpaces[j]);
-                            creatureSpaces[creatureSpaces[i].movableSpaces[j]].isSeen = true;
-                        }
-                        if (creatureSpaces[creatureSpaces[i].movableSpaces[j]].creature == null)
-                            creatureSpaces[creatureSpaces[i].movableSpaces[j]].isMovableSpace = true;
-                        else if (creatureSpaces[creatureSpaces[i].movableSpaces[j]].isPlayer1 != this.isPlayer1 && !ChaoticEngine.CombatThisTurn)
-                            creatureSpaces[creatureSpaces[i].movableSpaces[j]].isMovableSpace = true;
-                    }
-                }
-
-                for (int i = 0; i < creatureSpaces.Length; i++)
-                {
-                    creatureSpaces[i].isSeen = false;
+                    if (creatureSpaces[i].CreatureNode == null)
+                        creatureSpaces[i].isMovableSpace = true;
+                    else if (creatureSpaces[i].isPlayer1 != this.isPlayer1 && !ChaoticEngine.CombatThisTurn)
+                        creatureSpaces[i].isMovableSpace = true;
                 }
             }
             else
             {
-                for (int j = 0; j < movableSpaces.Length; j++)
+                if (creature.Range)
                 {
-                    if (creatureSpaces[movableSpaces[j]].creature == null)
-                        creatureSpaces[movableSpaces[j]].isMovableSpace = true;
-                    else if (creatureSpaces[movableSpaces[j]].isPlayer1 != this.isPlayer1 && !ChaoticEngine.CombatThisTurn)
-                        creatureSpaces[movableSpaces[j]].isMovableSpace = true;
+                    rangeQueue = new Queue<int>();
+                    for (int i = 0; i < creatureSpaces.Length; i++)
+                    {
+                        if (creatureSpaces[i] == this)
+                        {
+                            rangeQueue.Enqueue(i);
+                            creatureSpaces[i].isSeen = true;
+                        }
+                    }
+                    while (rangeQueue.Count != 0)
+                    {
+                        int i = rangeQueue.Dequeue();
+                        for (int j = 0; j < creatureSpaces[i].movableSpaces.Length; j++)
+                        {
+                            if (creatureSpaces[creatureSpaces[i].movableSpaces[j]].creature != null
+                                && !creatureSpaces[creatureSpaces[i].movableSpaces[j]].isSeen)
+                            {
+                                rangeQueue.Enqueue(creatureSpaces[i].movableSpaces[j]);
+                                creatureSpaces[creatureSpaces[i].movableSpaces[j]].isSeen = true;
+                            }
+                            if (creatureSpaces[creatureSpaces[i].movableSpaces[j]].creature == null)
+                                creatureSpaces[creatureSpaces[i].movableSpaces[j]].isMovableSpace = true;
+                            else if (creatureSpaces[creatureSpaces[i].movableSpaces[j]].isPlayer1 != this.isPlayer1 && !ChaoticEngine.CombatThisTurn)
+                                creatureSpaces[creatureSpaces[i].movableSpaces[j]].isMovableSpace = true;
+                        }
+                    }
+
+                    for (int i = 0; i < creatureSpaces.Length; i++)
+                    {
+                        creatureSpaces[i].isSeen = false;
+                    }
+                }
+                else
+                {
+                    for (int j = 0; j < movableSpaces.Length; j++)
+                    {
+                        if (creatureSpaces[movableSpaces[j]].creature == null)
+                            creatureSpaces[movableSpaces[j]].isMovableSpace = true;
+                        else if (creatureSpaces[movableSpaces[j]].isPlayer1 != this.isPlayer1 && !ChaoticEngine.CombatThisTurn)
+                            creatureSpaces[movableSpaces[j]].isMovableSpace = true;
+                    }
                 }
             }
         }
@@ -347,6 +361,7 @@ namespace Chaotic
         {
             creature = c;
             creature.Position = position;
+            creature.SaveOldCreature();
             if (creature.Battlegear != null)
                 creature.Battlegear.Position = new Vector2(position.X, position.Y +
                     (isPlayer1 ? -ChaoticEngine.kBattlegearGap : ChaoticEngine.kBattlegearGap));
@@ -386,6 +401,7 @@ namespace Chaotic
 
         public void RemoveBattlegear()
         {
+            creature.Battlegear.IsFaceUp = true;
             creature.UnEquip();
         }
 
@@ -578,6 +594,9 @@ namespace Chaotic
             {
                 spriteBatch.Draw(overlay, CreatureRectangle, null, Color.Red, 0f, Vector2.Zero, SpriteEffects.None, 0.6f);
             }
+
+            if (isCovered)
+                spriteBatch.Draw(overlay, CreatureRectangle, null, Color.Yellow, 0f, Vector2.Zero, SpriteEffects.None, 0.55f);
         }
     }
 }

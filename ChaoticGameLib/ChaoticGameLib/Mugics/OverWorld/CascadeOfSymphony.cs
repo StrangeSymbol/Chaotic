@@ -10,7 +10,8 @@ namespace ChaoticGameLib.Mugics
 
         void ICastTarget<Creature>.Ability(Creature creature)
         {
-            creature.ReducedFireDamage = creature.ReducedAirDamage = 5;
+            creature.ReducedFireDamage += 5;
+            creature.ReducedAirDamage += 5;
         }
 
         AbilityType ICast.Type { get { return AbilityType.TargetCreature; } }

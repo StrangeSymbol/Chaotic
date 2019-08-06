@@ -83,10 +83,10 @@ namespace ChaoticGameLib
 
             if (your.Fire && this.fire)
                 energy2 -= (byte)(fireDamage + your.FireDamage -
-                    (fireDamage + your.FireDamage >= your.ReducedFireDamage ? your.ReducedFireDamage : 0));
+                    (fireDamage + your.FireDamage >= enemy.ReducedFireDamage ? enemy.ReducedFireDamage : 0));
             if (your.Air && this.air)
                 energy2 -= (byte)(airDamage + your.AirDamage - 
-                    (airDamage + your.AirDamage >= your.ReducedAirDamage ? your.ReducedAirDamage : 0));
+                    (airDamage + your.AirDamage >= enemy.ReducedAirDamage ? enemy.ReducedAirDamage : 0));
             if (your.Earth && this.earth)
                 energy2 -= (byte)(earthDamage + your.EarthDamage);
             if (your.Water && this.water)
@@ -94,8 +94,6 @@ namespace ChaoticGameLib
 
             if (your.Battlegear is RiverlandStar && your.CreatureTribe == Tribe.OverWorld && your.Water && this.water)
                 energy1 += 5;
-            else if (enemy.Battlegear is StoneMail && enemy.Battlegear.IsFaceUp && enemy.Energy < energy)
-                energy2 -= 5;
 
             if (your.FirstAttack && your.Invisibility() && ChaoticLibEngine.HasMaquisDarini)
                 energy2 -= 5;
@@ -158,6 +156,10 @@ namespace ChaoticGameLib
                 energy2 = 0;
                 dealZero = false;
             }
+            
+            if (enemy.Battlegear is StoneMail && enemy.Battlegear.IsFaceUp && energy2 > 0)
+                energy2 -= 5;
+
             return new Tuple<short, short>(energy1, energy2);
         }
 

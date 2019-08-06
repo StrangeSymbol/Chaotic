@@ -25,9 +25,9 @@ namespace ChaoticGameLib.Creatures
             return this.Energy > 0 && !hive;
         }
 
-        void ISacrificeChange.Ability(ref bool hive)
+        bool ISacrificeChange.Ability()
         {
-            hive = true;
+            return true;
         }
 
         AbilityType ISacrifice.Type { get { return AbilityType.TargetSelfChange; } }

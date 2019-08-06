@@ -23,7 +23,7 @@ namespace ChaoticGameLib.Creatures
 
         public override bool CheckAbility(bool hive)
         {
-            return this.MugicCost >= this.MugicCost;
+            return this.MugicCounters >= this.MugicCost;
         }
 
         void IActivate.PayCost()

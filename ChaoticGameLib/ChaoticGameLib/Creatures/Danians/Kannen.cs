@@ -37,9 +37,9 @@ namespace ChaoticGameLib.Creatures
             this.MugicCounters--;
         }
 
-        void IActivateChange.Ability(ref bool hive)
+        bool IActivateChange.Ability()
         {
-            hive = true;
+            return true;
         }
 
         bool ISacrificeReturn.CheckReturnable(Creature c)

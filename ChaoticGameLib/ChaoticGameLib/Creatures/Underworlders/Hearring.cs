@@ -13,12 +13,12 @@ namespace ChaoticGameLib.Creatures
 
         public override bool CheckAbility(bool hive)
         {
-            return this.MugicCounters >= this.MugicCost;
+            return this.MugicCounters >= 1;
         }
 
         void IActivate.PayCost()
         {
-            this.MugicCounters -= this.MugicCost;
+            this.MugicCounters -= 1;
         }
 
         AbilityType IActivate.Type { get { return AbilityType.TargetLocationDeck; } }

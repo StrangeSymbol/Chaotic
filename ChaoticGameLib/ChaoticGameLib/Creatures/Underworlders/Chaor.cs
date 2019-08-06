@@ -4,7 +4,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace ChaoticGameLib.Creatures
 {
-    public class Chaor : Creature
+    public class Chaor : Creature, IActivateDispel
     {
         public Chaor(Texture2D sprite, Texture2D overlay, 
             byte energy, byte courage, byte power, byte wisdom, byte speed) :
@@ -24,6 +24,21 @@ namespace ChaoticGameLib.Creatures
         public override bool CheckAbility(bool hive)
         {
             return this.MugicCounters >= 3;
+        }
+
+        AbilityType IActivate.Type
+        {
+            get { return AbilityType.DispelMugic; }
+        }
+
+        void IActivate.PayCost()
+        {
+            this.MugicCounters -= 3;
+        }
+
+        bool IActivateDispel.CheckDispel(Mugic mugic)
+        {
+            return mugic.MugicCasting == MugicType.OverWorld;
         }
     }
 }

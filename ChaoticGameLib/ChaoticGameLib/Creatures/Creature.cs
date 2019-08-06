@@ -140,7 +140,6 @@ namespace ChaoticGameLib
             this.power = power;
             this.wisdom = wisdom;
             this.speed = speed;
-            this.mugicCounters = mugicCounters;
             this.fire = fire;
             this.air = air;
             this.earth = earth;
@@ -173,6 +172,7 @@ namespace ChaoticGameLib
             this.swiftGained = 0;
             this.reducedAirDamage = this.reducedFireDamage = 0;
             this.oldCreature = this.ShallowCopy() as Creature;
+            this.mugicCounters = mugicCounters;
         }
 
         public Creature(Texture2D sprite, Texture2D overlay, short energy, short courage, short power, short wisdom, short speed,
@@ -347,6 +347,11 @@ namespace ChaoticGameLib
                 return false;
         }
 
+        public bool HasRecklessness()
+        {
+            return this.recklessness > 0;
+        }
+
         public void Equip(Battlegear gear)
         {
             this.battlegear = gear.ShallowCopy();
@@ -436,6 +441,14 @@ namespace ChaoticGameLib
         public virtual bool CheckSacrificeTarget(Creature creature)
         {
             return true;
+        }
+        /// <summary>
+        /// Stores the current version of Creature to reference.
+        /// </summary>
+        public void SaveOldCreature()
+        {
+            if (oldCreature == null)
+                this.oldCreature = this.ShallowCopy() as Creature;
         }
 
         public override string ToString()

@@ -4,7 +4,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace ChaoticGameLib.Creatures
 {
-    public class Takinom : Creature, IActivateTarget<Creature>
+    public class Takinom : Creature, IActivateSelf
     {
         public Takinom(Texture2D sprite, Texture2D overlay, 
             byte energy, byte courage, byte power, byte wisdom, byte speed) :
@@ -28,7 +28,7 @@ namespace ChaoticGameLib.Creatures
 
         public override bool CheckAbilityTarget(Creature creature, bool sameOwner)
         {
-            return sameOwner && creature.CreatureTribe == Tribe.UnderWorld && creature.Energy > 0;
+            return sameOwner && this != creature && creature.CreatureTribe == Tribe.UnderWorld && creature.Energy > 0;
         }
 
         void IActivate.PayCost()
@@ -36,7 +36,7 @@ namespace ChaoticGameLib.Creatures
             // No Cost paid by activator.
         }
 
-        void IActivateTarget<Creature>.Ability(Creature c)
+        void IActivateSelf.Ability()
         {
             Heal(this.AbilityEnergy);
         }

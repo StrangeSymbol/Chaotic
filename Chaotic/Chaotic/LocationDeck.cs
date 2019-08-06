@@ -43,6 +43,7 @@ namespace Chaotic
         public int Count { get { return Deck.Count; } }
         public bool DeckCovered { get { return deckCover2.IsCovered; } set { deckCover2.IsCovered = value; } }
         public Rectangle DeckRectangle { get { return locationTemplate.CollisionRectangle; } }
+        public bool IsPlayer1 { get { return isPlayer1; } }
 
         public void ShuffleDeck(List<Location> deckHolder)
         {
@@ -53,6 +54,23 @@ namespace Chaotic
             {
                 deckCopy.Add(deckHolder[i].ShallowCopy() as Location);
             }
+
+            while (deckCopy.Count > 0)
+            {
+                Location card = deckCopy[random.Next(deckCopy.Count)];
+                deckCopy.Remove(card);
+                deckPile.Add(card);
+            }
+        }
+
+        /// <summary>
+        /// Re-shuffles the current Location Deck.
+        /// </summary>
+        public void ShuffleDeck()
+        {
+            Random random = new Random();
+            List<Location> deckCopy = new List<Location>(deckPile);
+            deckPile.Clear();
 
             while (deckCopy.Count > 0)
             {

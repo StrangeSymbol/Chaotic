@@ -40,7 +40,19 @@ namespace Chaotic
         }
 
         public bool Active { get { return active; } set { active = value; } }
-        public bool? ClickedYes { get { return clickedYes; } set { clickedYes = value; } }
+        public bool? ClickedYes
+        {
+            get { return clickedYes; }
+            set
+            {
+                clickedYes = value; 
+                if (clickedYes.HasValue)
+                {
+                    prevClicks[1] = prevClicks[0];
+                    prevClicks[0] = clickedYes.Value;
+                }
+            }
+        }
         public bool PrevClick { get { return prevClicks[1]; } }
 
         public void UpdateMessageBox(GameTime gameTime)
@@ -51,19 +63,20 @@ namespace Chaotic
                 if (yesButton.UpdateButton(mouse, gameTime))
                 {
                     active = false;
-                    clickedYes = true;
+                    ClickedYes = true;
                 }
                 else if (noButton.UpdateButton(mouse, gameTime))
                 {
                     active = false;
-                    clickedYes = false;
-                }
-                if (clickedYes.HasValue)
-                {
-                    prevClicks[1] = prevClicks[0];
-                    prevClicks[0] = clickedYes.Value;
+                    ClickedYes = false;
                 }
             }
+        }
+
+        public void Restore()
+        {
+            prevClicks[0] = prevClicks[1];
+            prevClicks[1] = true;
         }
 
         public void DrawMessageBox(SpriteBatch spriteBatch, float layerDepth=0.2f)

@@ -33,6 +33,7 @@ namespace ChaoticGameLib.Creatures
 
         void IActivateTarget<Creature>.Ability(Creature c)
         {
+            c.Energy += this.AbilityEnergy;
             c.GainedEnergyTurn += this.AbilityEnergy;
             this.UsedAbility = true;
         }

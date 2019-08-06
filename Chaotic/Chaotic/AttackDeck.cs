@@ -31,7 +31,12 @@ namespace Chaotic
             this.shuffleMove = false;
             this.numShuffles = 0;
         }
-
+        /// <summary>
+        /// Retrieves a given card from the deck.
+        /// </summary>
+        /// <param name="card">The index in the deck to retrieve.</param>
+        /// <returns>The selected Attack card.</returns>
+        /// <exception cref="IndexOutOfRangeException">Is thrown if the index for card is outside the deck capacity.</exception>
         public Attack RetrieveCard(int card)
         {
             if (card >= 0 && card < deckPile.Count)
@@ -45,7 +50,11 @@ namespace Chaotic
         public Vector2 Position { get { return attackTemplate.Position; } }
         public bool DeckCovered { get { return deckCover2.IsCovered; } set { deckCover2.IsCovered = value; } }
         public Rectangle DeckRectangle { get { return attackTemplate.CollisionRectangle; } }
-
+        public bool IsPlayer1 { get { return isPlayer1; } }
+        /// <summary>
+        /// Populates and Shuffles Attack cards to be used as a game deck.
+        /// </summary>
+        /// <param name="deckHolder">This is the list of attacks this player is using for their attack deck.</param>
         public void ShuffleDeck(List<Attack> deckHolder)
         {
             Random random = new Random();
@@ -63,7 +72,26 @@ namespace Chaotic
                 deckPile.Add(card);
             }
         }
+        /// <summary>
+        /// Re-shuffles the current Attack Deck.
+        /// </summary>
+        public void ShuffleDeck()
+        {
+            Random random = new Random();
+            List<Attack> deckCopy = new List<Attack>(deckPile);
+            deckPile.Clear();
 
+            while (deckCopy.Count > 0)
+            {
+                Attack card = deckCopy[random.Next(deckCopy.Count)];
+                deckCopy.Remove(card);
+                deckPile.Add(card);
+            }
+        }
+        /// <summary>
+        /// Shuffles the Attack deck when there are no more cards to draw.
+        /// </summary>
+        /// <param name="discardPile">The discard pile where the attack cards used are held.</param>
         public void ShuffleDeck(DiscardPile<Attack> discardPile)
         {
             if (deckPile.Count == 0)

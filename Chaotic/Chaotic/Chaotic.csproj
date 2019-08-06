@@ -148,6 +148,7 @@
     <Compile Include="GameMenu.cs" />
     <Compile Include="SelectingSystem.cs" />
     <Compile Include="SelectPanel.cs" />
+    <Compile Include="SelectType.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="ChaoticSymbolIcon.ico" />

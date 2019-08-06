@@ -60,6 +60,9 @@
   <ItemGroup>
     <Compile Include="Abilities\AbilityType.cs" />
     <Compile Include="Abilities\IActivate.cs" />
+    <Compile Include="Abilities\IActivateDispel.cs" />
+    <Compile Include="Abilities\ICastChange.cs" />
+    <Compile Include="Abilities\ICastDispel.cs" />
     <Compile Include="Abilities\ICastReturn.cs" />
     <Compile Include="Abilities\IActivateSelf.cs" />
     <Compile Include="Abilities\IActivateTarget.cs" />
@@ -68,6 +71,7 @@
     <Compile Include="Abilities\ICast.cs" />
     <Compile Include="Abilities\ICastTarget.cs" />
     <Compile Include="Abilities\IHive.cs" />
+    <Compile Include="Abilities\IIntimidate.cs" />
     <Compile Include="Abilities\ISacrificeChange.cs" />
     <Compile Include="Abilities\ISacrificeReturn.cs" />
     <Compile Include="Abilities\ISacrificeTarget.cs" />
