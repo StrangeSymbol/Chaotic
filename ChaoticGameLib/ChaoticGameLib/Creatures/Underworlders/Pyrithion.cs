@@ -9,7 +9,7 @@ namespace ChaoticGameLib.Creatures
         public Pyrithion(Texture2D sprite, Texture2D overlay, 
             byte energy, byte courage, byte power, byte wisdom, byte speed) :
             base(sprite, overlay, energy, courage, power, wisdom, speed, 0, true, false, false, false, 0,
-            false, 0, 0, false, false, false, 0, 0, 0, 0, 0, 10, Tribe.UnderWorld, CreatureType.Commander)
+            false, 0, 0, false, false, false, 0, 0, 0, 0, 10, 0, 10, 0, Tribe.UnderWorld, CreatureType.Commander)
         {
         }
 
@@ -24,10 +24,10 @@ namespace ChaoticGameLib.Creatures
 
         public void Ability(Creature c)
         {
-            c.Courage -= this.AbilityEnergy;
-            c.CourageCombat += this.AbilityEnergy;
-            c.Wisdom -= this.AbilityEnergy;
-            c.WisdomCombat += this.AbilityEnergy;
+            c.Courage -= this.IntimidateCourage;
+            c.CourageCombat += this.IntimidateCourage;
+            c.Wisdom -= this.IntimidateWisdom;
+            c.WisdomCombat += this.IntimidateWisdom;
         }
     }
 }

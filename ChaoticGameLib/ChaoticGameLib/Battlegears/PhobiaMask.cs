@@ -8,6 +8,18 @@ namespace ChaoticGameLib.Battlegears
     {
         public PhobiaMask(Texture2D sprite, Texture2D overlay) : base(sprite,overlay, 10) { }
 
+        public override void Equip(Creature creature)
+        {
+            creature.IntimidateCourage += this.DisciplineAmount;
+            creature.IntimidatePower += this.DisciplineAmount;
+        }
+
+        public override void UnEquip(Creature creature)
+        {
+            creature.IntimidateCourage -= this.DisciplineAmount;
+            creature.IntimidatePower -= this.DisciplineAmount;
+        }
+
         public override string Description()
         {
             return "Phobia Mask. Battlegear. Equipped Creature gains \"Intimidate: Courage 10\"" +

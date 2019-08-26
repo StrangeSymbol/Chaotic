@@ -17,7 +17,7 @@ namespace ChaoticGameLib.Mugics
 
         AbilityType ICast.Type
         {
-            get { return AbilityType.TargetCreatureTwo; }
+            get { return AbilityType.TargetEngaged; }
         }
 
         public override string Description()

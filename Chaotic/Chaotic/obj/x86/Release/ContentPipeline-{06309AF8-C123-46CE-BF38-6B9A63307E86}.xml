@@ -2818,6 +2818,42 @@
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Release\Content\Mugics\SongOfSymmetry.xnb</Output>
       <Time>2019-07-15T23:04:52.7851275-04:00</Time>
     </Item>
+    <Item>
+      <Source>Elements\Air.png</Source>
+      <Name>Elements\Air</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Release\Content\Elements\Air.xnb</Output>
+      <Time>2019-07-29T16:00:31.4827881-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Elements\Earth.png</Source>
+      <Name>Elements\Earth</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Release\Content\Elements\Earth.xnb</Output>
+      <Time>2019-07-29T16:00:31.5140386-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Elements\Fire.png</Source>
+      <Name>Elements\Fire</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Release\Content\Elements\Fire.xnb</Output>
+      <Time>2019-07-29T16:00:31.560914-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Elements\Water.png</Source>
+      <Name>Elements\Water</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Release\Content\Elements\Water.xnb</Output>
+      <Time>2019-07-29T16:00:31.5765388-04:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{06309AF8-C123-46CE-BF38-6B9A63307E86}</ContentProjectGUID>

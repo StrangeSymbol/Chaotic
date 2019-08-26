@@ -35,7 +35,7 @@ namespace Chaotic
                     {
                         case ActionType.Move:
                             if (ChaoticEngine.GStage == GameStage.Action && numMoves > 0 &&
-                                (!ChaoticEngine.CombatThisTurn || !card.MovedThisTurn)) // Swift Effect.
+                                (!ChaoticEngine.CombatThisTurn || !card.MovedThisTurn) && !card.CannotMove) // Swift Effect.
                             {
                                 buttons[i].IsActive = true;
                                 buttons[i].Position = new Vector2(position.X + ChaoticEngine.kCardWidth,

@@ -9,7 +9,7 @@ namespace ChaoticGameLib.Creatures
         public Kughar(Texture2D sprite, Texture2D overlay, 
             byte energy, byte courage, byte power, byte wisdom, byte speed) :
             base(sprite, overlay, energy, courage, power, wisdom, speed, 0, true, false, false, false, 0, 
-            false, 0, 0, false, false, false, 0, 0, 0, 0, 0, 10, Tribe.UnderWorld, CreatureType.Taskmaster)
+            false, 0, 0, false, false, false, 0, 0, 0, 0, 0, 10, 0, 0, Tribe.UnderWorld, CreatureType.Taskmaster)
         {
         }
 
@@ -23,8 +23,8 @@ namespace ChaoticGameLib.Creatures
 
         public void Ability(Creature c)
         {
-            c.Power -= this.AbilityEnergy;
-            c.PowerCombat += this.AbilityEnergy;
+            c.Power -= this.IntimidatePower;
+            c.PowerCombat += this.IntimidatePower;
         }
     }
 }

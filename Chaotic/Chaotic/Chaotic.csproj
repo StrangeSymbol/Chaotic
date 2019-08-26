@@ -149,6 +149,8 @@
     <Compile Include="SelectingSystem.cs" />
     <Compile Include="SelectPanel.cs" />
     <Compile Include="SelectType.cs" />
+    <Compile Include="TriggeredPanel.cs" />
+    <Compile Include="TriggeredType.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="ChaoticSymbolIcon.ico" />
@@ -225,7 +227,7 @@
       </Group>
       <TargetPath>
       </TargetPath>
-      <PublishState>Include</PublishState>
+      <PublishState>Exclude</PublishState>
       <IncludeHash>True</IncludeHash>
       <FileType>Assembly</FileType>
     </PublishFile>
@@ -245,7 +247,7 @@
       </Group>
       <TargetPath>
       </TargetPath>
-      <PublishState>Include</PublishState>
+      <PublishState>Exclude</PublishState>
       <IncludeHash>True</IncludeHash>
       <FileType>Assembly</FileType>
     </PublishFile>

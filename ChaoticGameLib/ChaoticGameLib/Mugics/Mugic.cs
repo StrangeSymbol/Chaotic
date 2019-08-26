@@ -7,7 +7,7 @@ namespace ChaoticGameLib
 {
     public abstract class Mugic : ChaoticCard
     {
-        // Holds the value of mugic counters needed to activate mugic
+        // Holds the number of mugic counters needed to activate mugic
         byte cost;
 
         // Holds the type of Mugic card.

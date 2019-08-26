@@ -18,13 +18,17 @@ namespace Chaotic
         {
             burstStack = new Stack<Ability>();
             burstStart = startStage;
+            ChaoticEngine.MsgBox.Reset();
         }
 
         public static GameStage BurstStart { get { return burstStart; } set { burstStart = value; } }
         public static bool Alive { get { return burstStack != null && burstStack.Count > 0; } }
         public static bool Player1Turn 
         { 
-            get { return !(player1Turn ^ (burstStack.Count == 1 && burstStack.Peek()[0] is Attack)); }
+            get { return !(player1Turn ^ (burstStack.Count == 1 && burstStack.Peek()[0] is Attack
+                && (ChaoticEngine.MsgBox.ClickedYes == null ||
+                ChaoticEngine.MsgBox.ClickedYes.Value)));
+            }
             set { player1Turn = value; }
         }
 
@@ -35,7 +39,6 @@ namespace Chaotic
                 burstStack.Clear();
             }
         }
-
         public static Ability Peek()
         {
             return burstStack.Peek();

@@ -16,6 +16,11 @@ namespace ChaoticGameLib.Battlegears
             creature.Speed -= this.DisciplineAmount;
         }
 
+        public override bool CheckSacrifice(Creature creatureEquipped)
+        {
+            return creatureEquipped.Energy > 0;
+        }
+
         bool ISacrificeReturn.CheckReturnable(Creature c)
         {
             return c.CardType == CreatureType.Mandiblor || c.CardType == CreatureType.MandiblorMuge;

@@ -82,6 +82,19 @@ namespace Chaotic
                     }
                 }
             }
+            else if (mugic is ChaoticGameLib.Mugics.SongOfDeflection && Burst.Alive)
+            {
+                if (Burst.Peek().Action == AbilityAction.Cast && Burst.Peek()[0] is Mugic)
+                    return Burst.Peek().Count == 3; // Mugic has a single target.
+                else if (Burst.Peek()[0] is Battlegear)
+                    return Burst.Peek().Count == 3;
+                else if (Burst.Peek()[0] is Creature)
+                    return Burst.Peek().Count == 2;
+            }
+            else if ((mugic as ICast).Type == AbilityType.TargetEngaged)
+            {
+                return ChaoticEngine.sYouNode != null && ChaoticEngine.sEnemyNode != null;
+            }
             else if (mugic is ICastDispel)
             {
                 ICastDispel dispelMugic = mugic as ICastDispel;
@@ -206,11 +219,11 @@ namespace Chaotic
             return false;
         }
 
-        public static bool CheckAnyBattlegearAbility(BattleBoardNode[] creatureSpaces, ActiveLocation activeLoc)
+        public static bool CheckAnyBattlegearAbility(bool isPlayer1, BattleBoardNode[] creatureSpaces, ActiveLocation activeLoc)
         {
             for (int i = 0; i < creatureSpaces.Length; i++)
             {
-                if (creatureSpaces[i].CreatureNode != null &&
+                if (creatureSpaces[i].CreatureNode != null && creatureSpaces[i].IsPlayer1 == isPlayer1 &&
                     CheckBattlegearAbility(creatureSpaces[i].CreatureNode, creatureSpaces, activeLoc))
                    return true;
             }
@@ -231,12 +244,13 @@ namespace Chaotic
             return false;
         }
 
-        public static bool CheckAnyBattlegearSacrifice(BattleBoardNode[] creatureSpaces, DiscardPile<ChaoticCard> discardPile,
-            ActiveLocation activeLoc)
+        public static bool CheckAnyBattlegearSacrifice(bool isPlayer1, BattleBoardNode[] creatureSpaces,
+            DiscardPile<ChaoticCard> discardPile, ActiveLocation activeLoc)
         {
             for (int i = 0; i < creatureSpaces.Length; i++)
             {
-                if (creatureSpaces[i].CreatureNode != null && creatureSpaces[i].CreatureNode.Battlegear != null &&
+                if (creatureSpaces[i].CreatureNode != null && creatureSpaces[i].IsPlayer1 == isPlayer1 &&
+                    creatureSpaces[i].CreatureNode.Battlegear != null &&
                     CheckBattlegearSacrifice(creatureSpaces[i].CreatureNode, creatureSpaces, discardPile, activeLoc))
                     return true;
             }

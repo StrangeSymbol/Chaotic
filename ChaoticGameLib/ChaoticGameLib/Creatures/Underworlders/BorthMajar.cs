@@ -10,7 +10,7 @@ namespace ChaoticGameLib.Creatures
             byte energy, byte courage, byte power, byte wisdom, byte speed) :
             base(sprite, overlay, energy, courage, power, wisdom, speed, 1, false, false, false, false, 0,
             false, 0, 0, false, false, false,
-            0, 0, 0, 0, 0, 10, Tribe.UnderWorld, CreatureType.Commander) { }
+            0, 0, 0, 0, 0, 10, 10, 0, Tribe.UnderWorld, CreatureType.Commander) { }
 
         public override string Description()
         {
@@ -23,10 +23,10 @@ namespace ChaoticGameLib.Creatures
 
         public void Ability(Creature c)
         {
-            c.Power -= this.AbilityEnergy;
-            c.PowerCombat += this.AbilityEnergy;
-            c.Wisdom -= this.AbilityEnergy;
-            c.WisdomCombat += this.AbilityEnergy;
+            c.Power -= this.IntimidatePower;
+            c.PowerCombat += this.IntimidatePower;
+            c.Wisdom -= this.IntimidateWisdom;
+            c.WisdomCombat += this.IntimidateWisdom;
         }
     }
 }

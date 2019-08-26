@@ -60,12 +60,14 @@
   <ItemGroup>
     <Compile Include="Abilities\AbilityType.cs" />
     <Compile Include="Abilities\IActivate.cs" />
+    <Compile Include="Abilities\IActivateBattlegear.cs" />
     <Compile Include="Abilities\IActivateDispel.cs" />
     <Compile Include="Abilities\ICastChange.cs" />
     <Compile Include="Abilities\ICastDispel.cs" />
     <Compile Include="Abilities\ICastReturn.cs" />
     <Compile Include="Abilities\IActivateSelf.cs" />
     <Compile Include="Abilities\IActivateTarget.cs" />
+    <Compile Include="Abilities\ICastTargetCount.cs" />
     <Compile Include="Abilities\ICastTargetTwo.cs" />
     <Compile Include="Abilities\IActivateChange.cs" />
     <Compile Include="Abilities\ICast.cs" />

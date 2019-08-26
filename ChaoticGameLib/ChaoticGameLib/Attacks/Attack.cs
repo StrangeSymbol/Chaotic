@@ -99,7 +99,7 @@ namespace ChaoticGameLib
                 energy2 -= 5;
 
             if (your.Strike > 0 && your.FirstAttack && !enemy.Invisibility() &&
-                !(enemy.Battlegear.IsFaceUp && (enemy.Battlegear is SpectralViewer)))
+                !((enemy.Battlegear is SpectralViewer) && enemy.Battlegear.IsFaceUp))
                 energy2 -= your.Strike;
 
             if (location is StormTunnel)
@@ -159,6 +159,9 @@ namespace ChaoticGameLib
             
             if (enemy.Battlegear is StoneMail && enemy.Battlegear.IsFaceUp && energy2 > 0)
                 energy2 -= 5;
+
+            if (energy2 <= -enemy.ReducedDamage)
+                energy2 += enemy.ReducedDamage;
 
             return new Tuple<short, short>(energy1, energy2);
         }

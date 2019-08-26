@@ -49,5 +49,12 @@ namespace Chaotic
             }
             return false;
         }
+
+        public void RemoveTarget()
+        {
+            abilityList.RemoveAt(abilityList.Count - 1);
+            if (type == AbilityType.TargetSelectElemental)
+                abilityList.RemoveAt(abilityList.Count - 1);
+        }
     }
 }

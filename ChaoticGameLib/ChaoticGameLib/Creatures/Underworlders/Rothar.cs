@@ -9,7 +9,7 @@ namespace ChaoticGameLib.Creatures
         public Rothar(Texture2D sprite, Texture2D overlay, 
             byte energy, byte courage, byte power, byte wisdom, byte speed) :
             base(sprite, overlay, energy, courage, power, wisdom, speed, 0, false, false, true, false, 0,
-            false, 5, 0, false, false, false, 0, 0, 0, 0, 0, 10, Tribe.UnderWorld, CreatureType.Commander)
+            false, 5, 0, false, false, false, 0, 0, 0, 0, 0, 10, 0, 0, Tribe.UnderWorld, CreatureType.Commander)
         {
         }
 
@@ -24,8 +24,8 @@ namespace ChaoticGameLib.Creatures
 
         public void Ability(Creature c)
         {
-            c.Power -= this.AbilityEnergy;
-            c.PowerCombat += this.AbilityEnergy;
+            c.Power -= this.IntimidatePower;
+            c.PowerCombat += this.IntimidatePower;
         }
     }
 }

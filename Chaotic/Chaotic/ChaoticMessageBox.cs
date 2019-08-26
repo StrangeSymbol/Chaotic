@@ -35,7 +35,7 @@ namespace Chaotic
             this.noButton = new Button(texture, new Vector2(graphics.PreferredBackBufferWidth / 2 + texture.Width / 2,
                 position.Y + panel.Height - texture.Height - 20), content.Load<Texture2D>("OkButtonCover"));
             font = content.Load<SpriteFont>(@"Fonts\MessageBox");
-            prevClicks = new bool[2]{true, true};
+            prevClicks = new bool[3]{true, true, true};
             clickedYes = null;
         }
 
@@ -48,6 +48,7 @@ namespace Chaotic
                 clickedYes = value; 
                 if (clickedYes.HasValue)
                 {
+                    prevClicks[2] = prevClicks[1];
                     prevClicks[1] = prevClicks[0];
                     prevClicks[0] = clickedYes.Value;
                 }
@@ -76,7 +77,12 @@ namespace Chaotic
         public void Restore()
         {
             prevClicks[0] = prevClicks[1];
-            prevClicks[1] = true;
+            prevClicks[1] = prevClicks[2];
+        }
+
+        public void Reset()
+        {
+            prevClicks = new bool[3] { true, true, true };
         }
 
         public void DrawMessageBox(SpriteBatch spriteBatch, float layerDepth=0.2f)
@@ -86,7 +92,7 @@ namespace Chaotic
                 spriteBatch.Draw(panel, position, null, Color.White, 0f, Vector2.Zero, 1f, SpriteEffects.None, layerDepth);
                 yesButton.Draw(spriteBatch);
                 noButton.Draw(spriteBatch);
-                spriteBatch.DrawString(font, title, position, Color.Black, 0f, 
+                spriteBatch.DrawString(font, title + (Burst.Player1Turn ? " Player1" : " Player2"), position, Color.Black, 0f, 
                     Vector2.Zero, 1f, SpriteEffects.None, layerDepth - 0.05f);
                 spriteBatch.DrawString(font, description, new Vector2(position.X + panel.Width / 2 - font.MeasureString(description).X / 2,
                     position.Y + panel.Height / 2 - font.MeasureString(description).Y / 2), Color.Black, 

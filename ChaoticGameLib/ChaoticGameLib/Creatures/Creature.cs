@@ -122,9 +122,24 @@ namespace ChaoticGameLib
         // The Type of Creature.
         CreatureType creatureType;
 
+        // Holds the amount of reduced damage available.
+        byte reducedDamage;
+
         // Holds the reduced damage caused by element attacks.
         byte reducedFireDamage;
         byte reducedAirDamage;
+
+        // Holds the intimidate variables.
+        byte intimidateCourage;
+        byte intimidatePower;
+        byte intimidateWisdom;
+        byte intimidateSpeed;
+
+        // Holds whether this creature can't move.
+        bool cannotMove;
+
+        // Holds whether this creature loses all abilities.
+        bool negate;
         #endregion
 
         #region constructor
@@ -196,6 +211,23 @@ namespace ChaoticGameLib
             this.airDamage = this.oldCreature.airDamage = airDamage;
             this.earthDamage = this.oldCreature.earthDamage = earthDamage;
             this.waterDamage = this.oldCreature.waterDamage = waterDamage;
+        }
+
+        public Creature(Texture2D sprite, Texture2D overlay,
+            short energy, short courage, short power, short wisdom, short speed,
+            byte mugicCounters, bool fire, bool air, bool earth, bool water, byte swift, bool range, byte recklessness,
+            byte strike, bool surprise, bool mixedArmies, bool unique,
+            byte fireDamage, byte airDamage, byte earthDamage, byte waterDamage,
+            byte intimidateCourage, byte intimidatePower, byte intimidateWisdom, byte intimidateSpeed, 
+            Tribe tribe, CreatureType creatureType) :
+            this(sprite, overlay, energy, courage, power, wisdom, speed, mugicCounters, fire, air, earth, water,
+            swift, range, recklessness, strike, surprise, mixedArmies, unique,
+            fireDamage, airDamage, earthDamage, waterDamage, tribe, creatureType)
+        {
+            this.intimidateCourage = intimidateCourage;
+            this.intimidatePower = intimidatePower;
+            this.intimidateWisdom = intimidateWisdom;
+            this.intimidateSpeed = intimidateSpeed;
         }
 
         public Creature(Texture2D sprite, Texture2D overlay,
@@ -286,12 +318,23 @@ namespace ChaoticGameLib
 
         protected byte PreNumAdja { get { return this.prevNumAdja; } set { this.prevNumAdja = value; } }
 
+        public byte ReducedDamage { get { return reducedDamage; } set { reducedDamage = value; } }
+
         public byte ReducedFireDamage { get { return reducedFireDamage; } set { this.reducedFireDamage = value; } }
         public byte ReducedAirDamage { get { return reducedAirDamage; } set { this.reducedAirDamage = value; } }
 
         public Tribe CreatureTribe { get { return tribe; } }
 
         public CreatureType CardType { get { return creatureType; } }
+
+        public byte IntimidateCourage { get { return intimidateCourage; } set { intimidateCourage = value; } }
+        public byte IntimidatePower { get { return intimidatePower; } set { intimidatePower = value; } }
+        public byte IntimidateWisdom { get { return intimidateWisdom; } set { intimidateWisdom = value; } }
+        public byte IntimidateSpeed { get { return intimidateSpeed; } set { intimidateSpeed = value; } }
+
+        public bool CannotMove { get { return cannotMove; } set { cannotMove = value; } }
+
+        public bool Negate { get { return negate; } set { negate = value; } }
         #endregion
  
         #region Member Functions
@@ -336,7 +379,9 @@ namespace ChaoticGameLib
             this.swift = (byte)(oldCreature.swift + swiftGained);
             this.range = oldCreature.Range;
             this.canMoveAnywhere = false;
+            this.reducedDamage = 0;
             this.reducedAirDamage = this.reducedFireDamage = 0;
+            this.cannotMove = false;
         }
 
         public bool Invisibility()
@@ -477,7 +522,26 @@ namespace ChaoticGameLib
                 builder.Append(" Earth ");
             if (this.water)
                 builder.Append(" Water ");
-
+            if (this.intimidateCourage > 0)
+            {
+                builder.Append("Intimidate Courage ");
+                builder.Append(this.intimidateCourage);
+            }
+            if (this.intimidatePower > 0)
+            {
+                builder.Append("Intimidate Power ");
+                builder.Append(this.intimidatePower);
+            }
+            if (this.intimidateWisdom > 0)
+            {
+                builder.Append("Intimidate Wisdom ");
+                builder.Append(this.intimidateWisdom);
+            }
+            if (this.intimidateSpeed > 0)
+            {
+                builder.Append("Intimidate Speed ");
+                builder.Append(this.intimidateSpeed);
+            }
             return builder.ToString();
         }
         #endregion

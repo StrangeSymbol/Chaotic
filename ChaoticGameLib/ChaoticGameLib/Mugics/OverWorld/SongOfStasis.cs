@@ -10,7 +10,7 @@ namespace ChaoticGameLib.Mugics
 
         void ICastTarget<Creature>.Ability(Creature creature)
         {
-            // TODO: This Creature can't move for the rest of the turn.
+            creature.CannotMove = true;
         }
 
         AbilityType ICast.Type { get { return AbilityType.TargetCreature; } }

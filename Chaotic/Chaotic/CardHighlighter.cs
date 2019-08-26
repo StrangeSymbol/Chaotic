@@ -8,6 +8,7 @@ namespace Chaotic
 {
     class CardHighlighter
     {
+        Queue<Texture2D> cards; // All the cards to be highlighted.
         Texture2D card; // The image of the card highlighted.
         Vector2 cardPos; // The location of the card on the screen.
         Texture2D sheen; // The image of the sheen on the card.
@@ -23,6 +24,7 @@ namespace Chaotic
             sheen = content.Load<Texture2D>("Sheen");
             cardPos = new Vector2((graphics.PreferredBackBufferWidth - ChaoticEngine.kCardCoveredWidth) / 2,
                 (graphics.PreferredBackBufferHeight - ChaoticEngine.kCardCoveredHeight) / 2);
+            cards = new Queue<Texture2D>();
         }
 
         public void InitializeHighlight(GameTime gameTime, ChaoticGameLib.ChaoticCard card)
@@ -32,6 +34,11 @@ namespace Chaotic
             sheenWidth = 0;
             sheenHeight = 0;
             elapsedTime = gameTime.TotalGameTime.TotalMilliseconds;
+        }
+
+        public void AddHighlight(Texture2D texture)
+        {
+            cards.Enqueue(texture);
         }
 
         public bool UpdateHighlight(GameTime gameTime)
@@ -57,6 +64,14 @@ namespace Chaotic
                 else
                 {
                     card = null;
+                    if (cards.Count > 0)
+                    {
+                        card = cards.Dequeue();
+                        sheenPos = cardPos;
+                        sheenWidth = 0;
+                        sheenHeight = 0;
+                        elapsedTime = gameTime.TotalGameTime.TotalMilliseconds;
+                    }
                     return true;
                 }
                 return false;

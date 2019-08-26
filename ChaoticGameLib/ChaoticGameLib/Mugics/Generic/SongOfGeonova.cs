@@ -16,7 +16,9 @@ namespace ChaoticGameLib.Mugics
         void ICastTarget<Creature>.Ability(Creature creature)
         {
             if (creature.Earth || creature.Water)
+            {
                 creature.Energy -= 10;
+            }
         }
 
         AbilityType ICast.Type { get { return AbilityType.TargetCreature; } }

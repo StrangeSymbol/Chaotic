@@ -24,7 +24,7 @@ namespace ChaoticGameLib.Mugics
 
         AbilityType ICast.Type
         {
-            get { throw new NotImplementedException(); }
+            get { return AbilityType.TargetEngaged; }
         }
     }
 }

@@ -4,7 +4,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace ChaoticGameLib.Creatures
 {
-    public class Drakness : Creature
+    public class Drakness : Creature, IActivateTarget<Creature>
     {
         public Drakness(Texture2D sprite, Texture2D overlay, 
             byte energy, byte courage, byte power, byte wisdom, byte speed) :
@@ -17,6 +17,21 @@ namespace ChaoticGameLib.Creatures
                 "Mugic Ability: 0 Elemental Type: Fire Creature Ability: " +
                 "If Mugic you control would deal damage, it deals an additional 5 damage. Unique " +
             "Trust not your own shadow -- for Drakness dwells there before he strikes.";
+        }
+
+        void IActivateTarget<Creature>.Ability(Creature card)
+        {
+            card.Energy -= 5;
+        }
+
+        AbilityType IActivate.Type
+        {
+            get { return AbilityType.TargetCreature; }
+        }
+
+        void IActivate.PayCost()
+        {
+            throw new NotImplementedException();
         }
     }
 }
