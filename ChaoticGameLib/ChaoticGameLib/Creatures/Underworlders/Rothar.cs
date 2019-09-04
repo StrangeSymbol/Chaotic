@@ -21,11 +21,5 @@ namespace ChaoticGameLib.Creatures
             "Recklessness 5 [When this Creature makes an attack, it deals 5 damage to itself.] " +
             "\"I don't run. I don't flinch. But I don't care, either.\" -- Rothar";
         }
-
-        public void Ability(Creature c)
-        {
-            c.Power -= this.IntimidatePower;
-            c.PowerCombat += this.IntimidatePower;
-        }
     }
 }

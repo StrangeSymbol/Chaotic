@@ -1,7 +1,6 @@
 ﻿using System;
 using ChaoticGameLib.Battlegears;
 using ChaoticGameLib.Locations;
-using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
 namespace ChaoticGameLib
@@ -76,7 +75,6 @@ namespace ChaoticGameLib
 
         public virtual Tuple<short, short> PotentialDamage(Creature your, Creature enemy, Location location)
         {
-            short energy = enemy.Energy;
             short energy1 = 0;
             short energy2 = 0;
             energy2 -= baseDamage;
@@ -94,9 +92,6 @@ namespace ChaoticGameLib
 
             if (your.Battlegear is RiverlandStar && your.CreatureTribe == Tribe.OverWorld && your.Water && this.water)
                 energy1 += 5;
-
-            if (your.FirstAttack && your.Invisibility() && ChaoticLibEngine.HasMaquisDarini)
-                energy2 -= 5;
 
             if (your.Strike > 0 && your.FirstAttack && !enemy.Invisibility() &&
                 !((enemy.Battlegear is SpectralViewer) && enemy.Battlegear.IsFaceUp))

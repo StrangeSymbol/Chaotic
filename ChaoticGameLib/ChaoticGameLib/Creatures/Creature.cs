@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using ChaoticGameLib.Battlegears;
-using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Graphics;
+﻿using Microsoft.Xna.Framework.Graphics;
 
 namespace ChaoticGameLib
 {
@@ -382,6 +378,8 @@ namespace ChaoticGameLib
             this.reducedDamage = 0;
             this.reducedAirDamage = this.reducedFireDamage = 0;
             this.cannotMove = false;
+            this.negate = false;
+            UnNegateBattlegear();
         }
 
         public bool Invisibility()
@@ -413,10 +411,28 @@ namespace ChaoticGameLib
 
         public void DeactivateBattleGear()
         {
-            if (battlegear != null && this.Battlegear.IsFaceUp)
+            if (battlegear != null && this.battlegear.IsFaceUp)
             {
-                this.Battlegear.IsFaceUp = false;
-                this.Battlegear.UnEquip(this);
+                this.battlegear.IsFaceUp = false;
+                this.battlegear.UnEquip(this);
+            }
+        }
+
+        public void NegateBattlegear()
+        {
+            if (battlegear != null && !this.battlegear.Negate)
+            {
+                this.battlegear.Negate = true;
+                this.battlegear.UnEquip(this);
+            }
+        }
+
+        public void UnNegateBattlegear()
+        {
+            if (battlegear != null && this.battlegear.Negate)
+            {
+                this.battlegear.Negate = false;
+                this.battlegear.Equip(this);
             }
         }
 
@@ -522,26 +538,7 @@ namespace ChaoticGameLib
                 builder.Append(" Earth ");
             if (this.water)
                 builder.Append(" Water ");
-            if (this.intimidateCourage > 0)
-            {
-                builder.Append("Intimidate Courage ");
-                builder.Append(this.intimidateCourage);
-            }
-            if (this.intimidatePower > 0)
-            {
-                builder.Append("Intimidate Power ");
-                builder.Append(this.intimidatePower);
-            }
-            if (this.intimidateWisdom > 0)
-            {
-                builder.Append("Intimidate Wisdom ");
-                builder.Append(this.intimidateWisdom);
-            }
-            if (this.intimidateSpeed > 0)
-            {
-                builder.Append("Intimidate Speed ");
-                builder.Append(this.intimidateSpeed);
-            }
+            
             return builder.ToString();
         }
         #endregion

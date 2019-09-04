@@ -9,7 +9,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyProduct("ChaoticGameLib")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyCompany("Hewlett-Packard")]
-[assembly: AssemblyCopyright("Copyright © Hewlett-Packard 2016")]
+[assembly: AssemblyCopyright("Copyright © StrangeSymbol 2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

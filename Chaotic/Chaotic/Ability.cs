@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections;
-using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Graphics;
-using Microsoft.Xna.Framework.Input;
-using Microsoft.Xna.Framework.Content;
+﻿using System.Collections;
 using ChaoticGameLib;
 
 namespace Chaotic
@@ -55,6 +50,22 @@ namespace Chaotic
             abilityList.RemoveAt(abilityList.Count - 1);
             if (type == AbilityType.TargetSelectElemental)
                 abilityList.RemoveAt(abilityList.Count - 1);
+        }
+
+        public override string ToString()
+        {
+            System.Text.StringBuilder builder = new System.Text.StringBuilder();
+            foreach (object obj in abilityList)
+            {
+                if (obj is ChaoticCard)
+                {
+                    ChaoticCard card = obj as ChaoticCard;
+                    builder.Append(card.Name);
+                    builder.Append(" ");
+                }
+            }
+            builder.Append("\n");
+            return builder.ToString();
         }
     }
 }

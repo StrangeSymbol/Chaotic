@@ -41,6 +41,11 @@ namespace Chaotic
             cards.Enqueue(texture);
         }
 
+        public bool IsEmpty()
+        {
+            return card == null;
+        }
+
         public bool UpdateHighlight(GameTime gameTime)
         {
             if (card != null)

@@ -20,11 +20,5 @@ namespace ChaoticGameLib.Creatures
             "Intimidate Power 10 [Opposing Creature loses 10 Power until the end of combat.] " +
             "Recklessness 5 [When this Creature makes an attack, it deals 5 damage to itself.]";
         }
-
-        public void Ability(Creature c)
-        {
-            c.Power -= this.IntimidatePower;
-            c.PowerCombat += this.IntimidatePower;
-        }
     }
 }

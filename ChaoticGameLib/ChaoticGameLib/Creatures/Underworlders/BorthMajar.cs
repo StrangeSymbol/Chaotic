@@ -20,13 +20,5 @@ namespace ChaoticGameLib.Creatures
             "Intimidate Wisdom 10 [Opposing Creature loses 10 Wisdom until the end of combat.] " +
             "Brains or brawn? One can't decide...and one doesn't need to.";
         }
-
-        public void Ability(Creature c)
-        {
-            c.Power -= this.IntimidatePower;
-            c.PowerCombat += this.IntimidatePower;
-            c.Wisdom -= this.IntimidateWisdom;
-            c.WisdomCombat += this.IntimidateWisdom;
-        }
     }
 }

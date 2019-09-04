@@ -1,7 +1,4 @@
-﻿using System;
-using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Graphics;
-using ChaoticGameLib;
+﻿using ChaoticGameLib;
 
 namespace Chaotic
 {
@@ -90,6 +87,10 @@ namespace Chaotic
                     return Burst.Peek().Count == 3;
                 else if (Burst.Peek()[0] is Creature)
                     return Burst.Peek().Count == 2;
+            }
+            else if (mugic is ChaoticGameLib.Mugics.MelodyOfMirage && Burst.Alive)
+            {
+                return Burst.Peek()[0] is Attack;
             }
             else if ((mugic as ICast).Type == AbilityType.TargetEngaged)
             {

@@ -20,11 +20,5 @@ namespace ChaoticGameLib.Creatures
             "Intimidate Power 10 [Opposing Creature loses 10 Power until the end of combat.] " +
             "On bad days, Kughar is angry, furious and enraged. On good day, he's just angry and furious.";
         }
-
-        public void Ability(Creature c)
-        {
-            c.Power -= this.IntimidatePower;
-            c.PowerCombat += this.IntimidatePower;
-        }
     }
 }

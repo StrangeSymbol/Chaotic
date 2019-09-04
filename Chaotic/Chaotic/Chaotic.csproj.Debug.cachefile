@@ -1,5 +1,4 @@
 Content\CardBack.xnb
-Content\CardOutline.xnb
 Content\Menu\ChaoticSymbol.xnb
 Content\Menu\EditButton.xnb
 Content\Menu\MenuButtonCover.xnb
@@ -150,7 +149,6 @@ Content\Creatures\Donmar.xnb
 Content\Creatures\Dractyl.xnb
 Content\Creatures\Frafdo.xnb
 Content\Creatures\Gespedan.xnb
-Content\Creatures\Heptadd.xnb
 Content\Creatures\Intress.xnb
 Content\Creatures\Laarina.xnb
 Content\Creatures\Maglax.xnb
@@ -263,11 +261,8 @@ Content\Creatures\Chaor.xnb
 Content\Creatures\LordVanBloot.xnb
 Content\damagecover.xnb
 Content\healcover.xnb
-Content\Fonts\CardDescriptionFont.xnb
-Content\Fonts\PanelFont.xnb
-Content\Fonts\AttackDamage.xnb
+Content\Creatures\Heptadd.xnb
 Content\Creatures\Malvadine.xnb
-Content\Fonts\EndGame.xnb
 Content\Creatures\Ario.xnb
 Content\Creatures\Biondu.xnb
 Content\Creatures\Brathe.xnb
@@ -284,7 +279,6 @@ Content\Creatures\Vinta.xnb
 Content\Creatures\Zhade.xnb
 Content\Creatures\Ekuud.xnb
 Content\Creatures\Galin.xnb
-Content\Fonts\HUB.xnb
 Content\Creatures\Hota.xnb
 Content\Creatures\Ibiaan.xnb
 Content\Creatures\Junda.xnb
@@ -301,10 +295,9 @@ Content\Creatures\Formicidor.xnb
 Content\Coin\OverWorldHeads.xnb
 Content\Coin\OverWorldTails.xnb
 Content\Sheen.xnb
-Content\Fonts\Description.xnb
 Content\Panel\NoButton.xnb
 Content\Panel\YesButton.xnb
-Content\Fonts\MessageBox.xnb
+Content\CardOutline.xnb
 Content\Mugics\ChorusOfTheHive.xnb
 Content\Mugics\RefrainOfDenial_OverWorld0UnderWorld_.xnb
 Content\Mugics\SongOfMandiblor.xnb
@@ -315,3 +308,15 @@ Content\Elements\Air.xnb
 Content\Elements\Earth.xnb
 Content\Elements\Fire.xnb
 Content\Elements\Water.xnb
+Content\Fonts\CardDescriptionFont.xnb
+Content\Fonts\PanelFont.xnb
+Content\Fonts\AttackDamage.xnb
+Content\Fonts\EndGame.xnb
+Content\Fonts\HUB.xnb
+Content\Fonts\Description.xnb
+Content\Fonts\MessageBox.xnb
+Content\SplashScreens\SplashScreen.xnb
+Content\SplashScreens\SplashScreenDecember.xnb
+Content\SplashScreens\SplashScreenMarch.xnb
+Content\SplashScreens\SplashScreenOctober.xnb
+Content\Fonts\TriggeredFont.xnb

@@ -21,15 +21,5 @@ namespace ChaoticGameLib.Creatures
                 "Lord Van Bloot may not enter mixed armies. Unique " +
             "\"I may serve Chaor, but in time, Chaor will serve me!\" -- Lord Van Bloot";
         }
-
-        public void Ability(Creature enemy)
-        {
-            if (!UsedAbility)
-            {
-                if (enemy.Courage < 65)
-                    enemy.Energy -= 10;
-                UsedAbility = true;
-            }
-        }
     }
 }

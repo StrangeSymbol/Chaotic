@@ -28,9 +28,10 @@ namespace Chaotic
         Button okButton;
         Vector2[] positions;
         SpriteFont font;
+        SpriteFont triggerTypeFont;
         string[] selectedText;
 
-        public TriggeredPanel(ContentManager content, GraphicsDeviceManager graphics, int selectNumber)
+        public TriggeredPanel(ContentManager content, GraphicsDeviceManager graphics)
         {
             cTextureWidth = 85;
             cTextureHeight = 133;
@@ -56,17 +57,22 @@ namespace Chaotic
                     positions[i] = new Vector2(positions[i - 1].X + cTextureWidth + cSpaceWidth, positions[i - 1].Y);
             }
             font = content.Load<SpriteFont>(@"Fonts\PanelFont");
+            triggerTypeFont = content.Load<SpriteFont>(@"Fonts\TriggeredFont");
             pos1 = new Vector2(positions[2].X - cTextureWidth / 2, positions[2].Y);
             pos2 = new Vector2(positions[2].X + cTextureWidth / 2 + cSpaceWidth, positions[2].Y);
+        }
+
+        public bool Active { get { return active; } set { if (!active) selectedIndices = new List<int>(); active = value; } }
+        public int SelectNumber { get { return selectNumber; } }
+
+        public void InitializeSelectNumber(int selectNumber)
+        {
             this.selectNumber = selectNumber;
             selectedText = new string[selectNumber];
             for (int i = 0; i < selectNumber; i++)
                 selectedText[i] = (i + 1).ToString();
             selectedIndices = new List<int>();
         }
-
-        public bool Active { get { return active; } set { if (!active) selectedIndices = new List<int>(); active = value; } }
-        public int SelectNumber { get { return selectNumber; } }
 
         public List<int> UpdatePanel(GameTime gameTime, List<Tuple<Creature, TriggeredType>> pile, CardDescription description)
         {
@@ -234,9 +240,9 @@ namespace Chaotic
                                    Color.Red, 0f, Vector2.Zero, 1f, SpriteEffects.None, 0.05f);
                         }
                         string type = convertTriggeredType(pile[i]);
-                        spriteBatch.DrawString(font, type,
-                            new Vector2(positions[j].X + cTextureWidth / 2 - font.MeasureString(type).X / 2,
-                                positions[j].Y + cTextureHeight + font.MeasureString(type).Y), Color.Black,
+                        spriteBatch.DrawString(triggerTypeFont, type,
+                            new Vector2(positions[j].X + cTextureWidth / 2 - triggerTypeFont.MeasureString(type).X / 2,
+                                positions[j].Y + cTextureHeight), Color.Black,
                                 0f, Vector2.Zero, 1f, SpriteEffects.None, 0.05f);
                     }
                 }
@@ -256,9 +262,9 @@ namespace Chaotic
                             Color.Red, 0f, Vector2.Zero, 1f, SpriteEffects.None, 0.05f);
                     }
                     string type = convertTriggeredType(pile[1]);
-                    spriteBatch.DrawString(font, type,
-                        new Vector2(pos1.X + cTextureWidth / 2 - font.MeasureString(type).X / 2,
-                            pos1.Y + cTextureHeight + font.MeasureString(type).Y), Color.Black,
+                    spriteBatch.DrawString(triggerTypeFont, type,
+                        new Vector2(pos1.X + cTextureWidth / 2 - triggerTypeFont.MeasureString(type).X / 2,
+                            pos1.Y + cTextureHeight), Color.Black,
                             0f, Vector2.Zero, 1f, SpriteEffects.None, 0.05f);
 
                     spriteBatch.DrawString(font, 1.ToString(),
@@ -276,9 +282,9 @@ namespace Chaotic
                             Color.Red, 0f, Vector2.Zero, 1f, SpriteEffects.None, 0.05f);
                     }
                     type = convertTriggeredType(pile[0]);
-                    spriteBatch.DrawString(font, type,
-                        new Vector2(pos2.X + cTextureWidth / 2 - font.MeasureString(type).X / 2,
-                            pos2.Y + cTextureHeight + font.MeasureString(type).Y), Color.Black,
+                    spriteBatch.DrawString(triggerTypeFont, type,
+                        new Vector2(pos2.X + cTextureWidth / 2 - triggerTypeFont.MeasureString(type).X / 2,
+                            pos2.Y + cTextureHeight), Color.Black,
                             0f, Vector2.Zero, 1f, SpriteEffects.None, 0.05f);
                 }
                 else if (start - end == 0)
@@ -297,9 +303,9 @@ namespace Chaotic
                             Color.Red, 0f, Vector2.Zero, 1f, SpriteEffects.None, 0.05f);
                     }
                     string type = convertTriggeredType(pile[start]);
-                    spriteBatch.DrawString(font, type,
-                        new Vector2(positions[2].X + cTextureWidth / 2 - font.MeasureString(type).X / 2,
-                            positions[2].Y + cTextureHeight + font.MeasureString(type).Y), Color.Black,
+                    spriteBatch.DrawString(triggerTypeFont, type,
+                        new Vector2(positions[2].X + cTextureWidth / 2 - triggerTypeFont.MeasureString(type).X / 2,
+                            positions[2].Y + cTextureHeight), Color.Black,
                             0f, Vector2.Zero, 1f, SpriteEffects.None, 0.05f);
                 }
             }
@@ -309,13 +315,15 @@ namespace Chaotic
             switch (card.Item2)
             {
                 case TriggeredType.IntimidateCourage:
-                    return "Intimidate Courage: " + card.Item1.IntimidateCourage;
+                    return "Intimidate \nCourage: " + card.Item1.IntimidateCourage;
                 case TriggeredType.IntimidatePower:
-                    return "Intimidate Power: " + card.Item1.IntimidatePower;
+                    return "Intimidate \nPower: " + card.Item1.IntimidatePower;
                 case TriggeredType.IntimidateWisdom:
-                    return "Intimidate Wisdom: " + card.Item1.IntimidateWisdom;
+                    return "Intimidate \nWisdom: " + card.Item1.IntimidateWisdom;
                 case TriggeredType.IntimidateSpeed:
-                    return "Intimidate Speed: " + card.Item1.IntimidateSpeed;
+                    return "Intimidate \nSpeed: " + card.Item1.IntimidateSpeed;
+                case TriggeredType.LordVanBloot:
+                    return "Less 10 Energy";
                 case TriggeredType.Recklessness:
                     return "Recklessness " + card.Item1.Recklessness;
                 default:

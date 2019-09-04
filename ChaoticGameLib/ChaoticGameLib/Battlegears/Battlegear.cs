@@ -14,6 +14,9 @@ namespace ChaoticGameLib
         // Whether to reveal battlegear at beginning of game.
         bool revealAtBeginning;
 
+        // Holds whether this battlegear is negated.
+        bool negate;
+
         public Battlegear(Texture2D texture, Texture2D overlay)
             : this(texture, overlay, 0)
         {
@@ -34,6 +37,8 @@ namespace ChaoticGameLib
         protected byte DisciplineAmount { get { return disciplineAmount; } set { disciplineAmount = value; } }
         public bool IsFaceUp { get { return this.isFaceUp; } set { this.isFaceUp = value; } }
         public bool RevealAtBeginning { get { return this.revealAtBeginning; } }
+
+        public bool Negate { get { return this.negate; } set { negate = value; } }
 
         new public Battlegear ShallowCopy()
         {

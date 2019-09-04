@@ -21,11 +21,5 @@ namespace ChaoticGameLib.Creatures
             "Range [This Creature may move though occupied spaces.] " +
             "\"Fear is a great motivator. Just look at Krekk.\" -- Lord Van Bloot";
         }
-
-        public void Ability(Creature c)
-        {
-            c.Power -= this.IntimidatePower;
-            c.PowerCombat += this.IntimidatePower;
-        }
     }
 }

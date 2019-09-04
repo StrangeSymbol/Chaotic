@@ -21,13 +21,5 @@ namespace ChaoticGameLib.Creatures
             "Intimidate Wisdom 10 [Opposing Creature loses 10 Wisdom until the end of combat.] " +
             "\"Yeah, I could build that.\" -- Khybon";
         }
-
-        public void Ability(Creature c)
-        {
-            c.Courage -= this.IntimidateCourage;
-            c.CourageCombat += this.IntimidateCourage;
-            c.Wisdom -= this.IntimidateWisdom;
-            c.WisdomCombat += this.IntimidateWisdom;
-        }
     }
 }

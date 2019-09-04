@@ -4,6 +4,6 @@ namespace Chaotic
 {
     enum TriggeredType
     {
-        IntimidateCourage, IntimidatePower, IntimidateWisdom, IntimidateSpeed, Recklessness,
+        IntimidateCourage, IntimidatePower, IntimidateWisdom, IntimidateSpeed, Recklessness, LordVanBloot,
     }
 }

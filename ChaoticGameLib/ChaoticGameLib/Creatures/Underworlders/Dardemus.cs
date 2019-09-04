@@ -21,11 +21,5 @@ namespace ChaoticGameLib.Creatures
                 "Intimidate Courage 10 [Opposing Creature loses 10 Courage until the end of combat.]" +
             "This UnderWorld prison guard has a simple policy that works: whip first, whip fast, whip last.";
         }
-
-        public void Ability(Creature c)
-        {
-            c.Courage -= this.IntimidateCourage;
-            c.CourageCombat += this.IntimidateCourage;
-        }
     }
 }

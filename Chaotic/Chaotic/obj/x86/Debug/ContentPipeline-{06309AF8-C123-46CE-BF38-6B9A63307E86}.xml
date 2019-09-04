@@ -8,16 +8,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\CardBack.xnb</Output>
-      <Time>2018-06-22T13:44:48.6832621-04:00</Time>
-    </Item>
-    <Item>
-      <Source>CardOutline.png</Source>
-      <Name>CardOutline</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\CardOutline.xnb</Output>
-      <Time>2019-07-14T22:42:47.7195174-04:00</Time>
+      <Time>2019-08-13T15:58:54.2188426-04:00</Time>
     </Item>
     <Item>
       <Source>Menu\ChaoticSymbol.png</Source>
@@ -26,7 +17,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Menu\ChaoticSymbol.xnb</Output>
-      <Time>2018-06-27T13:23:35.2412239-04:00</Time>
+      <Time>2019-08-13T15:58:54.5145894-04:00</Time>
     </Item>
     <Item>
       <Source>Menu\EditButton.png</Source>
@@ -35,7 +26,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Menu\EditButton.xnb</Output>
-      <Time>2018-06-27T13:23:35.3662261-04:00</Time>
+      <Time>2019-08-13T15:58:54.5145894-04:00</Time>
     </Item>
     <Item>
       <Source>Menu\MenuButtonCover.png</Source>
@@ -44,7 +35,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Menu\MenuButtonCover.xnb</Output>
-      <Time>2018-06-27T13:23:35.3818499-04:00</Time>
+      <Time>2019-08-13T15:58:54.5357184-04:00</Time>
     </Item>
     <Item>
       <Source>Menu\TestButton.png</Source>
@@ -53,7 +44,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Menu\TestButton.xnb</Output>
-      <Time>2018-06-27T13:23:35.3974777-04:00</Time>
+      <Time>2019-08-13T15:58:54.5367592-04:00</Time>
     </Item>
     <Item>
       <Source>Menu\OneOnOneButton.png</Source>
@@ -62,7 +53,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Menu\OneOnOneButton.xnb</Output>
-      <Time>2018-06-27T13:35:46.5731572-04:00</Time>
+      <Time>2019-08-13T15:58:54.5357184-04:00</Time>
     </Item>
     <Item>
       <Source>Menu\ThreeOnThreeButton.png</Source>
@@ -71,7 +62,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Menu\ThreeOnThreeButton.xnb</Output>
-      <Time>2018-06-27T13:35:46.6201074-04:00</Time>
+      <Time>2019-08-13T15:58:54.5367592-04:00</Time>
     </Item>
     <Item>
       <Source>Menu\SuitBackButton.png</Source>
@@ -80,7 +71,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Menu\SuitBackButton.xnb</Output>
-      <Time>2018-06-27T17:02:36.0852144-04:00</Time>
+      <Time>2019-08-13T15:58:54.5367592-04:00</Time>
     </Item>
     <Item>
       <Source>Menu\backBtnCover.png</Source>
@@ -89,7 +80,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Menu\backBtnCover.xnb</Output>
-      <Time>2018-06-27T17:27:22.8629068-04:00</Time>
+      <Time>2019-08-13T15:58:54.5377462-04:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\CastlePillar.jpg</Source>
@@ -98,7 +89,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\CastlePillar.xnb</Output>
-      <Time>2018-06-28T12:48:02.8496673-04:00</Time>
+      <Time>2019-08-13T15:58:54.1570076-04:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\CastleBodhran.jpg</Source>
@@ -107,7 +98,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\CastleBodhran.xnb</Output>
-      <Time>2018-06-28T12:48:45.5588416-04:00</Time>
+      <Time>2019-08-13T15:58:54.1560108-04:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\ChaoticBackground.jpg</Source>
@@ -116,7 +107,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\ChaoticBackground.xnb</Output>
-      <Time>2018-06-28T12:48:45.5744664-04:00</Time>
+      <Time>2019-08-13T15:58:54.1580049-04:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\CordacFalls.jpg</Source>
@@ -125,7 +116,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\CordacFalls.xnb</Output>
-      <Time>2018-06-28T12:48:45.5900911-04:00</Time>
+      <Time>2019-08-13T15:58:54.1590343-04:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\CordacFallsPlungePool.jpg</Source>
@@ -134,7 +125,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\CordacFallsPlungePool.xnb</Output>
-      <Time>2018-06-28T12:48:45.6213417-04:00</Time>
+      <Time>2019-08-13T15:58:54.1599995-04:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\CrystalCave.jpg</Source>
@@ -143,7 +134,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\CrystalCave.xnb</Output>
-      <Time>2018-06-28T12:48:45.6369664-04:00</Time>
+      <Time>2019-08-13T15:58:54.1599995-04:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\DoorsOfTheDeepmines.jpg</Source>
@@ -152,7 +143,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\DoorsOfTheDeepmines.xnb</Output>
-      <Time>2018-06-28T12:48:45.668216-04:00</Time>
+      <Time>2019-08-13T15:58:54.1609968-04:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\DranakisThreshold.jpg</Source>
@@ -161,7 +152,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\DranakisThreshold.xnb</Output>
-      <Time>2018-06-28T12:48:45.6838418-04:00</Time>
+      <Time>2019-08-13T15:58:54.1619948-04:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\Everrain.jpg</Source>
@@ -170,7 +161,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\Everrain.xnb</Output>
-      <Time>2018-06-28T12:48:45.7150913-04:00</Time>
+      <Time>2019-08-13T15:58:54.1619948-04:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\EyeOfTheMaelstrom.jpg</Source>
@@ -179,7 +170,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\EyeOfTheMaelstrom.xnb</Output>
-      <Time>2018-06-28T12:48:45.7307181-04:00</Time>
+      <Time>2019-08-13T15:58:54.1640202-04:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\FearValley.jpg</Source>
@@ -188,7 +179,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\FearValley.xnb</Output>
-      <Time>2018-06-28T12:48:45.7619676-04:00</Time>
+      <Time>2019-08-13T15:58:54.166016-04:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\ForestOfLife.jpg</Source>
@@ -197,7 +188,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\ForestOfLife.xnb</Output>
-      <Time>2018-06-28T12:48:45.7932171-04:00</Time>
+      <Time>2019-08-13T15:58:54.166983-04:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\GlacierPlains.jpg</Source>
@@ -206,7 +197,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\GlacierPlains.xnb</Output>
-      <Time>2018-06-28T12:48:45.8244666-04:00</Time>
+      <Time>2019-08-13T15:58:54.166983-04:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\GloomuckSwamp.jpg</Source>
@@ -215,7 +206,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\GloomuckSwamp.xnb</Output>
-      <Time>2018-06-28T12:48:45.8400924-04:00</Time>
+      <Time>2019-08-13T15:58:54.1689756-04:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\GothosTower.jpg</Source>
@@ -224,7 +215,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\GothosTower.xnb</Output>
-      <Time>2018-06-28T12:48:45.8557162-04:00</Time>
+      <Time>2019-08-13T15:58:54.1700049-04:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\IronPillar.jpg</Source>
@@ -233,7 +224,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\IronPillar.xnb</Output>
-      <Time>2018-06-28T12:48:45.8713409-04:00</Time>
+      <Time>2019-08-13T15:58:54.1709702-04:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\KiruCity.jpg</Source>
@@ -242,7 +233,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\KiruCity.xnb</Output>
-      <Time>2018-06-28T12:48:45.8869688-04:00</Time>
+      <Time>2019-08-13T15:58:54.1719676-04:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\LakeKenIPo.jpg</Source>
@@ -251,7 +242,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\LakeKenIPo.xnb</Output>
-      <Time>2018-06-28T12:48:45.9025915-04:00</Time>
+      <Time>2019-08-13T15:58:54.1739622-04:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\LavaPond.jpg</Source>
@@ -260,7 +251,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\LavaPond.xnb</Output>
-      <Time>2018-06-28T12:48:45.9338451-04:00</Time>
+      <Time>2019-08-13T15:58:54.1749603-04:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\MipedimOasis.jpg</Source>
@@ -269,7 +260,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\MipedimOasis.xnb</Output>
-      <Time>2018-06-28T12:48:45.9494657-04:00</Time>
+      <Time>2019-08-13T15:58:54.1759566-04:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\MountPillar.jpg</Source>
@@ -278,7 +269,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\MountPillar.xnb</Output>
-      <Time>2018-06-28T12:48:45.9650915-04:00</Time>
+      <Time>2019-08-13T15:58:54.1769546-04:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\RavanaughRidge.jpg</Source>
@@ -287,7 +278,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\RavanaughRidge.xnb</Output>
-      <Time>2018-06-28T12:48:45.9963421-04:00</Time>
+      <Time>2019-08-13T15:58:54.1779515-04:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\Riverlands.jpg</Source>
@@ -296,7 +287,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\Riverlands.xnb</Output>
-      <Time>2018-06-28T12:48:46.0119668-04:00</Time>
+      <Time>2019-08-13T15:58:54.1789486-04:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\RunicGrove.jpg</Source>
@@ -305,7 +296,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\RunicGrove.xnb</Output>
-      <Time>2018-06-28T12:48:46.0275916-04:00</Time>
+      <Time>2019-08-13T15:58:54.1809445-04:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\StonePillar.jpg</Source>
@@ -314,7 +305,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\StonePillar.xnb</Output>
-      <Time>2018-06-28T12:48:46.0432205-04:00</Time>
+      <Time>2019-08-13T15:58:54.1819408-04:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\StormTunnel.jpg</Source>
@@ -323,7 +314,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\StormTunnel.xnb</Output>
-      <Time>2018-06-28T12:48:46.0588421-04:00</Time>
+      <Time>2019-08-13T15:58:54.1819408-04:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\StrongholdMorn.jpg</Source>
@@ -332,7 +323,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\StrongholdMorn.xnb</Output>
-      <Time>2018-06-28T12:48:46.0900947-04:00</Time>
+      <Time>2019-08-13T15:58:54.1829386-04:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\UnderworldCity.jpg</Source>
@@ -341,7 +332,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\UnderworldCity.xnb</Output>
-      <Time>2018-06-28T12:48:46.1057185-04:00</Time>
+      <Time>2019-08-13T15:58:54.1849346-04:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\UnderWorldColosseum.jpg</Source>
@@ -350,7 +341,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\UnderWorldColosseum.xnb</Output>
-      <Time>2018-06-28T12:48:46.1213443-04:00</Time>
+      <Time>2019-08-13T15:58:54.183936-04:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\WoodenPillar.jpg</Source>
@@ -359,7 +350,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\WoodenPillar.xnb</Output>
-      <Time>2018-06-28T12:48:46.1525938-04:00</Time>
+      <Time>2019-08-13T15:58:54.1859313-04:00</Time>
     </Item>
     <Item>
       <Source>Panel\ArrowButtonCoverL.png</Source>
@@ -368,7 +359,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Panel\ArrowButtonCoverL.xnb</Output>
-      <Time>2018-06-28T12:51:49.6673542-04:00</Time>
+      <Time>2019-08-13T15:58:54.614674-04:00</Time>
     </Item>
     <Item>
       <Source>Panel\ArrowButtonCoverR.png</Source>
@@ -377,7 +368,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Panel\ArrowButtonCoverR.xnb</Output>
-      <Time>2018-06-28T12:51:49.682982-04:00</Time>
+      <Time>2019-08-13T15:58:54.614674-04:00</Time>
     </Item>
     <Item>
       <Source>Panel\ArrowButtonL.png</Source>
@@ -386,7 +377,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Panel\ArrowButtonL.xnb</Output>
-      <Time>2018-06-28T12:51:49.6986068-04:00</Time>
+      <Time>2019-08-13T15:58:54.6287885-04:00</Time>
     </Item>
     <Item>
       <Source>Panel\ArrowButtonR.png</Source>
@@ -395,7 +386,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Panel\ArrowButtonR.xnb</Output>
-      <Time>2018-06-28T12:51:49.7142295-04:00</Time>
+      <Time>2019-08-13T15:58:54.6287885-04:00</Time>
     </Item>
     <Item>
       <Source>Panel\OkButton.jpg</Source>
@@ -404,7 +395,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Panel\OkButton.xnb</Output>
-      <Time>2018-06-28T12:51:49.7298543-04:00</Time>
+      <Time>2019-08-13T15:58:54.6298237-04:00</Time>
     </Item>
     <Item>
       <Source>Panel\Panel.png</Source>
@@ -413,7 +404,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Panel\Panel.xnb</Output>
-      <Time>2018-06-28T12:52:33.7328869-04:00</Time>
+      <Time>2019-08-13T15:58:54.6298237-04:00</Time>
     </Item>
     <Item>
       <Source>BattleBoardButtons\ActivateButton.jpg</Source>
@@ -422,7 +413,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\BattleBoardButtons\ActivateButton.xnb</Output>
-      <Time>2018-06-28T12:55:18.2831923-04:00</Time>
+      <Time>2019-08-13T15:58:54.1859313-04:00</Time>
     </Item>
     <Item>
       <Source>BattleBoardSprites\Attack.jpg</Source>
@@ -431,7 +422,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\BattleBoardSprites\Attack.xnb</Output>
-      <Time>2018-06-28T13:02:31.3788142-04:00</Time>
+      <Time>2019-08-13T15:58:54.1889219-04:00</Time>
     </Item>
     <Item>
       <Source>BattleBoardSprites\AttackDiscard.jpg</Source>
@@ -440,7 +431,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\BattleBoardSprites\AttackDiscard.xnb</Output>
-      <Time>2018-06-28T13:02:31.3788142-04:00</Time>
+      <Time>2019-08-13T15:58:54.1889219-04:00</Time>
     </Item>
     <Item>
       <Source>BattleBoardSprites\BattleBoardDescription.png</Source>
@@ -449,7 +440,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\BattleBoardSprites\BattleBoardDescription.xnb</Output>
-      <Time>2018-06-28T13:02:31.394439-04:00</Time>
+      <Time>2019-08-13T15:58:54.1899195-04:00</Time>
     </Item>
     <Item>
       <Source>BattleBoardSprites\CardSpace.jpg</Source>
@@ -458,7 +449,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\BattleBoardSprites\CardSpace.xnb</Output>
-      <Time>2018-06-28T13:02:31.4100637-04:00</Time>
+      <Time>2019-08-13T15:58:54.1899195-04:00</Time>
     </Item>
     <Item>
       <Source>BattleBoardSprites\Discard.jpg</Source>
@@ -467,7 +458,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\BattleBoardSprites\Discard.xnb</Output>
-      <Time>2018-06-28T13:02:31.4256895-04:00</Time>
+      <Time>2019-08-13T15:58:54.1909176-04:00</Time>
     </Item>
     <Item>
       <Source>BattleBoardSprites\Location.jpg</Source>
@@ -476,7 +467,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\BattleBoardSprites\Location.xnb</Output>
-      <Time>2018-06-28T13:02:31.4256895-04:00</Time>
+      <Time>2019-08-13T15:58:54.1909176-04:00</Time>
     </Item>
     <Item>
       <Source>BattleBoardSprites\LocationCardBack.png</Source>
@@ -485,7 +476,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\BattleBoardSprites\LocationCardBack.xnb</Output>
-      <Time>2018-06-28T13:02:31.4413143-04:00</Time>
+      <Time>2019-08-13T15:58:54.1919141-04:00</Time>
     </Item>
     <Item>
       <Source>BattleBoardSprites\Mugic-Dan.png</Source>
@@ -494,7 +485,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\BattleBoardSprites\Mugic-Dan.xnb</Output>
-      <Time>2018-06-28T13:02:31.4569401-04:00</Time>
+      <Time>2019-08-13T15:58:54.1929457-04:00</Time>
     </Item>
     <Item>
       <Source>BattleBoardSprites\Mugic-Gen.png</Source>
@@ -503,7 +494,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\BattleBoardSprites\Mugic-Gen.xnb</Output>
-      <Time>2018-06-28T13:02:31.4725658-04:00</Time>
+      <Time>2019-08-13T15:58:54.1929457-04:00</Time>
     </Item>
     <Item>
       <Source>BattleBoardSprites\Mugic-Mip.png</Source>
@@ -512,7 +503,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\BattleBoardSprites\Mugic-Mip.xnb</Output>
-      <Time>2018-06-28T13:02:31.4725658-04:00</Time>
+      <Time>2019-08-13T15:58:54.1929457-04:00</Time>
     </Item>
     <Item>
       <Source>BattleBoardSprites\Mugic-UW.png</Source>
@@ -521,7 +512,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\BattleBoardSprites\Mugic-UW.xnb</Output>
-      <Time>2018-06-28T13:02:31.5038143-04:00</Time>
+      <Time>2019-08-13T15:58:54.1929457-04:00</Time>
     </Item>
     <Item>
       <Source>BattleBoardSprites\MugicOW.png</Source>
@@ -530,7 +521,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\BattleBoardSprites\MugicOW.xnb</Output>
-      <Time>2018-06-28T13:02:31.4881906-04:00</Time>
+      <Time>2019-08-13T15:58:54.1939491-04:00</Time>
     </Item>
     <Item>
       <Source>BattleBoardButtons\CancelButton.jpg</Source>
@@ -539,7 +530,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\BattleBoardButtons\CancelButton.xnb</Output>
-      <Time>2018-06-28T13:03:53.7822192-04:00</Time>
+      <Time>2019-08-13T15:58:54.1869292-04:00</Time>
     </Item>
     <Item>
       <Source>BattleBoardButtons\CastButton.jpg</Source>
@@ -548,7 +539,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\BattleBoardButtons\CastButton.xnb</Output>
-      <Time>2018-06-28T13:03:53.797845-04:00</Time>
+      <Time>2019-08-13T15:58:54.1869292-04:00</Time>
     </Item>
     <Item>
       <Source>BattleBoardButtons\MoveButton.jpg</Source>
@@ -557,7 +548,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\BattleBoardButtons\MoveButton.xnb</Output>
-      <Time>2018-06-28T13:03:53.797845-04:00</Time>
+      <Time>2019-08-13T15:58:54.1879251-04:00</Time>
     </Item>
     <Item>
       <Source>BattleBoardButtons\SacrificeButton.jpg</Source>
@@ -566,7 +557,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\BattleBoardButtons\SacrificeButton.xnb</Output>
-      <Time>2018-06-28T13:03:53.8134698-04:00</Time>
+      <Time>2019-08-13T15:58:54.1879251-04:00</Time>
     </Item>
     <Item>
       <Source>Attacks\Allmageddon.png</Source>
@@ -575,7 +566,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\Allmageddon.xnb</Output>
-      <Time>2018-06-28T13:53:59.910295-04:00</Time>
+      <Time>2019-08-13T15:58:54.1095114-04:00</Time>
     </Item>
     <Item>
       <Source>Attacks\AshTorrent.png</Source>
@@ -584,7 +575,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\AshTorrent.xnb</Output>
-      <Time>2018-06-28T13:53:59.9259187-04:00</Time>
+      <Time>2019-08-13T15:58:54.1105078-04:00</Time>
     </Item>
     <Item>
       <Source>Attacks\CoilCrush.png</Source>
@@ -593,7 +584,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\CoilCrush.xnb</Output>
-      <Time>2018-06-28T13:53:59.9571631-04:00</Time>
+      <Time>2019-08-13T15:58:54.1115063-04:00</Time>
     </Item>
     <Item>
       <Source>Attacks\Degenervate.png</Source>
@@ -602,7 +593,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\Degenervate.xnb</Output>
-      <Time>2018-06-28T13:54:00.03529-04:00</Time>
+      <Time>2019-08-13T15:58:54.1125038-04:00</Time>
     </Item>
     <Item>
       <Source>Attacks\Delerium.png</Source>
@@ -611,7 +602,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\Delerium.xnb</Output>
-      <Time>2018-06-28T13:54:00.0821622-04:00</Time>
+      <Time>2019-08-13T15:58:54.1135006-04:00</Time>
     </Item>
     <Item>
       <Source>Attacks\Ektospasm.png</Source>
@@ -620,7 +611,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\Ektospasm.xnb</Output>
-      <Time>2018-06-28T13:54:00.097788-04:00</Time>
+      <Time>2019-08-13T15:58:54.1145011-04:00</Time>
     </Item>
     <Item>
       <Source>Attacks\EmberSwarm.png</Source>
@@ -629,7 +620,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\EmberSwarm.xnb</Output>
-      <Time>2018-06-28T13:54:00.1446653-04:00</Time>
+      <Time>2019-08-13T15:58:54.1154956-04:00</Time>
     </Item>
     <Item>
       <Source>Attacks\Evaporize.png</Source>
@@ -638,7 +629,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\Evaporize.xnb</Output>
-      <Time>2018-06-28T13:54:00.1759138-04:00</Time>
+      <Time>2019-08-13T15:58:54.1154956-04:00</Time>
     </Item>
     <Item>
       <Source>Attacks\Fearocity.png</Source>
@@ -647,7 +638,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\Fearocity.xnb</Output>
-      <Time>2018-06-28T13:54:00.2071633-04:00</Time>
+      <Time>2019-08-13T15:58:54.1164939-04:00</Time>
     </Item>
     <Item>
       <Source>Attacks\FlameOrb.png</Source>
@@ -656,7 +647,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\FlameOrb.xnb</Output>
-      <Time>2018-06-28T13:54:00.2227881-04:00</Time>
+      <Time>2019-08-13T15:58:54.1174913-04:00</Time>
     </Item>
     <Item>
       <Source>Attacks\FlashKick.png</Source>
@@ -665,7 +656,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\FlashKick.xnb</Output>
-      <Time>2018-06-28T13:54:00.2384129-04:00</Time>
+      <Time>2019-08-13T15:58:54.1184877-04:00</Time>
     </Item>
     <Item>
       <Source>Attacks\Flashmend.png</Source>
@@ -674,7 +665,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\Flashmend.xnb</Output>
-      <Time>2018-06-28T13:54:00.3009119-04:00</Time>
+      <Time>2019-08-13T15:58:54.120059-04:00</Time>
     </Item>
     <Item>
       <Source>Attacks\Flashwarp.png</Source>
@@ -683,7 +674,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\Flashwarp.xnb</Output>
-      <Time>2018-06-28T13:54:00.3321624-04:00</Time>
+      <Time>2019-08-13T15:58:54.1211625-04:00</Time>
     </Item>
     <Item>
       <Source>Attacks\FrostBlight.png</Source>
@@ -692,7 +683,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\FrostBlight.xnb</Output>
-      <Time>2018-06-28T13:54:00.3477872-04:00</Time>
+      <Time>2019-08-13T15:58:54.1221008-04:00</Time>
     </Item>
     <Item>
       <Source>Attacks\HailStorm.png</Source>
@@ -701,7 +692,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\HailStorm.xnb</Output>
-      <Time>2018-06-28T13:54:00.3790377-04:00</Time>
+      <Time>2019-08-13T15:58:54.1221008-04:00</Time>
     </Item>
     <Item>
       <Source>Attacks\HiveCall.png</Source>
@@ -710,7 +701,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\HiveCall.xnb</Output>
-      <Time>2018-06-28T13:54:00.3946625-04:00</Time>
+      <Time>2019-08-13T15:58:54.1231317-04:00</Time>
     </Item>
     <Item>
       <Source>Attacks\Incinerase.png</Source>
@@ -719,7 +710,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\Incinerase.xnb</Output>
-      <Time>2018-06-28T13:54:00.4102903-04:00</Time>
+      <Time>2019-08-13T15:58:54.1240956-04:00</Time>
     </Item>
     <Item>
       <Source>Attacks\InfernoGust.png</Source>
@@ -728,7 +719,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\InfernoGust.xnb</Output>
-      <Time>2018-06-28T13:54:00.4415388-04:00</Time>
+      <Time>2019-08-13T15:58:54.1251092-04:00</Time>
     </Item>
     <Item>
       <Source>Attacks\IronBalls.png</Source>
@@ -737,7 +728,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\IronBalls.xnb</Output>
-      <Time>2018-06-28T13:54:00.4571615-04:00</Time>
+      <Time>2019-08-13T15:58:54.1260901-04:00</Time>
     </Item>
     <Item>
       <Source>Attacks\Lavalanche.png</Source>
@@ -746,7 +737,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\Lavalanche.xnb</Output>
-      <Time>2018-06-28T13:54:00.5509132-04:00</Time>
+      <Time>2019-08-13T15:58:54.1270874-04:00</Time>
     </Item>
     <Item>
       <Source>Attacks\LightningBurst.png</Source>
@@ -755,7 +746,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\LightningBurst.xnb</Output>
-      <Time>2018-06-28T13:54:00.5977885-04:00</Time>
+      <Time>2019-08-13T15:58:54.1280855-04:00</Time>
     </Item>
     <Item>
       <Source>Attacks\LuckyShot.png</Source>
@@ -764,7 +755,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\LuckyShot.xnb</Output>
-      <Time>2018-06-28T13:54:00.6134132-04:00</Time>
+      <Time>2019-08-13T15:58:54.1290823-04:00</Time>
     </Item>
     <Item>
       <Source>Attacks\Megaroar.png</Source>
@@ -773,7 +764,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\Megaroar.xnb</Output>
-      <Time>2018-06-28T13:54:00.6290647-04:00</Time>
+      <Time>2019-08-13T15:58:54.130119-04:00</Time>
     </Item>
     <Item>
       <Source>Attacks\Mirthquake.png</Source>
@@ -782,7 +773,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\Mirthquake.xnb</Output>
-      <Time>2018-06-28T13:54:00.6602886-04:00</Time>
+      <Time>2019-08-13T15:58:54.1311086-04:00</Time>
     </Item>
     <Item>
       <Source>Attacks\ParalEyes.png</Source>
@@ -791,7 +782,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\ParalEyes.xnb</Output>
-      <Time>2018-06-28T13:54:00.6759133-04:00</Time>
+      <Time>2019-08-13T15:58:54.1320752-04:00</Time>
     </Item>
     <Item>
       <Source>Attacks\Pebblestorm.png</Source>
@@ -800,7 +791,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\Pebblestorm.xnb</Output>
-      <Time>2018-06-28T13:54:00.7071628-04:00</Time>
+      <Time>2019-08-13T15:58:54.1330714-04:00</Time>
     </Item>
     <Item>
       <Source>Attacks\PowerPulse.png</Source>
@@ -809,7 +800,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\PowerPulse.xnb</Output>
-      <Time>2018-06-28T13:54:00.7227886-04:00</Time>
+      <Time>2019-08-13T15:58:54.1340698-04:00</Time>
     </Item>
     <Item>
       <Source>Attacks\QuickExit.png</Source>
@@ -818,7 +809,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\QuickExit.xnb</Output>
-      <Time>2018-06-28T13:54:00.7384134-04:00</Time>
+      <Time>2019-08-13T15:58:54.1350685-04:00</Time>
     </Item>
     <Item>
       <Source>Attacks\RipTide.png</Source>
@@ -827,7 +818,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\RipTide.xnb</Output>
-      <Time>2018-06-28T13:54:00.7540392-04:00</Time>
+      <Time>2019-08-13T15:58:54.1360636-04:00</Time>
     </Item>
     <Item>
       <Source>Attacks\RockWave.png</Source>
@@ -836,7 +827,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\RockWave.xnb</Output>
-      <Time>2018-06-28T13:54:00.7852887-04:00</Time>
+      <Time>2019-08-13T15:58:54.1370901-04:00</Time>
     </Item>
     <Item>
       <Source>Attacks\Rustoxic.png</Source>
@@ -845,7 +836,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\Rustoxic.xnb</Output>
-      <Time>2018-06-28T13:54:00.8634145-04:00</Time>
+      <Time>2019-08-13T15:58:54.1380598-04:00</Time>
     </Item>
     <Item>
       <Source>Attacks\ShadowStrike.png</Source>
@@ -854,7 +845,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\ShadowStrike.xnb</Output>
-      <Time>2018-06-28T13:54:00.894664-04:00</Time>
+      <Time>2019-08-13T15:58:54.1380598-04:00</Time>
     </Item>
     <Item>
       <Source>Attacks\ShriekShock.png</Source>
@@ -863,7 +854,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\ShriekShock.xnb</Output>
-      <Time>2018-06-28T13:54:00.9415394-04:00</Time>
+      <Time>2019-08-13T15:58:54.1390573-04:00</Time>
     </Item>
     <Item>
       <Source>Attacks\SkeletalStrike.png</Source>
@@ -872,7 +863,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\SkeletalStrike.xnb</Output>
-      <Time>2018-06-28T13:54:01.0040394-04:00</Time>
+      <Time>2019-08-13T15:58:54.1400545-04:00</Time>
     </Item>
     <Item>
       <Source>Attacks\SleepSting.png</Source>
@@ -881,7 +872,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\SleepSting.xnb</Output>
-      <Time>2018-06-28T13:54:01.0509147-04:00</Time>
+      <Time>2019-08-13T15:58:54.1410528-04:00</Time>
     </Item>
     <Item>
       <Source>Attacks\SludgeGush.png</Source>
@@ -890,7 +881,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\SludgeGush.xnb</Output>
-      <Time>2018-06-28T13:54:01.0821642-04:00</Time>
+      <Time>2019-08-13T15:58:54.1420501-04:00</Time>
     </Item>
     <Item>
       <Source>Attacks\SpiritGust.png</Source>
@@ -899,7 +890,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\SpiritGust.xnb</Output>
-      <Time>2018-06-28T13:54:01.1290395-04:00</Time>
+      <Time>2019-08-13T15:58:54.1420501-04:00</Time>
     </Item>
     <Item>
       <Source>Attacks\SqueezePlay.png</Source>
@@ -908,7 +899,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\SqueezePlay.xnb</Output>
-      <Time>2018-06-28T13:54:01.1759148-04:00</Time>
+      <Time>2019-08-13T15:58:54.1430466-04:00</Time>
     </Item>
     <Item>
       <Source>Attacks\SteamRage.png</Source>
@@ -917,7 +908,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\SteamRage.xnb</Output>
-      <Time>2018-06-28T13:54:01.2071633-04:00</Time>
+      <Time>2019-08-13T15:58:54.1440438-04:00</Time>
     </Item>
     <Item>
       <Source>Attacks\TelekineticBolt.png</Source>
@@ -926,7 +917,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\TelekineticBolt.xnb</Output>
-      <Time>2018-06-28T13:54:01.2540386-04:00</Time>
+      <Time>2019-08-13T15:58:54.1450411-04:00</Time>
     </Item>
     <Item>
       <Source>Attacks\ThunderShout.png</Source>
@@ -935,7 +926,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\ThunderShout.xnb</Output>
-      <Time>2018-06-28T13:54:01.3009129-04:00</Time>
+      <Time>2019-08-13T15:58:54.1460386-04:00</Time>
     </Item>
     <Item>
       <Source>Attacks\TorrentOfFlame.png</Source>
@@ -944,7 +935,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\TorrentOfFlame.xnb</Output>
-      <Time>2018-06-28T13:54:01.365592-04:00</Time>
+      <Time>2019-08-13T15:58:54.1480356-04:00</Time>
     </Item>
     <Item>
       <Source>Attacks\ToxicGust.png</Source>
@@ -953,7 +944,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\ToxicGust.xnb</Output>
-      <Time>2018-06-28T13:54:01.4577576-04:00</Time>
+      <Time>2019-08-13T15:58:54.1490292-04:00</Time>
     </Item>
     <Item>
       <Source>Attacks\Unsanity.png</Source>
@@ -962,7 +953,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\Unsanity.xnb</Output>
-      <Time>2018-06-28T13:54:01.5046319-04:00</Time>
+      <Time>2019-08-13T15:58:54.1510261-04:00</Time>
     </Item>
     <Item>
       <Source>Attacks\Velocitrap.png</Source>
@@ -971,7 +962,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\Velocitrap.xnb</Output>
-      <Time>2018-06-28T13:54:01.5515082-04:00</Time>
+      <Time>2019-08-13T15:58:54.1520212-04:00</Time>
     </Item>
     <Item>
       <Source>Attacks\VineSnare.png</Source>
@@ -980,7 +971,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\VineSnare.xnb</Output>
-      <Time>2018-06-28T13:54:01.5671319-04:00</Time>
+      <Time>2019-08-13T15:58:54.1530183-04:00</Time>
     </Item>
     <Item>
       <Source>Attacks\Viperlash.png</Source>
@@ -989,7 +980,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\Viperlash.xnb</Output>
-      <Time>2018-06-28T13:54:01.6140073-04:00</Time>
+      <Time>2019-08-13T15:58:54.1540156-04:00</Time>
     </Item>
     <Item>
       <Source>Attacks\Windslash.png</Source>
@@ -998,7 +989,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\Windslash.xnb</Output>
-      <Time>2018-06-28T13:54:01.6608826-04:00</Time>
+      <Time>2019-08-13T15:58:54.1550129-04:00</Time>
     </Item>
     <Item>
       <Source>Locations\CastleBodhran.png</Source>
@@ -1007,7 +998,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\CastleBodhran.xnb</Output>
-      <Time>2018-06-28T14:17:44.7402282-04:00</Time>
+      <Time>2019-08-13T15:58:54.4135556-04:00</Time>
     </Item>
     <Item>
       <Source>Locations\CastlePillar.png</Source>
@@ -1016,7 +1007,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\CastlePillar.xnb</Output>
-      <Time>2018-06-28T14:17:44.7714797-04:00</Time>
+      <Time>2019-08-13T15:58:54.4145515-04:00</Time>
     </Item>
     <Item>
       <Source>Locations\CordacFalls.png</Source>
@@ -1025,7 +1016,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\CordacFalls.xnb</Output>
-      <Time>2018-06-28T14:17:44.7871055-04:00</Time>
+      <Time>2019-08-13T15:58:54.4253377-04:00</Time>
     </Item>
     <Item>
       <Source>Locations\CordacFallsPlungePool.png</Source>
@@ -1034,7 +1025,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\CordacFallsPlungePool.xnb</Output>
-      <Time>2018-06-28T14:17:44.818353-04:00</Time>
+      <Time>2019-08-13T15:58:54.4263705-04:00</Time>
     </Item>
     <Item>
       <Source>Locations\CrystalCave.png</Source>
@@ -1043,7 +1034,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\CrystalCave.xnb</Output>
-      <Time>2018-06-28T14:17:44.8496056-04:00</Time>
+      <Time>2019-08-13T15:58:54.4273735-04:00</Time>
     </Item>
     <Item>
       <Source>Locations\DoorsOfTheDeepmines.png</Source>
@@ -1052,7 +1043,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\DoorsOfTheDeepmines.xnb</Output>
-      <Time>2018-06-28T14:17:44.8652293-04:00</Time>
+      <Time>2019-08-13T15:58:54.4283624-04:00</Time>
     </Item>
     <Item>
       <Source>Locations\DranakisThreshold.png</Source>
@@ -1061,7 +1052,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\DranakisThreshold.xnb</Output>
-      <Time>2018-06-28T14:17:44.8964799-04:00</Time>
+      <Time>2019-08-13T15:58:54.4293262-04:00</Time>
     </Item>
     <Item>
       <Source>Locations\Everrain.png</Source>
@@ -1070,7 +1061,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\Everrain.xnb</Output>
-      <Time>2018-06-28T14:17:44.9121036-04:00</Time>
+      <Time>2019-08-13T15:58:54.4303242-04:00</Time>
     </Item>
     <Item>
       <Source>Locations\EyeOfTheMaelstrom.png</Source>
@@ -1079,7 +1070,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\EyeOfTheMaelstrom.xnb</Output>
-      <Time>2018-06-28T14:17:44.9433541-04:00</Time>
+      <Time>2019-08-13T15:58:54.4313579-04:00</Time>
     </Item>
     <Item>
       <Source>Locations\FearValley.png</Source>
@@ -1088,7 +1079,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\FearValley.xnb</Output>
-      <Time>2018-06-28T14:17:44.9746037-04:00</Time>
+      <Time>2019-08-13T15:58:54.4323179-04:00</Time>
     </Item>
     <Item>
       <Source>Locations\ForestOfLife.png</Source>
@@ -1097,7 +1088,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\ForestOfLife.xnb</Output>
-      <Time>2018-06-28T14:17:44.9902305-04:00</Time>
+      <Time>2019-08-13T15:58:54.4333477-04:00</Time>
     </Item>
     <Item>
       <Source>Locations\Gigantempopolis.png</Source>
@@ -1106,7 +1097,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\Gigantempopolis.xnb</Output>
-      <Time>2018-06-28T14:17:45.0058573-04:00</Time>
+      <Time>2019-08-13T15:58:54.4333477-04:00</Time>
     </Item>
     <Item>
       <Source>Locations\GlacierPlains.png</Source>
@@ -1115,7 +1106,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\GlacierPlains.xnb</Output>
-      <Time>2018-06-28T14:17:45.021481-04:00</Time>
+      <Time>2019-08-13T15:58:54.4343455-04:00</Time>
     </Item>
     <Item>
       <Source>Locations\GloomuckSwamp.png</Source>
@@ -1124,7 +1115,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\GloomuckSwamp.xnb</Output>
-      <Time>2018-06-28T14:17:45.0527305-04:00</Time>
+      <Time>2019-08-13T15:58:54.4353427-04:00</Time>
     </Item>
     <Item>
       <Source>Locations\GothosTower.png</Source>
@@ -1133,7 +1124,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\GothosTower.xnb</Output>
-      <Time>2018-06-28T14:17:45.0839801-04:00</Time>
+      <Time>2019-08-13T15:58:54.4363405-04:00</Time>
     </Item>
     <Item>
       <Source>Locations\IronPillar.png</Source>
@@ -1142,7 +1133,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\IronPillar.xnb</Output>
-      <Time>2018-06-28T14:17:45.0996048-04:00</Time>
+      <Time>2019-08-13T15:58:54.4373454-04:00</Time>
     </Item>
     <Item>
       <Source>Locations\KiruCity.png</Source>
@@ -1151,7 +1142,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\KiruCity.xnb</Output>
-      <Time>2018-06-28T14:17:45.1152306-04:00</Time>
+      <Time>2019-08-13T15:58:54.4373454-04:00</Time>
     </Item>
     <Item>
       <Source>Locations\LakeKenIPo.png</Source>
@@ -1160,7 +1151,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\LakeKenIPo.xnb</Output>
-      <Time>2018-06-28T14:17:45.1308584-04:00</Time>
+      <Time>2019-08-13T15:58:54.4383331-04:00</Time>
     </Item>
     <Item>
       <Source>Locations\LavaPond.png</Source>
@@ -1169,7 +1160,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\LavaPond.xnb</Output>
-      <Time>2018-06-28T14:17:45.3183556-04:00</Time>
+      <Time>2019-08-13T15:58:54.457636-04:00</Time>
     </Item>
     <Item>
       <Source>Locations\MipedimOasis.png</Source>
@@ -1178,7 +1169,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\MipedimOasis.xnb</Output>
-      <Time>2018-06-28T14:17:45.3340173-04:00</Time>
+      <Time>2019-08-13T15:58:54.4585908-04:00</Time>
     </Item>
     <Item>
       <Source>Locations\MountPillar.png</Source>
@@ -1187,7 +1178,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\MountPillar.xnb</Output>
-      <Time>2018-06-28T14:17:45.3652298-04:00</Time>
+      <Time>2019-08-13T15:58:54.4595799-04:00</Time>
     </Item>
     <Item>
       <Source>Locations\RavanaughRidge.png</Source>
@@ -1196,7 +1187,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\RavanaughRidge.xnb</Output>
-      <Time>2018-06-28T14:17:45.3808556-04:00</Time>
+      <Time>2019-08-13T15:58:54.4605803-04:00</Time>
     </Item>
     <Item>
       <Source>Locations\Riverlands.png</Source>
@@ -1205,7 +1196,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\Riverlands.xnb</Output>
-      <Time>2018-06-28T14:17:45.3964804-04:00</Time>
+      <Time>2019-08-13T15:58:54.4605803-04:00</Time>
     </Item>
     <Item>
       <Source>Locations\RunicGrove.png</Source>
@@ -1214,7 +1205,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\RunicGrove.xnb</Output>
-      <Time>2018-06-28T14:17:45.4277299-04:00</Time>
+      <Time>2019-08-13T15:58:54.4615735-04:00</Time>
     </Item>
     <Item>
       <Source>Locations\StonePillar.png</Source>
@@ -1223,7 +1214,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\StonePillar.xnb</Output>
-      <Time>2018-06-28T14:17:45.4433567-04:00</Time>
+      <Time>2019-08-13T15:58:54.4635783-04:00</Time>
     </Item>
     <Item>
       <Source>Locations\StormTunnel.png</Source>
@@ -1232,7 +1223,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\StormTunnel.xnb</Output>
-      <Time>2018-06-28T14:17:45.4746052-04:00</Time>
+      <Time>2019-08-13T15:58:54.4635783-04:00</Time>
     </Item>
     <Item>
       <Source>Locations\StrongholdMorn.png</Source>
@@ -1241,7 +1232,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\StrongholdMorn.xnb</Output>
-      <Time>2018-06-28T14:17:45.5058568-04:00</Time>
+      <Time>2019-08-13T15:58:54.4655637-04:00</Time>
     </Item>
     <Item>
       <Source>Locations\UnderworldCity.png</Source>
@@ -1250,7 +1241,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\UnderworldCity.xnb</Output>
-      <Time>2018-06-28T14:17:45.5214815-04:00</Time>
+      <Time>2019-08-13T15:58:54.4810078-04:00</Time>
     </Item>
     <Item>
       <Source>Locations\UnderWorldColosseum.png</Source>
@@ -1259,7 +1250,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\UnderWorldColosseum.xnb</Output>
-      <Time>2018-06-28T14:17:45.5683538-04:00</Time>
+      <Time>2019-08-13T15:58:54.4655637-04:00</Time>
     </Item>
     <Item>
       <Source>Locations\WoodenPillar.png</Source>
@@ -1268,7 +1259,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\WoodenPillar.xnb</Output>
-      <Time>2018-06-28T14:17:45.5839806-04:00</Time>
+      <Time>2019-08-13T15:58:54.5109851-04:00</Time>
     </Item>
     <Item>
       <Source>OkButtonCover.png</Source>
@@ -1277,7 +1268,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\OkButtonCover.xnb</Output>
-      <Time>2018-06-28T15:23:49.0653701-04:00</Time>
+      <Time>2019-08-13T15:58:54.6136715-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\Arias.png</Source>
@@ -1286,7 +1277,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Arias.xnb</Output>
-      <Time>2018-06-29T00:31:51.4313093-04:00</Time>
+      <Time>2019-08-13T15:58:54.2218365-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\Attacat.png</Source>
@@ -1295,7 +1286,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Attacat.xnb</Output>
-      <Time>2018-06-29T00:31:51.4469341-04:00</Time>
+      <Time>2019-08-13T15:58:54.2238305-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\Blazier.png</Source>
@@ -1304,7 +1295,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Blazier.xnb</Output>
-      <Time>2018-06-29T00:31:51.4625599-04:00</Time>
+      <Time>2019-08-13T15:58:54.22782-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\Blugon.png</Source>
@@ -1313,7 +1304,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Blugon.xnb</Output>
-      <Time>2018-06-29T00:31:51.4625599-04:00</Time>
+      <Time>2019-08-13T15:58:54.2288172-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\Bodal.png</Source>
@@ -1322,7 +1313,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Bodal.xnb</Output>
-      <Time>2018-06-29T00:31:51.4781877-04:00</Time>
+      <Time>2019-08-13T15:58:54.2298146-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\Crawsectus.png</Source>
@@ -1331,7 +1322,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Crawsectus.xnb</Output>
-      <Time>2018-06-29T00:31:51.4938114-04:00</Time>
+      <Time>2019-08-13T15:58:54.2348016-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\Donmar.png</Source>
@@ -1340,7 +1331,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Donmar.xnb</Output>
-      <Time>2018-06-29T00:31:51.5094352-04:00</Time>
+      <Time>2019-08-13T15:58:54.2367961-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\Dractyl.png</Source>
@@ -1349,7 +1340,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Dractyl.xnb</Output>
-      <Time>2018-06-29T00:31:51.5250599-04:00</Time>
+      <Time>2019-08-13T15:58:54.2377934-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\Frafdo.png</Source>
@@ -1358,7 +1349,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Frafdo.xnb</Output>
-      <Time>2018-06-29T00:31:51.5406857-04:00</Time>
+      <Time>2019-08-13T15:58:54.2407855-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\Gespedan.png</Source>
@@ -1367,16 +1358,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Gespedan.xnb</Output>
-      <Time>2018-06-29T00:31:51.5563105-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Creatures\Heptadd.png</Source>
-      <Name>Creatures\Heptadd</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Heptadd.xnb</Output>
-      <Time>2019-04-09T19:51:43.7558865-04:00</Time>
+      <Time>2019-08-13T15:58:54.2427806-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\Intress.png</Source>
@@ -1385,7 +1367,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Intress.xnb</Output>
-      <Time>2018-06-29T00:31:51.6188105-04:00</Time>
+      <Time>2019-08-13T15:58:54.2507591-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\Laarina.png</Source>
@@ -1394,7 +1376,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Laarina.xnb</Output>
-      <Time>2018-06-29T00:31:51.6344363-04:00</Time>
+      <Time>2019-08-13T15:58:54.2637565-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\Maglax.png</Source>
@@ -1403,7 +1385,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Maglax.xnb</Output>
-      <Time>2018-06-29T00:31:51.65006-04:00</Time>
+      <Time>2019-08-13T15:58:54.2687089-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\Maxxor.png</Source>
@@ -1412,7 +1394,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Maxxor.xnb</Output>
-      <Time>2018-06-29T00:31:51.6656848-04:00</Time>
+      <Time>2019-08-13T15:58:54.2876581-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\Owis.png</Source>
@@ -1421,7 +1403,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Owis.xnb</Output>
-      <Time>2018-06-29T00:31:51.6813096-04:00</Time>
+      <Time>2019-08-13T15:58:54.3046145-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\Psimion.png</Source>
@@ -1430,7 +1412,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Psimion.xnb</Output>
-      <Time>2018-06-29T00:31:51.6969364-04:00</Time>
+      <Time>2019-08-13T15:58:54.3076064-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\Slurhk.png</Source>
@@ -1439,7 +1421,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Slurhk.xnb</Output>
-      <Time>2018-06-29T00:31:51.7125591-04:00</Time>
+      <Time>2019-08-13T15:58:54.3327801-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\Staluk.png</Source>
@@ -1448,7 +1430,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Staluk.xnb</Output>
-      <Time>2018-06-29T00:31:51.7125591-04:00</Time>
+      <Time>2019-08-13T15:58:54.335771-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\TangathToborn.png</Source>
@@ -1457,7 +1439,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\TangathToborn.xnb</Output>
-      <Time>2018-06-29T00:31:51.7281859-04:00</Time>
+      <Time>2019-08-13T15:58:54.3377966-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\Tartarek.png</Source>
@@ -1466,7 +1448,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Tartarek.xnb</Output>
-      <Time>2018-06-29T00:31:51.7438096-04:00</Time>
+      <Time>2019-08-13T15:58:54.3387952-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\Velreth.png</Source>
@@ -1475,7 +1457,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Velreth.xnb</Output>
-      <Time>2018-06-29T00:31:51.7594364-04:00</Time>
+      <Time>2019-08-13T15:58:54.345779-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\Xaerv.png</Source>
@@ -1484,7 +1466,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Xaerv.xnb</Output>
-      <Time>2018-06-29T00:31:51.7906849-04:00</Time>
+      <Time>2019-08-13T15:58:54.3907793-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\Zalic.png</Source>
@@ -1493,7 +1475,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Zalic.xnb</Output>
-      <Time>2018-06-29T00:31:51.8375623-04:00</Time>
+      <Time>2019-08-13T15:58:54.3938104-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\Najarin.png</Source>
@@ -1502,7 +1484,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Najarin.xnb</Output>
-      <Time>2018-07-01T13:48:40.9219536-04:00</Time>
+      <Time>2019-08-13T15:58:54.2896526-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\Rellim.png</Source>
@@ -1511,7 +1493,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Rellim.xnb</Output>
-      <Time>2018-07-01T14:17:20.2906559-04:00</Time>
+      <Time>2019-08-13T15:58:54.3115957-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\Yokkis.png</Source>
@@ -1520,7 +1502,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Yokkis.xnb</Output>
-      <Time>2018-07-01T14:17:50.0313095-04:00</Time>
+      <Time>2019-08-13T15:58:54.3928108-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\Vidav.png</Source>
@@ -1529,7 +1511,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Vidav.xnb</Output>
-      <Time>2018-08-01T22:20:29.0234052-04:00</Time>
+      <Time>2019-08-13T15:58:54.3467724-04:00</Time>
     </Item>
     <Item>
       <Source>Attacks\TornadoTackle.png</Source>
@@ -1538,7 +1520,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\TornadoTackle.xnb</Output>
-      <Time>2018-08-02T13:33:36.9783337-04:00</Time>
+      <Time>2019-08-13T15:58:54.1470359-04:00</Time>
     </Item>
     <Item>
       <Source>Battlegears\AquaShield.png</Source>
@@ -1547,7 +1529,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\AquaShield.xnb</Output>
-      <Time>2018-08-02T14:58:15.1183314-04:00</Time>
+      <Time>2019-08-13T15:58:54.1949378-04:00</Time>
     </Item>
     <Item>
       <Source>Battlegears\Cyclance.png</Source>
@@ -1556,7 +1538,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\Cyclance.xnb</Output>
-      <Time>2018-08-02T14:58:15.1339602-04:00</Time>
+      <Time>2019-08-13T15:58:54.1959035-04:00</Time>
     </Item>
     <Item>
       <Source>Battlegears\DiamondOfVlaric.png</Source>
@@ -1565,7 +1547,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\DiamondOfVlaric.xnb</Output>
-      <Time>2018-08-02T14:58:15.149587-04:00</Time>
+      <Time>2019-08-13T15:58:54.1959035-04:00</Time>
     </Item>
     <Item>
       <Source>Battlegears\DragonPulse.png</Source>
@@ -1574,7 +1556,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\DragonPulse.xnb</Output>
-      <Time>2018-08-02T14:58:15.1652108-04:00</Time>
+      <Time>2019-08-13T15:58:54.1969026-04:00</Time>
     </Item>
     <Item>
       <Source>Battlegears\ElixirOfTenacity.png</Source>
@@ -1583,7 +1565,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\ElixirOfTenacity.xnb</Output>
-      <Time>2018-08-02T14:58:15.1964592-04:00</Time>
+      <Time>2019-08-13T15:58:54.1979031-04:00</Time>
     </Item>
     <Item>
       <Source>Battlegears\GauntletsOfMight.png</Source>
@@ -1592,7 +1574,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\GauntletsOfMight.xnb</Output>
-      <Time>2018-08-02T14:58:15.212084-04:00</Time>
+      <Time>2019-08-13T15:58:54.1988976-04:00</Time>
     </Item>
     <Item>
       <Source>Battlegears\Liquilizer.png</Source>
@@ -1601,7 +1583,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\Liquilizer.xnb</Output>
-      <Time>2018-08-02T14:58:15.2277087-04:00</Time>
+      <Time>2019-08-13T15:58:54.1998951-04:00</Time>
     </Item>
     <Item>
       <Source>Battlegears\MipedianCactus.png</Source>
@@ -1610,7 +1592,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\MipedianCactus.xnb</Output>
-      <Time>2018-08-02T14:58:15.2433324-04:00</Time>
+      <Time>2019-08-13T15:58:54.2008922-04:00</Time>
     </Item>
     <Item>
       <Source>Battlegears\Mowercycle.png</Source>
@@ -1619,7 +1601,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\Mowercycle.xnb</Output>
-      <Time>2018-08-02T14:58:15.274584-04:00</Time>
+      <Time>2019-08-13T15:58:54.2018902-04:00</Time>
     </Item>
     <Item>
       <Source>Battlegears\MugiciansLyre.png</Source>
@@ -1628,7 +1610,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\MugiciansLyre.xnb</Output>
-      <Time>2018-08-02T14:58:15.2902077-04:00</Time>
+      <Time>2019-08-13T15:58:54.2028871-04:00</Time>
     </Item>
     <Item>
       <Source>Battlegears\NexusFuse.png</Source>
@@ -1637,7 +1619,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\NexusFuse.xnb</Output>
-      <Time>2018-08-02T14:58:15.3214582-04:00</Time>
+      <Time>2019-08-13T15:58:54.2028871-04:00</Time>
     </Item>
     <Item>
       <Source>Battlegears\OrbOfForesight.png</Source>
@@ -1646,7 +1628,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\OrbOfForesight.xnb</Output>
-      <Time>2018-08-02T14:58:15.337084-04:00</Time>
+      <Time>2019-08-13T15:58:54.2038841-04:00</Time>
     </Item>
     <Item>
       <Source>Battlegears\PhobiaMask.png</Source>
@@ -1655,7 +1637,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\PhobiaMask.xnb</Output>
-      <Time>2018-08-02T14:58:15.3527097-04:00</Time>
+      <Time>2019-08-13T15:58:54.2048816-04:00</Time>
     </Item>
     <Item>
       <Source>Battlegears\PrismOfVacuity.png</Source>
@@ -1664,7 +1646,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\PrismOfVacuity.xnb</Output>
-      <Time>2018-08-02T14:58:15.3683365-04:00</Time>
+      <Time>2019-08-13T15:58:54.2058785-04:00</Time>
     </Item>
     <Item>
       <Source>Battlegears\Pyroblaster.png</Source>
@@ -1673,7 +1655,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\Pyroblaster.xnb</Output>
-      <Time>2018-08-02T14:58:15.3839592-04:00</Time>
+      <Time>2019-08-13T15:58:54.2068758-04:00</Time>
     </Item>
     <Item>
       <Source>Battlegears\RingOfNaarin.png</Source>
@@ -1682,7 +1664,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\RingOfNaarin.xnb</Output>
-      <Time>2018-08-02T14:58:15.4152077-04:00</Time>
+      <Time>2019-08-13T15:58:54.2068758-04:00</Time>
     </Item>
     <Item>
       <Source>Battlegears\RiverlandStar.png</Source>
@@ -1691,7 +1673,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\RiverlandStar.xnb</Output>
-      <Time>2018-08-02T14:58:15.4308355-04:00</Time>
+      <Time>2019-08-13T15:58:54.2078732-04:00</Time>
     </Item>
     <Item>
       <Source>Battlegears\SkeletalSteed.png</Source>
@@ -1700,7 +1682,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\SkeletalSteed.xnb</Output>
-      <Time>2018-08-02T14:58:15.4464602-04:00</Time>
+      <Time>2019-08-13T15:58:54.2088704-04:00</Time>
     </Item>
     <Item>
       <Source>Battlegears\SpectralViewer.png</Source>
@@ -1709,7 +1691,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\SpectralViewer.xnb</Output>
-      <Time>2018-08-02T14:58:15.462084-04:00</Time>
+      <Time>2019-08-13T15:58:54.2098662-04:00</Time>
     </Item>
     <Item>
       <Source>Battlegears\StaffOfWisdom.png</Source>
@@ -1718,7 +1700,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\StaffOfWisdom.xnb</Output>
-      <Time>2018-08-02T14:58:15.4777097-04:00</Time>
+      <Time>2019-08-13T15:58:54.2108985-04:00</Time>
     </Item>
     <Item>
       <Source>Battlegears\StoneMail.png</Source>
@@ -1727,7 +1709,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\StoneMail.xnb</Output>
-      <Time>2018-08-02T14:58:15.4933345-04:00</Time>
+      <Time>2019-08-13T15:58:54.2118613-04:00</Time>
     </Item>
     <Item>
       <Source>Battlegears\TalismanOfTheMandiblor.png</Source>
@@ -1736,7 +1718,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\TalismanOfTheMandiblor.xnb</Output>
-      <Time>2018-08-02T14:58:15.5089602-04:00</Time>
+      <Time>2019-08-13T15:58:54.2118613-04:00</Time>
     </Item>
     <Item>
       <Source>Battlegears\TorrentKrinth.png</Source>
@@ -1745,7 +1727,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\TorrentKrinth.xnb</Output>
-      <Time>2018-08-02T14:58:15.524584-04:00</Time>
+      <Time>2019-08-13T15:58:54.2128922-04:00</Time>
     </Item>
     <Item>
       <Source>Battlegears\Torwegg.png</Source>
@@ -1754,7 +1736,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\Torwegg.xnb</Output>
-      <Time>2018-08-02T14:58:15.5402087-04:00</Time>
+      <Time>2019-08-13T15:58:54.2138555-04:00</Time>
     </Item>
     <Item>
       <Source>Battlegears\Viledriver.png</Source>
@@ -1763,7 +1745,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\Viledriver.xnb</Output>
-      <Time>2018-08-02T14:58:15.5558355-04:00</Time>
+      <Time>2019-08-13T15:58:54.2148895-04:00</Time>
     </Item>
     <Item>
       <Source>Battlegears\VlaricShard.png</Source>
@@ -1772,7 +1754,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\VlaricShard.xnb</Output>
-      <Time>2018-08-02T14:58:15.5714613-04:00</Time>
+      <Time>2019-08-13T15:58:54.215851-04:00</Time>
     </Item>
     <Item>
       <Source>Battlegears\Whepcrack.png</Source>
@@ -1781,7 +1763,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\Whepcrack.xnb</Output>
-      <Time>2018-08-02T14:58:15.587084-04:00</Time>
+      <Time>2019-08-13T15:58:54.2168496-04:00</Time>
     </Item>
     <Item>
       <Source>Battlegears\WindStrider.png</Source>
@@ -1790,7 +1772,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\WindStrider.xnb</Output>
-      <Time>2018-08-02T14:58:15.6027108-04:00</Time>
+      <Time>2019-08-13T15:58:54.2178471-04:00</Time>
     </Item>
     <Item>
       <Source>Mugics\Decrescendo.png</Source>
@@ -1799,7 +1781,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\Decrescendo.xnb</Output>
-      <Time>2018-08-03T02:31:50.9555315-04:00</Time>
+      <Time>2019-08-13T15:58:54.5514885-04:00</Time>
     </Item>
     <Item>
       <Source>Mugics\EmberFlourish.png</Source>
@@ -1808,7 +1790,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\EmberFlourish.xnb</Output>
-      <Time>2018-08-03T02:31:50.9711552-04:00</Time>
+      <Time>2019-08-13T15:58:54.5580015-04:00</Time>
     </Item>
     <Item>
       <Source>Mugics\GeoFlourish.png</Source>
@@ -1817,7 +1799,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\GeoFlourish.xnb</Output>
-      <Time>2018-08-03T02:31:51.0024057-04:00</Time>
+      <Time>2019-08-13T15:58:54.5609934-04:00</Time>
     </Item>
     <Item>
       <Source>Mugics\InterludeOfConsequence.png</Source>
@@ -1826,7 +1808,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\InterludeOfConsequence.xnb</Output>
-      <Time>2018-08-03T02:31:51.0024057-04:00</Time>
+      <Time>2019-08-13T15:58:54.5629883-04:00</Time>
     </Item>
     <Item>
       <Source>Mugics\MinorFlourish.png</Source>
@@ -1835,7 +1817,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\MinorFlourish.xnb</Output>
-      <Time>2018-08-03T02:31:51.0180315-04:00</Time>
+      <Time>2019-08-13T15:58:54.5649829-04:00</Time>
     </Item>
     <Item>
       <Source>Mugics\SongOfEmbernova.png</Source>
@@ -1844,7 +1826,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\SongOfEmbernova.xnb</Output>
-      <Time>2018-08-03T02:31:51.0336562-04:00</Time>
+      <Time>2019-08-13T15:58:54.5842793-04:00</Time>
     </Item>
     <Item>
       <Source>Mugics\SongOfFuturesight.png</Source>
@@ -1853,7 +1835,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\SongOfFuturesight.xnb</Output>
-      <Time>2018-08-03T02:31:51.04928-04:00</Time>
+      <Time>2019-08-13T15:58:54.5940061-04:00</Time>
     </Item>
     <Item>
       <Source>Mugics\SongOfGeonova.png</Source>
@@ -1862,7 +1844,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\SongOfGeonova.xnb</Output>
-      <Time>2018-08-03T02:31:51.0649047-04:00</Time>
+      <Time>2019-08-13T15:58:54.5950038-04:00</Time>
     </Item>
     <Item>
       <Source>Mugics\SongOfTruesight.png</Source>
@@ -1871,7 +1853,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\SongOfTruesight.xnb</Output>
-      <Time>2018-08-03T02:31:51.0805315-04:00</Time>
+      <Time>2019-08-13T15:58:54.6126695-04:00</Time>
     </Item>
     <Item>
       <Source>Mugics\CascadeOfSymphony.png</Source>
@@ -1880,7 +1862,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\CascadeOfSymphony.xnb</Output>
-      <Time>2018-08-03T13:38:17.2354217-04:00</Time>
+      <Time>2019-08-13T15:58:54.5387448-04:00</Time>
     </Item>
     <Item>
       <Source>Mugics\HymnOfTheElements.png</Source>
@@ -1889,7 +1871,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\HymnOfTheElements.xnb</Output>
-      <Time>2018-08-03T13:38:17.3291824-04:00</Time>
+      <Time>2019-08-13T15:58:54.5619914-04:00</Time>
     </Item>
     <Item>
       <Source>Mugics\MugicReprise.png</Source>
@@ -1898,7 +1880,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\MugicReprise.xnb</Output>
-      <Time>2018-08-03T13:38:17.4073-04:00</Time>
+      <Time>2019-08-13T15:58:54.5659802-04:00</Time>
     </Item>
     <Item>
       <Source>Mugics\OverworldAria.png</Source>
@@ -1907,7 +1889,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\OverworldAria.xnb</Output>
-      <Time>2018-08-03T13:38:17.4229237-04:00</Time>
+      <Time>2019-08-13T15:58:54.5669772-04:00</Time>
     </Item>
     <Item>
       <Source>Mugics\RefrainOfDenial.png</Source>
@@ -1916,7 +1898,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\RefrainOfDenial.xnb</Output>
-      <Time>2018-08-03T13:38:17.4542625-04:00</Time>
+      <Time>2019-08-13T15:58:54.5792574-04:00</Time>
     </Item>
     <Item>
       <Source>Mugics\SongOfFocus.png</Source>
@@ -1925,7 +1907,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\SongOfFocus.xnb</Output>
-      <Time>2018-08-03T13:38:17.532299-04:00</Time>
+      <Time>2019-08-13T15:58:54.5852409-04:00</Time>
     </Item>
     <Item>
       <Source>Mugics\SongOfResurgence.png</Source>
@@ -1934,7 +1916,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\SongOfResurgence.xnb</Output>
-      <Time>2018-08-03T13:38:17.5635495-04:00</Time>
+      <Time>2019-08-13T15:58:54.5980278-04:00</Time>
     </Item>
     <Item>
       <Source>Mugics\SongOfStasis.png</Source>
@@ -1943,7 +1925,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\SongOfStasis.xnb</Output>
-      <Time>2018-08-03T13:38:17.5791804-04:00</Time>
+      <Time>2019-08-13T15:58:54.5999948-04:00</Time>
     </Item>
     <Item>
       <Source>Mugics\Fortissimo.png</Source>
@@ -1952,7 +1934,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\Fortissimo.xnb</Output>
-      <Time>2018-08-04T00:25:36.1540435-04:00</Time>
+      <Time>2019-08-13T15:58:54.5599962-04:00</Time>
     </Item>
     <Item>
       <Source>Mugics\CanonOfCasualty.png</Source>
@@ -1961,7 +1943,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\CanonOfCasualty.xnb</Output>
-      <Time>2018-08-04T15:58:14.4764972-04:00</Time>
+      <Time>2019-08-13T15:58:54.5387448-04:00</Time>
     </Item>
     <Item>
       <Source>Mugics\DiscordOfDisarming.png</Source>
@@ -1970,7 +1952,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\DiscordOfDisarming.xnb</Output>
-      <Time>2018-08-04T15:58:14.5233642-04:00</Time>
+      <Time>2019-08-13T15:58:54.5514885-04:00</Time>
     </Item>
     <Item>
       <Source>Mugics\MelodyOfMalady.png</Source>
@@ -1979,7 +1961,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\MelodyOfMalady.xnb</Output>
-      <Time>2018-08-04T15:58:14.5546158-04:00</Time>
+      <Time>2019-08-13T15:58:54.5639853-04:00</Time>
     </Item>
     <Item>
       <Source>Mugics\RefrainOfDenial_OverWorld_.png</Source>
@@ -1988,7 +1970,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\RefrainOfDenial_OverWorld_.xnb</Output>
-      <Time>2018-08-04T15:58:14.5702754-04:00</Time>
+      <Time>2019-08-13T15:58:54.581286-04:00</Time>
     </Item>
     <Item>
       <Source>Mugics\SongOfAsperity.png</Source>
@@ -1997,7 +1979,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\SongOfAsperity.xnb</Output>
-      <Time>2018-08-04T18:27:34.8918055-04:00</Time>
+      <Time>2019-08-13T15:58:54.5822475-04:00</Time>
     </Item>
     <Item>
       <Source>Mugics\SongOfFury.png</Source>
@@ -2006,7 +1988,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\SongOfFury.xnb</Output>
-      <Time>2018-08-04T18:27:34.9074303-04:00</Time>
+      <Time>2019-08-13T15:58:54.5862618-04:00</Time>
     </Item>
     <Item>
       <Source>Mugics\SongOfRevival_UnderWorld_.png</Source>
@@ -2015,7 +1997,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\SongOfRevival_UnderWorld_.xnb</Output>
-      <Time>2018-08-04T18:27:34.923056-04:00</Time>
+      <Time>2019-08-13T15:58:54.5989947-04:00</Time>
     </Item>
     <Item>
       <Source>Mugics\SongOfTreachery.png</Source>
@@ -2024,7 +2006,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\SongOfTreachery.xnb</Output>
-      <Time>2018-08-04T18:27:34.9386797-04:00</Time>
+      <Time>2019-08-13T15:58:54.6116497-04:00</Time>
     </Item>
     <Item>
       <Source>Mugics\FanfareOfTheVanishing.png</Source>
@@ -2033,7 +2015,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\FanfareOfTheVanishing.xnb</Output>
-      <Time>2018-08-04T21:46:04.7317048-04:00</Time>
+      <Time>2019-08-13T15:58:54.5589996-04:00</Time>
     </Item>
     <Item>
       <Source>Mugics\MelodyOfMirage.png</Source>
@@ -2042,7 +2024,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\MelodyOfMirage.xnb</Output>
-      <Time>2018-08-04T21:46:04.7473295-04:00</Time>
+      <Time>2019-08-13T15:58:54.5639853-04:00</Time>
     </Item>
     <Item>
       <Source>Mugics\NotesOfNeverwhere.png</Source>
@@ -2051,7 +2033,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\NotesOfNeverwhere.xnb</Output>
-      <Time>2018-08-04T21:46:04.7629573-04:00</Time>
+      <Time>2019-08-13T15:58:54.5659802-04:00</Time>
     </Item>
     <Item>
       <Source>Mugics\SongOfDeflection.png</Source>
@@ -2060,7 +2042,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\SongOfDeflection.xnb</Output>
-      <Time>2018-08-04T21:46:04.77858-04:00</Time>
+      <Time>2019-08-13T15:58:54.5832561-04:00</Time>
     </Item>
     <Item>
       <Source>Mugics\SongOfRecovery.png</Source>
@@ -2069,7 +2051,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\SongOfRecovery.xnb</Output>
-      <Time>2018-08-04T21:46:04.7942068-04:00</Time>
+      <Time>2019-08-13T15:58:54.5960009-04:00</Time>
     </Item>
     <Item>
       <Source>Mugics\TrillsOfDiminution.png</Source>
@@ -2078,7 +2060,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\TrillsOfDiminution.xnb</Output>
-      <Time>2018-08-04T21:46:04.8098316-04:00</Time>
+      <Time>2019-08-13T15:58:54.6136715-04:00</Time>
     </Item>
     <Item>
       <Source>Battlegears\FluxBauble.png</Source>
@@ -2087,7 +2069,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\FluxBauble.xnb</Output>
-      <Time>2018-12-22T00:51:54.6152785-05:00</Time>
+      <Time>2019-08-13T15:58:54.1988976-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\BarathBeyond.png</Source>
@@ -2096,7 +2078,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\BarathBeyond.xnb</Output>
-      <Time>2018-12-28T00:45:09.3443085-05:00</Time>
+      <Time>2019-08-13T15:58:54.2248278-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\BorthMajar.png</Source>
@@ -2105,7 +2087,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\BorthMajar.xnb</Output>
-      <Time>2018-12-28T00:45:09.5318087-05:00</Time>
+      <Time>2019-08-13T15:58:54.2308122-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\Dardemus.png</Source>
@@ -2114,7 +2096,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Dardemus.xnb</Output>
-      <Time>2018-12-28T00:45:09.5943436-05:00</Time>
+      <Time>2019-08-13T15:58:54.2357989-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\Ghuul.png</Source>
@@ -2123,7 +2105,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Ghuul.xnb</Output>
-      <Time>2018-12-28T00:45:09.6100074-05:00</Time>
+      <Time>2019-08-13T15:58:54.2437774-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\Grook.png</Source>
@@ -2132,7 +2114,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Grook.xnb</Output>
-      <Time>2018-12-28T00:45:09.6568837-05:00</Time>
+      <Time>2019-08-13T15:58:54.2447746-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\Hearring.png</Source>
@@ -2141,7 +2123,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Hearring.xnb</Output>
-      <Time>2018-12-28T00:45:09.6724346-05:00</Time>
+      <Time>2019-08-13T15:58:54.245772-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\Khybon.png</Source>
@@ -2150,7 +2132,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Khybon.xnb</Output>
-      <Time>2018-12-28T00:45:09.7036831-05:00</Time>
+      <Time>2019-08-13T15:58:54.2557454-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\Klasp.png</Source>
@@ -2159,7 +2141,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Klasp.xnb</Output>
-      <Time>2018-12-28T00:45:09.7193335-05:00</Time>
+      <Time>2019-08-13T15:58:54.2607302-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\Krekk.png</Source>
@@ -2168,7 +2150,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Krekk.xnb</Output>
-      <Time>2018-12-28T00:45:09.7505584-05:00</Time>
+      <Time>2019-08-13T15:58:54.2617606-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\Magmon.png</Source>
@@ -2177,7 +2159,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Magmon.xnb</Output>
-      <Time>2018-12-28T00:45:09.7974327-05:00</Time>
+      <Time>2019-08-13T15:58:54.2697063-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\Pyrithion.png</Source>
@@ -2186,7 +2168,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Pyrithion.xnb</Output>
-      <Time>2018-12-28T00:45:09.8287601-05:00</Time>
+      <Time>2019-08-13T15:58:54.3086038-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\Rarran.png</Source>
@@ -2195,7 +2177,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Rarran.xnb</Output>
-      <Time>2018-12-28T00:45:09.8444157-05:00</Time>
+      <Time>2019-08-13T15:58:54.3105988-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\Rothar.png</Source>
@@ -2204,7 +2186,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Rothar.xnb</Output>
-      <Time>2018-12-28T00:45:09.9068142-05:00</Time>
+      <Time>2019-08-13T15:58:54.3125936-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\Skithia.png</Source>
@@ -2213,7 +2195,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Skithia.xnb</Output>
-      <Time>2018-12-28T00:45:09.9381612-05:00</Time>
+      <Time>2019-08-13T15:58:54.3163026-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\Solvis.png</Source>
@@ -2222,7 +2204,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Solvis.xnb</Output>
-      <Time>2018-12-28T00:45:10.0162891-05:00</Time>
+      <Time>2019-08-13T15:58:54.3347751-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\Takinom.png</Source>
@@ -2231,7 +2213,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Takinom.xnb</Output>
-      <Time>2018-12-28T00:45:10.0475396-05:00</Time>
+      <Time>2019-08-13T15:58:54.3367966-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\Xield.png</Source>
@@ -2240,7 +2222,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Xield.xnb</Output>
-      <Time>2018-12-28T00:45:10.1880588-05:00</Time>
+      <Time>2019-08-13T15:58:54.3918093-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\Drakness.png</Source>
@@ -2249,7 +2231,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Drakness.xnb</Output>
-      <Time>2018-12-28T01:19:54.2501279-05:00</Time>
+      <Time>2019-08-13T15:58:54.2387907-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\Kerric.png</Source>
@@ -2258,7 +2240,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Kerric.xnb</Output>
-      <Time>2018-12-28T01:19:54.2657537-05:00</Time>
+      <Time>2019-08-13T15:58:54.254748-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\Kughar.png</Source>
@@ -2267,7 +2249,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Kughar.xnb</Output>
-      <Time>2018-12-28T01:19:54.2814041-05:00</Time>
+      <Time>2019-08-13T15:58:54.2627248-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\Miklon.png</Source>
@@ -2276,7 +2258,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Miklon.xnb</Output>
-      <Time>2018-12-28T01:19:54.2970043-05:00</Time>
+      <Time>2019-08-13T15:58:54.2886556-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\Nauthilax.png</Source>
@@ -2285,7 +2267,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Nauthilax.xnb</Output>
-      <Time>2018-12-28T01:19:54.2970043-05:00</Time>
+      <Time>2019-08-13T15:58:54.3026436-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\Toxis.png</Source>
@@ -2294,7 +2276,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Toxis.xnb</Output>
-      <Time>2018-12-28T01:19:54.3126311-05:00</Time>
+      <Time>2019-08-13T15:58:54.3407935-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\Ulmar.png</Source>
@@ -2303,7 +2285,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Ulmar.xnb</Output>
-      <Time>2018-12-28T01:19:54.3282548-05:00</Time>
+      <Time>2019-08-13T15:58:54.342752-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\Zaur.png</Source>
@@ -2312,7 +2294,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Zaur.xnb</Output>
-      <Time>2018-12-28T01:19:54.3438796-05:00</Time>
+      <Time>2019-08-13T15:58:54.3948056-04:00</Time>
     </Item>
     <Item>
       <Source>Menu\SixOnSixButton.png</Source>
@@ -2321,7 +2303,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Menu\SixOnSixButton.xnb</Output>
-      <Time>2018-12-31T19:27:58.4331212-05:00</Time>
+      <Time>2019-08-13T15:58:54.5357184-04:00</Time>
     </Item>
     <Item>
       <Source>BattleBoardSprites\EndTurnButton.png</Source>
@@ -2330,7 +2312,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\BattleBoardSprites\EndTurnButton.xnb</Output>
-      <Time>2019-01-03T04:17:42.1452215-05:00</Time>
+      <Time>2019-08-13T15:58:54.1909176-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\Skreeth.png</Source>
@@ -2339,7 +2321,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Skreeth.xnb</Output>
-      <Time>2019-01-03T22:41:18.5475586-05:00</Time>
+      <Time>2019-08-13T15:58:54.3173001-04:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\Gigantempopolis.jpg</Source>
@@ -2348,7 +2330,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\Gigantempopolis.xnb</Output>
-      <Time>2019-01-04T04:24:10.9377488-05:00</Time>
+      <Time>2019-08-13T15:58:54.166983-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\Chaor.png</Source>
@@ -2357,7 +2339,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Chaor.xnb</Output>
-      <Time>2019-03-25T23:43:08.7510927-04:00</Time>
+      <Time>2019-08-13T15:58:54.2338045-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\LordVanBloot.png</Source>
@@ -2366,7 +2348,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\LordVanBloot.xnb</Output>
-      <Time>2019-03-25T23:43:08.8135672-04:00</Time>
+      <Time>2019-08-13T15:58:54.2667144-04:00</Time>
     </Item>
     <Item>
       <Source>damagecover.png</Source>
@@ -2375,7 +2357,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\damagecover.xnb</Output>
-      <Time>2019-03-26T00:37:56.5920798-04:00</Time>
+      <Time>2019-08-13T15:58:54.6308187-04:00</Time>
     </Item>
     <Item>
       <Source>healcover.png</Source>
@@ -2384,34 +2366,16 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\healcover.xnb</Output>
-      <Time>2019-03-26T00:37:56.6077046-04:00</Time>
+      <Time>2019-08-13T15:58:54.6318162-04:00</Time>
     </Item>
     <Item>
-      <Source>Fonts\CardDescriptionFont.spritefont</Source>
-      <Name>Fonts\CardDescriptionFont</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
+      <Source>Creatures\Heptadd.png</Source>
+      <Name>Creatures\Heptadd</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Fonts\CardDescriptionFont.xnb</Output>
-      <Time>2019-05-25T01:20:17.3624928-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Fonts\PanelFont.spritefont</Source>
-      <Name>Fonts\PanelFont</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Fonts\PanelFont.xnb</Output>
-      <Time>2018-06-30T13:20:39.5295095-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Fonts\AttackDamage.spritefont</Source>
-      <Name>Fonts\AttackDamage</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Fonts\AttackDamage.xnb</Output>
-      <Time>2018-12-31T20:13:51.7002297-05:00</Time>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Heptadd.xnb</Output>
+      <Time>2019-08-13T15:58:54.2467698-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\Malvadine.png</Source>
@@ -2420,16 +2384,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Malvadine.xnb</Output>
-      <Time>2019-04-09T19:51:55.8834948-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Fonts\EndGame.spritefont</Source>
-      <Name>Fonts\EndGame</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Fonts\EndGame.xnb</Output>
-      <Time>2019-04-11T02:47:52.2577652-04:00</Time>
+      <Time>2019-08-13T15:58:54.2717009-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\Ario.png</Source>
@@ -2438,7 +2393,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Ario.xnb</Output>
-      <Time>2019-05-09T02:06:30.7824948-04:00</Time>
+      <Time>2019-08-13T15:58:54.2228339-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\Biondu.png</Source>
@@ -2447,7 +2402,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Biondu.xnb</Output>
-      <Time>2019-05-09T02:06:31.1545181-04:00</Time>
+      <Time>2019-08-13T15:58:54.226822-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\Brathe.png</Source>
@@ -2456,7 +2411,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Brathe.xnb</Output>
-      <Time>2019-05-09T02:06:31.1845192-04:00</Time>
+      <Time>2019-08-13T15:58:54.2318102-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\MarquisDarini.png</Source>
@@ -2465,7 +2420,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\MarquisDarini.xnb</Output>
-      <Time>2019-05-09T02:06:31.2005184-04:00</Time>
+      <Time>2019-08-13T15:58:54.2736955-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\PrinceMudeenu.png</Source>
@@ -2474,7 +2429,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\PrinceMudeenu.xnb</Output>
-      <Time>2019-05-09T02:06:31.2165198-04:00</Time>
+      <Time>2019-08-13T15:58:54.3056118-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\Qwun.png</Source>
@@ -2483,7 +2438,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Qwun.xnb</Output>
-      <Time>2019-05-09T02:06:31.2485214-04:00</Time>
+      <Time>2019-08-13T15:58:54.3096011-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\Shimmark.png</Source>
@@ -2492,7 +2447,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Shimmark.xnb</Output>
-      <Time>2019-05-09T02:06:31.265523-04:00</Time>
+      <Time>2019-08-13T15:58:54.3135904-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\Siado.png</Source>
@@ -2501,7 +2456,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Siado.xnb</Output>
-      <Time>2019-05-09T02:06:31.2815222-04:00</Time>
+      <Time>2019-08-13T15:58:54.3145879-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\Sobtjek.png</Source>
@@ -2510,7 +2465,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Sobtjek.xnb</Output>
-      <Time>2019-05-09T02:06:31.2975266-04:00</Time>
+      <Time>2019-08-13T15:58:54.3337768-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\Tiaane.png</Source>
@@ -2519,7 +2474,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Tiaane.xnb</Output>
-      <Time>2019-05-09T02:06:31.3165247-04:00</Time>
+      <Time>2019-08-13T15:58:54.3397944-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\Ubliqun.png</Source>
@@ -2528,7 +2483,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Ubliqun.xnb</Output>
-      <Time>2019-05-09T02:06:31.3335283-04:00</Time>
+      <Time>2019-08-13T15:58:54.3417875-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\Uro.png</Source>
@@ -2537,7 +2492,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Uro.xnb</Output>
-      <Time>2019-05-09T02:06:31.3485284-04:00</Time>
+      <Time>2019-08-13T15:58:54.3437805-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\Vinta.png</Source>
@@ -2546,7 +2501,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Vinta.xnb</Output>
-      <Time>2019-05-09T02:06:31.3645297-04:00</Time>
+      <Time>2019-08-13T15:58:54.3477754-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\Zhade.png</Source>
@@ -2555,7 +2510,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Zhade.xnb</Output>
-      <Time>2019-05-09T02:06:31.3845321-04:00</Time>
+      <Time>2019-08-13T15:58:54.3958053-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\Ekuud.png</Source>
@@ -2564,7 +2519,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Ekuud.xnb</Output>
-      <Time>2019-05-21T14:41:57.8268386-04:00</Time>
+      <Time>2019-08-13T15:58:54.2387907-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\Galin.png</Source>
@@ -2573,16 +2528,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Galin.xnb</Output>
-      <Time>2019-05-21T14:54:32.1309868-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Fonts\HUB.spritefont</Source>
-      <Name>Fonts\HUB</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Fonts\HUB.xnb</Output>
-      <Time>2019-05-25T03:18:51.605603-04:00</Time>
+      <Time>2019-08-13T15:58:54.2417833-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\Hota.png</Source>
@@ -2591,7 +2537,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Hota.xnb</Output>
-      <Time>2019-05-27T02:16:27.1001486-04:00</Time>
+      <Time>2019-08-13T15:58:54.2487644-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\Ibiaan.png</Source>
@@ -2600,7 +2546,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Ibiaan.xnb</Output>
-      <Time>2019-05-27T02:16:27.1191518-04:00</Time>
+      <Time>2019-08-13T15:58:54.2497624-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\Junda.png</Source>
@@ -2609,7 +2555,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Junda.xnb</Output>
-      <Time>2019-05-27T02:16:27.135153-04:00</Time>
+      <Time>2019-08-13T15:58:54.2517582-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\Kannen.png</Source>
@@ -2618,7 +2564,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Kannen.xnb</Output>
-      <Time>2019-05-27T02:16:27.1521525-04:00</Time>
+      <Time>2019-08-13T15:58:54.2527617-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\Kebna.png</Source>
@@ -2627,7 +2573,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Kebna.xnb</Output>
-      <Time>2019-05-27T02:16:27.1701543-04:00</Time>
+      <Time>2019-08-13T15:58:54.2537512-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\Lhad.png</Source>
@@ -2636,7 +2582,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Lhad.xnb</Output>
-      <Time>2019-05-27T02:16:27.1981568-04:00</Time>
+      <Time>2019-08-13T15:58:54.2647205-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\Lore.png</Source>
@@ -2645,7 +2591,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Lore.xnb</Output>
-      <Time>2019-05-27T02:16:27.2181571-04:00</Time>
+      <Time>2019-08-13T15:58:54.2677127-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\Mallash.png</Source>
@@ -2654,7 +2600,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Mallash.xnb</Output>
-      <Time>2019-05-27T02:16:27.2371582-04:00</Time>
+      <Time>2019-08-13T15:58:54.2707042-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\OduBathax.png</Source>
@@ -2663,7 +2609,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\OduBathax.xnb</Output>
-      <Time>2019-05-27T02:16:27.2561582-04:00</Time>
+      <Time>2019-08-13T15:58:54.3036176-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\Skartalas.png</Source>
@@ -2672,7 +2618,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Skartalas.xnb</Output>
-      <Time>2019-05-27T02:16:27.3616064-04:00</Time>
+      <Time>2019-08-13T15:58:54.3153051-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\ValaniiLevaan.png</Source>
@@ -2681,7 +2627,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\ValaniiLevaan.xnb</Output>
-      <Time>2019-05-27T02:16:27.4236089-04:00</Time>
+      <Time>2019-08-13T15:58:54.3447778-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\Wamma.png</Source>
@@ -2690,7 +2636,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Wamma.xnb</Output>
-      <Time>2019-05-27T02:16:27.4426089-04:00</Time>
+      <Time>2019-08-13T15:58:54.3487676-04:00</Time>
     </Item>
     <Item>
       <Source>Creatures\Formicidor.png</Source>
@@ -2699,7 +2645,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Formicidor.xnb</Output>
-      <Time>2019-05-27T02:35:11.381582-04:00</Time>
+      <Time>2019-08-13T15:58:54.2397882-04:00</Time>
     </Item>
     <Item>
       <Source>Coin\OverWorldHeads.png</Source>
@@ -2708,7 +2654,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Coin\OverWorldHeads.xnb</Output>
-      <Time>2019-05-30T13:28:11.9033321-04:00</Time>
+      <Time>2019-08-13T15:58:54.2208385-04:00</Time>
     </Item>
     <Item>
       <Source>Coin\OverWorldTails.png</Source>
@@ -2717,7 +2663,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Coin\OverWorldTails.xnb</Output>
-      <Time>2019-05-30T13:28:11.9492276-04:00</Time>
+      <Time>2019-08-13T15:58:54.2208385-04:00</Time>
     </Item>
     <Item>
       <Source>Sheen.png</Source>
@@ -2726,16 +2672,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Sheen.xnb</Output>
-      <Time>2019-06-07T04:41:02.9868583-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Fonts\Description.spritefont</Source>
-      <Name>Fonts\Description</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Fonts\Description.xnb</Output>
-      <Time>2019-06-10T17:51:26.1448186-04:00</Time>
+      <Time>2019-08-13T15:58:54.6308187-04:00</Time>
     </Item>
     <Item>
       <Source>Panel\NoButton.jpg</Source>
@@ -2744,7 +2681,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Panel\NoButton.xnb</Output>
-      <Time>2019-07-02T04:16:47.2554625-04:00</Time>
+      <Time>2019-08-13T15:58:54.6298237-04:00</Time>
     </Item>
     <Item>
       <Source>Panel\YesButton.jpg</Source>
@@ -2753,16 +2690,16 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Panel\YesButton.xnb</Output>
-      <Time>2019-07-02T04:16:47.3023399-04:00</Time>
+      <Time>2019-08-13T15:58:54.6308187-04:00</Time>
     </Item>
     <Item>
-      <Source>Fonts\MessageBox.spritefont</Source>
-      <Name>Fonts\MessageBox</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
+      <Source>CardOutline.png</Source>
+      <Name>CardOutline</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Fonts\MessageBox.xnb</Output>
-      <Time>2019-07-02T04:20:47.9794898-04:00</Time>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\CardOutline.xnb</Output>
+      <Time>2019-08-13T15:58:54.2188426-04:00</Time>
     </Item>
     <Item>
       <Source>Mugics\ChorusOfTheHive.png</Source>
@@ -2771,7 +2708,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\ChorusOfTheHive.xnb</Output>
-      <Time>2019-07-15T23:04:52.6401197-04:00</Time>
+      <Time>2019-08-13T15:58:54.5514885-04:00</Time>
     </Item>
     <Item>
       <Source>Mugics\RefrainOfDenial_OverWorld0UnderWorld_.png</Source>
@@ -2780,7 +2717,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\RefrainOfDenial_OverWorld0UnderWorld_.xnb</Output>
-      <Time>2019-07-15T23:04:52.6921226-04:00</Time>
+      <Time>2019-08-13T15:58:54.5802865-04:00</Time>
     </Item>
     <Item>
       <Source>Mugics\SongOfMandiblor.png</Source>
@@ -2789,7 +2726,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\SongOfMandiblor.xnb</Output>
-      <Time>2019-07-15T23:04:52.7131232-04:00</Time>
+      <Time>2019-08-13T15:58:54.5950038-04:00</Time>
     </Item>
     <Item>
       <Source>Mugics\SongOfResistance.png</Source>
@@ -2798,7 +2735,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\SongOfResistance.xnb</Output>
-      <Time>2019-07-15T23:04:52.7491259-04:00</Time>
+      <Time>2019-08-13T15:58:54.5969982-04:00</Time>
     </Item>
     <Item>
       <Source>Mugics\SongOfSurprisal.png</Source>
@@ -2807,7 +2744,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\SongOfSurprisal.xnb</Output>
-      <Time>2019-07-15T23:04:52.7691272-04:00</Time>
+      <Time>2019-08-13T15:58:54.6019925-04:00</Time>
     </Item>
     <Item>
       <Source>Mugics\SongOfSymmetry.png</Source>
@@ -2816,7 +2753,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\SongOfSymmetry.xnb</Output>
-      <Time>2019-07-15T23:04:52.7851275-04:00</Time>
+      <Time>2019-08-13T15:58:54.6049783-04:00</Time>
     </Item>
     <Item>
       <Source>Elements\Air.png</Source>
@@ -2825,7 +2762,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Elements\Air.xnb</Output>
-      <Time>2019-07-29T16:00:31.4827881-04:00</Time>
+      <Time>2019-08-13T15:58:54.3958053-04:00</Time>
     </Item>
     <Item>
       <Source>Elements\Earth.png</Source>
@@ -2834,7 +2771,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Elements\Earth.xnb</Output>
-      <Time>2019-07-29T16:00:31.5140386-04:00</Time>
+      <Time>2019-08-13T15:58:54.3967661-04:00</Time>
     </Item>
     <Item>
       <Source>Elements\Fire.png</Source>
@@ -2843,7 +2780,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Elements\Fire.xnb</Output>
-      <Time>2019-07-29T16:00:31.560914-04:00</Time>
+      <Time>2019-08-13T15:58:54.3967661-04:00</Time>
     </Item>
     <Item>
       <Source>Elements\Water.png</Source>
@@ -2852,7 +2789,115 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Elements\Water.xnb</Output>
-      <Time>2019-07-29T16:00:31.5765388-04:00</Time>
+      <Time>2019-08-13T15:58:54.3967661-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Fonts\CardDescriptionFont.spritefont</Source>
+      <Name>Fonts\CardDescriptionFont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Fonts\CardDescriptionFont.xnb</Output>
+      <Time>2019-08-13T15:58:54.3977634-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Fonts\PanelFont.spritefont</Source>
+      <Name>Fonts\PanelFont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Fonts\PanelFont.xnb</Output>
+      <Time>2019-08-13T15:58:54.4125561-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Fonts\AttackDamage.spritefont</Source>
+      <Name>Fonts\AttackDamage</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Fonts\AttackDamage.xnb</Output>
+      <Time>2019-08-13T15:58:54.3977634-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Fonts\EndGame.spritefont</Source>
+      <Name>Fonts\EndGame</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Fonts\EndGame.xnb</Output>
+      <Time>2019-08-13T15:58:54.4115215-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Fonts\HUB.spritefont</Source>
+      <Name>Fonts\HUB</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Fonts\HUB.xnb</Output>
+      <Time>2019-08-13T15:58:54.4115215-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Fonts\Description.spritefont</Source>
+      <Name>Fonts\Description</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Fonts\Description.xnb</Output>
+      <Time>2019-08-13T15:58:54.4108754-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Fonts\MessageBox.spritefont</Source>
+      <Name>Fonts\MessageBox</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Fonts\MessageBox.xnb</Output>
+      <Time>2019-08-13T15:58:54.4115215-04:00</Time>
+    </Item>
+    <Item>
+      <Source>SplashScreens\SplashScreen.png</Source>
+      <Name>SplashScreens\SplashScreen</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\SplashScreens\SplashScreen.xnb</Output>
+      <Time>2019-08-27T18:20:21.2326424-04:00</Time>
+    </Item>
+    <Item>
+      <Source>SplashScreens\SplashScreenDecember.png</Source>
+      <Name>SplashScreens\SplashScreenDecember</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\SplashScreens\SplashScreenDecember.xnb</Output>
+      <Time>2019-08-27T18:20:21.2535864-04:00</Time>
+    </Item>
+    <Item>
+      <Source>SplashScreens\SplashScreenMarch.png</Source>
+      <Name>SplashScreens\SplashScreenMarch</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\SplashScreens\SplashScreenMarch.xnb</Output>
+      <Time>2019-08-27T18:20:21.2575757-04:00</Time>
+    </Item>
+    <Item>
+      <Source>SplashScreens\SplashScreenOctober.png</Source>
+      <Name>SplashScreens\SplashScreenOctober</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\SplashScreens\SplashScreenOctober.xnb</Output>
+      <Time>2019-08-27T18:20:21.2615651-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Fonts\TriggeredFont.spritefont</Source>
+      <Name>Fonts\TriggeredFont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Fonts\TriggeredFont.xnb</Output>
+      <Time>2019-08-28T13:53:03.5865518-04:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -2869,31 +2914,31 @@
     <Assemblies>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
-        <Value>2011-09-01T17:22:30-04:00</Value>
+        <Value>2011-09-01T16:22:30-04:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
-        <Value>2011-09-01T17:22:30-04:00</Value>
+        <Value>2011-09-01T16:22:30-04:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
-        <Value>2011-09-01T17:22:30-04:00</Value>
+        <Value>2011-09-01T16:22:30-04:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
-        <Value>2011-09-01T17:22:30-04:00</Value>
+        <Value>2011-09-01T16:22:30-04:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
-        <Value>2011-09-01T17:22:30-04:00</Value>
+        <Value>2011-09-01T16:22:30-04:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
-        <Value>2011-09-01T17:22:30-04:00</Value>
+        <Value>2011-09-01T16:22:30-04:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2016-12-14T17:29:44.6347419-05:00</Value>
+        <Value>2019-08-26T17:09:16.6974762-04:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>

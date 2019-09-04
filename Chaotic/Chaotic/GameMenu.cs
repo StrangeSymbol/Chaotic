@@ -16,7 +16,7 @@ namespace Chaotic
     enum MenuStage
     {
         Test = 1, DeckEdit, MainMenu, InGame, OneOnOne, ThreeOnThree, SixOnSix, Wait1On1, Ready1On1, Wait3On3, Ready3On3,
-        Wait6On6, Ready6On6,
+        Wait6On6, Ready6On6, SplashScreen,
     }
     /// <summary>
     /// This is the main type for your game
@@ -27,6 +27,7 @@ namespace Chaotic
         SpriteBatch spriteBatch;
 
         Texture2D title;
+        Texture2D splashScreen;
 
         MenuStage selectedStage;
 
@@ -54,7 +55,7 @@ namespace Chaotic
             int integer = sPath.LastIndexOf("Chaotic");
             sPath = sPath.Remove(integer);
             sPath += "ChaoticContent";
-            ChaoticEngine.MStage = MenuStage.MainMenu;
+            ChaoticEngine.MStage = MenuStage.SplashScreen;
             mainButtons = new MenuButton[2];
             testButtons = new MenuButton[4];
         }
@@ -81,6 +82,14 @@ namespace Chaotic
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
             title = Content.Load<Texture2D>(@"Menu/ChaoticSymbol");
+            if (DateTime.Now.Month == 3) // Check that it is March.
+                splashScreen = Content.Load<Texture2D>(@"SplashScreens\SplashScreenMarch");
+            else if (DateTime.Now.Month == 10) // Check that it is October.
+                splashScreen = Content.Load<Texture2D>(@"SplashScreens\SplashScreenOctober");
+            else if (DateTime.Now.Month == 12) // Check that it is December.
+                splashScreen = Content.Load<Texture2D>(@"SplashScreens\SplashScreenDecember");
+            else
+                splashScreen = Content.Load<Texture2D>(@"SplashScreens\SplashScreen");
 
             loadMenuButtons(graphics);
 
@@ -406,6 +415,10 @@ namespace Chaotic
             MouseState mouse = Mouse.GetState();
             switch (ChaoticEngine.MStage)
             {
+                case MenuStage.SplashScreen:
+                    if (gameTime.TotalGameTime.Seconds > 2)
+                        ChaoticEngine.MStage = MenuStage.MainMenu;
+                    break;
                 case MenuStage.Test:
                     UpdateButtons(testButtons, gameTime, mouse);
                     break;
@@ -538,6 +551,10 @@ namespace Chaotic
             spriteBatch.Draw(title, new Vector2(graphics.PreferredBackBufferWidth / 2 - title.Width / 2, 0), Color.White);
             switch (ChaoticEngine.MStage)
             {
+                case MenuStage.SplashScreen:
+                    spriteBatch.Draw(splashScreen, new Rectangle(0, 0,
+                        graphics.PreferredBackBufferWidth, graphics.PreferredBackBufferHeight), Color.White);
+                    break;
                 case MenuStage.Test:
                     DrawButtons(spriteBatch, testButtons);
                     break;

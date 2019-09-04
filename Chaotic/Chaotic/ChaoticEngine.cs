@@ -41,6 +41,8 @@ namespace Chaotic
         public static ChaoticMessageBox MsgBox { get; set; } // Checks whether a player wants to add to Burst.
         public static Ability CurrentAbility { get; set; }
         public static BattleBoardNode SelectedNode { get; set; }
+        public static bool HasMarquisDarini { get; set; }
+        
         public static MouseState PrevState { get; set; }
         public static List<ChaoticGameLib.Creature> sCreatures1;
         public static List<ChaoticGameLib.Battlegear> sBattlegears1;

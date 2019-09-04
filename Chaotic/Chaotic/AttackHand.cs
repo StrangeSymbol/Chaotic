@@ -249,7 +249,10 @@ namespace Chaotic
             foreach (Attack atk in hand)
             {
                 Tuple<short, short> damage = atk.PredictedDamage(creature1, creature2, location);
-                string msg1 = damage.Item1.ToString();
+                short damage1 = damage.Item1;
+                short damage2 = damage.Item2;
+                damage1 -= creature1.Recklessness;
+                string msg1 = damage1.ToString();
                 spriteBatch.Draw(healCover, new Vector2(atk.Position.X + ChaoticEngine.kCardWidth / 4 - healCover.Width / 2,
                     atk.Position.Y + 3 * ChaoticEngine.kCardHeight / 4 - healCover.Height / 4), null,
                     Color.White, 0f, Vector2.Zero, 1f, SpriteEffects.None, 0.65f);
@@ -257,7 +260,9 @@ namespace Chaotic
                     - spriteFont.MeasureString(msg1).X / 2,
                     atk.Position.Y + 3 * ChaoticEngine.kCardHeight / 4 - healCover.Height / 4),
                     Color.Black, 0f, Vector2.Zero, 1f, SpriteEffects.None, 0.6f);
-                string msg2 = Math.Abs(damage.Item2).ToString();
+                if (creature1.FirstAttack && creature1.Invisibility() && ChaoticEngine.HasMarquisDarini)
+                    damage2 -= 5;
+                string msg2 = Math.Abs(damage2).ToString();
                 spriteBatch.Draw(damageCover, new Vector2(atk.Position.X + 3 * ChaoticEngine.kCardWidth / 4 
                     - damageCover.Width / 2, atk.Position.Y + 3 * ChaoticEngine.kCardHeight / 4 - damageCover.Height / 4), null,
                     Color.White, 0f, Vector2.Zero, 1f, SpriteEffects.None, 0.65f);

@@ -72,10 +72,13 @@ namespace Chaotic
         private readonly int width;
         private readonly int height;
 
+        private SpriteFont font;
+
         public Coin(ContentManager content, GraphicsDeviceManager graphics)
         {
             this.heads = content.Load<Texture2D>(@"Coin/OverWorldHeads");
             this.tails = content.Load<Texture2D>(@"Coin/OverWorldTails");
+            this.font = content.Load<SpriteFont>(@"Fonts/HUB");
             width = heads.Width;
             height = heads.Height;
             this.position = this.initPosition = new Vector2(graphics.PreferredBackBufferWidth / 2 - width / 2,
@@ -249,6 +252,22 @@ namespace Chaotic
                 else
                     spriteBatch.Draw(tails, collisionRectangle, null, Color.White, 0f,
                         Vector2.Zero, SpriteEffects.None, layerDepth);
+
+                if (flippedSide.HasValue)
+                {
+                    string instructions = (flippedSide.Value ? "Player 1" : "Player 2") + 
+                        " is the Active player.\n" + "Press Enter To Start Game.";
+                    spriteBatch.DrawString(font, instructions,
+                        new Vector2(position.X + width / 2 - font.MeasureString(instructions).X / 2, position.Y + height),
+                        Color.Red, 0f, Vector2.Zero, 1f, SpriteEffects.None, layerDepth);
+                }
+                else
+                {
+                    string instructions = "Press Enter To Flip Coin.\n" + "Heads - Player 1; Tails - Player 2";
+                    spriteBatch.DrawString(font, instructions, 
+                        new Vector2(position.X + width / 2 - font.MeasureString(instructions).X / 2, position.Y + height), 
+                        Color.Red, 0f, Vector2.Zero, 1f, SpriteEffects.None, layerDepth);
+                }
             }
         }
     }

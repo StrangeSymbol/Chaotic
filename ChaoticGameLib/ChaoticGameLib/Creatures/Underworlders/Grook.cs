@@ -20,11 +20,5 @@ namespace ChaoticGameLib.Creatures
                 "Intimidate Power 10 [Opposing Creature loses 10 Power until the end of combat.] " +
             "\"Mugic -- Bah! What can a Mugician do that I can't do with my fists?\" -- Grook";
         }
-
-        public void Ability(Creature c)
-        {
-            c.Power -= this.IntimidatePower;
-            c.PowerCombat += this.IntimidatePower;
-        }
     }
 }

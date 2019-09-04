@@ -82,6 +82,8 @@ namespace Chaotic
             set { if (creature != null) creature.IsCovered = value; } }
         public bool IsCovered { get { return isCovered; } set { isCovered = value; } }
 
+        public int NumMoves { get { return numMoves; } set { numMoves = value; } }
+
         public bool HasBattegear()
         {
             return creature != null && creature.Battlegear != null;
@@ -392,6 +394,7 @@ namespace Chaotic
                  position.Y + ChaoticEngine.kCardHeight / 2 - mugicCounter.Height);
             mugicPositions[5] = new Vector2(position.X + ChaoticEngine.kCardWidth - 5 * mugicCounter.Width / 4,
                 position.Y + ChaoticEngine.kCardHeight * 0.75f - mugicCounter.Height / 2);
+            //TODO: Add more mugic positions to draw mugics.
         }
 
         public void RemoveCreature()
@@ -509,6 +512,27 @@ namespace Chaotic
                 builder.Append(" ");
                 builder.Append("Water ");
                 builder.Append(creature.WaterDamage);
+            }
+
+            if (creature.IntimidateCourage > 0)
+            {
+                builder.Append(" Intimidate Courage: ");
+                builder.Append(creature.IntimidateCourage);
+            }
+            if (creature.IntimidatePower > 0)
+            {
+                builder.Append(" Intimidate Power: ");
+                builder.Append(creature.IntimidatePower);
+            }
+            if (creature.IntimidateWisdom > 0)
+            {
+                builder.Append(" Intimidate Wisdom: ");
+                builder.Append(creature.IntimidateWisdom);
+            }
+            if (creature.IntimidateSpeed > 0)
+            {
+                builder.Append(" Intimidate Speed: ");
+                builder.Append(creature.IntimidateSpeed);
             }
 
             return builder.ToString();

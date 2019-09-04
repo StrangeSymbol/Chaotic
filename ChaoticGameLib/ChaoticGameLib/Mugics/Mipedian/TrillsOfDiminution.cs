@@ -4,7 +4,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace ChaoticGameLib.Mugics
 {
-    public class TrillsOfDiminution : Mugic
+    public class TrillsOfDiminution : Mugic, ICastTargetTwo<Creature>
     {
         public TrillsOfDiminution(Texture2D sprite, Texture2D overlay) : base(sprite, overlay, MugicType.Mipedian, 1) { }
 
@@ -13,5 +13,12 @@ namespace ChaoticGameLib.Mugics
             return base.Description() + " Target engaged Creature loses all abilities until the end of the turn." +
                 " Even the simplest sounds can resonate in one's mind.";
         }
+
+        void ICastTargetTwo<Creature>.Ability(Creature card1, Creature card2)
+        {
+            card1.Negate = true;
+        }
+
+        AbilityType ICast.Type { get { return AbilityType.TargetEngaged; } }
     }
 }
