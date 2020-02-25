@@ -1,4 +1,8 @@
-﻿namespace Chaotic
+﻿/*
+ *  Coded by: Ambrose Emmett-Iwaniw
+ *  The following code is (c) copyright 2020, StrangeSymbol, Inc. ALL RIGHTS RESERVED
+ */
+namespace Chaotic
 {
     partial class DeckSetup1On1
     {

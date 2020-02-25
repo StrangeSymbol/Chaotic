@@ -1,4 +1,8 @@
-﻿using System.Collections;
+﻿/*
+ *  Coded by: Ambrose Emmett-Iwaniw
+ *  The following code is (c) copyright 2020, StrangeSymbol, Inc. ALL RIGHTS RESERVED
+ */
+using System.Collections;
 using ChaoticGameLib;
 
 namespace Chaotic

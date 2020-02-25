@@ -15,3 +15,4 @@ C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\ChaoticGameLib\ChaoticGameLib\b
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\ChaoticGameLib\ChaoticGameLib\bin\x86\Release\Microsoft.Xna.Framework.Input.Touch.xml
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\ChaoticGameLib\ChaoticGameLib\obj\x86\Release\ChaoticGameLib.csproj.CoreCompileInputs.cache
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\ChaoticGameLib\ChaoticGameLib\obj\x86\Release\ChaoticGameLib.csproj.CopyComplete
+C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\ChaoticGameLib\ChaoticGameLib\obj\x86\Release\ChaoticGameLib.csprojAssemblyReference.cache

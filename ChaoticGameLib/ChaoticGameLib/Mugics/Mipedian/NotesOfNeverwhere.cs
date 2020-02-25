@@ -1,4 +1,8 @@
-﻿using Microsoft.Xna.Framework.Graphics;
+﻿/*
+ *  Coded by: Ambrose Emmett-Iwaniw
+ *  The following code is (c) copyright 2020, StrangeSymbol, Inc. ALL RIGHTS RESERVED
+ */
+using Microsoft.Xna.Framework.Graphics;
 
 namespace ChaoticGameLib.Mugics
 {
