@@ -46,6 +46,8 @@ namespace Chaotic
         public static Ability CurrentAbility { get; set; }
         public static BattleBoardNode SelectedNode { get; set; }
         public static bool HasMarquisDarini { get; set; }
+
+        public static CodedManager CodedEffects { get; set; }
         
         public static MouseState PrevState { get; set; }
         public static List<ChaoticGameLib.Creature> sCreatures1;
@@ -82,6 +84,20 @@ namespace Chaotic
             }
             else
                 return null;
+        }
+
+        public static List<T> LoadCards<T>(int count, int total, List<string> deck) where T : ChaoticGameLib.ChaoticCard
+        {
+            List<T> lst = new List<T>();
+            for (int i = 0; i < count; i++)
+            {
+                ChaoticGameLib.ChaoticCard card = ChaoticEngine.sCardDatabase.Find(c => c.Name == deck[i + total]).ShallowCopy();
+                if (card is T)
+                    lst.Add(card as T);
+                else
+                    throw new FileContentException("Card not as expected type.");
+            }
+            return lst;
         }
     }
 }

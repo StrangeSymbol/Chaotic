@@ -110,7 +110,12 @@ namespace Chaotic
                 }
             }
         }
-
+        /// <summary>
+        /// Updates automatic draw animation. 
+        /// </summary>
+        /// <param name="gameTime">Current game time.</param>
+        /// <param name="hand">The players attack hand.</param>
+        /// <returns>True when animation complete.</returns>
         public bool UpdateDeckPile(GameTime gameTime, AttackHand hand)
         {
             isPlayer1 = hand.IsPlayer1;
@@ -137,7 +142,13 @@ namespace Chaotic
             }
             return false;
         }
-
+        /// <summary>
+        /// Updates player selected draw animation.
+        /// </summary>
+        /// <param name="gameTime">Current game time.</param>
+        /// <param name="mouse">Current mouse state</param>
+        /// <param name="hand">The players attack hand.</param>
+        /// <returns>True when animation complete.</returns>
         public bool UpdateDeckPile(GameTime gameTime, MouseState mouse, AttackHand hand)
         {
             isPlayer1 = hand.IsPlayer1;
@@ -167,7 +178,11 @@ namespace Chaotic
             }
             return false;
         }
-
+        /// <summary>
+        /// Updates the shuffle animation.
+        /// </summary>
+        /// <param name="gameTime">Holds the current game time.</param>
+        /// <returns>True when shuffling is complete.</returns>
         public bool UpdateShuffleDeck(GameTime gameTime)
         {
             if (!ChaoticEngine.IsACardMoving)

@@ -223,6 +223,8 @@ namespace Chaotic
                 elaspedTime = gameTime.TotalGameTime.TotalMilliseconds;
                 creature.IsMoving = true;
                 creature.CourseToCard(discardPile.GetDiscardTemplate().Position);
+                ChaoticEngine.CodedEffects.InitializeCodedLetters(creature.Position +
+                    new Vector2(ChaoticEngine.kCardWidth / 2, ChaoticEngine.kCardHeight / 2));
             }
             else if (creature.Time >= gameTime.TotalGameTime.TotalMilliseconds - elaspedTime && creature.IsMoving)
                 creature.Move(gameTime);

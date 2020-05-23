@@ -2792,6 +2792,42 @@
       <Time>2019-08-13T15:58:54.3967661-04:00</Time>
     </Item>
     <Item>
+      <Source>SplashScreens\SplashScreen.png</Source>
+      <Name>SplashScreens\SplashScreen</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\SplashScreens\SplashScreen.xnb</Output>
+      <Time>2019-08-27T18:20:21.2326424-04:00</Time>
+    </Item>
+    <Item>
+      <Source>SplashScreens\SplashScreenDecember.png</Source>
+      <Name>SplashScreens\SplashScreenDecember</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\SplashScreens\SplashScreenDecember.xnb</Output>
+      <Time>2019-08-27T18:20:21.2535864-04:00</Time>
+    </Item>
+    <Item>
+      <Source>SplashScreens\SplashScreenMarch.png</Source>
+      <Name>SplashScreens\SplashScreenMarch</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\SplashScreens\SplashScreenMarch.xnb</Output>
+      <Time>2019-08-27T18:20:21.2575757-04:00</Time>
+    </Item>
+    <Item>
+      <Source>SplashScreens\SplashScreenOctober.png</Source>
+      <Name>SplashScreens\SplashScreenOctober</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\SplashScreens\SplashScreenOctober.xnb</Output>
+      <Time>2019-08-27T18:20:21.2615651-04:00</Time>
+    </Item>
+    <Item>
       <Source>Fonts\CardDescriptionFont.spritefont</Source>
       <Name>Fonts\CardDescriptionFont</Name>
       <Importer>FontDescriptionImporter</Importer>
@@ -2855,42 +2891,6 @@
       <Time>2019-08-13T15:58:54.4115215-04:00</Time>
     </Item>
     <Item>
-      <Source>SplashScreens\SplashScreen.png</Source>
-      <Name>SplashScreens\SplashScreen</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\SplashScreens\SplashScreen.xnb</Output>
-      <Time>2019-08-27T18:20:21.2326424-04:00</Time>
-    </Item>
-    <Item>
-      <Source>SplashScreens\SplashScreenDecember.png</Source>
-      <Name>SplashScreens\SplashScreenDecember</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\SplashScreens\SplashScreenDecember.xnb</Output>
-      <Time>2019-08-27T18:20:21.2535864-04:00</Time>
-    </Item>
-    <Item>
-      <Source>SplashScreens\SplashScreenMarch.png</Source>
-      <Name>SplashScreens\SplashScreenMarch</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\SplashScreens\SplashScreenMarch.xnb</Output>
-      <Time>2019-08-27T18:20:21.2575757-04:00</Time>
-    </Item>
-    <Item>
-      <Source>SplashScreens\SplashScreenOctober.png</Source>
-      <Name>SplashScreens\SplashScreenOctober</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\SplashScreens\SplashScreenOctober.xnb</Output>
-      <Time>2019-08-27T18:20:21.2615651-04:00</Time>
-    </Item>
-    <Item>
       <Source>Fonts\TriggeredFont.spritefont</Source>
       <Name>Fonts\TriggeredFont</Name>
       <Importer>FontDescriptionImporter</Importer>
@@ -2898,6 +2898,15 @@
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Fonts\TriggeredFont.xnb</Output>
       <Time>2019-08-28T13:53:03.5865518-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Fonts\CodedFont.spritefont</Source>
+      <Name>Fonts\CodedFont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Fonts\CodedFont.xnb</Output>
+      <Time>2020-05-22T03:29:04.7636183-04:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -2937,8 +2946,8 @@
         <Value>2011-09-01T16:22:30-04:00</Value>
       </Assembly>
       <Assembly>
-        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2019-08-26T17:09:16.6974762-04:00</Value>
+        <Key>C:\WINDOWS\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2020-02-05T17:47:40.3310138-05:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>

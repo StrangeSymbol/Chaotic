@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Chaotic.exe" size="294376">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Chaotic.exe" size="296960">
       <assemblyIdentity name="Chaotic" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>RWAPi+uW5WsKNig3kP45fqcn1nU=</dsig:DigestValue>
+        <dsig:DigestValue>YHvj1sbYagZnKz2BM8KmuYiEWZg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -2125,6 +2125,15 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
       <dsig:DigestValue>ZsoZHFio+/7QqHRZSS+iRgFsSOA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Fonts\CodedFont.xnb" size="21678">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>TaF2MhGC7gbsusYPBspgrUUPsho=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Content\Fonts\Description.xnb" size="13486">

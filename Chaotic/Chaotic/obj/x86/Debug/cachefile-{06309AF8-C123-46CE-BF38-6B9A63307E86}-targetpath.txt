@@ -308,6 +308,10 @@ Content\Elements\Air.xnb
 Content\Elements\Earth.xnb
 Content\Elements\Fire.xnb
 Content\Elements\Water.xnb
+Content\SplashScreens\SplashScreen.xnb
+Content\SplashScreens\SplashScreenDecember.xnb
+Content\SplashScreens\SplashScreenMarch.xnb
+Content\SplashScreens\SplashScreenOctober.xnb
 Content\Fonts\CardDescriptionFont.xnb
 Content\Fonts\PanelFont.xnb
 Content\Fonts\AttackDamage.xnb
@@ -315,8 +319,5 @@ Content\Fonts\EndGame.xnb
 Content\Fonts\HUB.xnb
 Content\Fonts\Description.xnb
 Content\Fonts\MessageBox.xnb
-Content\SplashScreens\SplashScreen.xnb
-Content\SplashScreens\SplashScreenDecember.xnb
-Content\SplashScreens\SplashScreenMarch.xnb
-Content\SplashScreens\SplashScreenOctober.xnb
 Content\Fonts\TriggeredFont.xnb
+Content\Fonts\CodedFont.xnb

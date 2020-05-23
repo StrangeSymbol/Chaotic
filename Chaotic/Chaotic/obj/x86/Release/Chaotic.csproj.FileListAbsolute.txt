@@ -349,3 +349,4 @@ C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Release
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\obj\x86\Release\Chaotic.csprojAssemblyReference.cache
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\obj\x86\Release\Chaotic.csproj.CoreCompileInputs.cache
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\obj\x86\Release\Chaotic.csproj.CopyComplete
+C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Release\Content\Fonts\CodedFont.xnb

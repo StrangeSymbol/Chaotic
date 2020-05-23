@@ -437,19 +437,70 @@ namespace Chaotic
                 case MenuStage.InGame:
                     break;
                 case MenuStage.OneOnOne:
-                    ChaoticEngine.MStage = MenuStage.Wait1On1;
-                    System.Windows.Forms.Application.EnableVisualStyles();
-                    new DeckSetup1On1("Test1").ShowDialog();
+                    #if DEBUG
+                        ChaoticEngine.MStage = MenuStage.Ready1On1;
+                        List<string> deck = ChaoticEngine.LoadFile("Test1");
+                        ChaoticEngine.sCreatures1 = ChaoticEngine.LoadCards<Creature>(1, 0, deck);
+                        ChaoticEngine.sBattlegears1 = ChaoticEngine.LoadCards<Battlegear>(1, 6, deck);
+                        ChaoticEngine.sMugics1 = ChaoticEngine.LoadCards<Mugic>(1, 12, deck);
+                        ChaoticEngine.sAttacks1 = ChaoticEngine.LoadCards<Attack>(10, 18, deck);
+                        ChaoticEngine.sLocations1 = ChaoticEngine.LoadCards<Location>(5, 38, deck);
+                        deck = ChaoticEngine.LoadFile("OverWorld Starter Deck");
+                        ChaoticEngine.sCreatures2 = ChaoticEngine.LoadCards<Creature>(1, 0, deck);
+                        ChaoticEngine.sBattlegears2 = ChaoticEngine.LoadCards<Battlegear>(1, 6, deck);
+                        ChaoticEngine.sMugics2 = ChaoticEngine.LoadCards<Mugic>(1, 12, deck);
+                        ChaoticEngine.sAttacks2 = ChaoticEngine.LoadCards<Attack>(10, 18, deck);
+                        ChaoticEngine.sLocations2 = ChaoticEngine.LoadCards<Location>(5, 38, deck);
+                        ChaoticEngine.Player2Setup = true;
+                    #else
+                        ChaoticEngine.MStage = MenuStage.Wait1On1;
+                        System.Windows.Forms.Application.EnableVisualStyles();
+                        new DeckSetup1On1("Test1").ShowDialog();
+                    #endif
                     break;
                 case MenuStage.ThreeOnThree:
-                    ChaoticEngine.MStage = MenuStage.Wait3On3;
-                    System.Windows.Forms.Application.EnableVisualStyles();
-                    new DeckSetup3On3("Test1").ShowDialog();
+                    #if DEBUG
+                        ChaoticEngine.MStage = MenuStage.Ready3On3;
+                        deck = ChaoticEngine.LoadFile("Test1");
+                        ChaoticEngine.sCreatures1 = ChaoticEngine.LoadCards<Creature>(3, 0, deck);
+                        ChaoticEngine.sBattlegears1 = ChaoticEngine.LoadCards<Battlegear>(3, 6, deck);
+                        ChaoticEngine.sMugics1 = ChaoticEngine.LoadCards<Mugic>(3, 12, deck);
+                        ChaoticEngine.sAttacks1 = ChaoticEngine.LoadCards<Attack>(10, 18, deck);
+                        ChaoticEngine.sLocations1 = ChaoticEngine.LoadCards<Location>(5, 38, deck);
+                        deck = ChaoticEngine.LoadFile("OverWorld Starter Deck");
+                        ChaoticEngine.sCreatures2 = ChaoticEngine.LoadCards<Creature>(3, 0, deck);
+                        ChaoticEngine.sBattlegears2 = ChaoticEngine.LoadCards<Battlegear>(3, 6, deck);
+                        ChaoticEngine.sMugics2 = ChaoticEngine.LoadCards<Mugic>(3, 12, deck);
+                        ChaoticEngine.sAttacks2 = ChaoticEngine.LoadCards<Attack>(10, 18, deck);
+                        ChaoticEngine.sLocations2 = ChaoticEngine.LoadCards<Location>(5, 38, deck);
+                        ChaoticEngine.Player2Setup = true;
+                    #else
+                        ChaoticEngine.MStage = MenuStage.Wait3On3;
+                        System.Windows.Forms.Application.EnableVisualStyles();
+                        new DeckSetup3On3("Test1").ShowDialog();
+                    #endif
                     break;
                 case MenuStage.SixOnSix:
-                    ChaoticEngine.MStage = MenuStage.Wait6On6;
-                    System.Windows.Forms.Application.EnableVisualStyles();
-                    new DeckSetup6On6("Test1").ShowDialog();
+                    #if DEBUG
+                        ChaoticEngine.MStage = MenuStage.Ready3On3;
+                        deck = ChaoticEngine.LoadFile("Test1");
+                        ChaoticEngine.sCreatures1 = ChaoticEngine.LoadCards<Creature>(6, 0, deck);
+                        ChaoticEngine.sBattlegears1 = ChaoticEngine.LoadCards<Battlegear>(6, 6, deck);
+                        ChaoticEngine.sMugics1 = ChaoticEngine.LoadCards<Mugic>(6, 12, deck);
+                        ChaoticEngine.sAttacks1 = ChaoticEngine.LoadCards<Attack>(20, 18, deck);
+                        ChaoticEngine.sLocations1 = ChaoticEngine.LoadCards<Location>(10, 38, deck);
+                        deck = ChaoticEngine.LoadFile("OverWorld Starter Deck");
+                        ChaoticEngine.sCreatures2 = ChaoticEngine.LoadCards<Creature>(6, 0, deck);
+                        ChaoticEngine.sBattlegears2 = ChaoticEngine.LoadCards<Battlegear>(6, 6, deck);
+                        ChaoticEngine.sMugics2 = ChaoticEngine.LoadCards<Mugic>(6, 12, deck);
+                        ChaoticEngine.sAttacks2 = ChaoticEngine.LoadCards<Attack>(20, 18, deck);
+                        ChaoticEngine.sLocations2 = ChaoticEngine.LoadCards<Location>(10, 38, deck);
+                        ChaoticEngine.Player2Setup = true;
+                    #else
+                        ChaoticEngine.MStage = MenuStage.Wait6On6;
+                        System.Windows.Forms.Application.EnableVisualStyles();
+                        new DeckSetup6On6("Test1").ShowDialog();
+                    #endif
                     break;
                 case MenuStage.Wait1On1:
                     if (ChaoticEngine.Player1Setup)

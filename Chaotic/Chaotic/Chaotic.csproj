@@ -74,7 +74,7 @@
     <GenerateManifests>true</GenerateManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <SignManifests>true</SignManifests>
+    <SignManifests>false</SignManifests>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="ChaoticGameLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
@@ -116,6 +116,8 @@
       <DependentUpon>ChaoticForm.cs</DependentUpon>
     </Compile>
     <Compile Include="CheckSystem.cs" />
+    <Compile Include="CodedCharacter.cs" />
+    <Compile Include="CodedManager.cs" />
     <Compile Include="Coin.cs" />
     <Compile Include="DeckSetup1On1.cs">
       <SubType>Form</SubType>

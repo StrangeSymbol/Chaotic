@@ -192,6 +192,7 @@ namespace Chaotic
                 locationPosition, false);
             activeLocation2 = new ActiveLocation(locationTexture,
                 new Vector2(locationPosition.X, locationPosition.Y - ChaoticEngine.kCardHeight));
+            ChaoticEngine.CodedEffects = new CodedManager(Game.Content);
             ChaoticEngine.BackgroundSprite = Game.Content.Load<Texture2D>(@"Backgrounds\ChaoticBackground");
             ChaoticEngine.OrgBackgroundSprite = ChaoticEngine.BackgroundSprite;
             backgroundRect = new Rectangle(0, 0, graphics.PreferredBackBufferWidth, graphics.PreferredBackBufferHeight);
@@ -1334,6 +1335,8 @@ namespace Chaotic
                 updateHive();
 
             ChaoticEngine.MsgBox.UpdateMessageBox(gameTime);
+
+            ChaoticEngine.CodedEffects.UpdateCodedLetters(gameTime);
 
             switch (ChaoticEngine.GStage)
             {
@@ -2492,6 +2495,8 @@ namespace Chaotic
             locationDeck2.DrawDeckPile(spriteBatch);
             activeLocation1.DrawActiveLocation(spriteBatch, true);
             activeLocation2.DrawActiveLocation(spriteBatch, false);
+
+            ChaoticEngine.CodedEffects.DrawCodedLetters(spriteBatch);
 
             if (ChaoticEngine.GStage != GameStage.ShuffleAtkDeck1)
                 attackDeck1.DrawDeckPile(spriteBatch);

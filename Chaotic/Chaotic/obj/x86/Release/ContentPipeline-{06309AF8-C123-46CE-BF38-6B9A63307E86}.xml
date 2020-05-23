@@ -2899,6 +2899,15 @@
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Release\Content\Fonts\TriggeredFont.xnb</Output>
       <Time>2019-08-28T13:53:03.5865518-04:00</Time>
     </Item>
+    <Item>
+      <Source>Fonts\CodedFont.spritefont</Source>
+      <Name>Fonts\CodedFont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Release\Content\Fonts\CodedFont.xnb</Output>
+      <Time>2020-05-22T03:29:04.7636183-04:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{06309AF8-C123-46CE-BF38-6B9A63307E86}</ContentProjectGUID>
@@ -2937,8 +2946,8 @@
         <Value>2011-09-01T16:22:30-04:00</Value>
       </Assembly>
       <Assembly>
-        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2019-08-26T17:09:16.6974762-04:00</Value>
+        <Key>C:\WINDOWS\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2020-02-05T17:47:40.3310138-05:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>
