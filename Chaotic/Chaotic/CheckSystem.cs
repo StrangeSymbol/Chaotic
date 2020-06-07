@@ -98,7 +98,12 @@ namespace Chaotic
             }
             else if ((mugic as ICast).Type == AbilityType.TargetEngaged)
             {
-                return ChaoticEngine.sYouNode != null && ChaoticEngine.sEnemyNode != null;
+                return ChaoticEngine.sYouNode!= null && mugic.CheckPlayable(ChaoticEngine.sYouNode.CreatureNode)
+                    && ChaoticEngine.sEnemyNode != null && mugic.CheckPlayable(ChaoticEngine.sEnemyNode.CreatureNode);
+            }
+            else if ((mugic as ICast).Type == AbilityType.TargetLocation)
+            {
+                return true; // TODO: either the activeLocations have a location not negated.
             }
             else if (mugic is ICastDispel)
             {
@@ -131,7 +136,7 @@ namespace Chaotic
         {
             for (int i = 0; i < creatureSpaces.Length; i++)
             {
-                if (creatureSpaces[i].CreatureNode != null && creatureSpaces[i].IsPlayer1 == isPlayer1 &&
+                if (creatureSpaces[i].CreatureNode != null && creatureSpaces[i].IsPlayer1 == isPlayer1 && 
                     (CheckCreatureAbility(isPlayer1, creatureSpaces[i].CreatureNode, creatureSpaces, discardPile, activeLoc) || 
                     CheckCreatureSacrifice(creatureSpaces[i].CreatureNode, creatureSpaces, discardPile, activeLoc)))
                     return true;
@@ -148,7 +153,7 @@ namespace Chaotic
         public static bool CheckCreatureAbility(bool isPlayer1, Creature creature,
             BattleBoardNode[] creatureSpaces, DiscardPile<ChaoticCard> discardPile, ActiveLocation activeLoc)
         {
-            if (!(activeLoc.LocationActive is ChaoticGameLib.Locations.DranakisThreshold) &&
+            if (!creature.Negate && !(activeLoc.LocationActive is ChaoticGameLib.Locations.DranakisThreshold) &&
                 creature.CheckAbility(ChaoticEngine.Hive))
             {
                 if (creature is ChaoticGameLib.Creatures.Najarin &&
@@ -197,7 +202,7 @@ namespace Chaotic
         public static bool CheckCreatureSacrifice(Creature creature, BattleBoardNode[] creatureSpaces, 
             DiscardPile<ChaoticCard> discardPile, ActiveLocation activeLoc)
         {
-            if (!(activeLoc.LocationActive is ChaoticGameLib.Locations.DranakisThreshold) && 
+            if (!creature.Negate && !(activeLoc.LocationActive is ChaoticGameLib.Locations.DranakisThreshold) && 
                 creature.CheckSacrifice(ChaoticEngine.Hive))
             {
                 if (creature is ChaoticGameLib.Creatures.Kannen)
@@ -238,10 +243,10 @@ namespace Chaotic
         public static bool CheckBattlegearAbility(Creature creatureEquipped, BattleBoardNode[] creatureSpaces,
             ActiveLocation activeLoc)
         {
-            if (!(activeLoc.LocationActive is ChaoticGameLib.Locations.DranakisThreshold))
+            if (!creatureEquipped.Battlegear.Negate && !(activeLoc.LocationActive is ChaoticGameLib.Locations.DranakisThreshold))
             {
-                if (creatureEquipped.Battlegear is ChaoticGameLib.Battlegears.MipedianCactus && creatureEquipped.Battlegear.IsFaceUp &&
-                creatureEquipped.CreatureTribe == Tribe.Mipedian)
+                if (creatureEquipped.Battlegear is ChaoticGameLib.Battlegears.MipedianCactus 
+                    && creatureEquipped.Battlegear.IsFaceUp && creatureEquipped.CreatureTribe == Tribe.Mipedian)
                 {
                     return creatureEquipped.MugicCounters >= 1 && !creatureEquipped.CanMoveAnywhere;
                 }
@@ -265,7 +270,7 @@ namespace Chaotic
         public static bool CheckBattlegearSacrifice(Creature creature, BattleBoardNode[] creatureSpaces,
             DiscardPile<ChaoticCard> discardPile, ActiveLocation activeLoc)
         {
-            if (!(activeLoc.LocationActive is ChaoticGameLib.Locations.DranakisThreshold) &&
+            if (!creature.Battlegear.Negate && !(activeLoc.LocationActive is ChaoticGameLib.Locations.DranakisThreshold) &&
                 creature.Battlegear.CheckSacrifice(creature))
             {
                 if (creature.Battlegear is ChaoticGameLib.Battlegears.TalismanOfTheMandiblor && creature.Battlegear.IsFaceUp &&

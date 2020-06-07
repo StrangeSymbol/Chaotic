@@ -6,7 +6,7 @@ namespace ChaoticGameLib.Mugics
 {
     public class SongOfResurgence : Mugic, ICastTarget<Creature>
     {
-        public SongOfResurgence(Texture2D sprite, Texture2D overlay) : base(sprite, overlay, MugicType.OverWorld, 1) { }
+        public SongOfResurgence(Texture2D sprite, Texture2D overlay, Texture2D negate) : base(sprite, overlay, negate, MugicType.OverWorld, 1) { }
         
         public override bool CheckPlayable(Creature creature)
         {

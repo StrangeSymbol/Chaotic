@@ -6,9 +6,9 @@ namespace ChaoticGameLib.Creatures
 {
     public class Qwun : Creature
     {
-        public Qwun(Texture2D sprite, Texture2D overlay, 
+        public Qwun(Texture2D sprite, Texture2D overlay, Texture2D negate, 
             byte energy, byte courage, byte power, byte wisdom, byte speed) :
-            base(sprite, overlay, energy, courage, power, wisdom, speed, 0, false, true, false, false, 0,
+            base(sprite, overlay, negate, energy, courage, power, wisdom, speed, 0, false, true, false, false, 0,
             false, 0, 0, true, false, false, Tribe.Mipedian, CreatureType.Scout)
         {
         }

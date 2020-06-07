@@ -4,7 +4,7 @@ namespace ChaoticGameLib.Mugics
 {
     public class ChorusOfTheHive : Mugic, ICastChange
     {
-        public ChorusOfTheHive(Texture2D sprite, Texture2D overlay) : base(sprite, overlay, MugicType.Danian, 1) { }
+        public ChorusOfTheHive(Texture2D sprite, Texture2D overlay, Texture2D negate) : base(sprite, overlay, negate, MugicType.Danian, 1) { }
         
         public override string Description()
         {

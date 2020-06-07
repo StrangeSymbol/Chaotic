@@ -6,7 +6,7 @@ namespace ChaoticGameLib.Mugics
 {
     public class SongOfRevival_UnderWorld_ : Mugic, ICastReturn
     {
-        public SongOfRevival_UnderWorld_(Texture2D sprite, Texture2D overlay) : base(sprite, overlay, MugicType.UnderWorld, 2) { }
+        public SongOfRevival_UnderWorld_(Texture2D sprite, Texture2D overlay, Texture2D negate) : base(sprite, overlay, negate, MugicType.UnderWorld, 2) { }
 
         bool ICastReturn.CheckReturnable(Creature c)
         {

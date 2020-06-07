@@ -46,16 +46,24 @@ namespace ChaoticGameLib
         // Controls what is visibly seen in the transition.
         Rectangle destination;
 
-        public ChaoticCard(Texture2D sprite, Texture2D overlay)
+        // Holds the image of the negate symbol.
+        Texture2D negateSymbol;
+
+        // Holds whether the cards ability has been negated.
+        bool negate;
+
+        public ChaoticCard(Texture2D sprite, Texture2D overlay, Texture2D negateSymbol)
             : base (sprite, Vector2.Zero, overlay)
         {
             this.unique = false;
             this.usedAbility = false;
+            this.negate = false;
+            this.negateSymbol = negateSymbol;
             this.name = getNameFromType();
         }
 
-        public ChaoticCard(Texture2D sprite, Texture2D overlay, bool unique)
-            : this(sprite, overlay)
+        public ChaoticCard(Texture2D sprite, Texture2D overlay, Texture2D negateSymbol, bool unique)
+            : this(sprite, overlay, negateSymbol)
         {
             this.unique = unique;
         }
@@ -92,6 +100,8 @@ namespace ChaoticGameLib
         public double Time { get { return time; } }
         public bool IsMoving { get; set; }
         public bool GotToDestination { get; set; }
+
+        public bool Negate { get { return negate; } set { negate = value; } }
 
         public void CourseToCard(Vector2 p2)
         {
@@ -156,6 +166,21 @@ namespace ChaoticGameLib
             spriteBatch.Draw(this.sprite, CollisionRectangle, null, Color.White, 0f, Vector2.Zero, spriteEffect, layer);
             if (IsCovered)
                 spriteBatch.Draw(this.overlay, CollisionRectangle, null, Color.Yellow, 0f, Vector2.Zero, spriteEffect, cover);
+            DrawNegate(spriteBatch, cover);
+        }
+
+        public void DrawNegate(SpriteBatch spriteBatch, float cover)
+        {
+            if (negate)
+            {
+                if (this is Location)
+                    spriteBatch.Draw(this.negateSymbol, new Rectangle((int)position.X + (kHeight - 3*kWidth/4) / 2,
+                        (int)position.Y + kWidth / 8, 3*kWidth/4, 3*kWidth/4),
+                        null, Color.White, 0f, Vector2.Zero, SpriteEffects.None, cover);
+                else
+                    spriteBatch.Draw(this.negateSymbol, new Rectangle((int)position.X+kWidth/8, (int)position.Y + (kHeight - kWidth) / 2,
+                    3*kWidth/4, 3*kWidth/4), null, Color.White, 0f, Vector2.Zero, SpriteEffects.None, cover);
+            }
         }
 
         public void Draw(SpriteBatch spriteBatch, Texture2D texture, bool isPlayer1)

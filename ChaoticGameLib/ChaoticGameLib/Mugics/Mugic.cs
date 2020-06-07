@@ -13,7 +13,7 @@ namespace ChaoticGameLib
         // Holds the type of Mugic card.
         MugicType type;
 
-        public Mugic(Texture2D sprite, Texture2D overlay, MugicType type, byte cost) : base(sprite, overlay)
+        public Mugic(Texture2D sprite, Texture2D overlay, Texture2D negate, MugicType type, byte cost) : base(sprite, overlay, negate)
         {
             this.type = type;
             this.cost = cost;
@@ -25,8 +25,8 @@ namespace ChaoticGameLib
         private byte additionalCost(Creature creature, Location location)
         {
             byte addCost = 0;
-            if ((location is Locations.GlacierPlains && this.type == MugicType.UnderWorld) ||
-                (location is Locations.WoodenPillar && this.type == MugicType.OverWorld))
+            if ((location is Locations.GlacierPlains && !location.Negate && this.type == MugicType.UnderWorld) ||
+                (location is Locations.WoodenPillar && !location.Negate && this.type == MugicType.OverWorld))
                 addCost++;
             return addCost;
         }
@@ -35,7 +35,7 @@ namespace ChaoticGameLib
         {
             if (creature.MugicCounters >= cost + additionalCost(creature, location))
             {
-                if (creature is Heptadd) // Heptadd can cast mugic from any tribe
+                if (creature is Heptadd && !creature.Negate) // Heptadd can cast mugic from any tribe
                     return true;
                 switch (type)
                 {

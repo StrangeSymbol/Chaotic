@@ -5,7 +5,7 @@ namespace ChaoticGameLib.Battlegears
 {
     public class Pyroblaster : Battlegear, ISacrificeTarget<Creature>
     {
-        public Pyroblaster(Texture2D sprite, Texture2D overlay) : base(sprite, overlay) { }
+        public Pyroblaster(Texture2D sprite, Texture2D overlay, Texture2D negate) : base(sprite, overlay, negate) { }
 
         public override bool CheckSacrifice(Creature creatureEquipped)
         {

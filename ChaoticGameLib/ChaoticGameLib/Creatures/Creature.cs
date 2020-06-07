@@ -133,18 +133,15 @@ namespace ChaoticGameLib
 
         // Holds whether this creature can't move.
         bool cannotMove;
-
-        // Holds whether this creature loses all abilities.
-        bool negate;
         #endregion
 
         #region constructor
         // To initialize basics of a creature
-        public Creature(Texture2D sprite, Texture2D overlay,
+        public Creature(Texture2D sprite, Texture2D overlay, Texture2D negate,
             short energy, short courage, short power, short wisdom, short speed,
             byte mugicCounters, bool fire, bool air, bool earth, bool water, byte swift, bool range, byte recklessness,
             byte strike, bool surprise, bool mixedArmies, bool unique, Tribe tribe, CreatureType creatureType)
-            : base(sprite, overlay, unique)
+            : base(sprite, overlay, negate, unique)
         {
             this.energy = energy;
             this.courage = courage;
@@ -186,21 +183,21 @@ namespace ChaoticGameLib
             this.mugicCounters = mugicCounters;
         }
 
-        public Creature(Texture2D sprite, Texture2D overlay, short energy, short courage, short power, short wisdom, short speed,
+        public Creature(Texture2D sprite, Texture2D overlay, Texture2D negate, short energy, short courage, short power, short wisdom, short speed,
             byte mugicCounters, bool fire, bool air, bool earth, bool water,
             bool mixedArmies, bool unique, Tribe tribe, CreatureType creatureType) :
-            this(sprite, overlay, energy, courage, power, wisdom, speed, mugicCounters, fire, air, earth, water,
+            this(sprite, overlay, negate, energy, courage, power, wisdom, speed, mugicCounters, fire, air, earth, water,
             0, false, 0, 0, false, mixedArmies, unique, tribe, creatureType)
         {
             
         }
 
-        public Creature(Texture2D sprite, Texture2D overlay,
+        public Creature(Texture2D sprite, Texture2D overlay, Texture2D negate,
             short energy, short courage, short power, short wisdom, short speed,
             byte mugicCounters, bool fire, bool air, bool earth, bool water, byte swift, bool range, byte recklessness,
             byte strike, bool surprise, bool mixedArmies, bool unique, 
             byte fireDamage, byte airDamage, byte earthDamage, byte waterDamage, Tribe tribe, CreatureType creatureType) :
-            this(sprite, overlay, energy, courage, power, wisdom, speed, mugicCounters, fire, air, earth, water,
+            this(sprite, overlay, negate, energy, courage, power, wisdom, speed, mugicCounters, fire, air, earth, water,
             swift, range, recklessness, strike, surprise, mixedArmies, unique, tribe, creatureType)
         {
             this.fireDamage = this.oldCreature.fireDamage = fireDamage;
@@ -209,14 +206,14 @@ namespace ChaoticGameLib
             this.waterDamage = this.oldCreature.waterDamage = waterDamage;
         }
 
-        public Creature(Texture2D sprite, Texture2D overlay,
+        public Creature(Texture2D sprite, Texture2D overlay, Texture2D negate,
             short energy, short courage, short power, short wisdom, short speed,
             byte mugicCounters, bool fire, bool air, bool earth, bool water, byte swift, bool range, byte recklessness,
             byte strike, bool surprise, bool mixedArmies, bool unique,
             byte fireDamage, byte airDamage, byte earthDamage, byte waterDamage,
             byte intimidateCourage, byte intimidatePower, byte intimidateWisdom, byte intimidateSpeed, 
             Tribe tribe, CreatureType creatureType) :
-            this(sprite, overlay, energy, courage, power, wisdom, speed, mugicCounters, fire, air, earth, water,
+            this(sprite, overlay, negate, energy, courage, power, wisdom, speed, mugicCounters, fire, air, earth, water,
             swift, range, recklessness, strike, surprise, mixedArmies, unique,
             fireDamage, airDamage, earthDamage, waterDamage, tribe, creatureType)
         {
@@ -226,12 +223,12 @@ namespace ChaoticGameLib
             this.intimidateSpeed = intimidateSpeed;
         }
 
-        public Creature(Texture2D sprite, Texture2D overlay,
+        public Creature(Texture2D sprite, Texture2D overlay, Texture2D negate,
             short energy, short courage, short power, short wisdom, short speed,
             byte mugicCounters, bool fire, bool air, bool earth, bool water, byte swift, bool range, byte recklessness,
             byte strike, bool surprise, bool mixedArmies, bool unique, byte fireDamage, byte airDamage, byte earthDamage,
             byte waterDamage, byte mugicCost, byte abilityEnergy, Tribe tribe, CreatureType creatureType):
-            this(sprite, overlay, energy, courage, power, wisdom, speed, mugicCounters,
+            this(sprite, overlay, negate, energy, courage, power, wisdom, speed, mugicCounters,
             fire, air, earth, water, swift, range, recklessness, strike, surprise, mixedArmies, unique,
             fireDamage, airDamage, earthDamage, waterDamage, tribe, creatureType)
         {
@@ -329,8 +326,6 @@ namespace ChaoticGameLib
         public byte IntimidateSpeed { get { return intimidateSpeed; } set { intimidateSpeed = value; } }
 
         public bool CannotMove { get { return cannotMove; } set { cannotMove = value; } }
-
-        public bool Negate { get { return negate; } set { negate = value; } }
         #endregion
  
         #region Member Functions
@@ -378,8 +373,9 @@ namespace ChaoticGameLib
             this.reducedDamage = 0;
             this.reducedAirDamage = this.reducedFireDamage = 0;
             this.cannotMove = false;
-            this.negate = false;
             UnNegateBattlegear();
+            if (!(this.battlegear is Battlegears.StoneMail && this.battlegear.IsFaceUp))
+                this.Negate = false;
         }
 
         public bool Invisibility()

@@ -6,9 +6,9 @@ namespace ChaoticGameLib.Creatures
 {
     public class Staluk : Creature
     {
-        public Staluk(Texture2D sprite, Texture2D overlay, 
+        public Staluk(Texture2D sprite, Texture2D overlay, Texture2D negate, 
             byte energy, byte courage, byte power, byte wisdom, byte speed) :
-            base(sprite, overlay, energy, courage, power, wisdom, speed, 0, false, false, true, false, 1, false, 
+            base(sprite, overlay, negate, energy, courage, power, wisdom, speed, 0, false, false, true, false, 1, false, 
             0, 0, false, false, false, 0, 0, 5, 0, Tribe.OverWorld, CreatureType.Warrior)
         {
         }

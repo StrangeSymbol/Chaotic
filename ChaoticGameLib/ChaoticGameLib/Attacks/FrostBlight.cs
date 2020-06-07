@@ -6,8 +6,8 @@ namespace ChaoticGameLib.Attacks
 {
     public class FrostBlight : Attack
     {
-        public FrostBlight(Texture2D sprite, Texture2D overlay)
-            : base(sprite, overlay, 5, 0, 0, 0, 5, 2, 10, 75, false, false, false, true) { }
+        public FrostBlight(Texture2D sprite, Texture2D overlay, Texture2D negate)
+            : base(sprite, overlay, negate, 5, 0, 0, 0, 5, 2, 10, 75, false, false, false, true) { }
 
         public override Tuple<short, short> PotentialDamage(Creature your, Creature enemy, Location location)
         {

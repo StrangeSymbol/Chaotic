@@ -7,7 +7,6 @@ using System.Windows.Forms;
 
 namespace Chaotic
 {
-#if WINDOWS || XBOX
     static class Program
     {
         /// <summary>
@@ -21,6 +20,5 @@ namespace Chaotic
             }
         }
     }
-#endif
 }
 

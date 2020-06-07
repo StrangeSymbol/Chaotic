@@ -6,8 +6,8 @@ namespace ChaoticGameLib.Attacks
 {
     public class RockWave : Attack
     {
-        public RockWave(Texture2D sprite, Texture2D overlay)
-            : base(sprite, overlay, 5, 0, 0, 5, 0, 2, 10, 75, false, false, true, false) { }
+        public RockWave(Texture2D sprite, Texture2D overlay, Texture2D negate)
+            : base(sprite, overlay, negate, 5, 0, 0, 5, 0, 2, 10, 75, false, false, true, false) { }
 
         public override Tuple<short, short> PotentialDamage(Creature your, Creature enemy, Location location)
         {

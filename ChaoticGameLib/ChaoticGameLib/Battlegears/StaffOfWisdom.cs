@@ -6,7 +6,7 @@ namespace ChaoticGameLib.Battlegears
 {
     public class StaffOfWisdom : Battlegear
     {
-        public StaffOfWisdom(Texture2D sprite, Texture2D overlay) : base(sprite, overlay, 25) { }
+        public StaffOfWisdom(Texture2D sprite, Texture2D overlay, Texture2D negate) : base(sprite, overlay, negate, 25) { }
         public override void Equip(Creature creature)
         {
             creature.Wisdom += this.DisciplineAmount;

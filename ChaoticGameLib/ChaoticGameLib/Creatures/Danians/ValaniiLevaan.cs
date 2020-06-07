@@ -6,8 +6,8 @@ namespace ChaoticGameLib.Creatures
 {
     public class ValaniiLevaan : Creature, IHive
     {
-        public ValaniiLevaan(Texture2D sprite, Texture2D overlay, byte energy, byte courage, byte power, byte wisdom, byte speed) :
-            base(sprite, overlay, energy, courage, power, wisdom, speed, 1,
+        public ValaniiLevaan(Texture2D sprite, Texture2D overlay, Texture2D negate, byte energy, byte courage, byte power, byte wisdom, byte speed) :
+            base(sprite, overlay, negate, energy, courage, power, wisdom, speed, 1,
             false, false, true, false, false, false, Tribe.Danian, CreatureType.Noble)
         {
         }

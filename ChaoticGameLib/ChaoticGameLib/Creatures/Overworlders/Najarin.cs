@@ -6,9 +6,9 @@ namespace ChaoticGameLib.Creatures
 {
     public class Najarin : Creature, IActivate
     {
-        public Najarin(Texture2D sprite, Texture2D overlay, 
+        public Najarin(Texture2D sprite, Texture2D overlay, Texture2D negate, 
             byte energy, byte courage, byte power, byte wisdom, byte speed) :
-            base(sprite, overlay, energy, courage, power, wisdom, speed, 2, false, false, false, false, 0,
+            base(sprite, overlay, negate, energy, courage, power, wisdom, speed, 2, false, false, false, false, 0,
             false, 0, 0, false, false, true, Tribe.OverWorld, CreatureType.StrategistMuge)
         {
         }

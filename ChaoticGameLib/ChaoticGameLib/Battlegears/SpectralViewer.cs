@@ -6,7 +6,7 @@ namespace ChaoticGameLib.Battlegears
 {
     public class SpectralViewer : Battlegear
     {
-        public SpectralViewer(Texture2D sprite, Texture2D overlay) : base(sprite, overlay) { }
+        public SpectralViewer(Texture2D sprite, Texture2D overlay, Texture2D negate) : base(sprite, overlay, negate) { }
 
         public override string Description()
         {

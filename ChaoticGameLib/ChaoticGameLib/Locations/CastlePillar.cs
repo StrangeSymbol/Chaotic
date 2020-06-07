@@ -6,8 +6,8 @@ namespace ChaoticGameLib.Locations
 {
     public class CastlePillar : Location
     {
-        public CastlePillar(Texture2D sprite, Texture2D background, Texture2D overlay)
-            : base(sprite, background, overlay, true, LocationType.Courage)
+        public CastlePillar(Texture2D sprite, Texture2D background, Texture2D overlay, Texture2D negate)
+            : base(sprite, background, overlay, negate, true, LocationType.Courage)
         {
         }
 

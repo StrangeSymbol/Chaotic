@@ -6,8 +6,8 @@ namespace ChaoticGameLib.Attacks
 {
     public class IronBalls : Attack
     {
-        public IronBalls(Texture2D sprite, Texture2D overlay)
-            : base(sprite, overlay, 0, 0, 0, 0, 0, 1, 0, 0, false, false, false, false) { }
+        public IronBalls(Texture2D sprite, Texture2D overlay, Texture2D negate)
+            : base(sprite, overlay, negate, 0, 0, 0, 0, 0, 1, 0, 0, false, false, false, false) { }
 
         public override string Description()
         {

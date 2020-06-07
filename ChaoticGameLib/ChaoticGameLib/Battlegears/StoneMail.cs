@@ -1,12 +1,14 @@
-﻿using System;
-using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Graphics;
+﻿/*
+ *  Coded by: Ambrose Emmett-Iwaniw
+ *  The following code is (c) copyright 2020, StrangeSymbol, Inc. ALL RIGHTS RESERVED
+ */
+ using Microsoft.Xna.Framework.Graphics;
 
 namespace ChaoticGameLib.Battlegears
 {
     public class StoneMail : Battlegear
     {
-        public StoneMail(Texture2D sprite, Texture2D overlay) : base(sprite, overlay, 50) { }
+        public StoneMail(Texture2D sprite, Texture2D overlay, Texture2D negate) : base(sprite, overlay, negate, 50) { }
         public override void Equip(Creature creature)
         {
             creature.Energy += this.DisciplineAmount;

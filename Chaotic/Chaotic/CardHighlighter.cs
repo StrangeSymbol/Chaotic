@@ -2,7 +2,6 @@
  *  Coded by: Ambrose Emmett-Iwaniw
  *  The following code is (c) copyright 2020, StrangeSymbol, Inc. ALL RIGHTS RESERVED
  */
-using System;
 using System.Collections.Generic;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -19,6 +18,9 @@ namespace Chaotic
         Vector2 sheenPos; // The location of the sheen in on the card.
         float sheenWidth; // Holds the width of sheen.
         float sheenHeight; // Holds the height of sheen.
+
+        //bool negate; // holds whether the card was negated.
+        //Texture2D negateSymbol; // holds the negate symbol.
 
         double elapsedTime;
         const float kWaitTime = 500f; // The amount of time the card gets highlighted.

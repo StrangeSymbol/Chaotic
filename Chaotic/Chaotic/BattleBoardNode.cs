@@ -2,7 +2,6 @@
  *  Coded by: Ambrose Emmett-Iwaniw
  *  The following code is (c) copyright 2020, StrangeSymbol, Inc. ALL RIGHTS RESERVED
  */
-using System;
 using System.Collections.Generic;
 using System.Text;
 using Microsoft.Xna.Framework;
@@ -546,7 +545,7 @@ namespace Chaotic
 
         private string battlegearDescription()
         {
-            return creature.Battlegear.Name;
+            return creature.Battlegear.Name + (creature.Battlegear.Negate ? " Negated." : "");
         }
 
         public void DrawBattleBoardNode(SpriteBatch spriteBatch, Texture2D cardBack)
@@ -564,6 +563,7 @@ namespace Chaotic
 
                 if (creature.IsCovered)
                     spriteBatch.Draw(overlay, CreatureRectangle, null, Color.Yellow, 0f, Vector2.Zero, SpriteEffects.None, 0.55f);
+                creature.DrawNegate(spriteBatch, 0.55f);
 
                 if (creature.Battlegear != null)
                 {

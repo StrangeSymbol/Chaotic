@@ -6,9 +6,9 @@ namespace ChaoticGameLib.Creatures
 {
     public class LordVanBloot : Creature
     {
-        public LordVanBloot(Texture2D sprite, Texture2D overlay, 
+        public LordVanBloot(Texture2D sprite, Texture2D overlay, Texture2D negate, 
             byte energy, byte courage, byte power, byte wisdom, byte speed) :
-            base(sprite, overlay, energy, courage, power, wisdom, speed, 2, false, false, true, false, 0,
+            base(sprite, overlay, negate, energy, courage, power, wisdom, speed, 2, false, false, true, false, 0,
             false, 0, 0, false, true, true, Tribe.UnderWorld, CreatureType.ConquerorMuge)
         {
         }

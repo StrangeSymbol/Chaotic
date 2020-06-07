@@ -6,7 +6,7 @@ namespace ChaoticGameLib.Mugics
 {
     public class RefrainOfDenial : Mugic, ICastDispel
     {
-        public RefrainOfDenial(Texture2D sprite, Texture2D overlay) : base(sprite, overlay, MugicType.OverWorld, 2) { }
+        public RefrainOfDenial(Texture2D sprite, Texture2D overlay, Texture2D negate) : base(sprite, overlay, negate, MugicType.OverWorld, 2) { }
 
         public override string Description()
         {

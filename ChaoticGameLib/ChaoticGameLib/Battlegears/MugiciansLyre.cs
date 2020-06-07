@@ -6,7 +6,7 @@ namespace ChaoticGameLib.Battlegears
 {
     public class MugiciansLyre : Battlegear, ISacrificeTarget<Creature>
     {
-        public MugiciansLyre(Texture2D sprite, Texture2D overlay) : base(sprite, overlay, 1) { }
+        public MugiciansLyre(Texture2D sprite, Texture2D overlay, Texture2D negate) : base(sprite, overlay, negate, 1) { }
 
         public override bool CheckSacrifice(Creature creatureEquipped)
         {

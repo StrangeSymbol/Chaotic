@@ -6,8 +6,8 @@ namespace ChaoticGameLib.Attacks
 {
     public class VineSnare : Attack
     {
-        public VineSnare(Texture2D sprite, Texture2D overlay)
-            : base(sprite, overlay, 5, 0, 0, 5, 0, 1, 0, 25, false, false, true, false) { }
+        public VineSnare(Texture2D sprite, Texture2D overlay, Texture2D negate)
+            : base(sprite, overlay, negate, 5, 0, 0, 5, 0, 1, 0, 25, false, false, true, false) { }
         public override void Damage(Creature your, Creature enemy, Location location)
         {
             base.Damage(your, enemy, location);

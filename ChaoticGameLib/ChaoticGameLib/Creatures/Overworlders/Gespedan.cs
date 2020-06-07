@@ -6,9 +6,9 @@ namespace ChaoticGameLib.Creatures
 {
     public class Gespedan : Creature, ISupport
     {
-        public Gespedan(Texture2D sprite, Texture2D overlay,
+        public Gespedan(Texture2D sprite, Texture2D overlay, Texture2D negate,
             byte energy, byte courage, byte power, byte wisdom, byte speed) :
-            base(sprite, overlay, energy, courage, power, wisdom, speed, 1, false, false, false, false, 1,
+            base(sprite, overlay, negate, energy, courage, power, wisdom, speed, 1, false, false, false, false, 1,
             false, 0, 0, false, false, false, Tribe.OverWorld, CreatureType.Scout)
         {
         }

@@ -6,9 +6,9 @@ namespace ChaoticGameLib.Creatures
 {
     public class Laarina : Creature
     {
-        public Laarina(Texture2D sprite, Texture2D overlay, 
+        public Laarina(Texture2D sprite, Texture2D overlay, Texture2D negate, 
             byte energy, byte courage, byte power, byte wisdom, byte speed) :
-            base(sprite, overlay, energy, courage, power, wisdom, speed, 2, false, false, true, true, 0,
+            base(sprite, overlay, negate, energy, courage, power, wisdom, speed, 2, false, false, true, true, 0,
             false, 0, 0, false, false, false, Tribe.OverWorld, CreatureType.Scout)
         {
         }

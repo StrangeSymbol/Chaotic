@@ -6,8 +6,8 @@ namespace ChaoticGameLib.Locations
 {
     public class CordacFallsPlungepool : Location
     {
-        public CordacFallsPlungepool(Texture2D sprite, Texture2D background, Texture2D overlay)
-            : base(sprite, background, overlay, LocationType.UnderWorld)
+        public CordacFallsPlungepool(Texture2D sprite, Texture2D background, Texture2D overlay, Texture2D negate)
+            : base(sprite, background, overlay, negate, LocationType.UnderWorld)
         {
         }
 

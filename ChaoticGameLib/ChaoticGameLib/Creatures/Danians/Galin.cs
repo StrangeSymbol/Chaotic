@@ -7,8 +7,8 @@ namespace ChaoticGameLib.Creatures
 {
     public class Galin : Creature, IHive
     {
-        public Galin(Texture2D sprite, Texture2D overlay, byte energy, byte courage, byte power, byte wisdom, byte speed) :
-            base(sprite, overlay, energy, courage, power, wisdom, speed, 0,
+        public Galin(Texture2D sprite, Texture2D overlay, Texture2D negate, byte energy, byte courage, byte power, byte wisdom, byte speed) :
+            base(sprite, overlay, negate, energy, courage, power, wisdom, speed, 0,
             false, false, false, false, false, false, Tribe.Danian, CreatureType.Mandiblor)
         {
         }

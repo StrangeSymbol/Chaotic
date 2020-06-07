@@ -6,8 +6,8 @@ namespace ChaoticGameLib.Attacks
 {
     public class EmberSwarm : Attack
     {
-        public EmberSwarm(Texture2D sprite, Texture2D overlay)
-            : base(sprite, overlay, 5, 5, 0, 0, 0, 1, 0, 25, true, false, false, false) { }
+        public EmberSwarm(Texture2D sprite, Texture2D overlay, Texture2D negate)
+            : base(sprite, overlay, negate, 5, 5, 0, 0, 0, 1, 0, 25, true, false, false, false) { }
         public override void Damage(Creature your, Creature enemy, Location location)
         {
             base.Damage(your, enemy, location);

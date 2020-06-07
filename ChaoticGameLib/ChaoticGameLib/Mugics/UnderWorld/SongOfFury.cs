@@ -6,7 +6,7 @@ namespace ChaoticGameLib.Mugics
 {
     public class SongOfFury : Mugic, ICastTargetTwo<Creature>
     {
-        public SongOfFury(Texture2D sprite, Texture2D overlay) : base(sprite, overlay, MugicType.UnderWorld, 1) { }
+        public SongOfFury(Texture2D sprite, Texture2D overlay, Texture2D negate) : base(sprite, overlay, negate, MugicType.UnderWorld, 1) { }
 
         void ICastTargetTwo<Creature>.Ability(Creature creature1, Creature creature2)
         {

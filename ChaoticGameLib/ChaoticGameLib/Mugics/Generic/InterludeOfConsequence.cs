@@ -6,7 +6,7 @@ namespace ChaoticGameLib.Mugics
 {
     public class InterludeOfConsequence : Mugic, ICast
     {
-        public InterludeOfConsequence(Texture2D sprite, Texture2D overlay) : base(sprite, overlay, MugicType.Generic, 1) { }
+        public InterludeOfConsequence(Texture2D sprite, Texture2D overlay, Texture2D negate) : base(sprite, overlay, negate, MugicType.Generic, 1) { }
 
         AbilityType ICast.Type { get { return AbilityType.ShuffleTargetDeck; } }
         

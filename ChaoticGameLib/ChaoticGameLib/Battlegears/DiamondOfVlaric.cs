@@ -5,7 +5,7 @@ namespace ChaoticGameLib.Battlegears
 {
     public class DiamondOfVlaric : Battlegear, ISacrificeTarget<Creature>
     {
-        public DiamondOfVlaric(Texture2D texture, Texture2D overlay) : base(texture, overlay) { }
+        public DiamondOfVlaric(Texture2D texture, Texture2D overlay, Texture2D negate) : base(texture, overlay, negate) { }
 
         public override bool CheckSacrifice(Creature creatureEquipped)
         {

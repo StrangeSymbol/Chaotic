@@ -6,8 +6,8 @@ namespace ChaoticGameLib.Creatures
 {
     public class Hota : Creature
     {
-        public Hota(Texture2D sprite, Texture2D overlay, byte energy, byte courage, byte power, byte wisdom, byte speed) :
-            base(sprite, overlay, energy, courage, power, wisdom, speed, 2,
+        public Hota(Texture2D sprite, Texture2D overlay, Texture2D negate, byte energy, byte courage, byte power, byte wisdom, byte speed) :
+            base(sprite, overlay, negate, energy, courage, power, wisdom, speed, 2,
             true, false, false, false, false, false, Tribe.Danian, CreatureType.MandiblorMuge)
         {
         }

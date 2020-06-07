@@ -1,13 +1,15 @@
-﻿using System;
-using Microsoft.Xna.Framework;
+﻿/*
+ *  Coded by: Ambrose Emmett-Iwaniw
+ *  The following code is (c) copyright 2020, StrangeSymbol, Inc. ALL RIGHTS RESERVED
+ */
 using Microsoft.Xna.Framework.Graphics;
 
 namespace ChaoticGameLib.Locations
 {
     public class IronPillar : Location
     {
-        public IronPillar(Texture2D sprite, Texture2D background, Texture2D overlay)
-            : base(sprite, background, overlay, LocationType.Courage)
+        public IronPillar(Texture2D sprite, Texture2D background, Texture2D overlay, Texture2D negate)
+            : base(sprite, background, overlay, negate, LocationType.Courage)
         {
         }
 

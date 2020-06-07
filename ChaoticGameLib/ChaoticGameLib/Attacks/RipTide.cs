@@ -6,8 +6,8 @@ namespace ChaoticGameLib.Attacks
 {
     public class RipTide : Attack
     {
-        public RipTide(Texture2D sprite, Texture2D overlay)
-            : base(sprite, overlay, 5, 0, 0, 0, 5, 1, 0, 25, false, false, false, true) { }
+        public RipTide(Texture2D sprite, Texture2D overlay, Texture2D negate)
+            : base(sprite, overlay, negate, 5, 0, 0, 0, 5, 1, 0, 25, false, false, false, true) { }
         public override void Damage(Creature your, Creature enemy, Location location)
         {
             base.Damage(your, enemy, location);

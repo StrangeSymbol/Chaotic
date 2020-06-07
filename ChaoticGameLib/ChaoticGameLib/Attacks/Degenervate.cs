@@ -6,8 +6,8 @@ namespace ChaoticGameLib.Attacks
 {
     public class Degenervate : Attack
     {
-        public Degenervate(Texture2D sprite, Texture2D overlay)
-            : base(sprite, overlay, 0, 0, 0, 0, 0, 0, 0, 25, false, false, false, true) { }
+        public Degenervate(Texture2D sprite, Texture2D overlay, Texture2D negate)
+            : base(sprite, overlay, negate, 0, 0, 0, 0, 0, 0, 0, 25, false, false, false, true) { }
         public override void Damage(Creature your, Creature enemy, Location location)
         {
             base.Damage(your, enemy, location);

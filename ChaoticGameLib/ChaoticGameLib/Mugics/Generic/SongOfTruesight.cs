@@ -7,7 +7,7 @@ namespace ChaoticGameLib.Mugics
 {
     public class SongOfTruesight : Mugic, ICastTarget<Creature>
     {
-        public SongOfTruesight(Texture2D sprite, Texture2D overlay) : base(sprite, overlay, MugicType.Generic, 1) { }
+        public SongOfTruesight(Texture2D sprite, Texture2D overlay, Texture2D negate) : base(sprite, overlay, negate, MugicType.Generic, 1) { }
 
         public override bool CheckPlayable(Creature creature)
         {

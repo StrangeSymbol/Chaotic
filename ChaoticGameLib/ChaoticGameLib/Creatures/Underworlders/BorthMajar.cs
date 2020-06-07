@@ -6,9 +6,9 @@ namespace ChaoticGameLib.Creatures
 {
     public class BorthMajar : Creature
     {
-        public BorthMajar(Texture2D sprite, Texture2D overlay, 
+        public BorthMajar(Texture2D sprite, Texture2D overlay, Texture2D negate, 
             byte energy, byte courage, byte power, byte wisdom, byte speed) :
-            base(sprite, overlay, energy, courage, power, wisdom, speed, 1, false, false, false, false, 0,
+            base(sprite, overlay, negate, energy, courage, power, wisdom, speed, 1, false, false, false, false, 0,
             false, 0, 0, false, false, false,
             0, 0, 0, 0, 0, 10, 10, 0, Tribe.UnderWorld, CreatureType.Commander) { }
 

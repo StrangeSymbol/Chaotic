@@ -230,20 +230,21 @@ namespace Chaotic
             //{
             //    if (ChaoticEngine.Player1First)
             //        foreach (Attack card in hand)
-            //            card.Draw(spriteBatch, isPlayer1);
+            //            card.Draw(spriteBatch, isPlayer1, 0.7f, 0.75f);
             //    else
             //        foreach (Attack card in hand)
-            //            spriteBatch.Draw(cardBack, card.CollisionRectangle, Color.White);
+            //            spriteBatch.Draw(cardBack, card.CollisionRectangle, null, Color.White, 0f, Vector2.Zero,
+            //                SpriteEffects.FlipVertically, 0.7f);
             //}
             //else
             //{
             //    if (!ChaoticEngine.Player1First)
             //        foreach (Attack card in hand)
-            //            card.Draw(spriteBatch, isPlayer1);
+            //            card.Draw(spriteBatch, isPlayer1, 0.7f, 0.75f);
             //    else
             //        foreach (Attack card in hand)
             //            spriteBatch.Draw(cardBack, card.CollisionRectangle, null, Color.White, 0f, Vector2.Zero,
-            //                SpriteEffects.FlipVertically, 0f);
+            //                SpriteEffects.FlipVertically, 0.7f);
             //}
             foreach (Attack card in hand)
                 card.Draw(spriteBatch, isPlayer1, 0.7f, 0.75f);

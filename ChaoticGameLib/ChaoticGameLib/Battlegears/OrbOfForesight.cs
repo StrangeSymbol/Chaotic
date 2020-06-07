@@ -6,7 +6,7 @@ namespace ChaoticGameLib.Battlegears
 {
     public class OrbOfForesight : Battlegear
     {
-        public OrbOfForesight(Texture2D sprite, Texture2D overlay) : base(sprite, overlay) { }
+        public OrbOfForesight(Texture2D sprite, Texture2D overlay, Texture2D negate) : base(sprite, overlay, negate) { }
 
         public override string Description()
         {

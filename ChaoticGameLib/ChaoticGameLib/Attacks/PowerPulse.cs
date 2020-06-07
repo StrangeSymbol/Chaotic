@@ -6,8 +6,8 @@ namespace ChaoticGameLib.Attacks
 {
     public class PowerPulse : Attack
     {
-        public PowerPulse(Texture2D sprite, Texture2D overlay)
-            : base(sprite, overlay, 10, 0, 0, 0, 0, 2, 10, 15, false, false, false, false) { }
+        public PowerPulse(Texture2D sprite, Texture2D overlay, Texture2D negate)
+            : base(sprite, overlay, negate, 10, 0, 0, 0, 0, 2, 10, 15, false, false, false, false) { }
 
         public override Tuple<short, short> PotentialDamage(Creature your, Creature enemy, Location location)
         {

@@ -6,7 +6,7 @@ namespace ChaoticGameLib.Mugics
 {
     public class MugicReprise : Mugic, ICast
     {
-        public MugicReprise(Texture2D sprite, Texture2D overlay) : base(sprite, overlay, MugicType.OverWorld, 2) { }
+        public MugicReprise(Texture2D sprite, Texture2D overlay, Texture2D negate) : base(sprite, overlay, negate, MugicType.OverWorld, 2) { }
 
         AbilityType ICast.Type { get { return AbilityType.ReturnMugic; } }
 

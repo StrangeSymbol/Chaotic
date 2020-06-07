@@ -6,8 +6,8 @@ namespace ChaoticGameLib.Creatures
 {
     public class Bodal : Creature, ISupport
     {
-        public Bodal(Texture2D sprite, Texture2D overlay, byte energy, byte courage, byte power, byte wisdom, byte speed) :
-            base(sprite, overlay, energy, courage, power, wisdom, speed, 1,
+        public Bodal(Texture2D sprite, Texture2D overlay, Texture2D negate, byte energy, byte courage, byte power, byte wisdom, byte speed) :
+            base(sprite, overlay, negate, energy, courage, power, wisdom, speed, 1,
             false, false, false, false, 0, false, 0, 0, false, false, false, Tribe.OverWorld, CreatureType.Caretaker)
         {
         }

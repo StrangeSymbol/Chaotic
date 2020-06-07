@@ -6,7 +6,7 @@ namespace ChaoticGameLib.Mugics
 {
     public class CanonOfCasualty : Mugic, ICastTarget<Creature>
     {
-        public CanonOfCasualty(Texture2D sprite, Texture2D overlay) : base(sprite, overlay, MugicType.UnderWorld, 1) { }
+        public CanonOfCasualty(Texture2D sprite, Texture2D overlay, Texture2D negate) : base(sprite, overlay, negate, MugicType.UnderWorld, 1) { }
 
         void ICastTarget<Creature>.Ability(Creature creature)
         {

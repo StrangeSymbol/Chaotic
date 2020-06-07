@@ -6,9 +6,9 @@ namespace ChaoticGameLib.Creatures
 {
     public class Heptadd : Creature
     {
-        public Heptadd(Texture2D sprite, Texture2D overlay, 
+        public Heptadd(Texture2D sprite, Texture2D overlay, Texture2D negate, 
             byte energy, byte courage, byte power, byte wisdom, byte speed) :
-            base(sprite, overlay, energy, courage, power, wisdom, speed, 1, true, true, true, true, 0,
+            base(sprite, overlay, negate, energy, courage, power, wisdom, speed, 1, true, true, true, true, 0,
             false, 0, 0, false, true, true, Tribe.OverWorld, CreatureType.GuardianMuge)
         {
         }

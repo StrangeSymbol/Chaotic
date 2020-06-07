@@ -321,3 +321,4 @@ Content\Fonts\Description.xnb
 Content\Fonts\MessageBox.xnb
 Content\Fonts\TriggeredFont.xnb
 Content\Fonts\CodedFont.xnb
+Content\negate.xnb

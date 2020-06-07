@@ -6,7 +6,7 @@ namespace ChaoticGameLib.Battlegears
 {
     public class FluxBauble : Battlegear
     {
-        public FluxBauble(Texture2D sprite, Texture2D overlay) : base(sprite, overlay) { }
+        public FluxBauble(Texture2D sprite, Texture2D overlay, Texture2D negate) : base(sprite, overlay, negate) { }
 
         public override string Description()
         {

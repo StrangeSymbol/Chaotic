@@ -6,9 +6,9 @@ namespace ChaoticGameLib.Creatures
 {
     public class Uro : Creature
     {
-        public Uro(Texture2D sprite, Texture2D overlay, 
+        public Uro(Texture2D sprite, Texture2D overlay, Texture2D negate, 
             byte energy, byte courage, byte power, byte wisdom, byte speed) :
-            base(sprite, overlay, energy, courage, power, wisdom, speed, 0, false, false, false, false, 0,
+            base(sprite, overlay, negate, energy, courage, power, wisdom, speed, 0, false, false, false, false, 0,
             false, 0, 5, true, false, false, Tribe.Mipedian, CreatureType.Elementalist)
         {
         }

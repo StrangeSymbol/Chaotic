@@ -5,7 +5,7 @@ namespace ChaoticGameLib.Battlegears
 {
     public class AquaShield : Battlegear, ISacrificeTarget<Creature>
     {
-        public AquaShield(Texture2D texture, Texture2D overlay) : base(texture, overlay, 15) { }
+        public AquaShield(Texture2D texture, Texture2D overlay, Texture2D negate) : base(texture, overlay, negate, 15) { }
         public override void Equip(Creature creature)
         {
             creature.GainedEnergy += 5;

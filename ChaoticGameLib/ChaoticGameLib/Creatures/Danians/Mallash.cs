@@ -6,8 +6,8 @@ namespace ChaoticGameLib.Creatures
 {
     public class Mallash : Creature, IHive
     {
-        public Mallash(Texture2D sprite, Texture2D overlay, byte energy, byte courage, byte power, byte wisdom, byte speed) :
-            base(sprite, overlay, energy, courage, power, wisdom, speed, 2,
+        public Mallash(Texture2D sprite, Texture2D overlay, Texture2D negate, byte energy, byte courage, byte power, byte wisdom, byte speed) :
+            base(sprite, overlay, negate, energy, courage, power, wisdom, speed, 2,
             false, false, true, false, false, false, Tribe.Danian, CreatureType.Battlemaster)
         {
         }

@@ -6,8 +6,8 @@ namespace ChaoticGameLib.Creatures
 {
     public class Wamma : Creature, IHive
     {
-        public Wamma(Texture2D sprite, Texture2D overlay, byte energy, byte courage, byte power, byte wisdom, byte speed) :
-            base(sprite, overlay, energy, courage, power, wisdom, speed, 0,
+        public Wamma(Texture2D sprite, Texture2D overlay, Texture2D negate, byte energy, byte courage, byte power, byte wisdom, byte speed) :
+            base(sprite, overlay, negate, energy, courage, power, wisdom, speed, 0,
             true, false, false, false, false, false, Tribe.Danian, CreatureType.Mandiblor)
         {
         }

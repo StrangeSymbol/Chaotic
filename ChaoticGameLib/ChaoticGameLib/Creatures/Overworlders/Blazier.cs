@@ -6,9 +6,9 @@ namespace ChaoticGameLib.Creatures
 {
     public class Blazier : Creature, IActivate
     {
-        public Blazier(Texture2D sprite, Texture2D overlay, byte energy, byte courage,
+        public Blazier(Texture2D sprite, Texture2D overlay, Texture2D negate, byte energy, byte courage,
             byte power, byte wisdom, byte speed) :
-            base(sprite, overlay, energy, courage, power, wisdom, speed, 2,
+            base(sprite, overlay, negate, energy, courage, power, wisdom, speed, 2,
             false, false, true, false, 0, false, 0, 0, false, false, false, Tribe.OverWorld, CreatureType.Scout)
         {
         }

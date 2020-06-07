@@ -5,7 +5,7 @@ namespace ChaoticGameLib.Battlegears
 {
     public class Liquilizer : Battlegear, ISacrificeTarget<Creature>
     {
-        public Liquilizer(Texture2D sprite, Texture2D overlay) : base(sprite, overlay) { }
+        public Liquilizer(Texture2D sprite, Texture2D overlay, Texture2D negate) : base(sprite, overlay, negate) { }
 
         public override bool CheckSacrifice(Creature creatureEquipped)
         {

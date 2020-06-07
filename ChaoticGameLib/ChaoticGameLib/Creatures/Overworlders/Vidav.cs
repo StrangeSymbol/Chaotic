@@ -6,9 +6,9 @@ namespace ChaoticGameLib.Creatures
 {
     public class Vidav : Creature, IActivateTarget<Creature>
     {
-        public Vidav(Texture2D sprite, Texture2D overlay, 
+        public Vidav(Texture2D sprite, Texture2D overlay, Texture2D negate, 
             byte energy, byte courage, byte power, byte wisdom, byte speed)
-            : base(sprite, overlay, energy, courage, power, wisdom, speed, 2, false, false, false, false, 0,
+            : base(sprite, overlay, negate, energy, courage, power, wisdom, speed, 2, false, false, false, false, 0,
             false, 0, 0, false, false, false, 0, 0, 0, 0, 1, 15, Tribe.OverWorld, CreatureType.Strategist)
         {
         }

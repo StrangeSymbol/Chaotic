@@ -6,8 +6,8 @@ namespace ChaoticGameLib.Attacks
 {
     public class Mirthquake : Attack
     {
-        public Mirthquake(Texture2D sprite, Texture2D overlay)
-            : base(sprite, overlay, 0, 0, 0, 0, 0, 0, 0, 0, false, false, false, false) { }
+        public Mirthquake(Texture2D sprite, Texture2D overlay, Texture2D negate)
+            : base(sprite, overlay, negate, 0, 0, 0, 0, 0, 0, 0, 0, false, false, false, false) { }
 
         public override string Description()
         {

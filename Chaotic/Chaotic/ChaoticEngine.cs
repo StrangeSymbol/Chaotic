@@ -5,9 +5,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Xml.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
-using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 
@@ -48,6 +46,8 @@ namespace Chaotic
         public static bool HasMarquisDarini { get; set; }
 
         public static CodedManager CodedEffects { get; set; }
+
+        public static DamageManager DamageEffects { get; set; }
         
         public static MouseState PrevState { get; set; }
         public static List<ChaoticGameLib.Creature> sCreatures1;

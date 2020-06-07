@@ -6,7 +6,7 @@ namespace ChaoticGameLib.Mugics
 {
     public class SongOfMandiblor : Mugic, ICastTargetCount<Creature>
     {
-        public SongOfMandiblor(Texture2D sprite, Texture2D overlay) : base(sprite, overlay, MugicType.Danian, 1) { }
+        public SongOfMandiblor(Texture2D sprite, Texture2D overlay, Texture2D negate) : base(sprite, overlay, negate, MugicType.Danian, 1) { }
         
         public override string Description()
         {

@@ -6,7 +6,7 @@ namespace ChaoticGameLib.Battlegears
 {
     public class RingOfNaarin : Battlegear
     {
-        public RingOfNaarin(Texture2D sprite, Texture2D overlay) : base(sprite, overlay, 10) { }
+        public RingOfNaarin(Texture2D sprite, Texture2D overlay, Texture2D negate) : base(sprite, overlay, negate, 10) { }
         public override void Equip(Creature creature)
         {
             creature.Power += this.DisciplineAmount;

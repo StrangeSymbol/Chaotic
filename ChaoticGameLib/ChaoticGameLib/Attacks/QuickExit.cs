@@ -6,8 +6,8 @@ namespace ChaoticGameLib.Attacks
 {
     public class QuickExit : Attack
     {
-        public QuickExit(Texture2D sprite, Texture2D overlay)
-            : base(sprite, overlay, 0, 0, 0, 0, 0, 0, 10, 15, false, false, false, false) { }
+        public QuickExit(Texture2D sprite, Texture2D overlay, Texture2D negate)
+            : base(sprite, overlay, negate, 0, 0, 0, 0, 0, 0, 10, 15, false, false, false, false) { }
 
         public override Tuple<short, short> PotentialDamage(Creature your, Creature enemy, Location location)
         {

@@ -6,9 +6,9 @@ namespace ChaoticGameLib.Creatures
 {
     public class Crawsectus : Creature
     {
-        public Crawsectus(Texture2D sprite, Texture2D overlay, byte energy, 
+        public Crawsectus(Texture2D sprite, Texture2D overlay, Texture2D negate, byte energy, 
             byte courage, byte power, byte wisdom, byte speed) :
-            base(sprite, overlay, energy, courage, power, wisdom, speed, 0,
+            base(sprite, overlay, negate, energy, courage, power, wisdom, speed, 0,
             false, false, true, true, 0, false, 0, 0, false, false, false, 0, 0, 5, 0, Tribe.OverWorld, CreatureType.Elementalist)
         {
         }

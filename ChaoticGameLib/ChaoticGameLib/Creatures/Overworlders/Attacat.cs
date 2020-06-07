@@ -6,8 +6,8 @@ namespace ChaoticGameLib.Creatures
 {
     public class Attacat : Creature
     {
-        public Attacat(Texture2D sprite, Texture2D overlay, byte energy, byte courage, byte power, byte wisdom, byte speed) :
-            base(sprite, overlay, energy, courage, power, wisdom, speed, 0,
+        public Attacat(Texture2D sprite, Texture2D overlay, Texture2D negate, byte energy, byte courage, byte power, byte wisdom, byte speed) :
+            base(sprite, overlay, negate, energy, courage, power, wisdom, speed, 0,
             false, false, false, false, 1, false, 0, 0, false, false, false, Tribe.OverWorld, CreatureType.GuardianWarrior)
         {
         }

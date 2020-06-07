@@ -6,7 +6,7 @@ namespace ChaoticGameLib.Mugics
 {
     public class SongOfResistance : Mugic, ICastTarget<Creature>
     {
-        public SongOfResistance(Texture2D sprite, Texture2D overlay) : base(sprite, overlay, MugicType.Danian, 2) { }
+        public SongOfResistance(Texture2D sprite, Texture2D overlay, Texture2D negate) : base(sprite, overlay, negate, MugicType.Danian, 2) { }
         
         public override string Description()
         {

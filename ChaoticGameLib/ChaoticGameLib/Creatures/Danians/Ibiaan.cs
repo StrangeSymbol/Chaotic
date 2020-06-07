@@ -6,9 +6,9 @@ namespace ChaoticGameLib.Creatures
 {
     public class Ibiaan : Creature, IHive
     {
-        public Ibiaan(Texture2D sprite, Texture2D overlay, 
+        public Ibiaan(Texture2D sprite, Texture2D overlay, Texture2D negate, 
             byte energy, byte courage, byte power, byte wisdom, byte speed) :
-            base(sprite, overlay, energy, courage, power, wisdom, speed, 0,
+            base(sprite, overlay, negate, energy, courage, power, wisdom, speed, 0,
             false, false, true, false, false, false, Tribe.Danian, CreatureType.Mandiblor)
         {
         }

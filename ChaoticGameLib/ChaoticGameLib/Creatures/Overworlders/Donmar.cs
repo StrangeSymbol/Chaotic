@@ -6,9 +6,9 @@ namespace ChaoticGameLib.Creatures
 {
     public class Donmar : Creature, IActivateTarget<Creature>
     {
-        public Donmar(Texture2D sprite, Texture2D overlay, 
+        public Donmar(Texture2D sprite, Texture2D overlay, Texture2D negate, 
             byte energy, byte courage, byte power, byte wisdom, byte speed) :
-            base(sprite, overlay, energy, courage, power, wisdom, speed, 2, 
+            base(sprite, overlay, negate, energy, courage, power, wisdom, speed, 2, 
             false, false, false, false, 0, false, 0, 0, false, false, false,
             0, 0, 0, 0, 1, 10, Tribe.OverWorld, CreatureType.Caretaker)
         {

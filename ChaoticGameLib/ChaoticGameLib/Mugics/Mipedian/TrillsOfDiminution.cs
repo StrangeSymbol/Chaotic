@@ -1,12 +1,14 @@
-﻿using System;
-using Microsoft.Xna.Framework;
+﻿/*
+ *  Coded by: Ambrose Emmett-Iwaniw
+ *  The following code is (c) copyright 2020, StrangeSymbol, Inc. ALL RIGHTS RESERVED
+ */
 using Microsoft.Xna.Framework.Graphics;
 
 namespace ChaoticGameLib.Mugics
 {
     public class TrillsOfDiminution : Mugic, ICastTargetTwo<Creature>
     {
-        public TrillsOfDiminution(Texture2D sprite, Texture2D overlay) : base(sprite, overlay, MugicType.Mipedian, 1) { }
+        public TrillsOfDiminution(Texture2D sprite, Texture2D overlay, Texture2D negate) : base(sprite, overlay, negate, MugicType.Mipedian, 1) { }
 
         public override string Description()
         {

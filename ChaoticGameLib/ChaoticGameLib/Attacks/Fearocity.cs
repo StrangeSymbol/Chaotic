@@ -6,8 +6,8 @@ namespace ChaoticGameLib.Attacks
 {
     public class Fearocity : Attack
     {
-        public Fearocity(Texture2D sprite, Texture2D overlay)
-            : base(sprite, overlay, 5, 0, 5, 0, 0, 2, 10, 75, false, true, false, false) { }
+        public Fearocity(Texture2D sprite, Texture2D overlay, Texture2D negate)
+            : base(sprite, overlay, negate, 5, 0, 5, 0, 0, 2, 10, 75, false, true, false, false) { }
 
         public override Tuple<short, short> PotentialDamage(Creature your, Creature enemy, Location location)
         {

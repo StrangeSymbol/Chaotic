@@ -7,8 +7,8 @@ namespace ChaoticGameLib.Attacks
 {
     public class TornadoTackle : Attack
     {
-        public TornadoTackle(Texture2D sprite, Texture2D overlay)
-            : base(sprite, overlay, 0, 0, 0, 0, 0, 0, 0, 0, false, true, false, false) { }
+        public TornadoTackle(Texture2D sprite, Texture2D overlay, Texture2D negate)
+            : base(sprite, overlay, negate, 0, 0, 0, 0, 0, 0, 0, 0, false, true, false, false) { }
         public override string Description()
         {
             return base.Description() + "Air: Both players reshuffle their Attack Deck.";

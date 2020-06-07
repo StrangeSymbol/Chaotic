@@ -6,8 +6,8 @@ namespace ChaoticGameLib.Attacks
 {
     public class LuckyShot : Attack
     {
-        public LuckyShot(Texture2D sprite, Texture2D overlay)
-            : base(sprite, overlay, 0, 0, 0, 0, 0, 4, 40, 0, false, false, false, false) { }
+        public LuckyShot(Texture2D sprite, Texture2D overlay, Texture2D negate)
+            : base(sprite, overlay, negate, 0, 0, 0, 0, 0, 4, 40, 0, false, false, false, false) { }
 
         public override Tuple<short, short> PotentialDamage(Creature your, Creature enemy, Location location)
         {

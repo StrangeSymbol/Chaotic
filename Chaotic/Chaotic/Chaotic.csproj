@@ -119,6 +119,8 @@
     <Compile Include="CodedCharacter.cs" />
     <Compile Include="CodedManager.cs" />
     <Compile Include="Coin.cs" />
+    <Compile Include="Damage.cs" />
+    <Compile Include="DamageManager.cs" />
     <Compile Include="DeckSetup1On1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -148,6 +150,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="GameMenu.cs" />
+    <Compile Include="SelectingDescription.cs" />
     <Compile Include="SelectingSystem.cs" />
     <Compile Include="SelectPanel.cs" />
     <Compile Include="SelectType.cs" />

@@ -91,7 +91,11 @@ namespace Chaotic
                     return true;
                 }
             }
-            return false;
+
+            if (hand.Count == 0)
+                return true;
+            else
+                return false;
         }
 
         public bool UpdateHand(GameTime gameTime, MouseState mouse, DiscardPile<ChaoticCard> discardPile)
@@ -120,7 +124,11 @@ namespace Chaotic
                     return true;
                 }
             }
-            return false;
+
+            if (hand.Count == 0)
+                return true;
+            else
+                return false;
         }
 
         public bool UpdateHand(GameTime gameTime, int i, DiscardPile<ChaoticCard> discardPile)

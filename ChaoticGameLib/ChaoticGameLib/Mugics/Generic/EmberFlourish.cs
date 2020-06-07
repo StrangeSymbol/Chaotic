@@ -6,7 +6,7 @@ namespace ChaoticGameLib.Mugics
 {
     public class EmberFlourish : Mugic, ICastTarget<Creature>
     {
-        public EmberFlourish(Texture2D sprite, Texture2D overlay) : base(sprite, overlay, MugicType.Generic, 1) { }
+        public EmberFlourish(Texture2D sprite, Texture2D overlay, Texture2D negate) : base(sprite, overlay, negate, MugicType.Generic, 1) { }
        
         public override bool CheckPlayable(Creature creature)
         {

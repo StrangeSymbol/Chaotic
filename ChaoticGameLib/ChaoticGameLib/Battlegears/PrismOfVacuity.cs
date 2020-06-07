@@ -6,7 +6,7 @@ namespace ChaoticGameLib.Battlegears
 {
     public class PrismOfVacuity : Battlegear, ISacrificeTarget<Creature>
     {
-        public PrismOfVacuity(Texture2D sprite, Texture2D overlay) : base(sprite, overlay, 20) { }
+        public PrismOfVacuity(Texture2D sprite, Texture2D overlay, Texture2D negate) : base(sprite, overlay, negate, 20) { }
         public override void Equip(Creature creature)
         {
             creature.Energy += 5;

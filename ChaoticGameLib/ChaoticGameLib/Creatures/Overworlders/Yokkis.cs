@@ -6,9 +6,9 @@ namespace ChaoticGameLib.Creatures
 {
     public class Yokkis : Creature, ISupport
     {
-        public Yokkis(Texture2D sprite, Texture2D overlay, 
+        public Yokkis(Texture2D sprite, Texture2D overlay, Texture2D negate, 
             byte energy, byte courage, byte power, byte wisdom, byte speed) :
-            base(sprite, overlay, energy, courage, power, wisdom, speed, 0, false, false, true, false, 0,
+            base(sprite, overlay, negate, energy, courage, power, wisdom, speed, 0, false, false, true, false, 0,
             false, 0, 0, false, false, false, Tribe.OverWorld, CreatureType.Hero)
         {
         }

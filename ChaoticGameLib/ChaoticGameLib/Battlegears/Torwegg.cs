@@ -6,7 +6,7 @@ namespace ChaoticGameLib.Battlegears
 {
     public class Torwegg : Battlegear
     {
-        public Torwegg(Texture2D sprite, Texture2D overlay) : base(sprite, overlay ,5) { }
+        public Torwegg(Texture2D sprite, Texture2D overlay, Texture2D negate) : base(sprite, overlay, negate ,5) { }
         public override void Equip(Creature creature)
         {
             creature.AirDamage += this.DisciplineAmount;

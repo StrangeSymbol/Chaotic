@@ -7,8 +7,8 @@ namespace ChaoticGameLib.Creatures
 {
     public class Kebna : Creature, IHive
     {
-        public Kebna(Texture2D sprite, Texture2D overlay, byte energy, byte courage, byte power, byte wisdom, byte speed) :
-            base(sprite, overlay, energy, courage, power, wisdom, speed, 1, 
+        public Kebna(Texture2D sprite, Texture2D overlay, Texture2D negate, byte energy, byte courage, byte power, byte wisdom, byte speed) :
+            base(sprite, overlay, negate, energy, courage, power, wisdom, speed, 1, 
             true, false, false, false, false, false, Tribe.Danian, CreatureType.Battlemaster)
         {
         }

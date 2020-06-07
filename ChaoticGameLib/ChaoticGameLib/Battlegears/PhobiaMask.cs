@@ -6,7 +6,7 @@ namespace ChaoticGameLib.Battlegears
 {
     public class PhobiaMask : Battlegear
     {
-        public PhobiaMask(Texture2D sprite, Texture2D overlay) : base(sprite,overlay, 10) { }
+        public PhobiaMask(Texture2D sprite, Texture2D overlay, Texture2D negate) : base(sprite,overlay, negate, 10) { }
 
         public override void Equip(Creature creature)
         {

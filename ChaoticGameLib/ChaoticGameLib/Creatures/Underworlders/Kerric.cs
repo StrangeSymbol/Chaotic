@@ -6,9 +6,9 @@ namespace ChaoticGameLib.Creatures
 {
     public class Kerric : Creature
     {
-        public Kerric(Texture2D sprite, Texture2D overlay, 
+        public Kerric(Texture2D sprite, Texture2D overlay, Texture2D negate, 
             byte energy, byte courage, byte power, byte wisdom, byte speed) :
-            base(sprite, overlay, energy, courage, power, wisdom, speed, 0, false, true, false, false, 1,
+            base(sprite, overlay, negate, energy, courage, power, wisdom, speed, 0, false, true, false, false, 1,
             true, 0, 0, false, false, false, Tribe.UnderWorld, CreatureType.Scout)
         {
         }

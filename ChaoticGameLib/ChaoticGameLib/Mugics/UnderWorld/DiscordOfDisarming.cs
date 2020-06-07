@@ -6,7 +6,7 @@ namespace ChaoticGameLib.Mugics
 {
     public class DiscordOfDisarming : Mugic, ICast
     {
-        public DiscordOfDisarming(Texture2D sprite, Texture2D overlay) : base(sprite, overlay, MugicType.UnderWorld, 1) { }
+        public DiscordOfDisarming(Texture2D sprite, Texture2D overlay, Texture2D negate) : base(sprite, overlay, negate, MugicType.UnderWorld, 1) { }
 
         AbilityType ICast.Type { get { return AbilityType.DestroyTargetBattlegear; } }
 

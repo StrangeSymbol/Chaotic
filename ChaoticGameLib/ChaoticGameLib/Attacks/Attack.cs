@@ -34,10 +34,10 @@ namespace ChaoticGameLib
         // Holds whether this attack deals 0 damage.
         bool dealZero;
 
-        public Attack(Texture2D sprite, Texture2D overlay, 
+        public Attack(Texture2D sprite, Texture2D overlay, Texture2D negate, 
             byte baseDamage, byte fireDamage, byte airDamage, byte earthDamage, byte waterDamage, byte buildNumber,
             byte energyAmount, byte disciplineAmount, bool fire, bool air, bool earth, bool water, bool unique=false)
-            : base(sprite, overlay, unique)
+            : base(sprite, overlay, negate, unique)
         {
             this.buildNumber = buildNumber;
             this.baseDamage = baseDamage;
@@ -90,52 +90,56 @@ namespace ChaoticGameLib
             if (your.Water && this.water)
                 energy2 -= (byte)(waterDamage + your.WaterDamage);
 
-            if (your.Battlegear is RiverlandStar && your.CreatureTribe == Tribe.OverWorld && your.Water && this.water)
+            if (your.Battlegear is RiverlandStar && your.Battlegear.IsFaceUp && !your.Battlegear.Negate
+                && your.CreatureTribe == Tribe.OverWorld && your.Water && this.water)
                 energy1 += 5;
 
-            if (your.Strike > 0 && your.FirstAttack && !enemy.Invisibility() &&
-                !((enemy.Battlegear is SpectralViewer) && enemy.Battlegear.IsFaceUp))
+            if (your.Strike > 0 && your.FirstAttack && !your.Negate && !enemy.Invisibility() &&
+                !((enemy.Battlegear is SpectralViewer) && enemy.Battlegear.IsFaceUp && !enemy.Battlegear.Negate))
                 energy2 -= your.Strike;
 
-            if (location is StormTunnel)
+            if (!location.Negate)
             {
-                if (your.Air && this.air)
-                    energy2 -= 5;
-                if (your.Water && this.water)
-                    energy2 += (byte)(energy2 >= 0 ? 0 : 5);
-            }
-            else if (location is Everrain)
-            {
-                if (your.Water && this.water)
-                    energy2 -= 5;
-                if (your.Earth && this.earth)
-                    energy2 += (byte)(energy2 >= 0 ? 0 : 5);
-            }
-            else if (location is GloomuckSwamp)
-            {
-                if (your.Earth && this.earth)
-                    energy2 -= 5;
-                if (your.Fire && this.fire)
-                    energy2 += (byte)(energy2 >= 0 ? 0 : 5);
-            }
-            else if (location is LavaPond)
-            {
-                if (your.Fire && this.fire)
-                    energy2 -= 5;
-                if (your.Air && this.air)
-                    energy2 += (byte)(energy2 >= 0 ? 0 : 5);
-            }
-            else if (location is MipedimOasis && your.FirstAttack && your.CreatureTribe == Tribe.Mipedian)
-                energy2 -= 10;
-            else if (location is Riverlands && your.Water && this.water)
-                energy1 += (byte)(your.Energy + 5 > 
-                    your.OldCreature.Energy + your.GainedEnergyTurn + your.GainedEnergy ? 0 : 5);
-            else if (location is UnderworldColosseum && your.FirstAttack && your.Fire)
-                energy2 -= 10;
-            else if (location is UnderworldCity && your.CreatureTribe == Tribe.UnderWorld)
-            {
-                if ((your.Power - enemy.Power) >= 15)
-                    energy2 -= 5;
+                if (location is StormTunnel)
+                {
+                    if (your.Air && this.air)
+                        energy2 -= 5;
+                    if (your.Water && this.water)
+                        energy2 += (byte)(energy2 >= 0 ? 0 : 5);
+                }
+                else if (location is Everrain)
+                {
+                    if (your.Water && this.water)
+                        energy2 -= 5;
+                    if (your.Earth && this.earth)
+                        energy2 += (byte)(energy2 >= 0 ? 0 : 5);
+                }
+                else if (location is GloomuckSwamp)
+                {
+                    if (your.Earth && this.earth)
+                        energy2 -= 5;
+                    if (your.Fire && this.fire)
+                        energy2 += (byte)(energy2 >= 0 ? 0 : 5);
+                }
+                else if (location is LavaPond)
+                {
+                    if (your.Fire && this.fire)
+                        energy2 -= 5;
+                    if (your.Air && this.air)
+                        energy2 += (byte)(energy2 >= 0 ? 0 : 5);
+                }
+                else if (location is MipedimOasis && your.FirstAttack && your.CreatureTribe == Tribe.Mipedian)
+                    energy2 -= 10;
+                else if (location is Riverlands && your.Water && this.water)
+                    energy1 += (byte)(your.Energy + 5 >
+                        your.OldCreature.Energy + your.GainedEnergyTurn + your.GainedEnergy ? 0 : 5);
+                else if (location is UnderworldColosseum && your.FirstAttack && your.Fire)
+                    energy2 -= 10;
+                else if (location is UnderworldCity && your.CreatureTribe == Tribe.UnderWorld)
+                {
+                    if ((your.Power - enemy.Power) >= 15)
+                        energy2 -= 5;
+                }
             }
 
             return new Tuple<short, short>(energy1, energy2);
@@ -146,13 +150,13 @@ namespace ChaoticGameLib
             Tuple<short, short> damage = PotentialDamage(your, enemy, location);
             short energy1 = damage.Item1;
             short energy2 = damage.Item2;
-            if ((location is CrystalCave && your.FirstAttack && your.Speed < enemy.Speed) || dealZero)
+            if ((location is CrystalCave && !location.Negate && your.FirstAttack && your.Speed < enemy.Speed) || dealZero)
             {
                 energy2 = 0;
                 dealZero = false;
             }
             
-            if (enemy.Battlegear is StoneMail && enemy.Battlegear.IsFaceUp && energy2 > 0)
+            if (enemy.Battlegear is StoneMail && enemy.Battlegear.IsFaceUp && !enemy.Battlegear.Negate)
                 energy2 -= 5;
 
             if (energy2 <= -enemy.ReducedDamage)

@@ -76,7 +76,10 @@ namespace Chaotic
                 if (locationTemp.IsMoving && isPlayer1)
                     locationTemp.DrawTemplate(spriteBatch, cardBack, isPlayer1, 0.9f);
                 else
+                {
                     locationTemp.DrawTemplate(spriteBatch, isPlayer1, 0.9f);
+                    location.DrawNegate(spriteBatch, 0.85f);
+                }
             }
         }
     }

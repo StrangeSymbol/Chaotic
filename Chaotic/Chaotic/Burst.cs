@@ -2,12 +2,7 @@
  *  Coded by: Ambrose Emmett-Iwaniw
  *  The following code is (c) copyright 2020, StrangeSymbol, Inc. ALL RIGHTS RESERVED
  */
-using System;
 using System.Collections.Generic;
-using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Graphics;
-using Microsoft.Xna.Framework.Input;
-using Microsoft.Xna.Framework.Content;
 using ChaoticGameLib;
 
 namespace Chaotic

@@ -6,8 +6,8 @@ namespace ChaoticGameLib.Creatures
 {
     public class Lore : Creature, IActivateTarget<Creature>
     {
-        public Lore(Texture2D sprite, Texture2D overlay, byte energy, byte courage, byte power, byte wisdom, byte speed) :
-            base(sprite, overlay, energy, courage, power, wisdom, speed, 3, false, false, false, false, 0, false, 0, 0, false,
+        public Lore(Texture2D sprite, Texture2D overlay, Texture2D negate, byte energy, byte courage, byte power, byte wisdom, byte speed) :
+            base(sprite, overlay, negate, energy, courage, power, wisdom, speed, 3, false, false, false, false, 0, false, 0, 0, false,
             false, true, 0, 0, 0, 0, 1, 10, Tribe.Danian, CreatureType.Muge)
         {
         }

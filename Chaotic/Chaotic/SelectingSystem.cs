@@ -3,11 +3,7 @@
  *  The following code is (c) copyright 2020, StrangeSymbol, Inc. ALL RIGHTS RESERVED
  */
 using System;
-using System.Collections.Generic;
-using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
-using ChaoticGameLib;
 
 namespace Chaotic
 {

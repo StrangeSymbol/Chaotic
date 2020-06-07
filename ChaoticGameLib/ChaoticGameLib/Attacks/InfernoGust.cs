@@ -6,8 +6,8 @@ namespace ChaoticGameLib.Attacks
 {
     public class InfernoGust : Attack
     {
-        public InfernoGust(Texture2D sprite, Texture2D overlay)
-            : base(sprite, overlay, 0, 5, 5, 0, 0, 1, 10, 15, true, true, false, false) { }
+        public InfernoGust(Texture2D sprite, Texture2D overlay, Texture2D negate)
+            : base(sprite, overlay, negate, 0, 5, 5, 0, 0, 1, 10, 15, true, true, false, false) { }
 
         public override Tuple<short, short> PotentialDamage(Creature your, Creature enemy, Location location)
         {

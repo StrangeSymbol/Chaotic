@@ -6,7 +6,7 @@ namespace ChaoticGameLib.Mugics
 {
     public class Decrescendo : Mugic, ICastTarget<Creature>
     {
-        public Decrescendo(Texture2D sprite, Texture2D overlay) : base(sprite, overlay, MugicType.Generic, 1) { }
+        public Decrescendo(Texture2D sprite, Texture2D overlay, Texture2D negate) : base(sprite, overlay, negate, MugicType.Generic, 1) { }
 
         void ICastTarget<Creature>.Ability(Creature creature)
         {

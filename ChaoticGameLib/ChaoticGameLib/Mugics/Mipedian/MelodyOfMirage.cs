@@ -6,7 +6,7 @@ namespace ChaoticGameLib.Mugics
 {
     public class MelodyOfMirage : Mugic, ICastTarget<Attack>
     {
-        public MelodyOfMirage(Texture2D sprite, Texture2D overlay) : base(sprite, overlay, MugicType.Mipedian, 1) { }
+        public MelodyOfMirage(Texture2D sprite, Texture2D overlay, Texture2D negate) : base(sprite, overlay, negate, MugicType.Mipedian, 1) { }
 
         void ICastTarget<Attack>.Ability(Attack attack)
         {

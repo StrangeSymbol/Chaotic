@@ -6,8 +6,8 @@ namespace ChaoticGameLib.Attacks
 {
     public class Unsanity : Attack
     {
-        public Unsanity(Texture2D sprite, Texture2D overlay)
-            : base(sprite, overlay, 0, 0, 5, 0, 5, 1, 10, 15, false, true, false, true) { }
+        public Unsanity(Texture2D sprite, Texture2D overlay, Texture2D negate)
+            : base(sprite, overlay, negate, 0, 0, 5, 0, 5, 1, 10, 15, false, true, false, true) { }
 
         public override Tuple<short, short> PotentialDamage(Creature your, Creature enemy, Location location)
         {

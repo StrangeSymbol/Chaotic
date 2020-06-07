@@ -6,7 +6,7 @@ namespace ChaoticGameLib.Mugics
 {
     public class FanfareOfTheVanishing : Mugic, ICastTarget<Creature>
     {
-        public FanfareOfTheVanishing(Texture2D sprite, Texture2D overlay) : base(sprite, overlay, MugicType.Mipedian, 1) { }
+        public FanfareOfTheVanishing(Texture2D sprite, Texture2D overlay, Texture2D negate) : base(sprite, overlay, negate, MugicType.Mipedian, 1) { }
 
         void ICastTarget<Creature>.Ability(Creature creature)
         {

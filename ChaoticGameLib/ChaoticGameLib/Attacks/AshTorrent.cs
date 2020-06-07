@@ -6,8 +6,8 @@ namespace ChaoticGameLib.Attacks
 {
     public class AshTorrent : Attack
     {
-        public AshTorrent(Texture2D sprite, Texture2D overlay) 
-            : base(sprite, overlay, 0, 5, 0, 5, 0, 1, 10, 15, true, false, true, false) { }
+        public AshTorrent(Texture2D sprite, Texture2D overlay, Texture2D negate) 
+            : base(sprite, overlay, negate, 0, 5, 0, 5, 0, 1, 10, 15, true, false, true, false) { }
 
         public override Tuple<short, short> PotentialDamage(Creature your, Creature enemy, Location location)
         {

@@ -6,7 +6,7 @@ namespace ChaoticGameLib.Attacks
 {
     public class SteamRage : Attack
     {
-        public SteamRage(Texture2D sprite, Texture2D overlay)
-            : base(sprite, overlay, 0, 5, 0, 0, 5, 1, 0, 0, true, false, false, true) { }
+        public SteamRage(Texture2D sprite, Texture2D overlay, Texture2D negate)
+            : base(sprite, overlay, negate, 0, 5, 0, 0, 5, 1, 0, 0, true, false, false, true) { }
     }
 }

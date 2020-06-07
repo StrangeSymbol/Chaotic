@@ -6,7 +6,7 @@ namespace ChaoticGameLib.Mugics
 {
     public class SongOfTreachery : Mugic, ICastTarget<Creature>
     {
-        public SongOfTreachery(Texture2D sprite, Texture2D overlay) : base(sprite, overlay, MugicType.UnderWorld, 1) { }
+        public SongOfTreachery(Texture2D sprite, Texture2D overlay, Texture2D negate) : base(sprite, overlay, negate, MugicType.UnderWorld, 1) { }
 
         public override bool CheckPlayable(Creature creature)
         {

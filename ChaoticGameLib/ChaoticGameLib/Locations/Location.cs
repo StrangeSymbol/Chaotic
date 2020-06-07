@@ -12,16 +12,13 @@ namespace ChaoticGameLib
         // Holds the active location background image.
         Texture2D background;
 
-        // Holds whether this location ability is negated.
-        bool negate;
-
-        public Location(Texture2D sprite, Texture2D background, Texture2D overlay, LocationType initiative)
-            : this(sprite, background, overlay, false, initiative)
+        public Location(Texture2D sprite, Texture2D background, Texture2D overlay, Texture2D negate, LocationType initiative)
+            : this(sprite, background, overlay, negate, false, initiative)
         { 
         }
 
-        public Location(Texture2D sprite, Texture2D background, Texture2D overlay, bool unique, LocationType initiative) 
-            : base(sprite, overlay, unique) 
+        public Location(Texture2D sprite, Texture2D background, Texture2D overlay, Texture2D negate, bool unique, LocationType initiative) 
+            : base(sprite, overlay, negate, unique) 
         {
             this.initiative = initiative;
             this.background = background;
@@ -29,7 +26,6 @@ namespace ChaoticGameLib
 
         public LocationType Initiative { get { return initiative; } }
         public Texture2D Background { get { return background; } }
-        public bool Negate { get { return this.negate; } set { negate = value; } }
 
         /// <summary>
         /// Determines who attacks first

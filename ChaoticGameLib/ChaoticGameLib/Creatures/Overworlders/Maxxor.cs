@@ -6,9 +6,9 @@ namespace ChaoticGameLib.Creatures
 {
     public class Maxxor : Creature, IActivateTarget<Creature>
     {
-        public Maxxor(Texture2D sprite, Texture2D overlay, 
+        public Maxxor(Texture2D sprite, Texture2D overlay, Texture2D negate, 
             byte energy, byte courage, byte power, byte wisdom, byte speed) :
-            base(sprite, overlay, energy, courage, power, wisdom, speed, 2, true, false, true, false, 0, 
+            base(sprite, overlay, negate, energy, courage, power, wisdom, speed, 2, true, false, true, false, 0, 
             false, 0, 0, false, true, true, 0, 0, 0, 0, 1, 10, Tribe.OverWorld, CreatureType.Hero)
         {
         }

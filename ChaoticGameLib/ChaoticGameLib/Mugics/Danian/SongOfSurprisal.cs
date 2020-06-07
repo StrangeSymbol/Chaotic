@@ -6,7 +6,7 @@ namespace ChaoticGameLib.Mugics
 {
     public class SongOfSurprisal : Mugic, ICastTarget<Creature>
     {
-        public SongOfSurprisal(Texture2D sprite, Texture2D overlay) : base(sprite, overlay, MugicType.Danian, 1) { }
+        public SongOfSurprisal(Texture2D sprite, Texture2D overlay, Texture2D negate) : base(sprite, overlay, negate, MugicType.Danian, 1) { }
 
         void ICastTarget<Creature>.Ability(Creature card)
         {

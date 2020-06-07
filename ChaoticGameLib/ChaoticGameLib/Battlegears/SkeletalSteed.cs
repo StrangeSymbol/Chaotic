@@ -7,7 +7,7 @@ namespace ChaoticGameLib.Battlegears
     public class SkeletalSteed : Battlegear
     {
         bool hadRange;
-        public SkeletalSteed(Texture2D sprite, Texture2D overlay) : base(sprite, overlay, 1, true) { }
+        public SkeletalSteed(Texture2D sprite, Texture2D overlay, Texture2D negate) : base(sprite, overlay, negate, 1, true) { }
         public override void Equip(Creature creature)
         {
             if (!creature.Range)

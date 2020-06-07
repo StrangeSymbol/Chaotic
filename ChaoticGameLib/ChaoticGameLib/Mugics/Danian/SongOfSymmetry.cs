@@ -6,7 +6,7 @@ namespace ChaoticGameLib.Mugics
 {
     public class SongOfSymmetry : Mugic, ICastTargetTwo<Creature>
     {
-        public SongOfSymmetry(Texture2D sprite, Texture2D overlay) : base(sprite, overlay, MugicType.Danian, 1) { }
+        public SongOfSymmetry(Texture2D sprite, Texture2D overlay, Texture2D negate) : base(sprite, overlay, negate, MugicType.Danian, 1) { }
 
         void ICastTargetTwo<Creature>.Ability(Creature card1, Creature card2)
         {

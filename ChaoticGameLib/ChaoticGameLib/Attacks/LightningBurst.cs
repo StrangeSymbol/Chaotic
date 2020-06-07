@@ -6,8 +6,8 @@ namespace ChaoticGameLib.Attacks
 {
     public class LightningBurst : Attack
     {
-        public LightningBurst(Texture2D sprite, Texture2D overlay)
-            : base(sprite, overlay, 5, 0, 5, 0, 0, 1, 0, 25, false, true, false, false) { }
+        public LightningBurst(Texture2D sprite, Texture2D overlay, Texture2D negate)
+            : base(sprite, overlay, negate, 5, 0, 5, 0, 0, 1, 0, 25, false, true, false, false) { }
         public override void Damage(Creature your, Creature enemy, Location location)
         {
             base.Damage(your, enemy, location);

@@ -6,7 +6,7 @@ namespace ChaoticGameLib.Mugics
 {
     public class SongOfAsperity : Mugic, ICastTarget<Creature>
     {
-        public SongOfAsperity(Texture2D sprite, Texture2D overlay) : base(sprite, overlay, MugicType.UnderWorld, 1) { }
+        public SongOfAsperity(Texture2D sprite, Texture2D overlay, Texture2D negate) : base(sprite, overlay, negate, MugicType.UnderWorld, 1) { }
 
         public override bool CheckPlayable(Creature creature)
         {

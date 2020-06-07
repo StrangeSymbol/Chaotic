@@ -6,7 +6,7 @@ namespace ChaoticGameLib.Mugics
 {
     public class SongOfStasis : Mugic, ICastTarget<Creature>
     {
-        public SongOfStasis(Texture2D sprite, Texture2D overlay) : base(sprite, overlay, MugicType.OverWorld, 1) { }
+        public SongOfStasis(Texture2D sprite, Texture2D overlay, Texture2D negate) : base(sprite, overlay, negate, MugicType.OverWorld, 1) { }
 
         void ICastTarget<Creature>.Ability(Creature creature)
         {

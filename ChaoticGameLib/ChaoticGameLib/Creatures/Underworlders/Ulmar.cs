@@ -6,9 +6,9 @@ namespace ChaoticGameLib.Creatures
 {
     public class Ulmar : Creature, IActivateTarget<Creature>
     {
-        public Ulmar(Texture2D sprite, Texture2D overlay, 
+        public Ulmar(Texture2D sprite, Texture2D overlay, Texture2D negate, 
             byte energy, byte courage, byte power, byte wisdom, byte speed) :
-            base(sprite, overlay, energy, courage, power, wisdom, speed, 2, true, false, false, false, 0,
+            base(sprite, overlay, negate, energy, courage, power, wisdom, speed, 2, true, false, false, false, 0,
             false, 0, 0, false, false, false, 0, 0, 0, 0, 1, 10, Tribe.UnderWorld, CreatureType.Conqueror)
         {
         }

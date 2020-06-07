@@ -7,7 +7,7 @@ namespace ChaoticGameLib.Battlegears
 {
     public class ElixirOfTenacity : Battlegear
     {
-        public ElixirOfTenacity(Texture2D sprite, Texture2D overlay) : base(sprite, overlay, 10) { }
+        public ElixirOfTenacity(Texture2D sprite, Texture2D overlay, Texture2D negate) : base(sprite, overlay, negate, 10) { }
 
         public override void Equip(Creature creature)
         {

@@ -6,7 +6,7 @@ namespace ChaoticGameLib.Battlegears
 {
     public class MipedianCactus : Battlegear, IActivateBattlegear
     {
-        public MipedianCactus(Texture2D sprite, Texture2D overlay) : base(sprite, overlay, 15) { }
+        public MipedianCactus(Texture2D sprite, Texture2D overlay, Texture2D negate) : base(sprite, overlay, negate, 15) { }
         public override void Equip(Creature creature)
         {
             creature.Wisdom += this.DisciplineAmount;

@@ -6,8 +6,8 @@ namespace ChaoticGameLib.Locations
 {
     public class DoorsOfTheDeepmines : Location
     {
-        public DoorsOfTheDeepmines(Texture2D sprite, Texture2D background, Texture2D overlay)
-            : base(sprite, background, overlay, LocationType.Speed)
+        public DoorsOfTheDeepmines(Texture2D sprite, Texture2D background, Texture2D overlay, Texture2D negate)
+            : base(sprite, background, overlay, negate, LocationType.Speed)
         {
         }
 

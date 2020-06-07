@@ -6,7 +6,7 @@ namespace ChaoticGameLib.Mugics
 {
     public class MelodyOfMalady : Mugic, ICastTargetTwo<Creature>
     {
-        public MelodyOfMalady(Texture2D sprite, Texture2D overlay) : base(sprite, overlay, MugicType.UnderWorld, 1) { }
+        public MelodyOfMalady(Texture2D sprite, Texture2D overlay, Texture2D negate) : base(sprite, overlay, negate, MugicType.UnderWorld, 1) { }
 
         public override string Description()
         {

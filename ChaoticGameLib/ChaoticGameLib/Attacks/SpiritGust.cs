@@ -6,8 +6,8 @@ namespace ChaoticGameLib.Attacks
 {
     public class SpiritGust : Attack
     {
-        public SpiritGust(Texture2D sprite, Texture2D overlay)
-            : base(sprite, overlay, 0, 0, 0, 0, 0, 0, 5, 50, false, false, false, false) { }
+        public SpiritGust(Texture2D sprite, Texture2D overlay, Texture2D negate)
+            : base(sprite, overlay, negate, 0, 0, 0, 0, 0, 0, 5, 50, false, false, false, false) { }
 
         public override Tuple<short, short> PotentialDamage(Creature your, Creature enemy, Location location)
         {

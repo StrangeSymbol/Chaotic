@@ -6,9 +6,9 @@ namespace ChaoticGameLib.Creatures
 {
     public class Solvis : Creature, IActivateTarget<Creature>
     {
-        public Solvis(Texture2D sprite, Texture2D overlay, 
+        public Solvis(Texture2D sprite, Texture2D overlay, Texture2D negate, 
             byte energy, byte courage, byte power, byte wisdom, byte speed) :
-            base(sprite, overlay, energy, courage, power, wisdom, speed, 2, false, false, false, false, 0,
+            base(sprite, overlay, negate, energy, courage, power, wisdom, speed, 2, false, false, false, false, 0,
             false, 0, 0, false, false, false, 0, 0, 0, 0, 2, 10, Tribe.UnderWorld, CreatureType.Taskmaster)
         {
         }

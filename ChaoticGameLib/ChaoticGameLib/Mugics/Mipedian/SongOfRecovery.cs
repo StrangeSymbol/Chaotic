@@ -6,7 +6,7 @@ namespace ChaoticGameLib.Mugics
 {
     public class SongOfRecovery : Mugic, ICastTarget<Creature>
     {
-        public SongOfRecovery(Texture2D sprite, Texture2D overlay) : base(sprite, overlay, MugicType.Mipedian, 1) { }
+        public SongOfRecovery(Texture2D sprite, Texture2D overlay, Texture2D negate) : base(sprite, overlay, negate, MugicType.Mipedian, 1) { }
         
         public override bool CheckPlayable(Creature creature)
         {
