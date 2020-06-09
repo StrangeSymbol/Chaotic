@@ -133,6 +133,9 @@ namespace ChaoticGameLib
 
         // Holds whether this creature can't move.
         bool cannotMove;
+
+        // Used for signalling when a Creature loses ability.
+        bool prevNegate;
         #endregion
 
         #region constructor
@@ -179,6 +182,7 @@ namespace ChaoticGameLib
             this.fireDamageGained = this.airDamageGained = this.earthDamageGained = this.waterDamageGained = 0;
             this.swiftGained = 0;
             this.reducedAirDamage = this.reducedFireDamage = 0;
+            this.prevNegate = false;
             this.oldCreature = this.ShallowCopy() as Creature;
             this.mugicCounters = mugicCounters;
         }
@@ -326,8 +330,10 @@ namespace ChaoticGameLib
         public byte IntimidateSpeed { get { return intimidateSpeed; } set { intimidateSpeed = value; } }
 
         public bool CannotMove { get { return cannotMove; } set { cannotMove = value; } }
+
+        public bool PrevNegate { get { return prevNegate; } set { prevNegate = value; } }
         #endregion
- 
+
         #region Member Functions
 
         public void RestoreCombat()
@@ -401,7 +407,8 @@ namespace ChaoticGameLib
             if (battlegear != null && !this.battlegear.IsFaceUp)
             {
                 this.battlegear.IsFaceUp = true;
-                this.battlegear.Equip(this);
+                if (!this.battlegear.Negate)
+                    this.battlegear.Equip(this);
             }
         }
 
@@ -419,7 +426,8 @@ namespace ChaoticGameLib
             if (battlegear != null && !this.battlegear.Negate)
             {
                 this.battlegear.Negate = true;
-                this.battlegear.UnEquip(this);
+                if (this.battlegear.IsFaceUp)
+                    this.battlegear.UnEquip(this);
             }
         }
 

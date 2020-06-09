@@ -25,7 +25,8 @@ namespace Chaotic
 
         public void DrawDescription(SpriteBatch spriteBatch)
         {
-            string description = String.Empty;
+            string description;
+
             switch (ChaoticEngine.GStage)
             {
                 case GameStage.Moving:

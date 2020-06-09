@@ -12,6 +12,9 @@ namespace ChaoticGameLib
         // Holds the active location background image.
         Texture2D background;
 
+        // Used to signal when a location is negated.
+        bool prevNegate;
+
         public Location(Texture2D sprite, Texture2D background, Texture2D overlay, Texture2D negate, LocationType initiative)
             : this(sprite, background, overlay, negate, false, initiative)
         { 
@@ -22,10 +25,12 @@ namespace ChaoticGameLib
         {
             this.initiative = initiative;
             this.background = background;
+            this.prevNegate = false;
         }
 
         public LocationType Initiative { get { return initiative; } }
         public Texture2D Background { get { return background; } }
+        public bool PrevNegate { get { return prevNegate; } set { prevNegate = value; } }
 
         /// <summary>
         /// Determines who attacks first
@@ -35,10 +40,10 @@ namespace ChaoticGameLib
         /// <returns>Which Creature won initiative check.</returns>
         public int initiativeCheck(Creature c1, Creature c2)
         {
-            if (c1.Surprise && !c2.Invisibility() &&
+            if (!c1.Negate && c1.Surprise && !c2.Invisibility() &&
                 !(c2.Battlegear != null && c2.Battlegear is ChaoticGameLib.Battlegears.SpectralViewer))
                 return 1;
-            else if (!c1.Invisibility() && c2.Surprise &&
+            else if (!c2.Negate && !c1.Invisibility() && c2.Surprise &&
                 !(c1.Battlegear != null && c1.Battlegear is ChaoticGameLib.Battlegears.SpectralViewer))
                 return -1;
             switch(initiative)

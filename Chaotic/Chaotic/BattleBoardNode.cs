@@ -264,7 +264,7 @@ namespace Chaotic
         public void RestoreMoves()
         {
             this.numMoves = 1;
-            if (creature != null)
+            if (creature != null && !creature.Negate)
                 this.numMoves += creature.Swift;
         }
 
@@ -282,7 +282,7 @@ namespace Chaotic
             }
             else
             {
-                if (creature.Range)
+                if (creature.Range && !creature.Negate)
                 {
                     rangeQueue = new Queue<int>();
                     for (int i = 0; i < creatureSpaces.Length; i++)

@@ -104,6 +104,7 @@
     <Compile Include="BattleBoardMenu.cs" />
     <Compile Include="BattleBoardNode.cs" />
     <Compile Include="Burst.cs" />
+    <Compile Include="BurstBox.cs" />
     <Compile Include="Button.cs" />
     <Compile Include="CardDescription.cs" />
     <Compile Include="CardHighlighter.cs" />

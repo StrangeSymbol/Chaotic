@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Chaotic.exe" size="304128">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Chaotic.exe" size="305664">
       <assemblyIdentity name="Chaotic" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>55aApmwYh/WkUG206UIDZEiH9VU=</dsig:DigestValue>
+        <dsig:DigestValue>VJVWPNVg7FWV2Hp2qm8UZRq2vxQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -62,7 +62,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>/dpvbvTwYfp/1G1jcIfbd1ap2wU=</dsig:DigestValue>
+        <dsig:DigestValue>srwMH5jBRxGg0tA0qFLBcEPv7X4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -1254,6 +1254,51 @@
       <dsig:DigestValue>f4fHIbP/+RYOX0BCq54A+mSBzkM=</dsig:DigestValue>
     </hash>
   </file>
+  <file name="Content\BurstSprites\ArrowButtonCoverD.xnb" size="4511">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>+5NrYkdqtsDJTTQeZg4c4H9cU/U=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\BurstSprites\ArrowButtonCoverU.xnb" size="4511">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>C4s3YXwuoBXAeOCvWdDr+f0FbeE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\BurstSprites\ArrowButtonD.xnb" size="4511">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Ef6BKFxyHO2Fosv0sexjH9KQEss=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\BurstSprites\ArrowButtonU.xnb" size="4511">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>381XVwATIAqO6absB2PaXdsMG2I=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\BurstSprites\box.xnb" size="2687">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>WKND6eDewNjtJjyafG6laBnFUu4=</dsig:DigestValue>
+    </hash>
+  </file>
   <file name="Content\CardBack.xnb" size="350187">
     <hash>
       <dsig:Transforms>
@@ -2110,6 +2155,15 @@
     </hash>
   </file>
   <file name="Content\Fonts\AttackDamage.xnb" size="38062">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Ja59bIxORmWYAJsePAxG79THlys=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Fonts\BurstBoxFont.xnb" size="38062">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />

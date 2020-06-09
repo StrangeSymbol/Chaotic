@@ -243,9 +243,9 @@ namespace Chaotic
         public static bool CheckBattlegearAbility(Creature creatureEquipped, BattleBoardNode[] creatureSpaces,
             ActiveLocation activeLoc)
         {
-            if (!creatureEquipped.Battlegear.Negate && !(activeLoc.LocationActive is ChaoticGameLib.Locations.DranakisThreshold))
+            if (!(activeLoc.LocationActive is ChaoticGameLib.Locations.DranakisThreshold))
             {
-                if (creatureEquipped.Battlegear is ChaoticGameLib.Battlegears.MipedianCactus 
+                if (creatureEquipped.Battlegear is ChaoticGameLib.Battlegears.MipedianCactus && !creatureEquipped.Battlegear.Negate
                     && creatureEquipped.Battlegear.IsFaceUp && creatureEquipped.CreatureTribe == Tribe.Mipedian)
                 {
                     return creatureEquipped.MugicCounters >= 1 && !creatureEquipped.CanMoveAnywhere;

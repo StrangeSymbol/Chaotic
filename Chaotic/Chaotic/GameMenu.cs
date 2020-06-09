@@ -483,7 +483,7 @@ namespace Chaotic
                     break;
                 case MenuStage.SixOnSix:
                     #if DEBUG
-                        ChaoticEngine.MStage = MenuStage.Ready3On3;
+                        ChaoticEngine.MStage = MenuStage.Ready6On6;
                         deck = ChaoticEngine.LoadFile("Test1");
                         ChaoticEngine.sCreatures1 = ChaoticEngine.LoadCards<Creature>(6, 0, deck);
                         ChaoticEngine.sBattlegears1 = ChaoticEngine.LoadCards<Battlegear>(6, 6, deck);

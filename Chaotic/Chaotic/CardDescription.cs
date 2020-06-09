@@ -27,7 +27,7 @@ namespace Chaotic
             font = content.Load<SpriteFont>(@"Fonts/Description");
             coveredCard = content.Load<Texture2D>("CardBack");
             description = String.Empty;
-            kPanelHeight = graphics.PreferredBackBufferHeight - 3 * kCardSpaceHeight - ChaoticEngine.kCardCoveredHeight;
+            kPanelHeight = 3*graphics.PreferredBackBufferHeight/4 - 3 * kCardSpaceHeight - ChaoticEngine.kCardCoveredHeight;
         }
 
         public Texture2D CoveredCard { get { return coveredCard; } set { coveredCard = value; } }

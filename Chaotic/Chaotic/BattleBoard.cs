@@ -564,6 +564,28 @@ namespace Chaotic
                 }
                 else if (loc is ChaoticGameLib.Locations.RunicGrove)
                     ChaoticEngine.GenericMugicOnly = true;
+                else if (loc is ChaoticGameLib.Locations.KiruCity)
+                {
+                    for (int i = 0; i < creatureSpaces.Length; i++)
+                    {
+                        if (creatureSpaces[i].CreatureNode != null &&
+                            creatureSpaces[i].CreatureNode.CreatureTribe == Tribe.OverWorld)
+                        {
+                            creatureSpaces[i].CreatureNode.Energy += 10;
+                            creatureSpaces[i].CreatureNode.GainedEnergyTurn += 10;
+
+                            ChaoticEngine.DamageEffects.AddDamageAmount(10, creatureSpaces[i].CreatureNode.Position);
+                        }
+                    }
+                }
+                else if (loc is ChaoticGameLib.Locations.IronPillar)
+                {
+                    for (int i = 0; i < creatureSpaces.Length; i++)
+                    {
+                        if (creatureSpaces[i].CreatureNode != null)
+                            creatureSpaces[i].CreatureNode.NegateBattlegear();
+                    }
+                }
             }
         }
 
@@ -581,6 +603,8 @@ namespace Chaotic
                 done = activeLocation2.ReturnLocationToDeck(gameTime, locationDeck2);
             if (done)
             {
+                turnOffLocation(); // Removes location effects.
+
                 // If both players have no Creatures left, they will tie.
                 if (creatureSpaces.Count(b => b.CreatureNode != null && b.IsPlayer1 == true) == 0 &&
                     creatureSpaces.Count(b => b.CreatureNode != null && b.IsPlayer1 == false) == 0)
@@ -1337,8 +1361,10 @@ namespace Chaotic
 
         private bool updateTriggeredBegCombat(GameTime gameTime)
         {
-            updateTriggered(gameTime, ChaoticEngine.sYouNode.CreatureNode, ChaoticEngine.sEnemyNode.CreatureNode, triggeredListAP);
-            updateTriggered(gameTime, ChaoticEngine.sEnemyNode.CreatureNode, ChaoticEngine.sYouNode.CreatureNode, triggeredListDP);
+            if (!ChaoticEngine.sYouNode.CreatureNode.Negate)
+                updateTriggered(gameTime, ChaoticEngine.sYouNode.CreatureNode, ChaoticEngine.sEnemyNode.CreatureNode, triggeredListAP);
+            if (!ChaoticEngine.sEnemyNode.CreatureNode.Negate)
+                updateTriggered(gameTime, ChaoticEngine.sEnemyNode.CreatureNode, ChaoticEngine.sYouNode.CreatureNode, triggeredListDP);
 
             if (triggeredListAP.Count > 1 || (triggeredListAP.Count == 1 && triggeredListDP.Count > 0))
                 stageQueue.Enqueue(GameStage.TriggeredSelectAP);
@@ -1394,6 +1420,20 @@ namespace Chaotic
                 if (!discardPile1.DiscardPanelActive && !attackDiscardPile1.DiscardPanelActive
                         && !attackDiscardPile2.DiscardPanelActive && !discardPile2.DiscardPanelActive)
                     creatureSpaces[i].UpdateCardDescription(mouse);
+
+                if (creatureSpaces[i].CreatureNode != null && 
+                    creatureSpaces[i].CreatureNode.Negate != creatureSpaces[i].CreatureNode.PrevNegate)
+                {
+                    updateSupport();
+                    hiveUpdate();
+
+                    if (creatureSpaces[i].NumMoves - creatureSpaces[i].CreatureNode.Swift <= 0)
+                        creatureSpaces[i].NumMoves = 0;
+                    else
+                        creatureSpaces[i].NumMoves = 1;
+
+                    creatureSpaces[i].CreatureNode.PrevNegate = creatureSpaces[i].CreatureNode.Negate;
+                }
             }
 
             if (backButton.UpdateButton(mouse, gameTime))
@@ -1404,6 +1444,13 @@ namespace Chaotic
 
             if (ChaoticEngine.Hive != ChaoticEngine.PrevHive)
                 updateHive();
+
+            Location actLoc = activeLocation1.LocationActive ?? activeLocation2.LocationActive;
+            if (actLoc != null && actLoc.Negate != actLoc.PrevNegate)
+            {
+                turnOffLocation();
+                actLoc.PrevNegate = actLoc.Negate;
+            }
 
             ChaoticEngine.MsgBox.UpdateMessageBox(gameTime);
 
@@ -1573,13 +1620,6 @@ namespace Chaotic
                             ChaoticEngine.Player1Strike = ChaoticEngine.Player1Active;
                         else
                             ChaoticEngine.Player1Strike = false;
-
-                        if (!activeLocation1.LocationActive.Negate && 
-                            activeLocation1.LocationActive is ChaoticGameLib.Locations.IronPillar)
-                        {
-                            ChaoticEngine.sYouNode.CreatureNode.NegateBattlegear();
-                            ChaoticEngine.sEnemyNode.CreatureNode.NegateBattlegear();
-                        }
                     }
                     else if (activeLocation2.LocationActive != null)
                     {
@@ -1591,13 +1631,6 @@ namespace Chaotic
                             ChaoticEngine.Player1Strike = ChaoticEngine.Player1Active;
                         else
                             ChaoticEngine.Player1Strike = true;
-
-                        if (!activeLocation2.LocationActive.Negate &&
-                            activeLocation2.LocationActive is ChaoticGameLib.Locations.IronPillar)
-                        {
-                            ChaoticEngine.sYouNode.CreatureNode.NegateBattlegear();
-                            ChaoticEngine.sEnemyNode.CreatureNode.NegateBattlegear();
-                        }
                     }
                     
                     ChaoticEngine.GStage = GameStage.BeginningOfCombat;
@@ -1688,20 +1721,6 @@ namespace Chaotic
                             ChaoticEngine.sEnemyNode.CreatureNode.Fire = ChaoticEngine.sEnemyNode.CreatureNode.Air =
                                 ChaoticEngine.sEnemyNode.CreatureNode.Earth = ChaoticEngine.sEnemyNode.CreatureNode.Water = true;
                         }
-                        else if (locActive is ChaoticGameLib.Locations.KiruCity)
-                        {
-                            for (int i = 0; i < creatureSpaces.Length; i++)
-                            {
-                                if (creatureSpaces[i].CreatureNode != null &&
-                                    creatureSpaces[i].CreatureNode.CreatureTribe == Tribe.OverWorld)
-                                {
-                                    creatureSpaces[i].CreatureNode.Energy += 10;
-                                    creatureSpaces[i].CreatureNode.GainedEnergyTurn += 10;
-
-                                    ChaoticEngine.DamageEffects.AddDamageAmount(10, creatureSpaces[i].CreatureNode.Position);
-                                }
-                            }
-                        }
                         else if (locActive is ChaoticGameLib.Locations.CastleBodhran)
                         {
                             int mugicDiscardCount1 = discardPile1.DiscardList.Count(c => c is Mugic);
@@ -1724,14 +1743,14 @@ namespace Chaotic
                         }
                     }
 
-                    if (!ChaoticEngine.sYouNode.CreatureNode.Battlegear.Negate && 
-                        (ChaoticEngine.sYouNode.CreatureNode.Battlegear is ChaoticGameLib.Battlegears.OrbOfForesight ||
-                        ChaoticEngine.sYouNode.CreatureNode.Battlegear is ChaoticGameLib.Battlegears.FluxBauble))
+                    if ((ChaoticEngine.sYouNode.CreatureNode.Battlegear is ChaoticGameLib.Battlegears.OrbOfForesight ||
+                        ChaoticEngine.sYouNode.CreatureNode.Battlegear is ChaoticGameLib.Battlegears.FluxBauble)
+                        && !ChaoticEngine.sYouNode.CreatureNode.Battlegear.Negate)
                         stageQueue.Enqueue(GameStage.BattlegearSelectAbility1);
 
-                    if (!ChaoticEngine.sEnemyNode.CreatureNode.Battlegear.Negate && 
-                        (ChaoticEngine.sEnemyNode.CreatureNode.Battlegear is ChaoticGameLib.Battlegears.OrbOfForesight ||
-                        ChaoticEngine.sEnemyNode.CreatureNode.Battlegear is ChaoticGameLib.Battlegears.FluxBauble))
+                    if ((ChaoticEngine.sEnemyNode.CreatureNode.Battlegear is ChaoticGameLib.Battlegears.OrbOfForesight ||
+                        ChaoticEngine.sEnemyNode.CreatureNode.Battlegear is ChaoticGameLib.Battlegears.FluxBauble)
+                        && !ChaoticEngine.sEnemyNode.CreatureNode.Battlegear.Negate)
                         stageQueue.Enqueue(GameStage.BattlegearSelectAbility2);
 
                     if (updateTriggeredBegCombat(gameTime))
@@ -2361,6 +2380,56 @@ namespace Chaotic
             ChaoticEngine.PrevState = mouse;
 
             base.Update(gameTime);
+        }
+
+        private void turnOffLocation()
+        {
+            Location loc = activeLocation1.LocationActive ?? activeLocation2.LocationActive;
+            if (loc is ChaoticGameLib.Locations.LavaPond)
+            {
+                for (int i = 0; i < creatureSpaces.Length; i++)
+                {
+                    if (creatureSpaces[i].CreatureNode is ChaoticGameLib.Creatures.Magmon)
+                        creatureSpaces[i].CreatureNode.FireDamage -= 5;
+                }
+            }
+            else if (loc is ChaoticGameLib.Locations.GothosTower)
+            {
+                for (int i = 0; i < creatureSpaces.Length; i++)
+                {
+                    if (creatureSpaces[i].CreatureNode != null)
+                    {
+                        if (!(creatureSpaces[i].CreatureNode is ChaoticGameLib.Creatures.LordVanBloot))
+                            creatureSpaces[i].CreatureNode.Courage += 10;
+                        else
+                            creatureSpaces[i].CreatureNode.Strike -= 15;
+                    }
+                }
+            }
+            else if (loc is ChaoticGameLib.Locations.RunicGrove)
+                ChaoticEngine.GenericMugicOnly = false;
+            else if (loc is ChaoticGameLib.Locations.KiruCity)
+            {
+                for (int i = 0; i < creatureSpaces.Length; i++)
+                {
+                    if (creatureSpaces[i].CreatureNode != null &&
+                        creatureSpaces[i].CreatureNode.CreatureTribe == Tribe.OverWorld)
+                    {
+                        short energy = creatureSpaces[i].CreatureNode.Energy;
+                        creatureSpaces[i].CreatureNode.RemoveGainedEnergy(10);
+                        if (Math.Abs(energy - creatureSpaces[i].CreatureNode.Energy)!=0)
+                            ChaoticEngine.DamageEffects.AddDamageAmount(-10, creatureSpaces[i].CreatureNode.Position);
+                    }
+                }
+            }
+            else if (loc is ChaoticGameLib.Locations.IronPillar)
+            {
+                for (int i = 0; i < creatureSpaces.Length; i++)
+                {
+                    if (creatureSpaces[i].CreatureNode != null)
+                        creatureSpaces[i].CreatureNode.UnNegateBattlegear();
+                }
+            }
         }
 
         private BattleBoardNode selectingCreature(MouseState mouse, bool isPlayer1)

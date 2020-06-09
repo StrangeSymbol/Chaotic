@@ -58,6 +58,7 @@ namespace Chaotic
                 locationTemp.Move(gameTime, position, deck.DeckPosition);
             else if (locationTemp.Time < gameTime.TotalGameTime.TotalMilliseconds - elapsedTime && locationTemp.IsMoving)
             {
+                location.Negate = false;
                 deck.Deck.Insert(0, location);
                 location = null;
                 locationTemp = null;
