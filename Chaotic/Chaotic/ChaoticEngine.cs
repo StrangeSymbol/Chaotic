@@ -48,7 +48,9 @@ namespace Chaotic
         public static CodedManager CodedEffects { get; set; }
 
         public static DamageManager DamageEffects { get; set; }
-        
+
+        public static BurstBox BurstContents { get; set; }
+
         public static MouseState PrevState { get; set; }
         public static List<ChaoticGameLib.Creature> sCreatures1;
         public static List<ChaoticGameLib.Battlegear> sBattlegears1;

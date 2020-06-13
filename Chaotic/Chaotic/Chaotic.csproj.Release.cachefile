@@ -322,3 +322,9 @@ Content\Fonts\MessageBox.xnb
 Content\Fonts\TriggeredFont.xnb
 Content\Fonts\CodedFont.xnb
 Content\negate.xnb
+Content\BurstSprites\ArrowButtonCoverD.xnb
+Content\BurstSprites\ArrowButtonCoverU.xnb
+Content\BurstSprites\ArrowButtonD.xnb
+Content\BurstSprites\ArrowButtonU.xnb
+Content\BurstSprites\box.xnb
+Content\Fonts\BurstBoxFont.xnb

@@ -59,16 +59,16 @@ namespace Chaotic
         public override string ToString()
         {
             System.Text.StringBuilder builder = new System.Text.StringBuilder();
+            builder.Append(isPlayer1 ? "Player 1" : "Player 2");
             foreach (object obj in abilityList)
             {
                 if (obj is ChaoticCard)
                 {
                     ChaoticCard card = obj as ChaoticCard;
+                    builder.Append("_");
                     builder.Append(card.Name);
-                    builder.Append(" ");
                 }
             }
-            builder.Append("\n");
             return builder.ToString();
         }
     }

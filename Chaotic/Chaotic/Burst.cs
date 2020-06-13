@@ -44,7 +44,7 @@ namespace Chaotic
         }
 
         public static Ability NextAbility()
-        {
+        { 
             return burstStack.Pop();
         }
 
@@ -52,6 +52,22 @@ namespace Chaotic
         {
             burstStack.Push(abil);
             player1Turn = abil.IsPlayer1;
+        }
+
+        public static string[] BurstBoxInfo()
+        {
+            if (burstStack == null)
+                return new string[] { };
+
+            Ability[] abilities = burstStack.ToArray();
+            List<string> abilityList = new List<string>();
+
+            foreach (Ability ability in abilities)
+            {
+                string abilityText = ability.ToString();
+                abilityList.AddRange(abilityText.Split('_'));
+            }
+            return abilityList.ToArray();
         }
     }
 }

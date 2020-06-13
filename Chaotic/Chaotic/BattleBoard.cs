@@ -199,6 +199,7 @@ namespace Chaotic
                 new Vector2(locationPosition.X, locationPosition.Y - ChaoticEngine.kCardHeight));
             ChaoticEngine.CodedEffects = new CodedManager(Game.Content);
             ChaoticEngine.DamageEffects = new DamageManager(Game.Content);
+            ChaoticEngine.BurstContents = new BurstBox(Game.Content, graphics);
             ChaoticEngine.BackgroundSprite = Game.Content.Load<Texture2D>(@"Backgrounds\ChaoticBackground");
             ChaoticEngine.OrgBackgroundSprite = ChaoticEngine.BackgroundSprite;
             backgroundRect = new Rectangle(0, 0, graphics.PreferredBackBufferWidth, graphics.PreferredBackBufferHeight);
@@ -603,8 +604,6 @@ namespace Chaotic
                 done = activeLocation2.ReturnLocationToDeck(gameTime, locationDeck2);
             if (done)
             {
-                turnOffLocation(); // Removes location effects.
-
                 // If both players have no Creatures left, they will tie.
                 if (creatureSpaces.Count(b => b.CreatureNode != null && b.IsPlayer1 == true) == 0 &&
                     creatureSpaces.Count(b => b.CreatureNode != null && b.IsPlayer1 == false) == 0)
@@ -645,7 +644,10 @@ namespace Chaotic
                 }
             }
             if (activeLocation1.LocationActive != null || activeLocation2.LocationActive != null)
+            {
                 ChaoticEngine.GStage = GameStage.ReturnLocation;
+                turnOffLocation(); // Removes location effects.
+            }
             else
                 ChaoticEngine.GStage = GameStage.LocationStep;
         }
@@ -712,6 +714,7 @@ namespace Chaotic
                 else
                     enemy.Earth = enemy.EarthCombat = false;
 
+                turnOffLocation(); // Removes location effects.
                 stageQueue.Enqueue(GameStage.ReturnLocationCombat);
             }
             else if (attack is IronBalls)
@@ -1456,6 +1459,7 @@ namespace Chaotic
 
             ChaoticEngine.CodedEffects.UpdateCodedLetters(gameTime);
             ChaoticEngine.DamageEffects.UpdateDamageAmounts(gameTime);
+            ChaoticEngine.BurstContents.UpdateBox(gameTime);
 
             switch (ChaoticEngine.GStage)
             {
@@ -1833,6 +1837,7 @@ namespace Chaotic
                     {
                         ChaoticEngine.sEnemyNode.CreatureNode.RestoreCombat();
                         ChaoticEngine.GStage = GameStage.ReturnLocation;
+                        turnOffLocation(); // Removes location effects.
                         if (!hadCombat[2] && !hadCombat[1] && !hadCombat[0])
                         {
                             hadCombat[0] = ChaoticEngine.CombatThisTurn;
@@ -1842,6 +1847,7 @@ namespace Chaotic
                     else
                     {
                         ChaoticEngine.GStage = GameStage.ReturnLocation;
+                        turnOffLocation(); // Removes location effects.
                         if (!hadCombat[2] && !hadCombat[1] && !hadCombat[0])
                         {
                             hadCombat[0] = ChaoticEngine.CombatThisTurn;
@@ -1855,6 +1861,7 @@ namespace Chaotic
                     if (ChaoticEngine.sYouNode.UpdateMoveCreature(gameTime, mouse, creatureSpaces[selectedSpace]))
                     {
                         ChaoticEngine.GStage = GameStage.ReturnLocation;
+                        turnOffLocation(); // Removes location effects.
                         creatureSpaces[selectedSpace].CreatureNode.MovedThisTurn = true;
                         updateSupport();
                     }
@@ -2725,6 +2732,7 @@ namespace Chaotic
 
             ChaoticEngine.CodedEffects.DrawCodedLetters(spriteBatch);
             ChaoticEngine.DamageEffects.DrawDamageAmounts(spriteBatch);
+            ChaoticEngine.BurstContents.DrawBox(spriteBatch);
 
             if (ChaoticEngine.GStage != GameStage.ShuffleAtkDeck1)
                 attackDeck1.DrawDeckPile(spriteBatch);
