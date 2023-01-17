@@ -581,7 +581,6 @@ namespace Chaotic
                         elapsedTime = gameTime.TotalGameTime.TotalMilliseconds;
                         selectedStage = buttons[i].Stage;
                         j = i;
-                        break;
                     }
                 }
                 else
