@@ -19,6 +19,6 @@ C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\ChaoticGameLib\ChaoticGameLib\b
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\ChaoticGameLib\ChaoticGameLib\bin\x86\Debug\Microsoft.Xna.Framework.Graphics.xml
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\ChaoticGameLib\ChaoticGameLib\bin\x86\Debug\Microsoft.Xna.Framework.GamerServices.xml
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\ChaoticGameLib\ChaoticGameLib\bin\x86\Debug\Microsoft.Xna.Framework.Input.Touch.xml
-C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\ChaoticGameLib\ChaoticGameLib\obj\x86\Debug\ChaoticGameLib.csprojAssemblyReference.cache
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\ChaoticGameLib\ChaoticGameLib\obj\x86\Debug\ChaoticGameLib.csproj.CoreCompileInputs.cache
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\ChaoticGameLib\ChaoticGameLib\obj\x86\Debug\ChaoticGameLib.csproj.CopyComplete
+C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\ChaoticGameLib\ChaoticGameLib\obj\x86\Debug\ChaoticGameLib.csproj.AssemblyReference.cache
