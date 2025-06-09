@@ -593,7 +593,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Release\Content\Attacks\Degenervate.xnb</Output>
-      <Time>2019-08-13T15:58:54.1125038-04:00</Time>
+      <Time>2025-06-05T14:36:22.3706294-04:00</Time>
     </Item>
     <Item>
       <Source>Attacks\Delerium.png</Source>
@@ -2828,6 +2828,312 @@
       <Time>2019-08-27T18:20:21.2615651-04:00</Time>
     </Item>
     <Item>
+      <Source>negate.png</Source>
+      <Name>negate</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Release\Content\negate.xnb</Output>
+      <Time>2020-06-02T03:49:36.3849924-04:00</Time>
+    </Item>
+    <Item>
+      <Source>BurstSprites\ArrowButtonCoverD.png</Source>
+      <Name>BurstSprites\ArrowButtonCoverD</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Release\Content\BurstSprites\ArrowButtonCoverD.xnb</Output>
+      <Time>2020-06-09T03:24:35.3318084-04:00</Time>
+    </Item>
+    <Item>
+      <Source>BurstSprites\ArrowButtonCoverU.png</Source>
+      <Name>BurstSprites\ArrowButtonCoverU</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Release\Content\BurstSprites\ArrowButtonCoverU.xnb</Output>
+      <Time>2020-06-09T03:24:35.3367819-04:00</Time>
+    </Item>
+    <Item>
+      <Source>BurstSprites\ArrowButtonD.png</Source>
+      <Name>BurstSprites\ArrowButtonD</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Release\Content\BurstSprites\ArrowButtonD.xnb</Output>
+      <Time>2020-06-09T03:24:35.3407644-04:00</Time>
+    </Item>
+    <Item>
+      <Source>BurstSprites\ArrowButtonU.png</Source>
+      <Name>BurstSprites\ArrowButtonU</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Release\Content\BurstSprites\ArrowButtonU.xnb</Output>
+      <Time>2020-06-09T03:24:35.34476-04:00</Time>
+    </Item>
+    <Item>
+      <Source>BurstSprites\box.png</Source>
+      <Name>BurstSprites\box</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Release\Content\BurstSprites\box.xnb</Output>
+      <Time>2020-06-09T03:24:35.3487552-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\Antidaeon.png</Source>
+      <Name>Creatures\Antidaeon</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Release\Content\Creatures\Antidaeon.xnb</Output>
+      <Time>2025-06-02T23:58:20.0845747-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\Banshor.png</Source>
+      <Name>Creatures\Banshor</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Release\Content\Creatures\Banshor.xnb</Output>
+      <Time>2025-06-02T23:53:28.8480601-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\Cerbie.png</Source>
+      <Name>Creatures\Cerbie</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Release\Content\Creatures\Cerbie.xnb</Output>
+      <Time>2025-06-02T23:59:11.0625124-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\Chargola.png</Source>
+      <Name>Creatures\Chargola</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Release\Content\Creatures\Chargola.xnb</Output>
+      <Time>2025-06-02T23:50:28.8637701-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\Dyrtax.png</Source>
+      <Name>Creatures\Dyrtax</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Release\Content\Creatures\Dyrtax.xnb</Output>
+      <Time>2025-06-03T00:01:44.6604721-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\Ettala.png</Source>
+      <Name>Creatures\Ettala</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Release\Content\Creatures\Ettala.xnb</Output>
+      <Time>2025-06-02T23:55:50.8588906-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\Getterek.png</Source>
+      <Name>Creatures\Getterek</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Release\Content\Creatures\Getterek.xnb</Output>
+      <Time>2025-06-03T00:01:23.9152228-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\Ghatup.png</Source>
+      <Name>Creatures\Ghatup</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Release\Content\Creatures\Ghatup.xnb</Output>
+      <Time>2025-06-02T23:59:41.0214394-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\Hoton.png</Source>
+      <Name>Creatures\Hoton</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Release\Content\Creatures\Hoton.xnb</Output>
+      <Time>2025-06-02T23:52:43.7324185-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\Mezzmarr.png</Source>
+      <Name>Creatures\Mezzmarr</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Release\Content\Creatures\Mezzmarr.xnb</Output>
+      <Time>2025-06-02T23:52:05.3873442-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\Mishmoshmish.png</Source>
+      <Name>Creatures\Mishmoshmish</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Release\Content\Creatures\Mishmoshmish.xnb</Output>
+      <Time>2025-06-02T23:58:43.4685445-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\Mommark.png</Source>
+      <Name>Creatures\Mommark</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Release\Content\Creatures\Mommark.xnb</Output>
+      <Time>2025-06-02T23:51:27.8178119-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\Nakal.png</Source>
+      <Name>Creatures\Nakal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Release\Content\Creatures\Nakal.xnb</Output>
+      <Time>2025-06-03T00:00:35.322767-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\Nebres.png</Source>
+      <Name>Creatures\Nebres</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Release\Content\Creatures\Nebres.xnb</Output>
+      <Time>2025-06-02T23:49:46.5411861-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\Neffa.png</Source>
+      <Name>Creatures\Neffa</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Release\Content\Creatures\Neffa.xnb</Output>
+      <Time>2025-06-02T23:49:13.0000599-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\Prantix.png</Source>
+      <Name>Creatures\Prantix</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Release\Content\Creatures\Prantix.xnb</Output>
+      <Time>2025-06-02T23:55:22.5961655-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\Quadore.png</Source>
+      <Name>Creatures\Quadore</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Release\Content\Creatures\Quadore.xnb</Output>
+      <Time>2025-06-02T23:54:56.0100627-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\Raimusa.png</Source>
+      <Name>Creatures\Raimusa</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Release\Content\Creatures\Raimusa.xnb</Output>
+      <Time>2025-06-02T23:57:53.504853-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\Sukoval.png</Source>
+      <Name>Creatures\Sukoval</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Release\Content\Creatures\Sukoval.xnb</Output>
+      <Time>2025-06-02T23:48:31.515024-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\Tarteme.png</Source>
+      <Name>Creatures\Tarteme</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Release\Content\Creatures\Tarteme.xnb</Output>
+      <Time>2025-06-02T23:57:26.9979017-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\Ulfhedinn.png</Source>
+      <Name>Creatures\Ulfhedinn</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Release\Content\Creatures\Ulfhedinn.xnb</Output>
+      <Time>2025-06-02T23:54:28.6200022-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\Vasquin.png</Source>
+      <Name>Creatures\Vasquin</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Release\Content\Creatures\Vasquin.xnb</Output>
+      <Time>2025-06-03T00:00:11.4911914-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Creatures\Agitos.png</Source>
+      <Name>Creatures\Agitos</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Release\Content\Creatures\Agitos.xnb</Output>
+      <Time>2025-06-02T23:54:00.8474241-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Attacks\Catacollision.png</Source>
+      <Name>Attacks\Catacollision</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Release\Content\Attacks\Catacollision.xnb</Output>
+      <Time>2025-06-02T23:56:25.814675-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Attacks\FrighteningMuck.png</Source>
+      <Name>Attacks\FrighteningMuck</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Release\Content\Attacks\FrighteningMuck.xnb</Output>
+      <Time>2025-06-02T23:56:51.1864743-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Attacks\Nexdoors.png</Source>
+      <Name>Attacks\Nexdoors</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Release\Content\Attacks\Nexdoors.xnb</Output>
+      <Time>2025-06-02T23:47:53.8720006-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Mugics\SongofTransportation.png</Source>
+      <Name>Mugics\SongofTransportation</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Release\Content\Mugics\SongofTransportation.xnb</Output>
+      <Time>2025-06-03T00:06:29.863072-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Mugics\SwarmSong.png</Source>
+      <Name>Mugics\SwarmSong</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Release\Content\Mugics\SwarmSong.xnb</Output>
+      <Time>2025-06-03T00:06:03.3361101-04:00</Time>
+    </Item>
+    <Item>
       <Source>Fonts\CardDescriptionFont.spritefont</Source>
       <Name>Fonts\CardDescriptionFont</Name>
       <Importer>FontDescriptionImporter</Importer>
@@ -2909,60 +3215,6 @@
       <Time>2020-05-22T03:29:04.7636183-04:00</Time>
     </Item>
     <Item>
-      <Source>negate.png</Source>
-      <Name>negate</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Release\Content\negate.xnb</Output>
-      <Time>2020-06-02T03:49:36.3849924-04:00</Time>
-    </Item>
-    <Item>
-      <Source>BurstSprites\ArrowButtonCoverD.png</Source>
-      <Name>BurstSprites\ArrowButtonCoverD</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Release\Content\BurstSprites\ArrowButtonCoverD.xnb</Output>
-      <Time>2020-06-09T03:24:35.3318084-04:00</Time>
-    </Item>
-    <Item>
-      <Source>BurstSprites\ArrowButtonCoverU.png</Source>
-      <Name>BurstSprites\ArrowButtonCoverU</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Release\Content\BurstSprites\ArrowButtonCoverU.xnb</Output>
-      <Time>2020-06-09T03:24:35.3367819-04:00</Time>
-    </Item>
-    <Item>
-      <Source>BurstSprites\ArrowButtonD.png</Source>
-      <Name>BurstSprites\ArrowButtonD</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Release\Content\BurstSprites\ArrowButtonD.xnb</Output>
-      <Time>2020-06-09T03:24:35.3407644-04:00</Time>
-    </Item>
-    <Item>
-      <Source>BurstSprites\ArrowButtonU.png</Source>
-      <Name>BurstSprites\ArrowButtonU</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Release\Content\BurstSprites\ArrowButtonU.xnb</Output>
-      <Time>2020-06-09T03:24:35.34476-04:00</Time>
-    </Item>
-    <Item>
-      <Source>BurstSprites\box.png</Source>
-      <Name>BurstSprites\box</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Release\Content\BurstSprites\box.xnb</Output>
-      <Time>2020-06-09T03:24:35.3487552-04:00</Time>
-    </Item>
-    <Item>
       <Source>Fonts\BurstBoxFont.spritefont</Source>
       <Name>Fonts\BurstBoxFont</Name>
       <Importer>FontDescriptionImporter</Importer>
@@ -3010,7 +3262,7 @@
       </Assembly>
       <Assembly>
         <Key>C:\WINDOWS\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2020-02-05T17:47:40.3310138-05:00</Value>
+        <Value>2021-03-13T22:11:54.0482934-05:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>

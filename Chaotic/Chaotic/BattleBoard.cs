@@ -24,7 +24,7 @@ namespace Chaotic
     SelAttackDeck, SelLocationDeck, SelAttackLocationDeck, SelElemental, SelReturnMugic, SelReturnCreature, DecideToBurst,
     AddingToBurst, RunBurst, HighLight, SelLocationAny, SelLocationOrder, SelAttackLocationOrder, SelUnoccupiedSpace,
     SelCreatureReturn, AttackDamage, DiscardCreatures, StrikePhase, TargetEngaged, TriggeredSelectAP, TriggeredSelectDP,
-    HiveCallDecision, TargetAttack};
+    HiveCallDecision, TargetAttack,};
 
     /// <summary>
     /// This is a game component that implements IUpdateable.

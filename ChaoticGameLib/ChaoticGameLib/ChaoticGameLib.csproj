@@ -106,6 +106,7 @@
     <Compile Include="Attacks\LuckyShot.cs" />
     <Compile Include="Attacks\MegaRoar.cs" />
     <Compile Include="Attacks\Mirthquake.cs" />
+    <Compile Include="Attacks\Nexdoors.cs" />
     <Compile Include="Attacks\ParalEyes.cs" />
     <Compile Include="Attacks\PebbleStorm.cs" />
     <Compile Include="Attacks\PowerPulse.cs" />

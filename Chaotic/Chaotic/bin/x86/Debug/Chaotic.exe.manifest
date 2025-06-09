@@ -50,19 +50,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>vZvTbFTANBjYEjlP3vF4cN/wU2w=</dsig:DigestValue>
+        <dsig:DigestValue>ZP97C045sVCHdnbigkVKnvMOrrs=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ChaoticGameLib.dll" size="194048">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ChaoticGameLib.dll" size="195072">
       <assemblyIdentity name="ChaoticGameLib" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>OmnNprkD13tr1HG0cDYhrAfUQ6g=</dsig:DigestValue>
+        <dsig:DigestValue>Tz5v5APRgaFFRVrxlggj7AG8/wI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

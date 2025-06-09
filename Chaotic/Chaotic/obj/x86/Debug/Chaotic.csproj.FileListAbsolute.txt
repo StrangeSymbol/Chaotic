@@ -637,7 +637,6 @@ C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\C
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\BurstSprites\ArrowButtonU.xnb
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\BurstSprites\box.xnb
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Fonts\BurstBoxFont.xnb
-C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\obj\x86\Debug\Chaotic.csproj.AssemblyReference.cache
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Antidaeon.xnb
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Banshor.xnb
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Cerbie.xnb
@@ -666,3 +665,5 @@ C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\C
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\Nexdoors.xnb
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\SongofTransportation.xnb
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\SwarmSong.xnb
+C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\obj\x86\Debug\Chaotic.csproj.AssemblyReference.cache
+C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\ChaoticGame.cs

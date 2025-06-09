@@ -2882,96 +2882,6 @@
       <Time>2020-06-09T03:24:35.3487552-04:00</Time>
     </Item>
     <Item>
-      <Source>Fonts\CardDescriptionFont.spritefont</Source>
-      <Name>Fonts\CardDescriptionFont</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Fonts\CardDescriptionFont.xnb</Output>
-      <Time>2019-08-13T15:58:54.3977634-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Fonts\PanelFont.spritefont</Source>
-      <Name>Fonts\PanelFont</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Fonts\PanelFont.xnb</Output>
-      <Time>2019-08-13T15:58:54.4125561-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Fonts\AttackDamage.spritefont</Source>
-      <Name>Fonts\AttackDamage</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Fonts\AttackDamage.xnb</Output>
-      <Time>2019-08-13T15:58:54.3977634-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Fonts\EndGame.spritefont</Source>
-      <Name>Fonts\EndGame</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Fonts\EndGame.xnb</Output>
-      <Time>2019-08-13T15:58:54.4115215-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Fonts\HUB.spritefont</Source>
-      <Name>Fonts\HUB</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Fonts\HUB.xnb</Output>
-      <Time>2019-08-13T15:58:54.4115215-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Fonts\Description.spritefont</Source>
-      <Name>Fonts\Description</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Fonts\Description.xnb</Output>
-      <Time>2019-08-13T15:58:54.4108754-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Fonts\MessageBox.spritefont</Source>
-      <Name>Fonts\MessageBox</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Fonts\MessageBox.xnb</Output>
-      <Time>2019-08-13T15:58:54.4115215-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Fonts\TriggeredFont.spritefont</Source>
-      <Name>Fonts\TriggeredFont</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Fonts\TriggeredFont.xnb</Output>
-      <Time>2019-08-28T13:53:03.5865518-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Fonts\CodedFont.spritefont</Source>
-      <Name>Fonts\CodedFont</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Fonts\CodedFont.xnb</Output>
-      <Time>2020-05-22T03:29:04.7636183-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Fonts\BurstBoxFont.spritefont</Source>
-      <Name>Fonts\BurstBoxFont</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Fonts\BurstBoxFont.xnb</Output>
-      <Time>2020-06-09T03:07:20.4629089-04:00</Time>
-    </Item>
-    <Item>
       <Source>Creatures\Antidaeon.png</Source>
       <Name>Creatures\Antidaeon</Name>
       <Importer>TextureImporter</Importer>
@@ -3222,6 +3132,96 @@
       <Options>None</Options>
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\SwarmSong.xnb</Output>
       <Time>2025-06-03T00:06:03.3361101-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Fonts\CardDescriptionFont.spritefont</Source>
+      <Name>Fonts\CardDescriptionFont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Fonts\CardDescriptionFont.xnb</Output>
+      <Time>2019-08-13T15:58:54.3977634-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Fonts\PanelFont.spritefont</Source>
+      <Name>Fonts\PanelFont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Fonts\PanelFont.xnb</Output>
+      <Time>2019-08-13T15:58:54.4125561-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Fonts\AttackDamage.spritefont</Source>
+      <Name>Fonts\AttackDamage</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Fonts\AttackDamage.xnb</Output>
+      <Time>2019-08-13T15:58:54.3977634-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Fonts\EndGame.spritefont</Source>
+      <Name>Fonts\EndGame</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Fonts\EndGame.xnb</Output>
+      <Time>2019-08-13T15:58:54.4115215-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Fonts\HUB.spritefont</Source>
+      <Name>Fonts\HUB</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Fonts\HUB.xnb</Output>
+      <Time>2019-08-13T15:58:54.4115215-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Fonts\Description.spritefont</Source>
+      <Name>Fonts\Description</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Fonts\Description.xnb</Output>
+      <Time>2019-08-13T15:58:54.4108754-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Fonts\MessageBox.spritefont</Source>
+      <Name>Fonts\MessageBox</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Fonts\MessageBox.xnb</Output>
+      <Time>2019-08-13T15:58:54.4115215-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Fonts\TriggeredFont.spritefont</Source>
+      <Name>Fonts\TriggeredFont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Fonts\TriggeredFont.xnb</Output>
+      <Time>2019-08-28T13:53:03.5865518-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Fonts\CodedFont.spritefont</Source>
+      <Name>Fonts\CodedFont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Fonts\CodedFont.xnb</Output>
+      <Time>2020-05-22T03:29:04.7636183-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Fonts\BurstBoxFont.spritefont</Source>
+      <Name>Fonts\BurstBoxFont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Fonts\BurstBoxFont.xnb</Output>
+      <Time>2020-06-09T03:07:20.4629089-04:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

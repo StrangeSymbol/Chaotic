@@ -116,7 +116,9 @@
     <Compile Include="ChaoticForm.Designer.cs">
       <DependentUpon>ChaoticForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ChaoticGame.cs" />
+    <Compile Include="ChaoticGame.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
     <Compile Include="CheckSystem.cs" />
     <Compile Include="CodedCharacter.cs" />
     <Compile Include="CodedManager.cs" />
