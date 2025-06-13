@@ -8,6 +8,7 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Input;
+using Microsoft.Xna.Framework.Audio;
 
 namespace Chaotic
 {
@@ -34,10 +35,12 @@ namespace Chaotic
                 graphics.PreferredBackBufferHeight / 2 - panel.Height / 2);
             Texture2D texture = content.Load<Texture2D>(@"Panel\YesButton");
             this.yesButton = new Button(texture, new Vector2(graphics.PreferredBackBufferWidth / 2 - 3 * texture.Width / 2,
-                position.Y + panel.Height - texture.Height - 20), content.Load<Texture2D>("OkButtonCover"));
+                position.Y + panel.Height - texture.Height - 20), content.Load<Texture2D>("OkButtonCover"),
+                content.Load<SoundEffect>(@"Audio\LeftMouseClick"));
             texture = content.Load<Texture2D>(@"Panel\NoButton");
             this.noButton = new Button(texture, new Vector2(graphics.PreferredBackBufferWidth / 2 + texture.Width / 2,
-                position.Y + panel.Height - texture.Height - 20), content.Load<Texture2D>("OkButtonCover"));
+                position.Y + panel.Height - texture.Height - 20), content.Load<Texture2D>("OkButtonCover"),
+                content.Load<SoundEffect>(@"Audio\LeftMouseClick"));
             font = content.Load<SpriteFont>(@"Fonts\MessageBox");
             prevClicks = new bool[3]{true, true, true};
             clickedYes = null;

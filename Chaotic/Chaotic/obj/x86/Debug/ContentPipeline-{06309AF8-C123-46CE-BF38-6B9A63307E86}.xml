@@ -3241,6 +3241,78 @@
       <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Audio\ChaoticTheme.xnb</Output>
       <Time>2025-06-12T22:54:54.0500654-04:00</Time>
     </Item>
+    <Item>
+      <Source>Audio\CardSet.wav</Source>
+      <Name>Audio\CardSet</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Audio\CardSet.xnb</Output>
+      <Time>2025-06-12T23:28:02.5994357-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\CardShuffle.wav</Source>
+      <Name>Audio\CardShuffle</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Audio\CardShuffle.xnb</Output>
+      <Time>2025-06-12T23:28:02.5994357-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\DrawCard.wav</Source>
+      <Name>Audio\DrawCard</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Audio\DrawCard.xnb</Output>
+      <Time>2025-06-12T23:28:02.6150907-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\ArrowClick.wav</Source>
+      <Name>Audio\ArrowClick</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Audio\ArrowClick.xnb</Output>
+      <Time>2025-06-13T03:50:47.5806999-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\ButtonClick.wav</Source>
+      <Name>Audio\ButtonClick</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Audio\ButtonClick.xnb</Output>
+      <Time>2025-06-13T03:50:47.5650564-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\CoinFlip.wav</Source>
+      <Name>Audio\CoinFlip</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Audio\CoinFlip.xnb</Output>
+      <Time>2025-06-13T03:50:47.533835-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\LeftMouseClick.wav</Source>
+      <Name>Audio\LeftMouseClick</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Audio\LeftMouseClick.xnb</Output>
+      <Time>2025-06-13T03:50:47.5494333-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\RightMouseClick.wav</Source>
+      <Name>Audio\RightMouseClick</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Audio\RightMouseClick.xnb</Output>
+      <Time>2025-06-13T03:50:47.5494333-04:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{06309AF8-C123-46CE-BF38-6B9A63307E86}</ContentProjectGUID>

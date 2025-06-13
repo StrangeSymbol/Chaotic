@@ -387,3 +387,11 @@ C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\obj\x86\Debug\C
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\obj\x86\Debug\Chaotic.pdb
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\Droskin.xnb
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Audio\ChaoticTheme.xnb
+C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Audio\CardSet.xnb
+C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Audio\CardShuffle.xnb
+C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Audio\DrawCard.xnb
+C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Audio\ArrowClick.xnb
+C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Audio\ButtonClick.xnb
+C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Audio\CoinFlip.xnb
+C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Audio\LeftMouseClick.xnb
+C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Audio\RightMouseClick.xnb

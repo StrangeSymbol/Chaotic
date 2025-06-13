@@ -7,6 +7,7 @@ using ChaoticGameLib.Attacks;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using Microsoft.Xna.Framework.Audio;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -167,18 +168,21 @@ namespace Chaotic
             attackDiscardPile1 = new DiscardPile<Attack>(Game.Content, graphics, attackDiscardTexture, attackDiscardPosition, true);
             Texture2D attackTexture = Game.Content.Load<Texture2D>(@"BattleBoardSprites\Attack");
             Vector2 attackPosition = new Vector2(attackDiscardPosition.X + 3 * ChaoticEngine.kCardWidth / 2, attackDiscardPosition.Y);
-            attackDeck1 = new AttackDeck(attackTexture, cardBack, spaceCover, attackPosition, true);
+            SoundEffect setEffect = Game.Content.Load<SoundEffect>(@"Audio\CardSet");
+            SoundEffect shuffleEffect = Game.Content.Load<SoundEffect>(@"Audio\CardShuffle");
+            SoundEffect drawEffect = Game.Content.Load<SoundEffect>(@"Audio\DrawCard");
+            attackDeck1 = new AttackDeck(attackTexture, cardBack, spaceCover, attackPosition, true, shuffleEffect, drawEffect, setEffect);
             attackHand1 = new AttackHand(true, cardBack, attackPosition, damageCover, healCover,
-                Game.Content.Load<SpriteFont>("Fonts/AttackDamage"));
+                Game.Content.Load<SpriteFont>("Fonts/AttackDamage"), setEffect);
             mugicHand1 = new MugicHand(true, cardBack, discardPosition,
-                Game.Content.Load<SpriteFont>(@"Fonts\CardDescriptionFont"));
+                Game.Content.Load<SpriteFont>(@"Fonts\CardDescriptionFont"), setEffect);
             for (int i = 0; i < ChaoticEngine.sMugics1.Count; i++)
                 mugicHand1.AddCardToHand(ChaoticEngine.sMugics1[i]);
             Vector2 locationPosition = new Vector2(graphics.PreferredBackBufferWidth / 2 - 3 * ChaoticEngine.kCardWidth
                 - ChaoticEngine.kCardHeight, 3 * ChaoticEngine.kCardHeight + 4 * ChaoticEngine.kBattlegearGap + 3 * ChaoticEngine.kCardGap);
             Texture2D locationTexture = Game.Content.Load<Texture2D>(@"BattleBoardSprites\LocationCardBack");
             locationDeck1 = new LocationDeck(Game.Content.Load<Texture2D>(@"BattleBoardSprites\Location"),
-                locationTexture, spaceCover, locationPosition, true);
+                locationTexture, spaceCover, locationPosition, true, shuffleEffect, drawEffect, setEffect);
             activeLocation1 = new ActiveLocation(locationTexture,
                 new Vector2(locationPosition.X, locationPosition.Y + ChaoticEngine.kCardHeight));
             discardPosition = new Vector2(graphics.PreferredBackBufferWidth / 2 + ChaoticEngine.kCardWidth, ChaoticEngine.kBattlegearGap);
@@ -186,17 +190,17 @@ namespace Chaotic
             attackDiscardPosition = new Vector2(graphics.PreferredBackBufferWidth / 2 - 2 * ChaoticEngine.kCardWidth, discardPosition.Y);
             attackDiscardPile2 = new DiscardPile<Attack>(Game.Content, graphics, attackDiscardTexture, attackDiscardPosition, false);
             attackPosition = new Vector2(attackDiscardPosition.X - 3 * ChaoticEngine.kCardWidth / 2, attackDiscardPosition.Y);
-            attackDeck2 = new AttackDeck(attackTexture, cardBack, spaceCover, attackPosition, false);
+            attackDeck2 = new AttackDeck(attackTexture, cardBack, spaceCover, attackPosition, false, shuffleEffect, drawEffect, setEffect);
             attackHand2 = new AttackHand(false, cardBack, attackPosition, damageCover, healCover,
-                Game.Content.Load<SpriteFont>("Fonts/AttackDamage"));
+                Game.Content.Load<SpriteFont>("Fonts/AttackDamage"), setEffect);
             mugicHand2 = new MugicHand(false, cardBack, discardPosition,
-                Game.Content.Load<SpriteFont>(@"Fonts\CardDescriptionFont"));
+                Game.Content.Load<SpriteFont>(@"Fonts\CardDescriptionFont"), setEffect);
             for (int i = 0; i < ChaoticEngine.sMugics2.Count; i++)
                 mugicHand2.AddCardToHand(ChaoticEngine.sMugics2[i]);
             locationPosition = new Vector2(discardPosition.X + 2 * ChaoticEngine.kCardWidth,
                 3 * ChaoticEngine.kCardHeight + 3 * ChaoticEngine.kBattlegearGap + 2 * ChaoticEngine.kCardGap - ChaoticEngine.kCardWidth);
             locationDeck2 = new LocationDeck(Game.Content.Load<Texture2D>(@"BattleBoardSprites\Location"), locationTexture, spaceCover,
-                locationPosition, false);
+                locationPosition, false, shuffleEffect, drawEffect, setEffect);
             activeLocation2 = new ActiveLocation(locationTexture,
                 new Vector2(locationPosition.X, locationPosition.Y - ChaoticEngine.kCardHeight));
             ChaoticEngine.CodedEffects = new CodedManager(Game.Content);
@@ -206,6 +210,7 @@ namespace Chaotic
             ChaoticEngine.OrgBackgroundSprite = ChaoticEngine.BackgroundSprite;
             backgroundRect = new Rectangle(0, 0, graphics.PreferredBackBufferWidth, graphics.PreferredBackBufferHeight);
             SpriteFont font = Game.Content.Load<SpriteFont>(@"Fonts\CardDescriptionFont");
+            // TODO: Add clicking sound.
             BattleBoardButton move = new BattleBoardButton(moveButtonSprite, overlay,
                 ChaoticEngine.kCardWidth, ChaoticEngine.kCardHeight / 3, ActionType.Move);
             BattleBoardButton activate = new BattleBoardButton(activateButtonSprite, overlay,
@@ -362,10 +367,10 @@ namespace Chaotic
 
             Texture2D backTexture = Game.Content.Load<Texture2D>("Menu/SuitBackButton");
             backButton = new Button(backTexture, new Vector2(graphics.PreferredBackBufferWidth - backTexture.Width - 20, 20),
-                Game.Content.Load<Texture2D>("Menu/backBtnCover"));
+                Game.Content.Load<Texture2D>("Menu/backBtnCover"), Game.Content.Load<SoundEffect>(@"Audio\ArrowClick"));
             endTurnButton = new Button(Game.Content.Load<Texture2D>("BattleBoardSprites/EndTurnButton"),
                 new Vector2(attackDeck1.Position.X + ChaoticEngine.kCardWidth, graphics.PreferredBackBufferHeight / 2),
-                Game.Content.Load<Texture2D>("Menu/MenuButtonCover"));
+                Game.Content.Load<Texture2D>("Menu/MenuButtonCover"), Game.Content.Load<SoundEffect>(@"Audio\LeftMouseClick"));
             endgamefont = Game.Content.Load<SpriteFont>("Fonts/EndGame");
             hubFont = Game.Content.Load<SpriteFont>("Fonts/HUB");
 

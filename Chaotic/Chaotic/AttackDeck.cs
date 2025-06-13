@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using Microsoft.Xna.Framework.Audio;
 using ChaoticGameLib;
 
 namespace Chaotic
@@ -22,8 +23,12 @@ namespace Chaotic
         bool start;
         bool shuffleMove;
         byte numShuffles;
+        SoundEffect drawEffect;
+        SoundEffect shuffleEffect;
+        SoundEffect setEffect;
 
-        public AttackDeck(Texture2D deck, Texture2D cardBack, Texture2D overlay, Vector2 position, bool isPlayer1)
+        public AttackDeck(Texture2D deck, Texture2D cardBack, Texture2D overlay, Vector2 position, bool isPlayer1,
+            SoundEffect shuffleEffect, SoundEffect drawEffect, SoundEffect setEffect)
         {
             deckPile = new List<Attack>();
             attackTemplate = new CardTemplate(deck, position);
@@ -34,6 +39,9 @@ namespace Chaotic
             this.start = false;
             this.shuffleMove = false;
             this.numShuffles = 0;
+            this.drawEffect = drawEffect;
+            this.shuffleEffect = shuffleEffect;
+            this.setEffect = setEffect;
         }
         /// <summary>
         /// Retrieves a given card from the deck.
@@ -126,6 +134,7 @@ namespace Chaotic
                 deckCover2.IsMoving = true;
                 deckCover2.CourseToCard(hand.GetNextHandPosition());
                 elapsedTime = gameTime.TotalGameTime.TotalMilliseconds;
+                drawEffect.Play();
             }
             else if (deckCover2.Time >= gameTime.TotalGameTime.TotalMilliseconds - elapsedTime && deckCover2.IsMoving)
                 deckCover2.Move(gameTime, attackTemplate.Position, hand.GetNextHandPosition());
@@ -138,6 +147,7 @@ namespace Chaotic
                 start = false;
                 deckCover2.IsMoving = false;
                 elapsedTime = 0.0;
+                setEffect.Play();
                 return true;
             }
             return false;
@@ -161,6 +171,7 @@ namespace Chaotic
                     deckCover2.IsMoving = true;
                     deckCover2.CourseToCard(hand.GetNextHandPosition());
                     elapsedTime = gameTime.TotalGameTime.TotalMilliseconds;
+                    drawEffect.Play();
                 }
             }
             else if (deckCover2.Time >= gameTime.TotalGameTime.TotalMilliseconds - elapsedTime && deckCover2.IsMoving)
@@ -174,6 +185,7 @@ namespace Chaotic
                 ChaoticEngine.IsACardMoving = false;
                 deckCover2.IsMoving = false;
                 elapsedTime = 0.0;
+                setEffect.Play();
                 return true;
             }
             return false;
@@ -201,6 +213,9 @@ namespace Chaotic
                     deckCover2.CourseToCard(attackTemplate.Position);
                 }
                 elapsedTime = gameTime.TotalGameTime.TotalMilliseconds;
+
+                if (numShuffles == 1)
+                    shuffleEffect.Play();
             }
             else if (deckCover2.Time >= gameTime.TotalGameTime.TotalMilliseconds - elapsedTime && deckCover2.IsMoving)
                 deckCover2.Move(gameTime);

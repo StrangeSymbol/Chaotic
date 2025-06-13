@@ -8,6 +8,7 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Input;
+using Microsoft.Xna.Framework.Audio;
 
 namespace Chaotic
 {
@@ -78,6 +79,8 @@ namespace Chaotic
 
         private SpriteFont font;
 
+        private SoundEffect coinEffect;
+
         public Coin(ContentManager content, GraphicsDeviceManager graphics)
         {
             this.heads = content.Load<Texture2D>(@"Coin/OverWorldHeads");
@@ -90,6 +93,7 @@ namespace Chaotic
             elapsedTime = 0.0;
             flipElapsedTime = 0.0;
             flippedSide = null;
+            this.coinEffect = content.Load<SoundEffect>(@"Audio\CoinFlip");
         }
 
         private Rectangle collisionRectangle
@@ -187,6 +191,7 @@ namespace Chaotic
                     isMoving = true;
                     courseToLocation(initPosition - Vector2.UnitY * 4 * height);
                     elapsedTime = gameTime.TotalGameTime.TotalMilliseconds;
+                    coinEffect.Play();
                 }
             }
             else if (time >= gameTime.TotalGameTime.TotalMilliseconds - elapsedTime && isMoving)

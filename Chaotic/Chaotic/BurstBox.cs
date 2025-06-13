@@ -6,6 +6,7 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using Microsoft.Xna.Framework.Audio;
 
 namespace Chaotic
 {
@@ -38,10 +39,10 @@ namespace Chaotic
             Vector2 upPosition = new Vector2(boxPosition.X + kPanelWidth + kSpaceWidth,
                 boxPosition.Y + kboxItemHeight*numBoxes / 2 - upSprite.Height / 2);
             upButton = new Button(upSprite, upPosition,
-                content.Load<Texture2D>(@"BurstSprites/ArrowButtonCoverU"));
+                content.Load<Texture2D>(@"BurstSprites/ArrowButtonCoverU"), content.Load<SoundEffect>(@"Audio\ButtonClick"));
             downButton = new Button(content.Load<Texture2D>(@"BurstSprites/ArrowButtonD"), upPosition + 
                 new Vector2(0, upSprite.Height + 2*kSpaceHeight),
-                content.Load<Texture2D>(@"BurstSprites/ArrowButtonCoverD"));
+                content.Load<Texture2D>(@"BurstSprites/ArrowButtonCoverD"), content.Load<SoundEffect>(@"Audio\ButtonClick"));
             start = 0;
             end = numBoxes-1;
         }

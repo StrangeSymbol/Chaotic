@@ -8,6 +8,7 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Input;
+using Microsoft.Xna.Framework.Audio;
 
 namespace Chaotic
 {
@@ -35,7 +36,8 @@ namespace Chaotic
             this.selectedText = selectedText;
             Texture2D texture = content.Load<Texture2D>(@"Panel\OkButton");
             this.okButton = new Button(texture, new Vector2(2 * graphics.PreferredBackBufferWidth / 4 - texture.Width / 2,
-                position.Y + panel.Height - texture.Height - 20), content.Load<Texture2D>("OkButtonCover"));
+                position.Y + panel.Height - texture.Height - 20), content.Load<Texture2D>("OkButtonCover"),
+                content.Load<SoundEffect>(@"Audio\RightMouseClick"));
             positions = new Vector2[4];
             for (int i = 0; i < positions.Length; i++)
             {

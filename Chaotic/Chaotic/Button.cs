@@ -6,6 +6,7 @@ using System;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using Microsoft.Xna.Framework.Audio;
 
 namespace Chaotic
 {
@@ -14,14 +15,16 @@ namespace Chaotic
         #region Fields
         double elapsedTime;
         const float ButtonWait = 100f;
+        SoundEffect buttonEffect;
         #endregion
         #region Properties
         public bool IsClicked { get; set; }
         #endregion
         #region Constructors
-        public Button(Texture2D sprite, Vector2 position, Texture2D overlay)
+        public Button(Texture2D sprite, Vector2 position, Texture2D overlay, SoundEffect buttonEffect)
             : base(sprite, position, overlay)
         {
+            this.buttonEffect = buttonEffect;
         }
         #endregion
         #region Methods
@@ -43,6 +46,7 @@ namespace Chaotic
             {
                 IsClicked = false;
                 elapsedTime = 0f;
+                buttonEffect.Play();
                 return true;
             }
             return false;

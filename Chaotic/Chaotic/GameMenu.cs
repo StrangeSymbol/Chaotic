@@ -49,6 +49,8 @@ namespace Chaotic
         SoundEffectInstance themeSong;
         bool playedSong;
 
+        SoundEffect menuButtonEffect;
+
         public GameMenu()
         {
             graphics = new GraphicsDeviceManager(this);
@@ -94,6 +96,8 @@ namespace Chaotic
 
             themeSong = themeSF.CreateInstance();
             themeSong.IsLooped = true;
+
+            menuButtonEffect = Content.Load<SoundEffect>(@"Audio\RightMouseClick");
 
             title = Content.Load<Texture2D>(@"Menu/ChaoticSymbol");
             if (DateTime.Now.Month == 3) // Check that it is March.
@@ -174,7 +178,7 @@ namespace Chaotic
               new Skreeth(Content.Load<Texture2D>(@"Creatures\Skreeth"), overlay, negate, 55, 80, 65, 60, 20),
               new Solvis(Content.Load<Texture2D>(@"Creatures\Solvis"), overlay, negate, 40, 45, 60, 65, 35),
               new Takinom(Content.Load<Texture2D>(@"Creatures\Takinom"), overlay, negate, 40, 60, 65, 20, 95),
-              new Toxis(Content.Load<Texture2D>(@"Creatures\Skreeth"), overlay, negate, 50, 45, 70, 40, 50),
+              new Toxis(Content.Load<Texture2D>(@"Creatures\Toxis"), overlay, negate, 50, 45, 70, 40, 50),
               new Ulmar(Content.Load<Texture2D>(@"Creatures\Ulmar"), overlay, negate, 25, 40, 20, 70, 35),
               new Xield(Content.Load<Texture2D>(@"Creatures\Xield"), overlay, negate, 20, 90, 40, 35, 15),
               new Zaur(Content.Load<Texture2D>(@"Creatures\Zaur"), overlay, negate, 50, 65, 75, 35, 25),
@@ -645,6 +649,7 @@ namespace Chaotic
                 ChaoticEngine.MStage = selectedStage;
                 buttons[j].IsClicked = false;
                 elapsedTime = 0f;
+                menuButtonEffect.Play();
             }
         }
 

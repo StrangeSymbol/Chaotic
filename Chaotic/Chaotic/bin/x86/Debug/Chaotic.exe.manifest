@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Chaotic.exe" size="352768">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Chaotic.exe" size="353792">
       <assemblyIdentity name="Chaotic" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>mZ9zam0rFvAwvvMreM8vodJ9foI=</dsig:DigestValue>
+        <dsig:DigestValue>65rOgk4mEOXgj3nYudD3f3NMtSA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -579,6 +579,42 @@
       <dsig:DigestValue>csH/dhHCBB+YfZYLeQvTUw13+aM=</dsig:DigestValue>
     </hash>
   </file>
+  <file name="Content\Audio\ArrowClick.xnb" size="32361">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>eSYYfUIxGAMETMxsXR/JAQ9HSzQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Audio\ButtonClick.xnb" size="8169">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>IDCDi06BWTaAOTQ5P1ij6pPMgKE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Audio\CardSet.xnb" size="24945">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>jSBOR6QFi6A6ZM3GsST1yh8vKAs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Audio\CardShuffle.xnb" size="37113">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>RkeC2fg+Tj+HFiBMpVG1braLaRg=</dsig:DigestValue>
+    </hash>
+  </file>
   <file name="Content\Audio\ChaoticTheme.xnb" size="10819685">
     <hash>
       <dsig:Transforms>
@@ -586,6 +622,42 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
       <dsig:DigestValue>NwNdWryHWX2hzWaM7m/q/QuOfcs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Audio\CoinFlip.xnb" size="85353">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>sPb2bGT0hRZqHrVJEFFMwf51CjU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Audio\DrawCard.xnb" size="17987">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>6z7mVEmZStxxRJmRYBJ7lHh/oFI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Audio\LeftMouseClick.xnb" size="198249">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>A9tGhjhxXQZOZ2qqGkBBCDucdiE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Audio\RightMouseClick.xnb" size="202857">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>iJwIpp2rjtQbD27ghZ/ayxOn5x8=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Content\Backgrounds\CastleBodhran.xnb" size="7056187">

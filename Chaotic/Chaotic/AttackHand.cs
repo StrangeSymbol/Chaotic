@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using Microsoft.Xna.Framework.Audio;
 using ChaoticGameLib;
 
 namespace Chaotic
@@ -22,9 +23,10 @@ namespace Chaotic
         readonly Vector2 attackTemplate;
         bool isPlayer1;
         double elaspedTime;
+        SoundEffect setEffect;
 
         public AttackHand(bool isPlayer1, Texture2D cardBack, Vector2 attackTemplate, Texture2D damage,
-            Texture2D heal, SpriteFont spriteFont)
+            Texture2D heal, SpriteFont spriteFont, SoundEffect setEffect)
         {
             this.isPlayer1 = isPlayer1;
             this.cardBack = cardBack;
@@ -34,6 +36,7 @@ namespace Chaotic
             elaspedTime = 0.0;
             this.attackTemplate = attackTemplate;
             this.spriteFont = spriteFont;
+            this.setEffect = setEffect;
         }
 
         public int Count { get { return hand.Count; } }
@@ -124,6 +127,7 @@ namespace Chaotic
                     ChaoticEngine.IsACardMoving = false;
                     elaspedTime = 0.0;
                     RemoveCardFromHand(i);
+                    setEffect.Play();
                     return true;
                 }
             }
@@ -150,6 +154,7 @@ namespace Chaotic
                 hand[i].IsMoving = false;
                 elaspedTime = 0.0;
                 RemoveCardFromHand(i);
+                setEffect.Play();
                 return true;
             }
             return false;

@@ -14,7 +14,7 @@ namespace Chaotic
         MenuStage stage;
 
         public MenuButton(Texture2D sprite, Vector2 position, Texture2D overlay, MenuStage stage)
-            : base(sprite, position, overlay)
+            : base(sprite, position, overlay, null)
         {
             this.stage = stage;
         }

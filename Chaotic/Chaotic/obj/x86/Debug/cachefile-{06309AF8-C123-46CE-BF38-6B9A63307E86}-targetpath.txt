@@ -358,3 +358,11 @@ Content\Fonts\CodedFont.xnb
 Content\Fonts\BurstBoxFont.xnb
 Content\Battlegears\Droskin.xnb
 Content\Audio\ChaoticTheme.xnb
+Content\Audio\CardSet.xnb
+Content\Audio\CardShuffle.xnb
+Content\Audio\DrawCard.xnb
+Content\Audio\ArrowClick.xnb
+Content\Audio\ButtonClick.xnb
+Content\Audio\CoinFlip.xnb
+Content\Audio\LeftMouseClick.xnb
+Content\Audio\RightMouseClick.xnb
