@@ -83,8 +83,11 @@ namespace Chaotic
                     }
                 }
             }
-            else if (mugic is ChaoticGameLib.Mugics.SongOfDeflection && Burst.Alive)
+            else if (mugic is ChaoticGameLib.Mugics.SongOfDeflection)
             {
+                if (!Burst.Alive)
+                    return false;
+
                 if (Burst.Peek().Action == AbilityAction.Cast && Burst.Peek()[0] is Mugic)
                     return Burst.Peek().Count == 3; // Mugic has a single target.
                 else if (Burst.Peek()[0] is Battlegear)
@@ -92,13 +95,18 @@ namespace Chaotic
                 else if (Burst.Peek()[0] is Creature)
                     return Burst.Peek().Count == 2;
             }
-            else if (mugic is ChaoticGameLib.Mugics.MelodyOfMirage && Burst.Alive)
+            else if (mugic is ChaoticGameLib.Mugics.MelodyOfMirage) // TODO: Fix
             {
-                return Burst.Peek()[0] is Attack;
+                //return Burst.Alive && Burst.Peek()[0] is Attack;
+                return Burst.Alive && Burst.StartedByAtk;
             }
-            else if ((mugic as ICast).Type == AbilityType.TargetEngaged)
+            else if (mugic is ChaoticGameLib.Mugics.SongOfTransportation)
             {
-                return ChaoticEngine.sYouNode!= null && mugic.CheckPlayable(ChaoticEngine.sYouNode.CreatureNode)
+                return !ChaoticEngine.CombatThisTurn;
+            }
+            else if ((mugic as ICast).Type == AbilityType.TargetEngaged) // TODO: Fix.
+            {
+                return ChaoticEngine.sYouNode != null && mugic.CheckPlayable(ChaoticEngine.sYouNode.CreatureNode)
                     && ChaoticEngine.sEnemyNode != null && mugic.CheckPlayable(ChaoticEngine.sEnemyNode.CreatureNode);
             }
             else if ((mugic as ICast).Type == AbilityType.TargetLocation)
@@ -285,6 +293,10 @@ namespace Chaotic
                                 return true;
                         }
                     }
+                }
+                else if (creature.Battlegear is ChaoticGameLib.Battlegears.Droskin)
+                {
+                    return Burst.StartedByAtk && (creature == ChaoticEngine.sYouNode.CreatureNode || creature == ChaoticEngine.sEnemyNode.CreatureNode);
                 }
                 else
                 {

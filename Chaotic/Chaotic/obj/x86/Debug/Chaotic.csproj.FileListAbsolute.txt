@@ -1,288 +1,4 @@
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Chaotic.exe
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Chaotic.pdb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\obj\x86\Debug\Chaotic.csprojResolveAssemblyReference.cache
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\obj\x86\Debug\Chaotic.exe
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\obj\x86\Debug\Chaotic.pdb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\CardBack.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\ChaoticGameLib.dll
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\ChaoticGameLib.pdb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\obj\x86\Debug\Chaotic.ChaoticForm.resources
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\obj\x86\Debug\Chaotic.csproj.GenerateResource.Cache
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Menu\ChaoticSymbol.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Menu\EditButton.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Menu\MenuButtonCover.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Menu\TestButton.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Menu\OneOnOneButton.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Menu\ThreeOnThreeButton.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Menu\SuitBackButton.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Menu\backBtnCover.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\CardOutline.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\CastlePillar.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\CastleBodhran.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\ChaoticBackground.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\CordacFalls.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\CordacFallsPlungePool.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\CrystalCave.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\DoorsOfTheDeepmines.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\DranakisThreshold.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\Everrain.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\FearValley.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\ForestOfLife.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\Gigantempopolis.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\GlacierPlains.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\GloomuckSwamp.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\GothosTower.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\IronPillar.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\KiruCity.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\LakeKenIPo.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\LavaPond.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\MipedimOasis.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\MountPillar.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\RavanaughRidge.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\Riverlands.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\RunicGrove.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\StonePillar.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\StormTunnel.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\StrongholdMorn.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\UnderworldCity.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\UnderWorldColosseum.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\WoodenPillar.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Panel\ArrowButtonCoverL.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Panel\ArrowButtonCoverR.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Panel\ArrowButtonL.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Panel\ArrowButtonR.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Panel\OkButton.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Panel\Panel.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\BattleBoardButtons\ActivateButton.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\BattleBoardSprites\Attack.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\BattleBoardSprites\AttackDiscard.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\BattleBoardSprites\BattleBoardDescription.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\BattleBoardSprites\CardSpace.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\BattleBoardSprites\Discard.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\BattleBoardSprites\Location.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\BattleBoardSprites\LocationCardBack.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\BattleBoardSprites\Mugic-Dan.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\BattleBoardSprites\Mugic-Gen.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\BattleBoardSprites\Mugic-Mip.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\BattleBoardSprites\Mugic-UW.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\BattleBoardSprites\MugicOW.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\BattleBoardButtons\CancelButton.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\BattleBoardButtons\CastButton.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\BattleBoardButtons\MoveButton.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\BattleBoardButtons\SacrificeButton.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\Allmageddon.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\AshTorrent.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\CoilCrush.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\Degenervate.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\Delerium.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\Ektospasm.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\EmberSwarm.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\Evaporize.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\Fearocity.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\FlameOrb.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\FlashKick.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\Flashmend.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\Flashwarp.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\FrostBlight.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\HailStorm.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\HiveCall.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\Incinerase.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\InfernoGust.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\IronBalls.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\Lavalanche.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\LightningBurst.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\LuckyShot.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\Megaroar.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\Mirthquake.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\ParalEyes.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\Pebblestorm.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\PowerPulse.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\QuickExit.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\RipTide.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\RockWave.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\Rustoxic.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\ShadowStrike.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\ShriekShock.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\SkeletalStrike.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\SleepSting.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\SludgeGush.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\SpiritGust.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\SqueezePlay.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\SteamRage.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\TelekineticBolt.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\ThunderShout.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\TorrentOfFlame.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\ToxicGust.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\Unsanity.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\Velocitrap.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\VineSnare.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\Viperlash.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\Windslash.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\CastleBodhran.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\CastlePillar.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\CordacFalls.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\CordacFallsPlungePool.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\CrystalCave.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\DoorsOfTheDeepmines.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\DranakisThreshold.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\Everrain.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\EyeOfTheMaelstrom.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\FearValley.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\ForestOfLife.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\Gigantempopolis.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\GlacierPlains.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\GloomuckSwamp.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\GothosTower.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\IronPillar.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\KiruCity.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\LakeKenIPo.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\LavaPond.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\MipedimOasis.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\MountPillar.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\RavanaughRidge.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\Riverlands.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\RunicGrove.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\StonePillar.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\StormTunnel.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\StrongholdMorn.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\UnderworldCity.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\UnderWorldColosseum.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\OkButtonCover.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Arias.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Attacat.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Blazier.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Blugon.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Bodal.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Crawsectus.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Donmar.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Dractyl.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Frafdo.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Gespedan.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Heptadd.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Intress.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Laarina.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Maglax.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Maxxor.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Owis.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Psimion.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Slurhk.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Staluk.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\TangathToborn.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Tartarek.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Velreth.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Vidav.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Xaerv.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Zalic.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Najarin.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Rellim.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Yokkis.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Fonts\CardDescriptionFont.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Fonts\PanelFont.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\TornadoTackle.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\AquaShield.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\Cyclance.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\DiamondOfVlaric.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\DragonPulse.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\ElixirOfTenacity.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\GauntletsOfMight.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\Liquilizer.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\MipedianCactus.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\Mowercycle.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\MugiciansLyre.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\NexusFuse.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\OrbOfForesight.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\PhobiaMask.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\PrismOfVacuity.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\Pyroblaster.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\RingOfNaarin.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\RiverlandStar.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\SkeletalSteed.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\SpectralViewer.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\StaffOfWisdom.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\StoneMail.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\TalismanOfTheMandiblor.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\TorrentKrinth.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\Torwegg.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\Viledriver.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\VlaricShard.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\Whepcrack.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\WindStrider.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Backgrounds\EyeOfTheMaelstrom.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Locations\WoodenPillar.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\Decrescendo.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\EmberFlourish.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\Fortissimo.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\InterludeOfConsequence.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\MinorFlourish.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\SongOfEmbernova.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\SongOfFuturesight.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\SongOfGeonova.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\SongOfTruesight.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\GeoFlourish.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\CascadeOfSymphony.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\HymnOfTheElements.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\MugicReprise.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\OverworldAria.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\RefrainOfDenial.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\SongOfFocus.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\SongOfResurgence.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\SongOfStasis.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\CanonOfCasualty.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\DiscordOfDisarming.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\MelodyOfMalady.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\RefrainOfDenial_OverWorld_.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\SongOfAsperity.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\SongOfFury.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\SongOfRevival_UnderWorld_.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\SongOfTreachery.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\FanfareOfTheVanishing.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\MelodyOfMirage.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\NotesOfNeverwhere.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\SongOfDeflection.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\SongOfRecovery.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\TrillsOfDiminution.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\FluxBauble.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\BarathBeyond.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\BorthMajar.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Chaor.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Dardemus.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Ghuul.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Grook.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Hearring.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Khybon.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Klasp.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Krekk.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\LordVanbloot.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Magmon.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Pyrithion.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Rarran.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Rothar.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Skithia.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Solvis.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Takinom.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Xield.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Drakness.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Kerric.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Kughar.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Miklon.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Nauthilax.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Toxis.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Ulmar.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Zaur.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Skreeth.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\obj\x86\Debug\Chaotic.DeckSetup3On3.resources
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\obj\x86\Debug\Chaotic.DeckSetup6On6.resources
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\obj\x86\Debug\Chaotic.DeckSetup1On1.resources
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Menu\SixOnSixButton.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\BattleBoardSprites\EndTurnButton.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Fonts\AttackDamage.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\damagecover.xnb
-C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\healcover.xnb
-C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\obj\x86\Debug\Chaotic.exe
-C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\obj\x86\Debug\Chaotic.pdb
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\CardBack.xnb
-C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\CardOutline.xnb
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Menu\ChaoticSymbol.xnb
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Menu\EditButton.xnb
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Menu\MenuButtonCover.xnb
@@ -433,7 +149,6 @@ C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\C
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Dractyl.xnb
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Frafdo.xnb
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Gespedan.xnb
-C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Heptadd.xnb
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Intress.xnb
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Laarina.xnb
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Maglax.xnb
@@ -546,25 +261,8 @@ C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\C
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\LordVanBloot.xnb
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\damagecover.xnb
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\healcover.xnb
-C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Fonts\CardDescriptionFont.xnb
-C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Fonts\PanelFont.xnb
-C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Fonts\AttackDamage.xnb
-C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Chaotic.exe
-C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Chaotic.pdb
-C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\ChaoticGameLib.dll
-C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\ChaoticGameLib.pdb
-C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
-C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\obj\x86\Debug\Chaotic.ChaoticForm.resources
-C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\obj\x86\Debug\Chaotic.DeckSetup1On1.resources
-C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\obj\x86\Debug\Chaotic.DeckSetup3On3.resources
-C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\obj\x86\Debug\Chaotic.DeckSetup6On6.resources
-C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\obj\x86\Debug\Chaotic.csproj.GenerateResource.Cache
+C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Heptadd.xnb
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Malvadine.xnb
-C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Fonts\EndGame.xnb
-C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Chaotic.exe.manifest
-C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Chaotic.application
-C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\obj\x86\Debug\Chaotic.exe.manifest
-C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\obj\x86\Debug\Chaotic.application
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Ario.xnb
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Biondu.xnb
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Brathe.xnb
@@ -581,7 +279,6 @@ C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\C
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Zhade.xnb
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Ekuud.xnb
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Galin.xnb
-C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Fonts\HUB.xnb
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Hota.xnb
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Ibiaan.xnb
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Junda.xnb
@@ -598,10 +295,9 @@ C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\C
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Coin\OverWorldHeads.xnb
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Coin\OverWorldTails.xnb
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Sheen.xnb
-C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Fonts\Description.xnb
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Panel\NoButton.xnb
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Panel\YesButton.xnb
-C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Fonts\MessageBox.xnb
+C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\CardOutline.xnb
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\ChorusOfTheHive.xnb
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\RefrainOfDenial_OverWorld0UnderWorld_.xnb
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\SongOfMandiblor.xnb
@@ -612,31 +308,16 @@ C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\C
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Elements\Earth.xnb
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Elements\Fire.xnb
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Elements\Water.xnb
-C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Microsoft.Xna.Framework.dll
-C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Microsoft.Xna.Framework.Game.dll
-C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Microsoft.Xna.Framework.Graphics.dll
-C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Microsoft.Xna.Framework.GamerServices.dll
-C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Microsoft.Xna.Framework.Input.Touch.dll
-C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Microsoft.Xna.Framework.xml
-C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Microsoft.Xna.Framework.Game.xml
-C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Microsoft.Xna.Framework.Graphics.xml
-C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Microsoft.Xna.Framework.GamerServices.xml
-C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Microsoft.Xna.Framework.Input.Touch.xml
-C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\obj\x86\Debug\Chaotic.csproj.CoreCompileInputs.cache
-C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\obj\x86\Debug\Chaotic.csproj.CopyComplete
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\SplashScreens\SplashScreen.xnb
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\SplashScreens\SplashScreenDecember.xnb
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\SplashScreens\SplashScreenMarch.xnb
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\SplashScreens\SplashScreenOctober.xnb
-C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Fonts\TriggeredFont.xnb
-C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Fonts\CodedFont.xnb
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\negate.xnb
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\BurstSprites\ArrowButtonCoverD.xnb
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\BurstSprites\ArrowButtonCoverU.xnb
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\BurstSprites\ArrowButtonD.xnb
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\BurstSprites\ArrowButtonU.xnb
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\BurstSprites\box.xnb
-C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Fonts\BurstBoxFont.xnb
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Antidaeon.xnb
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Banshor.xnb
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Creatures\Cerbie.xnb
@@ -665,5 +346,44 @@ C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\C
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Attacks\Nexdoors.xnb
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\SongofTransportation.xnb
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Mugics\SwarmSong.xnb
+C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Fonts\CardDescriptionFont.xnb
+C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Fonts\PanelFont.xnb
+C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Fonts\AttackDamage.xnb
+C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Fonts\EndGame.xnb
+C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Fonts\HUB.xnb
+C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Fonts\Description.xnb
+C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Fonts\MessageBox.xnb
+C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Fonts\TriggeredFont.xnb
+C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Fonts\CodedFont.xnb
+C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Fonts\BurstBoxFont.xnb
+C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Chaotic.exe.manifest
+C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Chaotic.application
+C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Chaotic.exe
+C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Chaotic.pdb
+C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\ChaoticGameLib.dll
+C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Microsoft.Xna.Framework.dll
+C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Microsoft.Xna.Framework.Game.dll
+C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Microsoft.Xna.Framework.Graphics.dll
+C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Microsoft.Xna.Framework.GamerServices.dll
+C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Microsoft.Xna.Framework.Input.Touch.dll
+C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\ChaoticGameLib.pdb
+C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Microsoft.Xna.Framework.xml
+C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Microsoft.Xna.Framework.Game.xml
+C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Microsoft.Xna.Framework.Graphics.xml
+C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Microsoft.Xna.Framework.GamerServices.xml
+C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Microsoft.Xna.Framework.Input.Touch.xml
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\obj\x86\Debug\Chaotic.csproj.AssemblyReference.cache
-C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\ChaoticGame.cs
+C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\obj\x86\Debug\Chaotic.ChaoticForm.resources
+C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\obj\x86\Debug\Chaotic.DeckSetup1On1.resources
+C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\obj\x86\Debug\Chaotic.DeckSetup3On3.resources
+C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\obj\x86\Debug\Chaotic.DeckSetup6On6.resources
+C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\obj\x86\Debug\Chaotic.csproj.GenerateResource.cache
+C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\obj\x86\Debug\Chaotic.csproj.CoreCompileInputs.cache
+C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\obj\x86\Debug\Chaotic.exe.manifest
+C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\obj\x86\Debug\Chaotic.application
+C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\obj\x86\Debug\Chaotic.csproj.CopyComplete
+C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\obj\x86\Debug\Chaotic.exe
+C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\obj\x86\Debug\Chaotic.pdb
+C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Battlegears\Droskin.xnb
+C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\Chaotic\Chaotic\bin\x86\Debug\Content\Audio\ChaoticTheme.xnb

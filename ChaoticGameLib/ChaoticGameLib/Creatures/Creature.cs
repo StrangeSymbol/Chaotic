@@ -386,6 +386,7 @@ namespace ChaoticGameLib
 
         public bool Invisibility()
         {
+            // TODO: For Opto, Scouts gain Immune to Invisibility. Add Immune bool variable and turn on for Scouts. 
             if (strike > 0 || surprise)
                 return true;
             else

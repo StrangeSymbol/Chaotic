@@ -356,3 +356,5 @@ Content\Fonts\MessageBox.xnb
 Content\Fonts\TriggeredFont.xnb
 Content\Fonts\CodedFont.xnb
 Content\Fonts\BurstBoxFont.xnb
+Content\Battlegears\Droskin.xnb
+Content\Audio\ChaoticTheme.xnb

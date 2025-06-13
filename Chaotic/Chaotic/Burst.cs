@@ -12,11 +12,13 @@ namespace Chaotic
         static Stack<Ability> burstStack; // Contains the abilities to resolve.
         static GameStage burstStart; // Contains the stage where the Burst started
         static bool player1Turn; // Holds onto whose current turn it is.
+        static bool startedByAtk; // Holds whether an Attack started the burst.
 
         public static void InitializeBurst(GameStage startStage)
         {
             burstStack = new Stack<Ability>();
             burstStart = startStage;
+            startedByAtk = false;
             ChaoticEngine.MsgBox.Reset();
         }
 
@@ -30,6 +32,8 @@ namespace Chaotic
             }
             set { player1Turn = value; }
         }
+
+        public static bool StartedByAtk { get { return startedByAtk; } set { startedByAtk = value; } }
 
         public static void Empty()
         {

@@ -14,6 +14,7 @@ using ChaoticGameLib.Creatures;
 using ChaoticGameLib.Battlegears;
 using ChaoticGameLib.Mugics;
 using ChaoticGameLib.Locations;
+using Microsoft.Xna.Framework.Audio;
 
 namespace Chaotic
 {
@@ -44,6 +45,9 @@ namespace Chaotic
         double elapsedTime;
 
         public static string sPath;
+
+        SoundEffectInstance themeSong;
+        bool playedSong;
 
         public GameMenu()
         {
@@ -84,6 +88,12 @@ namespace Chaotic
         {
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
+
+            SoundEffect themeSF = Content.Load<SoundEffect>(@"Audio\ChaoticTheme");
+            playedSong = false;
+
+            themeSong = themeSF.CreateInstance();
+            themeSong.IsLooped = true;
 
             title = Content.Load<Texture2D>(@"Menu/ChaoticSymbol");
             if (DateTime.Now.Month == 3) // Check that it is March.
@@ -288,6 +298,7 @@ namespace Chaotic
               new VlaricShard(Content.Load<Texture2D>(@"Battlegears\VlaricShard"), overlay, negate),
               new WhepCrack(Content.Load<Texture2D>(@"Battlegears\WhepCrack"), overlay, negate),
               new WindStrider(Content.Load<Texture2D>(@"Battlegears\WindStrider"), overlay, negate),
+              new Droskin(Content.Load<Texture2D>(@"Battlegears\Droskin"), overlay, negate),
               new Decrescendo(Content.Load<Texture2D>(@"Mugics\Decrescendo"), overlay, negate),
               new EmberFlourish(Content.Load<Texture2D>(@"Mugics\EmberFlourish"), overlay, negate),
               new Fortissimo(Content.Load<Texture2D>(@"Mugics\Fortissimo"), overlay, negate),
@@ -430,6 +441,7 @@ namespace Chaotic
         protected override void UnloadContent()
         {
             // TODO: Unload any non ContentManager content here
+            themeSong.Dispose();
         }
 
         /// <summary>
@@ -441,7 +453,13 @@ namespace Chaotic
         {
             // Allows the game to exit
             if (Keyboard.GetState().IsKeyDown(Keys.Escape))
+            {
+                if (playedSong)
+                {
+                    themeSong.Stop();
+                }
                 this.Exit();
+            }
 
             MouseState mouse = Mouse.GetState();
             switch (ChaoticEngine.MStage)
@@ -459,9 +477,19 @@ namespace Chaotic
                     new ChaoticForm().ShowDialog();
                     break;
                 case MenuStage.MainMenu:
+                    if (!playedSong)
+                    {
+                        playedSong = true;
+                        themeSong.Play();
+                    }
                     UpdateButtons(mainButtons, gameTime, mouse);
                     break;
                 case MenuStage.InGame:
+                    if (playedSong)
+                    {
+                        playedSong = false;
+                        themeSong.Pause();
+                    }
                     break;
                 case MenuStage.OneOnOne:
                     #if DEBUG
@@ -472,7 +500,7 @@ namespace Chaotic
                         ChaoticEngine.sMugics1 = ChaoticEngine.LoadCards<Mugic>(1, 12, deck);
                         ChaoticEngine.sAttacks1 = ChaoticEngine.LoadCards<Attack>(10, 18, deck);
                         ChaoticEngine.sLocations1 = ChaoticEngine.LoadCards<Location>(5, 38, deck);
-                        deck = ChaoticEngine.LoadFile("OverWorld Starter Deck");
+                        deck = ChaoticEngine.LoadFile("UnderWorld Starter Deck");
                         ChaoticEngine.sCreatures2 = ChaoticEngine.LoadCards<Creature>(1, 0, deck);
                         ChaoticEngine.sBattlegears2 = ChaoticEngine.LoadCards<Battlegear>(1, 6, deck);
                         ChaoticEngine.sMugics2 = ChaoticEngine.LoadCards<Mugic>(1, 12, deck);
@@ -494,7 +522,7 @@ namespace Chaotic
                         ChaoticEngine.sMugics1 = ChaoticEngine.LoadCards<Mugic>(3, 12, deck);
                         ChaoticEngine.sAttacks1 = ChaoticEngine.LoadCards<Attack>(10, 18, deck);
                         ChaoticEngine.sLocations1 = ChaoticEngine.LoadCards<Location>(5, 38, deck);
-                        deck = ChaoticEngine.LoadFile("OverWorld Starter Deck");
+                        deck = ChaoticEngine.LoadFile("UnderWorld Starter Deck");
                         ChaoticEngine.sCreatures2 = ChaoticEngine.LoadCards<Creature>(3, 0, deck);
                         ChaoticEngine.sBattlegears2 = ChaoticEngine.LoadCards<Battlegear>(3, 6, deck);
                         ChaoticEngine.sMugics2 = ChaoticEngine.LoadCards<Mugic>(3, 12, deck);
@@ -516,7 +544,7 @@ namespace Chaotic
                         ChaoticEngine.sMugics1 = ChaoticEngine.LoadCards<Mugic>(6, 12, deck);
                         ChaoticEngine.sAttacks1 = ChaoticEngine.LoadCards<Attack>(20, 18, deck);
                         ChaoticEngine.sLocations1 = ChaoticEngine.LoadCards<Location>(10, 38, deck);
-                        deck = ChaoticEngine.LoadFile("OverWorld Starter Deck");
+                        deck = ChaoticEngine.LoadFile("UnderWorld Starter Deck");
                         ChaoticEngine.sCreatures2 = ChaoticEngine.LoadCards<Creature>(6, 0, deck);
                         ChaoticEngine.sBattlegears2 = ChaoticEngine.LoadCards<Battlegear>(6, 6, deck);
                         ChaoticEngine.sMugics2 = ChaoticEngine.LoadCards<Mugic>(6, 12, deck);

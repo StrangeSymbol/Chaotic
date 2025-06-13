@@ -137,6 +137,7 @@
     <Compile Include="Battlegears\Cyclance.cs" />
     <Compile Include="Battlegears\DiamondOfVlaric.cs" />
     <Compile Include="Battlegears\DragonPulse.cs" />
+    <Compile Include="Battlegears\Droskin.cs" />
     <Compile Include="Battlegears\ElixirOfTenacity.cs" />
     <Compile Include="Battlegears\FluxBauble.cs" />
     <Compile Include="Battlegears\GauntletsOfMight.cs" />

@@ -24,7 +24,7 @@ namespace Chaotic
     SelAttackDeck, SelLocationDeck, SelAttackLocationDeck, SelElemental, SelReturnMugic, SelReturnCreature, DecideToBurst,
     AddingToBurst, RunBurst, HighLight, SelLocationAny, SelLocationOrder, SelAttackLocationOrder, SelUnoccupiedSpace,
     SelCreatureReturn, AttackDamage, DiscardCreatures, StrikePhase, TargetEngaged, TriggeredSelectAP, TriggeredSelectDP,
-    HiveCallDecision, TargetAttack,};
+    HiveCallDecision, TargetAttack, ChangeLocationStep,};
 
     /// <summary>
     /// This is a game component that implements IUpdateable.
@@ -593,7 +593,7 @@ namespace Chaotic
         /// <summary>
         /// Returns active location to deck, and checks if there was a winner or tie.
         /// </summary>
-        /// <param name="gameTime">ontrols the time of the game.</param>
+        /// <param name="gameTime">Controls the time of the game.</param>
         /// <param name="combatStage">Next stage if there was combat this turn.</param>
         /// <param name="locStep">Next stage if there wasn't combat this turn.</param>
         private void returnLocation(GameTime gameTime, GameStage combatStage, GameStage locStep)
@@ -685,6 +685,12 @@ namespace Chaotic
             {
                 stageQueue.Enqueue(GameStage.ShuffleAtkDeck1);
                 stageQueue.Enqueue(GameStage.ShuffleAtkDeck2);
+            }
+            else if (attack is Nexdoors && ((ChaoticEngine.Player1Active && your.Air) ||
+                (!ChaoticEngine.Player1Active && enemy.Air)) &&
+                    attackDeck.Deck.Count > 1)
+            {
+                stageQueue.Enqueue(GameStage.AttackSelectAbility);
             }
             else if (attack is SqueezePlay &&
                     attackDeck.Deck.Count > 1)
@@ -911,6 +917,8 @@ namespace Chaotic
                     break;
                 case AbilityType.TargetAttack:
                     stageQueue.Enqueue(GameStage.TargetAttack);
+                    break;
+                case AbilityType.ChangeLocation:
                     break;
                 default:
                     break;
@@ -1310,14 +1318,27 @@ namespace Chaotic
                     }
                     break;
                 case AbilityType.TargetAttack:
-                    ICastTarget<Attack> castTarAtk = ChaoticEngine.CurrentAbility[0] as ICastTarget<Attack>;
-                    Attack attack = ChaoticEngine.CurrentAbility[2] as Attack;
-                    castTarAtk.Ability(attack);
+                    if (ChaoticEngine.CurrentAbility[0] is ICastTarget<Attack>)
+                    {
+                        ICastTarget<Attack> castTarAtk = ChaoticEngine.CurrentAbility[0] as ICastTarget<Attack>;
+                        Attack attack = ChaoticEngine.CurrentAbility[2] as Attack;
+                        castTarAtk.Ability(attack);
+                    }
+                    if (ChaoticEngine.CurrentAbility[0] is ISacrificeTarget<Attack>)
+                    {
+                        ISacrificeTarget<Attack> castTarAtk = ChaoticEngine.CurrentAbility[0] as ISacrificeTarget<Attack>;
+                        Attack attack = ChaoticEngine.CurrentAbility[2] as Attack;
+                        castTarAtk.Ability(attack);
+                    }
                     break;
                 case AbilityType.TargetLocation:
                     ICastTarget<Location> castTarLoc = ChaoticEngine.CurrentAbility[0] as ICastTarget<Location>;
                     Location location = activeLocation1.LocationActive ?? activeLocation2.LocationActive;
                     castTarLoc.Ability(location);
+                    break;
+                case AbilityType.ChangeLocation:
+                    turnOffLocation(); // Removes location effects.
+                    stageQueue.Enqueue(GameStage.ChangeLocation); // TODO: Fix code.
                     break;
             }
             stageQueue.Enqueue(GameStage.RunBurst);
@@ -1558,6 +1579,12 @@ namespace Chaotic
                     if (ChaoticEngine.GStage != GameStage.LocationStepCombat)
                         stageQueue.Dequeue();
                     break;
+                case GameStage.ChangeLocationStep:
+                    // TODO: Messes up initiative check.
+                    locationStep(gameTime, Burst.Player1Turn, stageQueue.Peek());
+                    if (ChaoticEngine.GStage != GameStage.ChangeLocationStep)
+                        stageQueue.Dequeue();
+                    break;
                 case GameStage.CreatureToDiscard1:
                     creatureToDiscard(gameTime, mouse, ChaoticEngine.sYouNode, ChaoticEngine.sEnemyNode, discardPile1, 
                         GameStage.BattlegearToDiscard1);
@@ -1610,33 +1637,49 @@ namespace Chaotic
                 case GameStage.ReturnLocationCombat:
                     returnLocation(gameTime, GameStage.LocationStepCombat, GameStage.LocationStepCombat);
                     break;
+                case GameStage.ChangeLocation:
+                    returnLocation(gameTime, GameStage.ChangeLocationStep, GameStage.ChangeLocationStep);
+                    break;
                 case GameStage.Initiative:
                     ChaoticEngine.sYouNode.CreatureNode.ActivateBattlegear();
                     ChaoticEngine.sEnemyNode.CreatureNode.ActivateBattlegear();
 
+                    Location initLoc = activeLocation1.LocationActive ?? activeLocation2.LocationActive;
+
+                    int flag = initLoc.initiativeCheck(ChaoticEngine.sYouNode.CreatureNode,
+                            ChaoticEngine.sEnemyNode.CreatureNode);
+
+                    if (flag >= 0)
+                        ChaoticEngine.Player1Strike = ChaoticEngine.Player1Active;
+                    else
+                        ChaoticEngine.Player1Strike = !ChaoticEngine.Player1Active;
+
+
+                    // TODO: Fix SongOfTrans.
+                    /*
                     if (activeLocation1.LocationActive != null)
                     {
-                        int flag = activeLocation1.LocationActive.initiativeCheck(ChaoticEngine.sYouNode.CreatureNode,
+                        int flagg = activeLocation1.LocationActive.initiativeCheck(ChaoticEngine.sYouNode.CreatureNode,
                             ChaoticEngine.sEnemyNode.CreatureNode);
-                        if (flag > 0)
+                        if (flagg > 0)
                             ChaoticEngine.Player1Strike = true;
-                        else if (flag == 0)
+                        else if (flagg == 0)
                             ChaoticEngine.Player1Strike = ChaoticEngine.Player1Active;
                         else
                             ChaoticEngine.Player1Strike = false;
                     }
                     else if (activeLocation2.LocationActive != null)
                     {
-                        int flag = activeLocation2.LocationActive.initiativeCheck(ChaoticEngine.sYouNode.CreatureNode,
+                        int flagg = activeLocation2.LocationActive.initiativeCheck(ChaoticEngine.sYouNode.CreatureNode,
                             ChaoticEngine.sEnemyNode.CreatureNode);
-                        if (flag > 0)
+                        if (flagg > 0)
                             ChaoticEngine.Player1Strike = false;
-                        else if (flag == 0)
+                        else if (flagg == 0)
                             ChaoticEngine.Player1Strike = ChaoticEngine.Player1Active;
                         else
                             ChaoticEngine.Player1Strike = true;
                     }
-                    
+                    */
                     ChaoticEngine.GStage = GameStage.BeginningOfCombat;
                     break;
                 case GameStage.BeginningOfCombat:
@@ -2157,6 +2200,8 @@ namespace Chaotic
                          // Recklessness ability.
                         if (Burst.Alive && Burst.Peek()[0] is Attack)
                         {
+                            Burst.StartedByAtk = true; // Telling us an Attack started the burst.
+
                             if (ChaoticEngine.Player1Active)
                             {
                                 if (ChaoticEngine.Player1Strike && !ChaoticEngine.sYouNode.CreatureNode.Negate &&
@@ -2378,6 +2423,7 @@ namespace Chaotic
                     }
                     break;
                 case GameStage.TargetAttack:
+                    // TODO: Fix Melody of Mirage and Droskin so attack card can be separated by another mugic.
                     Burst.NextAbility();
                     ChaoticEngine.CurrentAbility.Add(Burst.Peek()[0] as Attack);
                     Burst.Push(ChaoticEngine.CurrentAbility);
@@ -2621,6 +2667,10 @@ namespace Chaotic
             DiscardPile<Attack> attackDiscardPile)
         {
             if (attackDiscardPile[attackDiscardPile.Count - 1] is SqueezePlay)
+            {
+                selectOrdering<Attack>(gameTime, attackPanel1, attackDeck.Deck, ref topAtk);
+            }
+            else if (attackDiscardPile[attackDiscardPile.Count - 1] is Nexdoors)
             {
                 selectOrdering<Attack>(gameTime, attackPanel1, attackDeck.Deck, ref topAtk);
             }

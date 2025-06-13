@@ -6,9 +6,6 @@ C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\ChaoticGam
 C:\Users\Ambrose Emmett\Documents\Visual Studio 2013\Projects\my work\ChaoticGameLib\ChaoticGameLib\obj\x86\Debug\ChaoticGameLib.csprojResolveAssemblyReference.cache
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\ChaoticGameLib\ChaoticGameLib\bin\x86\Debug\ChaoticGameLib.dll
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\ChaoticGameLib\ChaoticGameLib\bin\x86\Debug\ChaoticGameLib.pdb
-C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\ChaoticGameLib\ChaoticGameLib\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
-C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\ChaoticGameLib\ChaoticGameLib\obj\x86\Debug\ChaoticGameLib.dll
-C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\ChaoticGameLib\ChaoticGameLib\obj\x86\Debug\ChaoticGameLib.pdb
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\ChaoticGameLib\ChaoticGameLib\bin\x86\Debug\Microsoft.Xna.Framework.dll
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\ChaoticGameLib\ChaoticGameLib\bin\x86\Debug\Microsoft.Xna.Framework.Game.dll
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\ChaoticGameLib\ChaoticGameLib\bin\x86\Debug\Microsoft.Xna.Framework.Graphics.dll
@@ -19,6 +16,9 @@ C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\ChaoticGameLib\ChaoticGameLib\b
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\ChaoticGameLib\ChaoticGameLib\bin\x86\Debug\Microsoft.Xna.Framework.Graphics.xml
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\ChaoticGameLib\ChaoticGameLib\bin\x86\Debug\Microsoft.Xna.Framework.GamerServices.xml
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\ChaoticGameLib\ChaoticGameLib\bin\x86\Debug\Microsoft.Xna.Framework.Input.Touch.xml
+C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\ChaoticGameLib\ChaoticGameLib\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\ChaoticGameLib\ChaoticGameLib\obj\x86\Debug\ChaoticGameLib.csproj.CoreCompileInputs.cache
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\ChaoticGameLib\ChaoticGameLib\obj\x86\Debug\ChaoticGameLib.csproj.CopyComplete
+C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\ChaoticGameLib\ChaoticGameLib\obj\x86\Debug\ChaoticGameLib.dll
+C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\ChaoticGameLib\ChaoticGameLib\obj\x86\Debug\ChaoticGameLib.pdb
 C:\Users\Ambrose Emmett\Documents\GitHub\Chaotic\ChaoticGameLib\ChaoticGameLib\obj\x86\Debug\ChaoticGameLib.csproj.AssemblyReference.cache

@@ -2,14 +2,14 @@
  *  Coded by: Ambrose Emmett-Iwaniw
  *  The following code is (c) copyright 2020, StrangeSymbol, Inc. ALL RIGHTS RESERVED
  */
-using System;
-using System.Linq;
-using System.Collections.Generic;
+using ChaoticGameLib;
+using ChaoticGameLib.Attacks;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
-using ChaoticGameLib;
-using ChaoticGameLib.Attacks;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Chaotic
 {
@@ -694,7 +694,7 @@ namespace Chaotic
             {
                 stageQueue.Enqueue(GameStage.AttackSelectAbility);
             }
-            else if (attack is SqueezePlay && 
+            else if (attack is SqueezePlay &&
                     attackDeck.Deck.Count > 1)
             {
                 stageQueue.Enqueue(GameStage.AttackSelectAbility);
@@ -1540,7 +1540,7 @@ namespace Chaotic
                         && !attackDiscardPile2.DiscardPanelActive && !discardPile2.DiscardPanelActive)
                     {
                         // TODO: Change for AI.
-                        updatePlayableAbilities(mouse, gameTime, ChaoticEngine.Player1Active); 
+                        updatePlayableAbilities(mouse, gameTime, ChaoticEngine.Player1Active);
 
                         if ((creatureSpaces.Count(b => b.CreatureNode != null && b.CreatureNode.MovedThisTurn == true) > 0 ||
                         ChaoticEngine.CombatThisTurn) && endTurnButton.UpdateButton(mouse, gameTime))
@@ -1939,7 +1939,7 @@ namespace Chaotic
                         ChaoticEngine.GStage = stageQueue.Dequeue();
                     }
                     break;
-                    //TODO: AI
+                //TODO: AI
                 case GameStage.SelectingCreature1:
                     ChaoticEngine.sEnemyNode = selectingCreature(mouse, !ChaoticEngine.Player1Active);
                     break;

@@ -43,26 +43,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Chaotic.exe" size="351232">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Chaotic.exe" size="352768">
       <assemblyIdentity name="Chaotic" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>ZP97C045sVCHdnbigkVKnvMOrrs=</dsig:DigestValue>
+        <dsig:DigestValue>mZ9zam0rFvAwvvMreM8vodJ9foI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ChaoticGameLib.dll" size="195072">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ChaoticGameLib.dll" size="195584">
       <assemblyIdentity name="ChaoticGameLib" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>Tz5v5APRgaFFRVrxlggj7AG8/wI=</dsig:DigestValue>
+        <dsig:DigestValue>Hki7z5RG0KBcf8aOaDTMFEd3JXI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -579,6 +579,15 @@
       <dsig:DigestValue>csH/dhHCBB+YfZYLeQvTUw13+aM=</dsig:DigestValue>
     </hash>
   </file>
+  <file name="Content\Audio\ChaoticTheme.xnb" size="10819685">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>NwNdWryHWX2hzWaM7m/q/QuOfcs=</dsig:DigestValue>
+    </hash>
+  </file>
   <file name="Content\Backgrounds\CastleBodhran.xnb" size="7056187">
     <hash>
       <dsig:Transforms>
@@ -1054,6 +1063,15 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
       <dsig:DigestValue>e1o3g5DaEZlWf6PL3nLhHIdPOv4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Battlegears\Droskin.xnb" size="350187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>/cwKS96AKLnZq08YGwRNP3P6dhc=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Content\Battlegears\ElixirOfTenacity.xnb" size="181627">
